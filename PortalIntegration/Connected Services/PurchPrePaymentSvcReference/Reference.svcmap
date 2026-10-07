@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="a389955d-4ff9-4bbc-a0dc-0fed789a0499" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PurchPrePaymentSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PurchPrePaymentSvcGroup.disco" MetadataType="Disco" ID="7c7cf10e-28d2-4d63-b027-1e30340f3253" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PurchPrePaymentSvcGroup?disco" />
+    <MetadataFile FileName="PurchPrePaymentSvcGroup.xsd" MetadataType="Schema" ID="1e07d0f4-b417-469b-9b24-211a1e534ff5" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PurchPrePaymentSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PurchPrePaymentSvcGroup.wsdl" MetadataType="Wsdl" ID="4b38edc5-50df-4065-af54-e3d52845efa8" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PurchPrePaymentSvcGroup?wsdl" />
+    <MetadataFile FileName="PurchPrePaymentSvcGroup1.xsd" MetadataType="Schema" ID="6f062ca1-f0f8-4c4a-8ea6-cb4eccf52be0" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PurchPrePaymentSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PurchPrePaymentSvcGroup1.wsdl" MetadataType="Wsdl" ID="b0635ffd-cc4f-439d-9a50-fbe290ed9c52" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PurchPrePaymentSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PurchPrePaymentSvcGroup2.xsd" MetadataType="Schema" ID="693f6e0c-cd0e-4980-a4a6-81a7d6e7cb88" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PurchPrePaymentSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PurchPrePaymentSvcGroup3.xsd" MetadataType="Schema" ID="40191abf-c4d0-493c-bf09-efc0d04f2b4e" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PurchPrePaymentSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PurchPrePaymentSvcGroup4.xsd" MetadataType="Schema" ID="437be4f9-09a9-48dd-9fec-2bfd94ca17b3" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PurchPrePaymentSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PurchPrePaymentSvcGroup5.xsd" MetadataType="Schema" ID="2cec8e78-6f9d-49c3-a326-b4a461fbb807" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PurchPrePaymentSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PurchPrePaymentSvcGroup6.xsd" MetadataType="Schema" ID="516857ac-489e-462f-85c4-dfff7387e1f9" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PurchPrePaymentSvcGroup?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

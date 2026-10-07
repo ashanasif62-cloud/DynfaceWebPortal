@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTableSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTableSvcGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTableSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTableSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTableSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTableSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTableSvcGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="retrieve">
+    <wsdl:part name="parameters" element="tns:retrieve" />
+  </wsdl:message>
+  <wsdl:message name="retrieve_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveResponse">
+    <wsdl:part name="parameters" element="tns:retrieveResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="JmgTimecardTableSvc_retrieve_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="update">
+    <wsdl:part name="parameters" element="tns:update" />
+  </wsdl:message>
+  <wsdl:message name="update_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="updateResponse">
+    <wsdl:part name="parameters" element="tns:updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="JmgTimecardTableSvc_update_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="employeeMissingEntries">
+    <wsdl:part name="parameters" element="tns:employeeMissingEntries" />
+  </wsdl:message>
+  <wsdl:message name="employeeMissingEntries_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="employeeMissingEntriesResponse">
+    <wsdl:part name="parameters" element="tns:employeeMissingEntriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="employeeMissingEntriesResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="JmgTimecardTableSvc_employeeMissingEntries_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSingleLine">
+    <wsdl:part name="parameters" element="tns:retrieveSingleLine" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSingleLine_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSingleLineResponse">
+    <wsdl:part name="parameters" element="tns:retrieveSingleLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSingleLineResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="JmgTimecardTableSvc_retrieveSingleLine_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="JmgTimecardTableSvc">
+    <wsdl:operation name="retrieve">
+      <wsdl:input wsam:Action="http://tempuri.org/JmgTimecardTableSvc/retrieve" name="retrieve" message="tns:retrieve" />
+      <wsdl:output wsam:Action="http://tempuri.org/JmgTimecardTableSvc/retrieveResponse" name="retrieveResponse" message="tns:retrieveResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/JmgTimecardTableSvc/Fault" name="SoapServiceFaultFault" message="tns:JmgTimecardTableSvc_retrieve_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsam:Action="http://tempuri.org/JmgTimecardTableSvc/update" name="update" message="tns:update" />
+      <wsdl:output wsam:Action="http://tempuri.org/JmgTimecardTableSvc/updateResponse" name="updateResponse" message="tns:updateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/JmgTimecardTableSvc/Fault" name="SoapServiceFaultFault" message="tns:JmgTimecardTableSvc_update_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="employeeMissingEntries">
+      <wsdl:input wsam:Action="http://tempuri.org/JmgTimecardTableSvc/employeeMissingEntries" name="employeeMissingEntries" message="tns:employeeMissingEntries" />
+      <wsdl:output wsam:Action="http://tempuri.org/JmgTimecardTableSvc/employeeMissingEntriesResponse" name="employeeMissingEntriesResponse" message="tns:employeeMissingEntriesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/JmgTimecardTableSvc/Fault" name="SoapServiceFaultFault" message="tns:JmgTimecardTableSvc_employeeMissingEntries_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveSingleLine">
+      <wsdl:input wsam:Action="http://tempuri.org/JmgTimecardTableSvc/retrieveSingleLine" name="retrieveSingleLine" message="tns:retrieveSingleLine" />
+      <wsdl:output wsam:Action="http://tempuri.org/JmgTimecardTableSvc/retrieveSingleLineResponse" name="retrieveSingleLineResponse" message="tns:retrieveSingleLineResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/JmgTimecardTableSvc/Fault" name="SoapServiceFaultFault" message="tns:JmgTimecardTableSvc_retrieveSingleLine_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

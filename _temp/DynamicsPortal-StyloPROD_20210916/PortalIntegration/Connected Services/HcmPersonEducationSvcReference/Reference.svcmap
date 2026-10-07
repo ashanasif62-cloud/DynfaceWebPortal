@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="09180cd3-414a-4e7e-8b42-b8426d60be83" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonEducationSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HcmPersonEducationSvcGroup4.xsd" MetadataType="Schema" ID="23914a15-4bce-414f-99ab-bacd3a17b9ca" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonEducationSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HcmPersonEducationSvcGroup3.xsd" MetadataType="Schema" ID="0c89f700-66ff-4680-a039-89792b532782" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonEducationSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HcmPersonEducationSvcGroup1.wsdl" MetadataType="Wsdl" ID="e8ba6e5d-d46e-4c97-8cee-dfec631ead0e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonEducationSvcGroup?wsdl" />
+    <MetadataFile FileName="HcmPersonEducationSvcGroup.disco" MetadataType="Disco" ID="0abfdd67-ac7d-40f6-b526-d79e44ff78aa" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonEducationSvcGroup?disco" />
+    <MetadataFile FileName="HcmPersonEducationSvcGroup1.xsd" MetadataType="Schema" ID="9cf35eed-d286-40ce-af75-2e94465d00a5" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonEducationSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HcmPersonEducationSvcGroup.xsd" MetadataType="Schema" ID="8b741087-3a13-4f38-8931-ebe382cde417" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonEducationSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HcmPersonEducationSvcGroup6.xsd" MetadataType="Schema" ID="ccc2435b-bd36-4706-a18e-19a8ae3d6d32" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonEducationSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HcmPersonEducationSvcGroup5.xsd" MetadataType="Schema" ID="e4b989aa-9fc5-4f0f-bb2c-f9ef6e514cde" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonEducationSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HcmPersonEducationSvcGroup.wsdl" MetadataType="Wsdl" ID="05d9d5b5-f417-422b-9002-c7bbaeb5d7dd" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonEducationSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HcmPersonEducationSvcGroup2.xsd" MetadataType="Schema" ID="b57ed4be-f211-4830-8644-7646719673db" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonEducationSvcGroup?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,1878 @@
+/* ============================================================
+   style.listpage-modern.css
+   Drop-in override for DynamicsPortal list pages.
+   Targets existing markup — zero changes to .aspx pages.
+   Designed: Microsoft Fluent / D365 aesthetic
+   ============================================================ */
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');*/
+
+/* ── Tokens ──────────────────────────────────────────────── */
+:root {
+    --lp-accent: #0078d4;
+    --lp-accent-dark: #005a9e;
+    --lp-accent-light: #deecf9;
+    --lp-accent-hover: #106ebe;
+    --lp-danger: #d13438;
+    --lp-danger-light: #fde7e9;
+    --lp-warning: #797775;
+    --lp-success: #107c10;
+    --lp-success-light: #dff6dd;
+    --lp-bg: #f3f2f1;
+    --lp-surface: #ffffff;
+    --lp-border: #edebe9;
+    --lp-border-dark: #c8c6c4;
+    --lp-text-primary: #201f1e;
+    --lp-text-secondary: #605e5c;
+    --lp-text-disabled: #a19f9d;
+    --lp-radius-sm: 4px;
+    --lp-radius-pill: 20px;
+    --lp-shadow-card: 0 1px 3px rgba(0, 0, 0, .10), 0 0 1px rgba(0, 0, 0, .06);
+    --lp-shadow-hover: 0 2px 8px rgba(0, 0, 0, .14), 0 0 2px rgba(0, 0, 0, .08);
+    --lp-transition: 0.15s ease;
+    --lp-font: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* ── Action Panel ────────────────────────────────────────── */
+.action-panel {
+    height: auto !important;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+/*    padding: 4px 8px !important;*/
+    background: var(--lp-accent) !important;
+    border-bottom: 1px solid var(--lp-accent-dark) !important;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.action-panel:empty,
+.action-panel>.float-right:only-child {
+    display: none !important;
+}
+
+/* Remove old action-items wrapper colour */
+.action-panel .action-items {
+    background: transparent !important;
+    padding: 0 !important;
+    line-height: normal !important;
+    display: inline-flex !important;
+    align-items: center;
+}
+
+/* ── Pill Buttons (New / Delete / Submit etc.) ───────────── */
+.action-panel .action-items>a,
+.action-panel .action-items>input[type="submit"],
+.action-panel .action-items>button,
+.action-panel a.action-button {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 5px;
+    padding: 2px 10px !important;
+    font-family: var(--lp-font) !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 22px !important;
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.30) !important;
+    border-radius: var(--lp-radius-pill) !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    white-space: nowrap;
+    transition: background var(--lp-transition), border-color var(--lp-transition), box-shadow var(--lp-transition) !important;
+    letter-spacing: 0.01em;
+}
+
+.action-panel .action-items>a:hover,
+.action-panel .action-items>input[type="submit"]:hover,
+.action-panel .action-items>button:hover {
+    background: rgba(255, 255, 255, 0.24) !important;
+    border-color: rgba(255, 255, 255, 0.55) !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18) !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.action-panel .action-items>a:active,
+.action-panel .action-items>input[type="submit"]:active {
+    background: rgba(255, 255, 255, 0.08) !important;
+    transform: translateY(1px);
+}
+
+/* Disabled state */
+.action-panel .action-items>a.aspNetDisabled,
+.action-panel .action-items>a[disabled] {
+    opacity: 0.38 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+
+/* Icons inside action buttons */
+.action-panel .action-items>a>i,
+.action-panel .action-items>a>.mdi,
+.action-panel .action-items>a>.fa {
+    font-size: 15px !important;
+    line-height: 1 !important;
+    vertical-align: middle;
+}
+
+/* Right-side utility icons (refresh, fullscreen) */
+.action-panel>.float-right .action-items>a {
+    color: rgba(255, 255, 255, 0.80) !important;
+    border: none !important;
+    background: transparent !important;
+    padding: 4px 6px !important;
+    border-radius: var(--lp-radius-sm) !important;
+}
+
+.action-panel>.float-right .action-items>a:hover {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* ── Page Card Header ────────────────────────────────────── */
+.page-contents>.card.card-header {
+    background: var(--lp-surface) !important;
+    border: none !important;
+    border-bottom: 1px solid var(--lp-border) !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 8px 12px !important;
+    margin-bottom: 0 !important;
+    display: flex !important;
+    align-items: center;
+}
+
+/* Remove gap between action panel and page content */
+.page-contents {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.card.card-header {
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+}
+
+.page-title {
+    font-family: var(--lp-font) !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: var(--lp-text-primary) !important;
+    letter-spacing: -0.01em;
+    text-shadow: none !important;
+    text-align: left !important;
+    display: inline-block !important;
+    /* keep existing */
+    flex: 1;
+    /* ADD THIS */
+}
+
+/* ── Page placeholder / scroll area ─────────────────────── */
+.page-placeholder {
+    height: calc(100vh - 128px) !important;
+    padding: 0 !important;
+    overflow-x: auto !important;
+    /* auto = only show scrollbar when needed */
+    overflow-y: auto !important;
+    scrollbar-width: thin;
+    scrollbar-color: #c8c6c4 #f3f2f1;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    transform: none !important; /* sticky breaks inside transformed containers */
+    will-change: auto !important;
+}
+
+/* Only apply bg/padding when a gridView is present */
+.page-placeholder:has(table[id*='gridView']) {
+    background: var(--lp-bg) !important;
+    padding: 0 !important;
+    /* ← was 12px 14px */
+}
+
+/* ── Grid Wrapper ────────────────────────────────────────── */
+table[id*='gridView'],
+table.table {
+    font-family: var(--lp-font) !important;
+    font-size: 13px !important;
+    color: var(--lp-text-primary) !important;
+    min-width: max-content !important;
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    background: var(--lp-surface) !important;
+    border-radius: var(--lp-radius-sm) !important;
+    overflow: visible !important;
+    /* ← CHANGED from hidden to visible */
+    box-shadow: var(--lp-shadow-card) !important;
+    margin-bottom: 0 !important;
+    white-space: nowrap;
+}
+
+/* ── Table Head ──────────────────────────────────────────── */
+table[id*='gridView'] thead,
+table.table thead {
+    background: #ffffff !important;
+    box-shadow: 0 1px 0 #e1dfdd !important;
+}
+
+    table[id*='gridView'] thead th,
+    table.table thead th {
+        font-family: 'Inter', 'Segoe UI', sans-serif !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        color: #6f6e6c !important;
+        text-transform: none !important;
+        letter-spacing: 0.01em !important;
+        padding: 13px 16px !important;
+        border-bottom: 2px solid #e8e6e3 !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        background: #ffffff !important;
+        white-space: nowrap;
+        user-select: none;
+    }
+
+table[id*='gridView'] thead th:hover,
+table.table thead th:hover {
+    background: #faf9f8 !important;
+    color: #323130 !important;
+}
+
+/* ── Table Body ──────────────────────────────────────────── */
+table[id*='gridView'] tbody tr,
+table.table tbody tr {
+    background: #ffffff !important;
+    transition: background var(--lp-transition), box-shadow var(--lp-transition) !important;
+    cursor: pointer;
+    border-bottom: 1px solid #f3f2f1 !important;
+}
+
+table[id*='gridView'] tbody tr:last-child,
+table.table tbody tr:last-child {
+    border-bottom: none !important;
+}
+
+table[id*='gridView'] tbody tr:hover,
+table.table tbody tr:hover {
+    background: #f5f9fe !important;
+    box-shadow: inset 3px 0 0 var(--lp-accent) !important;
+}
+
+table[id*='gridView'] tbody td,
+table.table tbody td {
+    font-family: 'Inter', 'Segoe UI', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    color: #1b1a19 !important;
+    padding: 13px 16px !important;
+    border: none !important;
+    border-bottom: 1px solid #f0eeec !important;
+    vertical-align: middle !important;
+    letter-spacing: -0.01em !important;
+    line-height: 1.55 !important;
+    background: transparent !important;
+}
+
+
+/* Sort icons from sorttable */
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort)::after {
+    content: '\f4ba' !important;
+    font-family: 'Material Design Icons' !important;
+    float: right;
+    opacity: 0.30;
+    font-size: 13px;
+}
+
+th.sorttable_sorted::after {
+    content: '\f4bc' !important;
+    font-family: 'Material Design Icons' !important;
+    float: right;
+    color: var(--lp-accent);
+    opacity: 1;
+}
+
+th.sorttable_sorted_reverse::after {
+    content: '\f4bd' !important;
+    font-family: 'Material Design Icons' !important;
+    float: right;
+    color: var(--lp-accent);
+    opacity: 1;
+}
+
+
+/* ── Row Selection ───────────────────────────────────────── */
+table.table tbody tr.row-selected {
+    background: var(--lp-accent-light) !important;
+    outline: none !important;
+}
+
+table.table tbody tr.row-selected td {
+    color: var(--lp-accent-dark) !important;
+    border-bottom-color: #c7e0f4 !important;
+}
+
+/* ── Checkboxes ──────────────────────────────────────────── */
+.round-checkbox input[type="checkbox"],
+input#chk_SelectAll,
+table[id*='gridView'] input[type="checkbox"] {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    width: 16px !important;
+    height: 16px !important;
+    border: 1.5px solid var(--lp-border-dark) !important;
+    border-radius: 50% !important;
+    background: #fff !important;
+    cursor: pointer !important;
+    vertical-align: middle;
+    transition: border-color var(--lp-transition), background var(--lp-transition) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.round-checkbox input[type="checkbox"]:hover,
+input#chk_SelectAll:hover,
+table[id*='gridView'] input[type="checkbox"]:hover {
+    border-color: var(--lp-accent) !important;
+    box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.12) !important;
+}
+
+.round-checkbox input[type="checkbox"]:checked,
+input#chk_SelectAll:checked,
+table[id*='gridView'] input[type="checkbox"]:checked {
+    background: var(--lp-accent) !important;
+    border-color: var(--lp-accent) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='white' d='M10 3L5 8.5 2 5.5'  stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 10px !important;
+}
+
+
+
+
+/* Date column — applied by JS when column contains dates */
+table[id*='gridView'] thead th.lp-col-date,
+table[id*='gridView'] tbody td.lp-col-date {
+    font-size: 12px !important;
+    color: #605e5c !important;
+    font-weight: 500 !important;
+    font-variant-numeric: tabular-nums !important;
+    letter-spacing: 0.02em !important;
+}
+
+/* Number column */
+table[id*='gridView'] thead th.lp-col-number,
+table[id*='gridView'] tbody td.lp-col-number {
+    font-variant-numeric: tabular-nums !important;
+    text-align: right !important;
+    letter-spacing: 0.01em !important;
+}
+
+/* ── Checkbox column — only when th actually contains a checkbox ── */
+table[id*='gridView'] thead th.lp-col-checkbox,
+table[id*='gridView'] tbody td.lp-col-checkbox {
+    width: 40px !important;
+    min-width: 40px !important;
+    max-width: 40px !important;
+    padding: 13px 8px !important;
+    text-align: center !important;
+}
+
+/* ── Prevent these columns from stretching on zoom out ───── */
+table[id*='gridView'],
+table.table {
+    table-layout: auto !important;
+}
+
+/* ── Hidden columns — rendered in DOM for data-rowjson but invisible ── */
+table[id*='gridView'] thead th.lp-col-hidden,
+table[id*='gridView'] tbody td.lp-col-hidden {
+    display: none !important;
+}
+
+/* ── Grid action buttons (edit/pencil in rows) ───────────── */
+.grid-img-btn,
+a.grid-btn {
+    opacity: 0.55;
+    transition: opacity var(--lp-transition), transform var(--lp-transition) !important;
+}
+
+table[id*='gridView'] tbody tr:hover .grid-img-btn,
+table[id*='gridView'] tbody tr:hover a.grid-btn,
+table.table tbody tr:hover .grid-img-btn,
+table.table tbody tr:hover a.grid-btn {
+    opacity: 1;
+}
+
+.grid-img-btn:hover,
+a.grid-btn:hover {
+    transform: scale(1.15);
+    background-color: transparent !important;
+}
+
+/* ── Action Panel Grid (inside grid toolbar) ─────────────── */
+.action-panel-grid {
+    background: var(--lp-surface) !important;
+    border-bottom: 1px solid var(--lp-border) !important;
+    padding: 4px 8px !important;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: auto !important;
+    min-height: 32px;
+}
+
+.action-panel-grid .action-items-grid {
+    border-radius: var(--lp-radius-sm) !important;
+    transition: background var(--lp-transition) !important;
+}
+
+.action-panel-grid .action-items-grid:hover {
+    background: var(--lp-accent-light) !important;
+}
+
+.action-panel-grid .action-items-grid>a {
+    color: var(--lp-accent) !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+}
+
+.action-panel-grid .action-items-grid>a>i {
+    color: var(--lp-accent) !important;
+}
+
+/* ── Pagination Wrapper ──────────────────────────────────── */
+.pagination-container {
+    background: var(--lp-surface) !important;
+    border-top: 1px solid var(--lp-border) !important;
+    padding: 10px 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    /* ← change from space-between */
+    flex-wrap: wrap;
+    gap: 8px;
+    font-family: var(--lp-font) !important;
+    margin: 0 !important;
+}
+
+/* ── Left side: Show N entries ───────────────────────────── */
+.pagination-option {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px !important;
+    color: var(--lp-text-secondary) !important;
+    float: none !important;
+    line-height: normal !important;
+    order: 1;
+}
+
+.pagination-option select,
+#ddlPagination {
+    font-family: var(--lp-font) !important;
+    font-size: 12px !important;
+    border: 1px solid var(--lp-border-dark) !important;
+    border-radius: var(--lp-radius-sm) !important;
+    padding: 3px 8px !important;
+    height: 28px;
+    color: var(--lp-text-primary) !important;
+    background: var(--lp-surface) !important;
+    cursor: pointer;
+    outline: none;
+    transition: border-color var(--lp-transition) !important;
+}
+
+.pagination-option select:focus,
+#ddlPagination:focus {
+    border-color: var(--lp-accent) !important;
+    box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.14) !important;
+}
+
+/* ── Center: Page number buttons ─────────────────────────── */
+.pagination-Numbers {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 3px;
+    margin: 0 !important;
+    float: none !important;
+    order: 2;
+}
+
+.pageNumber {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    height: 30px;
+    padding: 0 8px !important;
+    font-family: var(--lp-font) !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: var(--lp-text-primary) !important;
+    background: var(--lp-surface) !important;
+    border: 1px solid var(--lp-border-dark) !important;
+    border-radius: var(--lp-radius-sm) !important;
+    margin: 0 !important;
+    cursor: pointer;
+    user-select: none;
+    float: none !important;
+    text-decoration: none !important;
+    transition: background var(--lp-transition), border-color var(--lp-transition), color var(--lp-transition) !important;
+}
+
+.pageNumber:hover:not(.active) {
+    background: var(--lp-accent-light) !important;
+    border-color: var(--lp-accent) !important;
+    color: var(--lp-accent) !important;
+}
+
+.pageNumber.active,
+.pagination-Numbers span.active {
+    background: var(--lp-accent) !important;
+    border-color: var(--lp-accent) !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    cursor: default;
+}
+
+/* ── Prev / Next pills ───────────────────────────────────── */
+.lp-page-prev,
+.lp-page-next {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 4px;
+    height: 30px;
+    padding: 0 12px;
+    font-family: var(--lp-font) !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: var(--lp-accent) !important;
+    background: var(--lp-surface) !important;
+    border: 1px solid var(--lp-border-dark) !important;
+    border-radius: var(--lp-radius-pill) !important;
+    cursor: pointer;
+    user-select: none;
+    transition: background var(--lp-transition), border-color var(--lp-transition) !important;
+    text-decoration: none !important;
+}
+
+.lp-page-prev:hover,
+.lp-page-next:hover {
+    background: var(--lp-accent-light) !important;
+    border-color: var(--lp-accent) !important;
+}
+
+.lp-page-prev.disabled,
+.lp-page-next.disabled {
+    color: var(--lp-text-disabled) !important;
+    border-color: var(--lp-border) !important;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* ── Right side: Record count label ─────────────────────── */
+.lp-row-count {
+    font-size: 11px !important;
+    color: var(--lp-text-secondary) !important;
+    font-family: var(--lp-font) !important;
+    white-space: nowrap;
+    order: 3;
+    margin-left: auto;
+    padding-right: 0 !important;
+}
+
+/* ── Notification Panel ──────────────────────────────────── */
+.notification-panel {
+    font-family: var(--lp-font) !important;
+    font-size: 13px !important;
+    border-radius: var(--lp-radius-sm) !important;
+    border-bottom: none !important;
+    margin: 8px 0 4px !important;
+    padding: 8px 12px !important;
+    display: flex !important;
+    align-items: center;
+    min-height: auto !important;
+    line-height: 1.4 !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
+}
+
+.notification-panel .notification-container {
+    width: calc(100% - 30px) !important;
+}
+
+.notification-panel .notification-container p {
+    font-size: 13px !important;
+    margin: 0 !important;
+    line-height: 1.4 !important;
+}
+
+.notification-panel.success {
+    background: var(--lp-success-light) !important;
+    border-left: 3px solid var(--lp-success) !important;
+}
+
+.notification-panel.success .notification-container p::before {
+    color: var(--lp-success) !important;
+    font-size: 17px !important;
+}
+
+.notification-panel.error {
+    background: var(--lp-danger-light) !important;
+    border-left: 3px solid var(--lp-danger) !important;
+}
+
+.notification-panel.error .notification-container p::before {
+    color: var(--lp-danger) !important;
+    font-size: 17px !important;
+}
+
+.notification-panel.warning {
+    background: #fff4ce !important;
+    border-left: 3px solid #f7630c !important;
+}
+
+.notification-panel.warning .notification-container p::before {
+    color: #f7630c !important;
+    font-size: 17px !important;
+}
+
+/* ── Search input (top right) ────────────────────────────── */
+.search-container {
+    width: auto !important;
+    min-width: 180px;
+}
+
+.search-input {
+    font-family: var(--lp-font) !important;
+    font-size: 12px !important;
+    border: 1px solid var(--lp-border-dark) !important;
+    border-radius: var(--lp-radius-pill) !important;
+    padding: 4px 32px 4px 10px !important;
+    color: var(--lp-text-primary) !important;
+    background-color: var(--lp-surface) !important;
+    background-image: url("/distribution/img/ic_search_black_24px.svg") !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+    background-position: calc(100% - 8px) center !important;
+    transition: border-color var(--lp-transition), box-shadow var(--lp-transition) !important;
+    height: 28px;
+}
+
+.search-input:focus,
+.search-input:hover {
+    outline: none !important;
+    border-color: var(--lp-accent) !important;
+    box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.18) !important;
+    border-radius: var(--lp-radius-pill) !important;
+}
+
+/* ── Status badge helper (optional — works if you add class) */
+.lp-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: var(--lp-radius-pill);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.lp-badge-submitted {
+    background: #dff6dd;
+    color: #107c10;
+}
+
+.lp-badge-notsubmitted {
+    background: #f3f2f1;
+    color: #605e5c;
+}
+
+.lp-badge-approved {
+    background: #deecf9;
+    color: #0078d4;
+}
+
+.lp-badge-rejected {
+    background: #fde7e9;
+    color: #d13438;
+}
+
+.lp-badge-pending {
+    background: #fff4ce;
+    color: #8a6914;
+}
+
+/* ── Empty state (when grid has no rows) ─────────────────── */
+.lp-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    color: var(--lp-text-secondary);
+    font-family: var(--lp-font);
+    gap: 8px;
+}
+
+.lp-empty-state i {
+    font-size: 36px;
+    color: var(--lp-border-dark);
+}
+
+.lp-empty-state p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ── Overlay ─────────────────────────────────────────────── */
+#overlay {
+    background: rgba(0, 0, 0, 0.38) !important;
+    backdrop-filter: blur(2px);
+}
+
+#overlay>div {
+    background: var(--lp-surface);
+    color: var(--lp-text-primary) !important;
+    border-radius: 8px;
+    padding: 24px 32px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    font-family: var(--lp-font) !important;
+    font-size: 14px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#overlay>div i {
+    color: var(--lp-accent) !important;
+    font-size: 28px !important;
+}
+
+/* This forces the scrollbar to always paint, overriding overlay mode */
+.page-placeholder::-webkit-scrollbar,
+.page-placeholder *::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+}
+
+.page-placeholder::-webkit-scrollbar:hover,
+.page-placeholder *::-webkit-scrollbar:hover {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+.page-placeholder::-webkit-scrollbar-track,
+.page-placeholder *::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+.page-placeholder::-webkit-scrollbar:hover::-webkit-scrollbar-track,
+.page-placeholder *::-webkit-scrollbar:hover::-webkit-scrollbar-track {
+    background: #f3f2f1 !important;
+}
+
+.page-placeholder::-webkit-scrollbar-thumb,
+.page-placeholder *::-webkit-scrollbar-thumb {
+    background: #c8c6c4 !important;
+    border-radius: 10px !important;
+    border: 2px solid transparent !important;
+    background-clip: padding-box !important;
+}
+
+.page-placeholder::-webkit-scrollbar-thumb:hover,
+.page-placeholder *::-webkit-scrollbar-thumb:hover {
+    background: #8a8886 !important;
+    border-width: 3px !important;
+}
+
+.page-placeholder::-webkit-scrollbar-thumb:active,
+.page-placeholder *::-webkit-scrollbar-thumb:active {
+    background: #605e5c !important;
+}
+
+.page-placeholder::-webkit-scrollbar-corner,
+.page-placeholder *::-webkit-scrollbar-corner {
+    background: transparent !important;
+}
+
+.page-placeholder::-webkit-scrollbar:hover::-webkit-scrollbar-corner,
+.page-placeholder *::-webkit-scrollbar:hover::-webkit-scrollbar-corner {
+    background: #f3f2f1 !important;
+}
+
+/* ── Override mCustomScrollbar thumbs globally to expand on hover and never turn white ── */
+
+/* 1. Base Vertical Scrollbar Thumb */
+.mCSB_scrollTools_vertical .mCSB_dragger .mCSB_dragger_bar {
+    width: 6px !important;
+    /* Default thin vertical width */
+    background-color: #c8c6c4 !important;
+    /* Neutral elegant grey */
+    opacity: 0.85 !important;
+    border-radius: 10px !important;
+    transition: width 0.15s ease-in-out, background-color 0.15s ease-in-out, opacity 0.15s ease-in-out !important;
+}
+
+/* 2. Base Horizontal Scrollbar Thumb */
+.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    height: 6px !important;
+    /* Default thin horizontal height */
+    background-color: #c8c6c4 !important;
+    /* Neutral elegant grey */
+    opacity: 0.85 !important;
+    border-radius: 10px !important;
+    transition: height 0.15s ease-in-out, background-color 0.15s ease-in-out, opacity 0.15s ease-in-out !important;
+}
+
+/* 3. Hover State - Vertical (Thicker, Darker Grey, NO White!) */
+.mCSB_scrollTools_vertical .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical .mCSB_draggerContainer:hover .mCSB_dragger_bar {
+    width: 12px !important;
+    /* Thicker (mota) on hover */
+    background-color: #8a8886 !important;
+    /* Elegant dark-grey (never white!) */
+    opacity: 1 !important;
+}
+
+/* 4. Hover State - Horizontal (Thicker, Darker Grey, NO White!) */
+.mCSB_scrollTools_horizontal .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal .mCSB_draggerContainer:hover .mCSB_dragger_bar {
+    height: 12px !important;
+    /* Thicker (mota) on hover */
+    background-color: #8a8886 !important;
+    /* Elegant dark-grey (never white!) */
+    opacity: 1 !important;
+}
+
+/* 5. Active/Drag State - Vertical */
+.mCSB_scrollTools_vertical .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    width: 12px !important;
+    /* Remains thick when dragged */
+    background-color: #605e5c !important;
+    /* High contrast solid grey when active */
+    opacity: 1 !important;
+}
+
+/* 6. Active/Drag State - Horizontal */
+.mCSB_scrollTools_horizontal .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    height: 12px !important;
+    /* Remains thick when dragged */
+    background-color: #605e5c !important;
+    /* High contrast solid grey when active */
+    opacity: 1 !important;
+}
+
+/* 7. Customize scrollbar track backgrounds to match our clean style */
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent !important;
+    /* Clean modern track */
+    transition: background-color 0.2s ease-in-out !important;
+}
+
+.mCSB_scrollTools:hover .mCSB_draggerRail,
+.mCSB_scrollTools_onDrag .mCSB_draggerRail {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    /* Light track backdrop when active */
+}
+
+/* ── Smooth row entry animation ──────────────────────────── */
+@keyframes lp-row-in {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+table[id*='gridView'] tbody tr {
+    animation: lp-row-in 0.18s ease both;
+}
+
+/* ── Scrollbars ──────────────────────────────────────────── */
+
+/* Firefox */
+.page-placeholder,
+.page-placeholder * {
+    scrollbar-width: thin;
+    scrollbar-color: #c8c6c4 #f3f2f1;
+}
+
+
+/* ── Prevent pointer cursor on nosort headers ────────────── */
+table[id*='gridView'] thead th.sorttable_nosort,
+table.table thead th.sorttable_nosort {
+    cursor: default !important;
+}
+
+table[id*='gridView'] thead th.sorttable_nosort:hover,
+table.table thead th.sorttable_nosort:hover {
+    background: #ffffff !important;
+    color: #6f6e6c !important;
+}
+
+/* ── Toast Notifications ─────────────────────────────────── */
+#lp-toast-container {
+    position: fixed;
+    top: 56px;
+    right: 16px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    pointer-events: none;
+}
+
+.lp-toast {
+    pointer-events: all;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 280px;
+    max-width: 380px;
+    padding: 12px 14px;
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.14), 0 1px 4px rgba(0, 0, 0, 0.08);
+    font-family: var(--lp-font);
+    font-size: 13px;
+    line-height: 1.45;
+    border-left: 3px solid transparent;
+    animation: lp-toast-in 0.22s ease both;
+    position: relative;
+    overflow: hidden;
+}
+
+.lp-toast.lp-toast-hiding {
+    animation: lp-toast-out 0.22s ease both;
+}
+
+@keyframes lp-toast-in {
+    from {
+        opacity: 0;
+        transform: translateX(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes lp-toast-out {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+        max-height: 120px;
+        margin-bottom: 0;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(24px);
+        max-height: 0;
+        margin-bottom: -8px;
+    }
+}
+
+/* progress bar */
+.lp-toast::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: currentColor;
+    opacity: 0.25;
+    animation: lp-toast-progress linear both;
+}
+
+.lp-toast-icon {
+    font-size: 18px;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.lp-toast-body {
+    flex: 1;
+}
+
+.lp-toast-title {
+    font-weight: 600;
+    font-size: 12.5px;
+    margin-bottom: 2px;
+}
+
+.lp-toast-msg {
+    color: var(--lp-text-secondary);
+    font-size: 12px;
+}
+
+.lp-toast-close {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--lp-text-disabled);
+    padding: 0;
+    margin-top: 1px;
+    transition: color 0.15s;
+}
+
+.lp-toast-close:hover {
+    color: var(--lp-text-primary);
+}
+
+/* variants */
+.lp-toast.success {
+    border-left-color: #107c10;
+    color: #107c10;
+}
+
+.lp-toast.success .lp-toast-title {
+    color: #107c10;
+}
+
+.lp-toast.error {
+    border-left-color: #d13438;
+    color: #d13438;
+}
+
+.lp-toast.error .lp-toast-title {
+    color: #d13438;
+}
+
+.lp-toast.warning {
+    border-left-color: #f7630c;
+    color: #f7630c;
+}
+
+.lp-toast.warning .lp-toast-title {
+    color: #c05000;
+}
+
+.lp-toast.info {
+    border-left-color: #0078d4;
+    color: #0078d4;
+}
+
+.lp-toast.info .lp-toast-title {
+    color: #0078d4;
+}
+
+@keyframes lp-toast-progress {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+/* ── Column Filter / Sort Dropdown ──────────────────────────────────── */
+
+/* trigger icon on every th */
+table[id*="gridView"] thead th.lp-col-th {
+    position: relative;
+    padding-right: 28px !important;
+    cursor: pointer;
+}
+
+table[id*="gridView"] thead th.lp-col-th .lp-col-icon {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    color: #b0aeac;
+    transition: color .15s, opacity .15s;
+    pointer-events: none;
+    font-family: "Material Design Icons";
+    opacity: 0;
+    /* ← hidden by default */
+}
+
+table[id*="gridView"] thead th.lp-col-th:hover .lp-col-icon,
+table[id*="gridView"] thead th.lp-col-th.lp-col-active .lp-col-icon,
+table[id*="gridView"] thead th.lp-col-th.lp-sort-asc .lp-col-icon,
+table[id*="gridView"] thead th.lp-col-th.lp-sort-desc .lp-col-icon {
+    opacity: 1;
+    /* ← show on hover / active / sorted */
+}
+
+table[id*="gridView"] thead th.lp-col-th.lp-col-active {
+    background: #e8f3fc !important;
+    color: #0078d4 !important;
+}
+
+/* dropdown panel */
+.lp-col-dropdown {
+    position: fixed;
+    z-index: 99999;
+    background: #fff;
+    border: 1px solid #e1dfdd;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .14), 0 1px 4px rgba(0, 0, 0, .08);
+    width: 260px;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    font-size: 13px;
+    overflow: hidden;
+    animation: lpDropIn .15s ease;
+}
+
+@keyframes lpDropIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* header */
+.lp-col-dropdown .lp-cd-header {
+    padding: 10px 14px 8px;
+    border-bottom: 1px solid #f3f2f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lp-col-dropdown .lp-cd-title {
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    color: #605e5c;
+}
+
+.lp-col-dropdown .lp-cd-clear {
+    font-size: 11px;
+    color: #0078d4;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: inherit;
+}
+
+.lp-col-dropdown .lp-cd-clear:hover {
+    text-decoration: underline;
+}
+
+/* sort buttons */
+.lp-col-dropdown .lp-cd-sort {
+    padding: 8px 14px;
+    border-bottom: 1px solid #f3f2f1;
+    display: flex;
+    gap: 6px;
+}
+
+.lp-col-dropdown .lp-cd-sort-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 6px 8px;
+    border: 1px solid #edebe9;
+    border-radius: 6px;
+    background: #faf9f8;
+    font-size: 12px;
+    font-weight: 500;
+    color: #323130;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background .12s, border-color .12s, color .12s;
+}
+
+.lp-col-dropdown .lp-cd-sort-btn:hover {
+    background: #e8f3fc;
+    border-color: #0078d4;
+    color: #0078d4;
+}
+
+.lp-col-dropdown .lp-cd-sort-btn.lp-sort-active {
+    background: #0078d4;
+    border-color: #0078d4;
+    color: #fff;
+}
+
+.lp-col-dropdown .lp-cd-sort-btn i {
+    font-size: 14px;
+}
+
+/* date / number range inputs */
+.lp-col-dropdown .lp-cd-daterange {
+    padding: 8px 14px;
+    border-bottom: 1px solid #f3f2f1;
+}
+
+.lp-col-dropdown .lp-cd-daterange label {
+    display: block;
+    font-size: 10.5px;
+    font-weight: 600;
+    color: #8a8886;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-bottom: 4px;
+    margin-top: 6px;
+}
+
+.lp-col-dropdown .lp-cd-daterange input[type="date"],
+.lp-col-dropdown .lp-cd-daterange input[type="number"] {
+    width: 100%;
+    border: 1px solid #edebe9;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 12px;
+    font-family: inherit;
+    color: #323130;
+    background: #faf9f8;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color .12s;
+}
+
+.lp-col-dropdown .lp-cd-daterange input[type="date"]:focus,
+.lp-col-dropdown .lp-cd-daterange input[type="number"]:focus {
+    border-color: #0078d4;
+    background: #fff;
+}
+
+/* search box */
+.lp-col-dropdown .lp-cd-search-wrap {
+    padding: 8px 14px;
+    border-bottom: 1px solid #f3f2f1;
+    position: relative;
+}
+
+.lp-col-dropdown .lp-cd-search {
+    width: 100%;
+    border: 1px solid #edebe9;
+    border-radius: 20px;
+    padding: 6px 10px 6px 30px;
+    font-size: 12px;
+    font-family: inherit;
+    color: #323130;
+    background: #faf9f8;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color .12s, box-shadow .12s;
+}
+
+.lp-col-dropdown .lp-cd-search:focus {
+    border-color: #0078d4;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(0, 120, 212, .12);
+}
+
+.lp-col-dropdown .lp-cd-search-wrap .lp-cd-search-icon {
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #a19f9d;
+    pointer-events: none;
+    font-family: "Material Design Icons";
+}
+
+/* checkbox value list */
+.lp-col-dropdown .lp-cd-list {
+    max-height: 190px;
+    overflow-y: auto;
+    padding: 6px 0;
+    scrollbar-width: thin;
+}
+
+.lp-col-dropdown .lp-cd-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.lp-col-dropdown .lp-cd-list::-webkit-scrollbar-thumb {
+    background: #d2d0ce;
+    border-radius: 2px;
+}
+
+.lp-col-dropdown .lp-cd-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: background .1s;
+}
+
+.lp-col-dropdown .lp-cd-item:hover {
+    background: #f3f2f1;
+}
+
+.lp-col-dropdown .lp-cd-item.lp-cd-item-checked {
+    background: #e8f3fc;
+}
+
+.lp-col-dropdown .lp-cd-item input[type="checkbox"] {
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 3px !important;
+    border: 1.5px solid #8a8886 !important;
+    cursor: pointer;
+    flex-shrink: 0;
+    accent-color: #0078d4;
+}
+
+.lp-col-dropdown .lp-cd-item span {
+    font-size: 12.5px;
+    color: #201f1e;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 195px;
+}
+
+.lp-cd-no-results {
+    padding: 12px 14px;
+    font-size: 12px;
+    color: #a19f9d;
+    text-align: center;
+}
+
+/* footer buttons */
+.lp-col-dropdown .lp-cd-footer {
+    padding: 8px 14px;
+    border-top: 1px solid #f3f2f1;
+    display: flex;
+    gap: 6px;
+    justify-content: flex-end;
+}
+
+.lp-col-dropdown .lp-cd-apply {
+    padding: 6px 18px;
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background .12s;
+}
+
+.lp-col-dropdown .lp-cd-apply:hover {
+    background: #005a9e;
+}
+
+.lp-col-dropdown .lp-cd-cancel {
+    padding: 6px 14px;
+    background: transparent;
+    color: #605e5c;
+    border: 1px solid #edebe9;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background .12s;
+}
+
+.lp-col-dropdown .lp-cd-cancel:hover {
+    background: #f3f2f1;
+}
+
+/* active filter dot indicator */
+.lp-col-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0078d4;
+    margin-left: 5px;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+/* ── Column drag states ──────────────────────────────────── */
+table[id*="gridView"] thead th.lp-col-dragging {
+    opacity: 0.4;
+    cursor: grabbing !important;
+}
+
+table[id*="gridView"] thead th.lp-col-dragover {
+    border-left: 2px solid #0078d4 !important;
+    background: #e8f3fc !important;
+}
+
+table[id*="gridView"] thead th.lp-col-th {
+    cursor: grab;
+}
+
+/* ── 3-dot column options button ─────────────────────────── */
+.lp-chooser-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    /* slightly wider */
+    height: 42px;
+    background: #ffffff;
+    border: none;
+    border-left: 1px solid #e8e6e3;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    /* slightly more gap between dots */
+    padding: 10px 8px;
+    /* padding around the dots */
+    z-index: 3;
+    transition: background .15s;
+}
+
+.lp-chooser-btn:hover {
+    background: #f0f0f0;
+}
+
+.lp-chooser-btn span {
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #605e5c;
+}
+
+/* ── 3-dot dropdown menu ─────────────────────────────────── */
+.lp-chooser-menu {
+    position: fixed;
+    z-index: 99999;
+    background: #fff;
+    border: 1px solid #e1dfdd;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .12);
+    width: 180px;
+    overflow: hidden;
+}
+
+.lp-chooser-item {
+    padding: 10px 14px;
+    font-family: var(--lp-font);
+    font-size: 13px;
+    color: #201f1e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background .1s;
+}
+
+.lp-chooser-item:hover {
+    background: #f3f2f1;
+}
+
+.lp-chooser-item .mdi {
+    font-size: 16px;
+    color: #0078d4;
+}
+
+/* ── Column visibility panel ─────────────────────────────── */
+.lp-col-panel-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.32);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lp-col-panel {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, .18);
+    width: 360px;
+    max-width: 94vw;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--lp-font);
+    overflow: hidden;
+    animation: lpDropIn .18s ease;
+}
+
+.lp-col-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px 10px;
+    border-bottom: 1px solid #edebe9;
+}
+
+.lp-col-panel-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #201f1e;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.lp-col-panel-title .mdi {
+    color: #0078d4;
+    font-size: 18px;
+}
+
+.lp-col-panel-close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #a19f9d;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+
+.lp-col-panel-close:hover {
+    color: #201f1e;
+}
+
+.lp-col-panel-sub {
+    font-size: 12px;
+    color: #605e5c;
+    margin: 0;
+    padding: 8px 18px 4px;
+}
+
+.lp-col-panel-list {
+    overflow-y: auto;
+    flex: 1;
+    padding: 6px 12px;
+    scrollbar-width: thin;
+}
+
+.lp-col-panel-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background .1s;
+    user-select: none;
+}
+
+.lp-col-panel-item:hover {
+    background: #f3f2f1;
+}
+
+.lp-col-panel-item.checked {
+    background: #f0f7ff;
+}
+
+.lp-col-panel-item input[type="checkbox"] {
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 4px !important;
+    border: 1.5px solid #8a8886 !important;
+    accent-color: #0078d4;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.lp-col-panel-icon {
+    font-size: 15px;
+    color: #c8c6c4;
+}
+
+.lp-col-panel-label {
+    font-size: 13px;
+    color: #201f1e;
+    flex: 1;
+}
+
+.lp-col-panel-footer {
+    padding: 10px 18px;
+    border-top: 1px solid #edebe9;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.lp-col-panel-apply {
+    padding: 7px 20px;
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: var(--lp-font);
+    cursor: pointer;
+    transition: background .12s;
+}
+
+.lp-col-panel-apply:hover {
+    background: #005a9e;
+}
+
+.lp-col-panel-cancel {
+    padding: 7px 16px;
+    background: transparent;
+    color: #605e5c;
+    border: 1px solid #edebe9;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: var(--lp-font);
+    cursor: pointer;
+    transition: background .12s;
+}
+
+.lp-col-panel-cancel:hover {
+    background: #f3f2f1;
+}
+
+
+/* ── Sticky header — must be on th, not tr ── */
+table[id*='gridView'] thead tr,
+table.table thead tr {
+    position: static !important;
+    /* ← REMOVE sticky from tr */
+}
+
+table[id*='gridView'] thead th,
+table.table thead th {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 5 !important;
+    background: #ffffff !important;
+}
+
+/* ── Sticky checkbox column (left) ── */
+table[id*='gridView'] thead th.lp-col-checkbox,
+table[id*='gridView'] tbody td.lp-col-checkbox {
+    position: sticky !important;
+    left: 0 !important;
+    background: #ffffff !important;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.06) !important;
+}
+
+table[id*='gridView'] thead th.lp-col-checkbox {
+    z-index: 6 !important;
+    /* above other sticky headers */
+}
+
+table[id*='gridView'] tbody td.lp-col-checkbox {
+    z-index: 2 !important;
+}
+
+table[id*='gridView'] tbody tr:hover td.lp-col-checkbox {
+    background: #f0f7ff !important;
+}
+
+table.table tbody tr.row-selected td.lp-col-checkbox {
+    background: var(--lp-accent-light) !important;
+}
+
+/* ── Sticky actions column — always pinned to right edge ── */
+table[id*='gridView'] thead th.lp-col-actions,
+table[id*='gridView'] tbody td.lp-col-actions {
+    position: sticky !important;
+    right: 0 !important;
+    z-index: 3 !important;
+    background: #ffffff !important;
+    width: 60px !important;
+    min-width: 60px !important;
+    max-width: 60px !important;
+    padding: 8px 6px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.08) !important;
+}
+
+table[id*='gridView'] thead th.lp-col-actions {
+    z-index: 6 !important;
+    background: #ffffff !important;
+}
+
+table[id*='gridView'] tbody tr:hover td.lp-col-actions {
+    background: #f0f7ff !important;
+}
+
+table.table tbody tr.row-selected td.lp-col-actions {
+    background: var(--lp-accent-light) !important;
+}
+
+/* ── Attachment count badge ──────────────────────────────── */
+.attach-btn-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.attach-count-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: #0078d4;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    font-family: var(--lp-font);
+    min-width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3px;
+    line-height: 1;
+    pointer-events: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Normalize date & number columns to match all other columns */
+table[id*='gridView'] thead th.lp-col-date,
+table[id*='gridView'] thead th.lp-col-number {
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    color: #6f6e6c !important;
+    letter-spacing: 0.10em !important;
+    font-variant-numeric: normal !important;
+    text-align: center !important;
+}
+
+table[id*='gridView'] tbody td.lp-col-date,
+table[id*='gridView'] tbody td.lp-col-number {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    color: #1b1a19 !important;
+    letter-spacing: -0.01em !important;
+    font-variant-numeric: normal !important;
+    text-align: center !important;
+}
+
+/* stagger first 10 rows */
+table[id*='gridView'] tbody tr:nth-child(1) {
+    animation-delay: .02s;
+}
+
+table[id*='gridView'] tbody tr:nth-child(2) {
+    animation-delay: .04s;
+}
+
+table[id*='gridView'] tbody tr:nth-child(3) {
+    animation-delay: .06s;
+}
+
+table[id*='gridView'] tbody tr:nth-child(4) {
+    animation-delay: .08s;
+}
+
+table[id*='gridView'] tbody tr:nth-child(5) {
+    animation-delay: .10s;
+}
+
+table[id*='gridView'] tbody tr:nth-child(6) {
+    animation-delay: .12s;
+}
+
+table[id*='gridView'] tbody tr:nth-child(7) {
+    animation-delay: .14s;
+}
+
+table[id*='gridView'] tbody tr:nth-child(8) {
+    animation-delay: .16s;
+}
+
+table[id*='gridView'] tbody tr:nth-child(9) {
+    animation-delay: .18s;
+}
+
+table[id*='gridView'] tbody tr:nth-child(10) {
+    animation-delay: .20s;
+}
+
+/* ── D365 Click to Edit Hover Effects & Sleek Controls ───── */
+/*table[id*="gridView"] tbody tr td {
+    transition: background-color 0.1s ease !important;
+}
+table[id*="gridView"] tbody tr:not(.row-selected):not(.lp-editing-row):hover td {
+    background-color: #f0f7ff !important;
+}
+table[id*="gridView"] tbody tr.lp-editing-row td {
+    background-color: #fbfbfb !important;
+}*/
+/* Style textboxes inside grid cells during edit mode to look exceptionally clean */
+/*table[id*="gridView"] tbody tr td input[type="text"] {
+    height: 28px !important;
+    padding: 3px 6px !important;
+    font-size: 12.5px !important;
+    font-family: var(--lp-font), sans-serif !important;
+    border-radius: 4px !important;
+    border: 1px solid #0078d4 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 1px rgba(0, 120, 212, 0.15) !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+table[id*="gridView"] tbody tr td input[type="text"]:focus {
+    border-color: #005a9e !important;
+    box-shadow: 0 0 0 2px rgba(0, 90, 158, 0.25) !important;*/
+
+
+/* ── Auto-save micro-toast notifications ────────────────── */
+/*#lp-autosave-toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #107c10;
+    color: #ffffff;
+    padding: 11px 18px;
+    border-radius: 6px;
+    font-family: var(--lp-font), "Segoe UI", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 8px 24px rgba(16, 124, 16, 0.2), 0 2px 8px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 100000;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: all 0.25s cubic-bezier(0.1, 0.9, 0.2, 1);
+    pointer-events: none;
+}
+#lp-autosave-toast.lp-autosave-toast-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+#lp-autosave-toast i {
+    font-size: 18px;
+    line-height: 1;
+}*/

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="425efd7c-8a6a-45ad-a39d-380ef0050edb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeLeavesSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup3.wsdl" MetadataType="Wsdl" ID="31ecf4c9-6b6d-4f6b-90e8-1e802daa1ec8" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?wsdl" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup8.xsd" MetadataType="Schema" ID="2ee359d6-29ca-406a-a3c0-5ba016b92667" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup9.xsd" MetadataType="Schema" ID="cf9451c6-8ecc-4075-9b06-95c9bd5845b5" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup10.xsd" MetadataType="Schema" ID="96226c74-7f6d-4495-89ad-5dc9ad801b79" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup11.xsd" MetadataType="Schema" ID="9f7c8280-72a5-4fa7-a92d-0d238caba9bf" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup12.xsd" MetadataType="Schema" ID="b5ea44dc-1757-4fef-aa8e-42d396848496" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup13.xsd" MetadataType="Schema" ID="0676a80f-aef8-4eee-be6f-a1ed6d251bb7" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup4.wsdl" MetadataType="Wsdl" ID="dd029dbc-31ba-417b-9eb3-a6a3eb817691" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup14.xsd" MetadataType="Schema" ID="4b6d0cb0-c4da-4e79-89a8-2c296ce33d19" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup2.disco" MetadataType="Disco" ID="0bc623f5-6981-42a5-bcfa-fbb149a026ad" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

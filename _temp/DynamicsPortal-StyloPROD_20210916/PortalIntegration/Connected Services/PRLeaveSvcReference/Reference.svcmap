@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1ca521d0-3a78-4b10-847f-bdce0872c5dd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/PRLeaveSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="tempuri.org2.wsdl" MetadataType="Wsdl" ID="ad28f862-6106-4d60-8f97-26f224b1fad2" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLeaveSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="service2.wsdl" MetadataType="Wsdl" ID="5130e2d9-519b-49ff-83bf-ee4c4ba2f30d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLeaveSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="e8ce401c-a18c-4b96-b5d6-51a331afe399" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLeaveSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="Arrays2.xsd" MetadataType="Schema" ID="af56f26c-7391-46b1-b5b7-a6b66bb84eaf" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLeaveSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="tempuri.org2.xsd" MetadataType="Schema" ID="d58fa88e-2429-412a-944b-cef1da65f76f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLeaveSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="datacontracts2.xsd" MetadataType="Schema" ID="151c39bd-5ece-484e-b80c-ddbced85d8ec" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLeaveSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="Dynamics.AX.Application2.xsd" MetadataType="Schema" ID="f164bb01-0fdf-4e23-aeed-07a51945265a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLeaveSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="Microsoft.Dynamics.Ax.Xpp2.xsd" MetadataType="Schema" ID="fadbd0ae-730e-486f-8eef-4d07b2f26bd6" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLeaveSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="Microsoft.Dynamics.AX.KernelInterop2.xsd" MetadataType="Schema" ID="0860a97e-3988-4494-acd9-4182c897dc86" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLeaveSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

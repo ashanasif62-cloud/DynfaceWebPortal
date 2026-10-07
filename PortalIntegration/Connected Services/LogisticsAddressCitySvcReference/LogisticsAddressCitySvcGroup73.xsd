@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsAddressCitySvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfLogisticsAddressCitySvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LogisticsAddressCitySvcContract" nillable="true" type="tns:LogisticsAddressCitySvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLogisticsAddressCitySvcContract" nillable="true" type="tns:ArrayOfLogisticsAddressCitySvcContract" />
+  <xs:complexType name="LogisticsAddressCitySvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LogisticsAddressCitySvcContract" nillable="true" type="tns:LogisticsAddressCitySvcContract" />
+</xs:schema>

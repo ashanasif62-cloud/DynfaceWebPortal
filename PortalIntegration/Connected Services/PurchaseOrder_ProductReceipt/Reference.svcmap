@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="167f9b78-4eae-4929-a845-a6ce0bd0877b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/PO_ProductReceiptSvcServiceGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PO_ProductReceiptSvcServiceGroup.wsdl" MetadataType="Wsdl" ID="56810da8-56ca-4345-8ea6-14b082c3a328" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PO_ProductReceiptSvcServiceGroup?wsdl" />
+    <MetadataFile FileName="PO_ProductReceiptSvcServiceGroup1.wsdl" MetadataType="Wsdl" ID="907291fa-58be-4dd9-81ac-e54afadfd6b7" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PO_ProductReceiptSvcServiceGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PO_ProductReceiptSvcServiceGroup.xsd" MetadataType="Schema" ID="498da44b-725f-4488-a8cd-7eaf58b182f8" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PO_ProductReceiptSvcServiceGroup?xsd=xsd5" />
+    <MetadataFile FileName="PO_ProductReceiptSvcServiceGroup1.xsd" MetadataType="Schema" ID="916865f0-1ac2-4dd5-85cb-72825947698c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PO_ProductReceiptSvcServiceGroup?xsd=xsd4" />
+    <MetadataFile FileName="PO_ProductReceiptSvcServiceGroup.disco" MetadataType="Disco" ID="c02d8a9f-349d-4f5e-8ef8-e270eced574b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PO_ProductReceiptSvcServiceGroup?disco" />
+    <MetadataFile FileName="PO_ProductReceiptSvcServiceGroup2.xsd" MetadataType="Schema" ID="7816becb-cd3e-4985-ad99-1f09599b1997" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PO_ProductReceiptSvcServiceGroup?xsd=xsd6" />
+    <MetadataFile FileName="PO_ProductReceiptSvcServiceGroup3.xsd" MetadataType="Schema" ID="c3468043-ef32-4542-bd24-6579a2275b98" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PO_ProductReceiptSvcServiceGroup?xsd=xsd1" />
+    <MetadataFile FileName="PO_ProductReceiptSvcServiceGroup4.xsd" MetadataType="Schema" ID="ecec092a-84ad-474a-9e23-674415965260" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PO_ProductReceiptSvcServiceGroup?xsd=xsd0" />
+    <MetadataFile FileName="PO_ProductReceiptSvcServiceGroup5.xsd" MetadataType="Schema" ID="f27257fc-b391-48c0-b7f4-5a65a48c92be" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PO_ProductReceiptSvcServiceGroup?xsd=xsd3" />
+    <MetadataFile FileName="PO_ProductReceiptSvcServiceGroup6.xsd" MetadataType="Schema" ID="f804f935-80bc-4a12-9791-bdeb10fbf25c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PO_ProductReceiptSvcServiceGroup?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

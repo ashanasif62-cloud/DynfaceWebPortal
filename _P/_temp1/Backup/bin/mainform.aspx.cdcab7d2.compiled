@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/MainForm.aspx" hash="ffffffefe3a9c958" filehash="188ffdf53125" flags="110000" assembly="MaisonPortal" type="ASP.mainform_aspx">
+  <filedeps>
+    <filedep name="/MainForm.aspx" />
+  </filedeps>
+</preserve>

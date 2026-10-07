@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfLogisticsLocationSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LogisticsLocationSvcContract" nillable="true" type="tns:LogisticsLocationSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLogisticsLocationSvcContract" nillable="true" type="tns:ArrayOfLogisticsLocationSvcContract" />
+  <xs:complexType name="LogisticsLocationSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryRegionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeId" type="xs:long" />
+          <xs:element minOccurs="0" name="IsPrimary" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="IsPrimaryTaxRegistration" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="IsPrivate" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="LocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="Party" type="xs:long" />
+          <xs:element minOccurs="0" name="Purpose" type="tns:LogisticsLocationRoleType" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LogisticsLocationSvcContract" nillable="true" type="tns:LogisticsLocationSvcContract" />
+  <xs:simpleType name="LogisticsLocationRoleType">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:element name="LogisticsLocationRoleType" nillable="true" type="tns:LogisticsLocationRoleType" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

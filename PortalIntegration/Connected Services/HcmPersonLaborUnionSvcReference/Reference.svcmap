@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="0ba5abab-1237-4207-92bb-88d3b83af050" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup.disco" MetadataType="Disco" ID="e4fd36c5-fb22-4e1c-beb3-84bea97bdf07" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?disco" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup.wsdl" MetadataType="Wsdl" ID="b74ecc00-3cc7-4902-bc8b-042cd4856d33" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?wsdl" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup.xsd" MetadataType="Schema" ID="300c0ffa-9daf-40f5-858a-f8df0371a5d7" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup1.xsd" MetadataType="Schema" ID="a7d46246-f25d-476b-a245-a426a7c8e3dd" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup2.xsd" MetadataType="Schema" ID="91b4a183-8548-48db-94c1-9e646b7f0186" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup3.xsd" MetadataType="Schema" ID="1d1d7b87-7578-43c6-a797-2dd0f58970f4" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup4.xsd" MetadataType="Schema" ID="56b6436f-b7ef-42f3-8f32-68747fd36bb7" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup1.wsdl" MetadataType="Wsdl" ID="4c1f0332-f535-4703-baff-03a299d0196c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup5.xsd" MetadataType="Schema" ID="ba594ced-2d72-4899-a538-b95143c3383b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup6.xsd" MetadataType="Schema" ID="20820010-873e-4297-b9c4-fdeca1717163" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

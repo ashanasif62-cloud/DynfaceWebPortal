@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="afebd720-9c88-4395-a6da-94a6d62e8c60" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LogisticsLocationSvcGroup7.xsd" MetadataType="Schema" ID="0c272ab5-9f6a-4868-b58b-12ce578ce87c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup2.wsdl" MetadataType="Wsdl" ID="baff1137-fcb7-40b0-a69c-8bef982a4b4c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup72.xsd" MetadataType="Schema" ID="05582ed5-d10b-4e8c-ac2d-67d692d0ea75" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup76.xsd" MetadataType="Schema" ID="d4fe45e8-275d-4b8d-bb7f-ad3c05813e21" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup71.xsd" MetadataType="Schema" ID="ce61b5e9-1315-448b-8704-d931c338e715" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup21.wsdl" MetadataType="Wsdl" ID="cd6e6a9a-593d-4abe-8830-3963e812c490" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?wsdl" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup1.disco" MetadataType="Disco" ID="db2a751f-3b8d-43a6-b60b-bc0c00ee300c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?disco" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup75.xsd" MetadataType="Schema" ID="295db997-7357-479f-bb42-6e6a9d622c37" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup73.xsd" MetadataType="Schema" ID="84d62e73-2f5f-4288-91cf-259bf1c48611" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup74.xsd" MetadataType="Schema" ID="03ba0cf0-340d-47cb-aaee-b8eb3f8422f9" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

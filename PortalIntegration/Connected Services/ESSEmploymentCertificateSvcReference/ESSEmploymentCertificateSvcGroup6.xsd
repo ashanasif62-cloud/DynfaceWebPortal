@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/ESSEmploymentCertificateSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfESSEmploymentCertificateSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ESSEmploymentCertificateSvcContract" nillable="true" type="tns:ESSEmploymentCertificateSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfESSEmploymentCertificateSvcContract" nillable="true" type="tns:ArrayOfESSEmploymentCertificateSvcContract" />
+  <xs:complexType name="ESSEmploymentCertificateSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Authentication" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CertificateId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CertificateState" type="tns:ESSCertificateState" />
+          <xs:element minOccurs="0" name="CertificateTypeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Copies" type="xs:int" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmpId" type="xs:long" />
+          <xs:element minOccurs="0" name="EmployeeID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JobId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="Remarks" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReqestedFor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="WorkflowState" type="tns:ESSWorkFlowStatus" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ESSEmploymentCertificateSvcContract" nillable="true" type="tns:ESSEmploymentCertificateSvcContract" />
+  <xs:simpleType name="ESSCertificateState">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Draft" />
+      <xs:enumeration value="Pending" />
+      <xs:enumeration value="Composing" />
+      <xs:enumeration value="ReadyToCollect" />
+      <xs:enumeration value="Receive" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ESSCertificateState" nillable="true" type="tns:ESSCertificateState" />
+  <xs:simpleType name="ESSWorkFlowStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSubmitted" />
+      <xs:enumeration value="Submitted" />
+      <xs:enumeration value="PendingApproval" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Returned" />
+      <xs:enumeration value="ChangeRequest" />
+      <xs:enumeration value="Completed" />
+      <xs:enumeration value="PendingCancellation" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="Rejected" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ESSWorkFlowStatus" nillable="true" type="tns:ESSWorkFlowStatus" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+  <xs:complexType name="ArrayOfESSEmploymentCertificateTypeCodeContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ESSEmploymentCertificateTypeCodeContract" nillable="true" type="tns:ESSEmploymentCertificateTypeCodeContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfESSEmploymentCertificateTypeCodeContract" nillable="true" type="tns:ArrayOfESSEmploymentCertificateTypeCodeContract" />
+  <xs:complexType name="ESSEmploymentCertificateTypeCodeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q3:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AcknowledgmentRequired" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="CertificateTypeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Encrypt" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="LetterGenerationType" type="tns:PRLetterGenerationType" />
+          <xs:element minOccurs="0" name="LetterSendOption" type="tns:ESSLetterSendOption" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RequestedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TemplateName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TempleteId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ESSEmploymentCertificateTypeCodeContract" nillable="true" type="tns:ESSEmploymentCertificateTypeCodeContract" />
+  <xs:simpleType name="ESSNoYes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="No" />
+      <xs:enumeration value="Yes" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ESSNoYes" nillable="true" type="tns:ESSNoYes" />
+  <xs:simpleType name="PRLetterGenerationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PDF" />
+      <xs:enumeration value="Word" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PRLetterGenerationType" nillable="true" type="tns:PRLetterGenerationType" />
+  <xs:simpleType name="ESSLetterSendOption">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AutoApproveSend" />
+      <xs:enumeration value="ApprovalRequiredSend" />
+      <xs:enumeration value="ApprovalRequiredDontSend" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ESSLetterSendOption" nillable="true" type="tns:ESSLetterSendOption" />
+  <xs:complexType name="ArrayOfESSEmploymentCertificateRequestedForContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ESSEmploymentCertificateRequestedForContract" nillable="true" type="tns:ESSEmploymentCertificateRequestedForContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfESSEmploymentCertificateRequestedForContract" nillable="true" type="tns:ArrayOfESSEmploymentCertificateRequestedForContract" />
+  <xs:complexType name="ESSEmploymentCertificateRequestedForContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q4:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RequestedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestedForDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestedForId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ESSEmploymentCertificateRequestedForContract" nillable="true" type="tns:ESSEmploymentCertificateRequestedForContract" />
+</xs:schema>

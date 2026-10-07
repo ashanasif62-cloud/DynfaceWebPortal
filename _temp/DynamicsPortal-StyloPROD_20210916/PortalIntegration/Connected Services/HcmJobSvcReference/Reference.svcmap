@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c128ac59-2247-45e7-a26f-16c01ae81332" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/hcmjobsvcgroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="hcmjobsvcgroup72.xsd" MetadataType="Schema" ID="fc01736d-cbe3-420a-b73e-5c5afc64e6be" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd2" />
+    <MetadataFile FileName="hcmjobsvcgroup74.xsd" MetadataType="Schema" ID="a06991a1-4978-421b-bb92-3c823b51970a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd5" />
+    <MetadataFile FileName="hcmjobsvcgroup75.xsd" MetadataType="Schema" ID="ada19fea-4975-41a0-a665-6f6e707cd369" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd4" />
+    <MetadataFile FileName="hcmjobsvcgroup2.wsdl" MetadataType="Wsdl" ID="63e2fe97-d8d4-434e-b4d1-d82a04715bef" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/hcmjobsvcgroup?wsdl=wsdl0" />
+    <MetadataFile FileName="hcmjobsvcgroup76.xsd" MetadataType="Schema" ID="50299fa4-9c36-45df-ad05-68790a12891e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd6" />
+    <MetadataFile FileName="hcmjobsvcgroup21.wsdl" MetadataType="Wsdl" ID="d92acc5d-36d0-4782-af90-fb830ff4c891" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/hcmjobsvcgroup?wsdl" />
+    <MetadataFile FileName="hcmjobsvcgroup1.disco" MetadataType="Disco" ID="d258dbad-0ef0-498d-8ffd-2fa6ad69eb13" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/hcmjobsvcgroup?disco" />
+    <MetadataFile FileName="hcmjobsvcgroup71.xsd" MetadataType="Schema" ID="b3dfafa6-f1f2-4256-836e-c4da06a671c4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd1" />
+    <MetadataFile FileName="hcmjobsvcgroup7.xsd" MetadataType="Schema" ID="6e1dda61-1a1d-4811-b541-cd19f5fc4a69" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd0" />
+    <MetadataFile FileName="hcmjobsvcgroup73.xsd" MetadataType="Schema" ID="0afc6557-f3eb-441a-a444-497ef870f665" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

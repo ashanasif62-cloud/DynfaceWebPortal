@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/DFUserInfoSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="DFUserInfoSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DefaultLegalEntity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsEnrolledInPayroll" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="JobDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JobId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OriginalHireDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="Person" type="xs:long" />
+          <xs:element minOccurs="0" name="PositionDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Positionid" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="ServiceDuration" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WorkerRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="isDynamicsUser" type="q1:NoYes" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DFUserInfoSvcContract" nillable="true" type="tns:DFUserInfoSvcContract" />
+  <xs:complexType name="ArrayOfDFEmployeeLegalEntitiesContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DFEmployeeLegalEntitiesContract" nillable="true" type="tns:DFEmployeeLegalEntitiesContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDFEmployeeLegalEntitiesContract" nillable="true" type="tns:ArrayOfDFEmployeeLegalEntitiesContract" />
+  <xs:complexType name="DFEmployeeLegalEntitiesContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DFEmployeeLegalEntitiesContract" nillable="true" type="tns:DFEmployeeLegalEntitiesContract" />
+  <xs:simpleType name="DFMenuType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Dynaface" />
+      <xs:enumeration value="MobileApp" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DFMenuType" nillable="true" type="tns:DFMenuType" />
+  <xs:complexType name="ArrayOfDFEmployeeMenusContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DFEmployeeMenusContract" nillable="true" type="tns:DFEmployeeMenusContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDFEmployeeMenusContract" nillable="true" type="tns:ArrayOfDFEmployeeMenusContract" />
+  <xs:complexType name="DFEmployeeMenusContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q3:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccessLevel" type="xs:int" />
+          <xs:element minOccurs="0" name="DisplayOnFooter" type="tns:DFNoYes" />
+          <xs:element minOccurs="0" name="DisplayOnHeader" type="tns:DFNoYes" />
+          <xs:element minOccurs="0" name="DisplayOnMainScreen" type="tns:DFNoYes" />
+          <xs:element minOccurs="0" name="DisplayOnSideNavigation" type="tns:DFNoYes" />
+          <xs:element minOccurs="0" name="Image" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Label" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MenuId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModuleId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Object" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ParentId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoleId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Sequence" type="xs:int" />
+          <xs:element minOccurs="0" name="Type" type="xs:int" />
+          <xs:element minOccurs="0" name="Visible" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DFEmployeeMenusContract" nillable="true" type="tns:DFEmployeeMenusContract" />
+  <xs:simpleType name="DFNoYes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="No" />
+      <xs:enumeration value="Yes" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DFNoYes" nillable="true" type="tns:DFNoYes" />
+  <xs:complexType name="ArrayOfDFClientConfigurationContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DFClientConfigurationContract" nillable="true" type="tns:DFClientConfigurationContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDFClientConfigurationContract" nillable="true" type="tns:ArrayOfDFClientConfigurationContract" />
+  <xs:complexType name="DFClientConfigurationContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q4:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClientId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClientSecret" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GrantType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsActive" type="tns:DFNoYes" />
+          <xs:element minOccurs="0" name="QRImage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Resource" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TokenUrl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DFClientConfigurationContract" nillable="true" type="tns:DFClientConfigurationContract" />
+</xs:schema>

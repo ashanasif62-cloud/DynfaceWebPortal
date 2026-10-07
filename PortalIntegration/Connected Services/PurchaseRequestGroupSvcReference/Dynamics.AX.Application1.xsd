@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfPurchaseRequestSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PurchaseRequestSvcContract" nillable="true" type="tns:PurchaseRequestSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPurchaseRequestSvcContract" nillable="true" type="tns:ArrayOfPurchaseRequestSvcContract" />
+  <xs:complexType name="PurchaseRequestSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Createdby" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Originator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProjId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchReqId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchReqJustificationReasonCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchReqName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RequiredDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RequisitionPurpose" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequisitionStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SubmittedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Submittedby" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TransDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="employeeId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PurchaseRequestSvcContract" nillable="true" type="tns:PurchaseRequestSvcContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+  <xs:complexType name="ArrayOfPurchTotalsContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PurchTotalsContract" nillable="true" type="tns:PurchTotalsContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPurchTotalsContract" nillable="true" type="tns:ArrayOfPurchTotalsContract" />
+  <xs:complexType name="PurchTotalsContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q3:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CWQuantity" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CashDiscount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Charges" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CreditAvailable" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CreditLimit" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExchangeRate" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Limit" type="xs:decimal" />
+          <xs:element minOccurs="0" name="LineCount" type="xs:long" />
+          <xs:element minOccurs="0" name="LineDiscount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="OrderedQuantity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProductReceiptQuantity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Quantity" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="ReceiveNowQuantity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegisteredQuantity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegisteredQuantityandServices" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Remaining" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RoundOff" type="xs:decimal" />
+          <xs:element minOccurs="0" name="SalesTax" type="xs:decimal" />
+          <xs:element minOccurs="0" name="SubTotalAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalDiscount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Volume" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Weight" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PurchTotalsContract" nillable="true" type="tns:PurchTotalsContract" />
+</xs:schema>

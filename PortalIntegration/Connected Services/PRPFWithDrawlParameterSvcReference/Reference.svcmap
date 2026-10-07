@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="66252a60-e99b-4ce9-aca9-80a3464b1d13" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PRPFWithDrawlParameterSvcGroup.xsd" MetadataType="Schema" ID="72638a93-25af-4be3-95d8-b5a95b5878cb" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PRPFWithDrawlParameterSvcGroup1.xsd" MetadataType="Schema" ID="3c76efbd-22bc-4213-9e64-630ff2bb6460" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PRPFWithDrawlParameterSvcGroup.wsdl" MetadataType="Wsdl" ID="04420627-3526-430f-acb3-1afee71c03be" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?wsdl" />
+    <MetadataFile FileName="PRPFWithDrawlParameterSvcGroup1.wsdl" MetadataType="Wsdl" ID="1ecb6f24-fdf3-462f-8879-6708977fab28" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PRPFWithDrawlParameterSvcGroup2.xsd" MetadataType="Schema" ID="836426ac-cdee-4534-9e29-776a9d2a8e83" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PRPFWithDrawlParameterSvcGroup3.xsd" MetadataType="Schema" ID="f2e72628-7473-495e-abe4-2148e9459cc4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PRPFWithDrawlParameterSvcGroup4.xsd" MetadataType="Schema" ID="db8e8e89-dcab-499a-9e65-e25f63552fcc" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PRPFWithDrawlParameterSvcGroup5.xsd" MetadataType="Schema" ID="d342c2a8-6f1f-4047-9c4b-e9c91c086a50" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PRPFWithDrawlParameterSvcGroup.disco" MetadataType="Disco" ID="05da05e2-0774-425e-86e7-0981f7163c54" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?disco" />
+    <MetadataFile FileName="PRPFWithDrawlParameterSvcGroup6.xsd" MetadataType="Schema" ID="82661075-d15e-411b-8f02-eec77a465b48" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

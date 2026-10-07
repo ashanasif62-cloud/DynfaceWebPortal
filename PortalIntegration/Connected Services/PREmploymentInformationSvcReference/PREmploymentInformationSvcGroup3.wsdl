@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="http://tempuri.org" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="PREmploymentInformationSvcGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_PREmploymentInformationSvc_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_PREmploymentInformationSvc" type="i0:PREmploymentInformationSvc">
+    <wsp:PolicyReference URI="#BasicHttpBinding_PREmploymentInformationSvc_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="findByRecId">
+      <soap:operation soapAction="http://tempuri.org/PREmploymentInformationSvc/findByRecId" style="document" />
+      <wsdl:input name="findByRecId">
+        <soap:header message="i0:findByRecId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="findByRecIdResponse">
+        <soap:header message="i0:findByRecIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retriveAllEmployments">
+      <soap:operation soapAction="http://tempuri.org/PREmploymentInformationSvc/retriveAllEmployments" style="document" />
+      <wsdl:input name="retriveAllEmployments">
+        <soap:header message="i0:retriveAllEmployments_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retriveAllEmploymentsResponse">
+        <soap:header message="i0:retriveAllEmploymentsResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <soap:operation soapAction="http://tempuri.org/PREmploymentInformationSvc/update" style="document" />
+      <wsdl:input name="update">
+        <soap:header message="i0:update_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateResponse">
+        <soap:header message="i0:updateResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAll">
+      <soap:operation soapAction="http://tempuri.org/PREmploymentInformationSvc/retrieveAll" style="document" />
+      <wsdl:input name="retrieveAll">
+        <soap:header message="i0:retrieveAll_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveAllResponse">
+        <soap:header message="i0:retrieveAllResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="http://tempuri.org/PREmploymentInformationSvc/delete" style="document" />
+      <wsdl:input name="delete">
+        <soap:header message="i0:delete_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteResponse">
+        <soap:header message="i0:deleteResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <soap:operation soapAction="http://tempuri.org/PREmploymentInformationSvc/create" style="document" />
+      <wsdl:input name="create">
+        <soap:header message="i0:create_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="createResponse">
+        <soap:header message="i0:createResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="findByEmployee">
+      <soap:operation soapAction="http://tempuri.org/PREmploymentInformationSvc/findByEmployee" style="document" />
+      <wsdl:input name="findByEmployee">
+        <soap:header message="i0:findByEmployee_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="findByEmployeeResponse">
+        <soap:header message="i0:findByEmployeeResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retriveEmployeeRequestioner">
+      <soap:operation soapAction="http://tempuri.org/PREmploymentInformationSvc/retriveEmployeeRequestioner" style="document" />
+      <wsdl:input name="retriveEmployeeRequestioner">
+        <soap:header message="i0:retriveEmployeeRequestioner_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retriveEmployeeRequestionerResponse">
+        <soap:header message="i0:retriveEmployeeRequestionerResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retriveEmployeeReportees">
+      <soap:operation soapAction="http://tempuri.org/PREmploymentInformationSvc/retriveEmployeeReportees" style="document" />
+      <wsdl:input name="retriveEmployeeReportees">
+        <soap:header message="i0:retriveEmployeeReportees_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retriveEmployeeReporteesResponse">
+        <soap:header message="i0:retriveEmployeeReporteesResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveByEmail">
+      <soap:operation soapAction="http://tempuri.org/PREmploymentInformationSvc/retrieveByEmail" style="document" />
+      <wsdl:input name="retrieveByEmail">
+        <soap:header message="i0:retrieveByEmail_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveByEmailResponse">
+        <soap:header message="i0:retrieveByEmailResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getEmployeeLookup">
+      <soap:operation soapAction="http://tempuri.org/PREmploymentInformationSvc/getEmployeeLookup" style="document" />
+      <wsdl:input name="getEmployeeLookup">
+        <soap:header message="i0:getEmployeeLookup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getEmployeeLookupResponse">
+        <soap:header message="i0:getEmployeeLookupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PREmploymentInformationSvcGroup">
+    <wsdl:port name="BasicHttpBinding_PREmploymentInformationSvc" binding="tns:BasicHttpBinding_PREmploymentInformationSvc">
+      <soap:address location="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

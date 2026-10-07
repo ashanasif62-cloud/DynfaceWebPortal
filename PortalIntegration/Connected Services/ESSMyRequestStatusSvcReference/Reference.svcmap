@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="cd999eaf-a975-4d4c-ab90-376589c22c96" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSMyRequestStatusGroupSvc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ESSMyRequestStatusGroupSvc.xsd" MetadataType="Schema" ID="1db65534-e017-4ff9-a151-2cb52f39b7ed" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSMyRequestStatusGroupSvc?xsd=xsd6" />
+    <MetadataFile FileName="ESSMyRequestStatusGroupSvc.wsdl" MetadataType="Wsdl" ID="91498bd6-6b05-4526-8b70-16d3fbb42982" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSMyRequestStatusGroupSvc?wsdl" />
+    <MetadataFile FileName="ESSMyRequestStatusGroupSvc1.xsd" MetadataType="Schema" ID="404ee354-7e5f-48f5-9c47-399d801634ee" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSMyRequestStatusGroupSvc?xsd=xsd3" />
+    <MetadataFile FileName="ESSMyRequestStatusGroupSvc2.xsd" MetadataType="Schema" ID="8d2bc19c-6d76-4eb8-8404-724b11938ec5" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSMyRequestStatusGroupSvc?xsd=xsd0" />
+    <MetadataFile FileName="ESSMyRequestStatusGroupSvc3.xsd" MetadataType="Schema" ID="8ec4749b-df23-49b0-87c5-5b8e722a0f71" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSMyRequestStatusGroupSvc?xsd=xsd1" />
+    <MetadataFile FileName="ESSMyRequestStatusGroupSvc.disco" MetadataType="Disco" ID="9b10f5d8-6024-4ed5-9a49-c87ee269d9dd" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSMyRequestStatusGroupSvc?disco" />
+    <MetadataFile FileName="ESSMyRequestStatusGroupSvc4.xsd" MetadataType="Schema" ID="b1f8fc1c-9c89-4374-99e0-b357f98d5e4f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSMyRequestStatusGroupSvc?xsd=xsd2" />
+    <MetadataFile FileName="ESSMyRequestStatusGroupSvc1.wsdl" MetadataType="Wsdl" ID="b00cd2b8-5229-4852-80aa-d7b651a7f594" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSMyRequestStatusGroupSvc?wsdl=wsdl0" />
+    <MetadataFile FileName="ESSMyRequestStatusGroupSvc5.xsd" MetadataType="Schema" ID="dbeb2665-928d-4eb3-81bb-cbb6db8a18d7" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSMyRequestStatusGroupSvc?xsd=xsd5" />
+    <MetadataFile FileName="ESSMyRequestStatusGroupSvc6.xsd" MetadataType="Schema" ID="cab83eaa-50d2-4b64-9069-bdf227ff790a" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSMyRequestStatusGroupSvc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

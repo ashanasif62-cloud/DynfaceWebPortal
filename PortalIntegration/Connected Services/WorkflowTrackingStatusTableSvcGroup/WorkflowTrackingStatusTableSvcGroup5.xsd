@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfWorkflowTrackingStatusTableContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WorkflowTrackingStatusTableContract" nillable="true" type="tns:WorkflowTrackingStatusTableContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWorkflowTrackingStatusTableContract" nillable="true" type="tns:ArrayOfWorkflowTrackingStatusTableContract" />
+  <xs:complexType name="WorkflowTrackingStatusTableContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContextRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="ContextTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="CorrelationId" type="ser:guid" />
+          <xs:element minOccurs="0" name="CreatedDatetimelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Document" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DocumentType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DocumentTypelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Documentlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DueDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Duedatetimelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="From" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Originatorlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Subjectlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="createdDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="workflowWorkItemRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowWorkItemType" type="tns:WorkflowWorkItemType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WorkflowTrackingStatusTableContract" nillable="true" type="tns:WorkflowTrackingStatusTableContract" />
+  <xs:simpleType name="WorkflowWorkItemType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="WorkItem" />
+      <xs:enumeration value="RequestChange" />
+      <xs:enumeration value="Return" />
+      <xs:enumeration value="Escalated" />
+      <xs:enumeration value="FinalApprover" />
+      <xs:enumeration value="Recall" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="WorkflowWorkItemType" nillable="true" type="tns:WorkflowWorkItemType" />
+</xs:schema>

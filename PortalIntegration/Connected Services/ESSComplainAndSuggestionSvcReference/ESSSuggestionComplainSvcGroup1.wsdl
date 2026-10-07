@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/ESSSuggestionComplainSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/ESSSuggestionComplainSvcGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/ESSSuggestionComplainSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/ESSSuggestionComplainSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/ESSSuggestionComplainSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/ESSSuggestionComplainSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/ESSSuggestionComplainSvcGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Find">
+    <wsdl:part name="parameters" element="tns:Find" />
+  </wsdl:message>
+  <wsdl:message name="Find_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="FindResponse">
+    <wsdl:part name="parameters" element="tns:FindResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSComplainSuggesstionSVC_Find_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="FindByEmployee">
+    <wsdl:part name="parameters" element="tns:FindByEmployee" />
+  </wsdl:message>
+  <wsdl:message name="FindByEmployee_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="FindByEmployeeResponse">
+    <wsdl:part name="parameters" element="tns:FindByEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindByEmployeeResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSComplainSuggesstionSVC_FindByEmployee_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="Update">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="Update_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="UpdateResponse">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSComplainSuggesstionSVC_Update_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveAll">
+    <wsdl:part name="parameters" element="tns:RetrieveAll" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveAll_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveAllResponse">
+    <wsdl:part name="parameters" element="tns:RetrieveAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveAllResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSComplainSuggesstionSVC_RetrieveAll_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="Delete">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="Delete_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="DeleteResponse">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSComplainSuggesstionSVC_Delete_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRecord">
+    <wsdl:part name="parameters" element="tns:DeleteRecord" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRecord_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRecordResponse">
+    <wsdl:part name="parameters" element="tns:DeleteRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRecordResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSComplainSuggesstionSVC_DeleteRecord_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="Create">
+    <wsdl:part name="parameters" element="tns:Create" />
+  </wsdl:message>
+  <wsdl:message name="Create_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="CreateResponse">
+    <wsdl:part name="parameters" element="tns:CreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSComplainSuggesstionSVC_Create_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveComplainSuggestionTypes">
+    <wsdl:part name="parameters" element="tns:retrieveComplainSuggestionTypes" />
+  </wsdl:message>
+  <wsdl:message name="retrieveComplainSuggestionTypes_Headers">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q22:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveComplainSuggestionTypesResponse">
+    <wsdl:part name="parameters" element="tns:retrieveComplainSuggestionTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveComplainSuggestionTypesResponse_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q23:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSComplainSuggesstionSVC_retrieveComplainSuggestionTypes_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q24:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="ESSComplainSuggesstionSVC">
+    <wsdl:operation name="Find">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/Find" name="Find" message="tns:Find" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/FindResponse" name="FindResponse" message="tns:FindResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/Fault" name="SoapServiceFaultFault" message="tns:ESSComplainSuggesstionSVC_Find_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindByEmployee">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/FindByEmployee" name="FindByEmployee" message="tns:FindByEmployee" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/FindByEmployeeResponse" name="FindByEmployeeResponse" message="tns:FindByEmployeeResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/Fault" name="SoapServiceFaultFault" message="tns:ESSComplainSuggesstionSVC_FindByEmployee_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/Update" name="Update" message="tns:Update" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/UpdateResponse" name="UpdateResponse" message="tns:UpdateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/Fault" name="SoapServiceFaultFault" message="tns:ESSComplainSuggesstionSVC_Update_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveAll">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/RetrieveAll" name="RetrieveAll" message="tns:RetrieveAll" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/RetrieveAllResponse" name="RetrieveAllResponse" message="tns:RetrieveAllResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/Fault" name="SoapServiceFaultFault" message="tns:ESSComplainSuggesstionSVC_RetrieveAll_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/Delete" name="Delete" message="tns:Delete" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/DeleteResponse" name="DeleteResponse" message="tns:DeleteResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/Fault" name="SoapServiceFaultFault" message="tns:ESSComplainSuggesstionSVC_Delete_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRecord">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/DeleteRecord" name="DeleteRecord" message="tns:DeleteRecord" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/DeleteRecordResponse" name="DeleteRecordResponse" message="tns:DeleteRecordResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/Fault" name="SoapServiceFaultFault" message="tns:ESSComplainSuggesstionSVC_DeleteRecord_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Create">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/Create" name="Create" message="tns:Create" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/CreateResponse" name="CreateResponse" message="tns:CreateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/Fault" name="SoapServiceFaultFault" message="tns:ESSComplainSuggesstionSVC_Create_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveComplainSuggestionTypes">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/retrieveComplainSuggestionTypes" name="retrieveComplainSuggestionTypes" message="tns:retrieveComplainSuggestionTypes" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/retrieveComplainSuggestionTypesResponse" name="retrieveComplainSuggestionTypesResponse" message="tns:retrieveComplainSuggestionTypesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSComplainSuggesstionSVC/Fault" name="SoapServiceFaultFault" message="tns:ESSComplainSuggesstionSVC_retrieveComplainSuggestionTypes_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

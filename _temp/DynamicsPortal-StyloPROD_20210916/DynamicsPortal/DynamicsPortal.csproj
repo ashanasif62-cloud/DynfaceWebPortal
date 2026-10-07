@@ -1,0 +1,1125 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A4644D3-517C-4A81-A3AE-8B9B3AAED969}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynamicsPortal</RootNamespace>
+    <AssemblyName>DynamicsPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44314</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administration\User Management\SysRolesMenuItems_ListPage.aspx" />
+    <Content Include="Administration\User Management\SysUserRoles_ListPage.aspx" />
+    <Content Include="Administration\User Management\SysRoles_ListPage.aspx" />
+    <Content Include="Administration\User Management\SysUserInfo_ResetPassword.aspx" />
+    <Content Include="Administration\User Management\SysUserInfo_ChangePassword.aspx" />
+    <Content Include="Administration\User Management\SysUserInfo_ListPage.aspx" />
+    <Content Include="Administration\User Management\SysUserInfo_Create.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="distribution\css\animate.css" />
+    <Content Include="distribution\css\arrows.png" />
+    <Content Include="distribution\css\custom.css" />
+    <Content Include="distribution\css\fontastic.css" />
+    <Content Include="distribution\css\grasp_mobile_progress_circle-1.0.0.min.css" />
+    <Content Include="distribution\css\login-page.css" />
+    <Content Include="distribution\css\slimtable.css" />
+    <Content Include="distribution\css\spinners.css" />
+    <Content Include="distribution\css\style.blue.css" />
+    <Content Include="distribution\css\style.default.css" />
+    <Content Include="distribution\css\style.green.css" />
+    <Content Include="distribution\css\style.pink.css" />
+    <Content Include="distribution\css\style.red.css" />
+    <Content Include="distribution\css\style.sea.css" />
+    <Content Include="distribution\css\style.violet.css" />
+    <Content Include="distribution\css\usermanagement.css" />
+    <Content Include="distribution\fonts\dashboard.svg" />
+    <Content Include="distribution\icons-reference\fonts\dashboard.svg" />
+    <Content Include="distribution\icons-reference\icons-reference.html" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\css\materialdesignicons.css" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\css\materialdesignicons.min.css" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\fonts\materialdesignicons-webfont.svg" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\preview.html" />
+    <Content Include="distribution\icons-reference\styles.css" />
+    <Content Include="distribution\img\attachment_Icon.png" />
+    <Content Include="distribution\img\attendance.png" />
+    <Content Include="distribution\img\attendanceb.png" />
+    <Content Include="distribution\img\calculate 001.png" />
+    <Content Include="distribution\img\calculate 002.png" />
+    <Content Include="distribution\img\calculate 003.png" />
+    <Content Include="distribution\img\cancel.png" />
+    <Content Include="distribution\img\Cancel02.png" />
+    <Content Include="distribution\img\Cancel03.png" />
+    <Content Include="distribution\img\checkbox.png" />
+    <Content Include="distribution\img\checkbox2.png" />
+    <Content Include="distribution\img\delete.gif" />
+    <Content Include="distribution\img\Delete.png" />
+    <Content Include="distribution\img\DeleteRed_small.png" />
+    <Content Include="distribution\img\details001.png" />
+    <Content Include="distribution\img\edit.png" />
+    <Content Include="distribution\img\edit002.png" />
+    <Content Include="distribution\img\Edit02.png" />
+    <Content Include="distribution\img\Edit03.png" />
+    <Content Include="distribution\img\Edit04.png" />
+    <Content Include="distribution\img\Edit05.png" />
+    <Content Include="distribution\img\Edit06.png" />
+    <Content Include="distribution\img\eip_edit2.png" />
+    <Content Include="distribution\img\errorIcon.png" />
+    <Content Include="distribution\img\fav-add.png" />
+    <Content Include="distribution\img\fav-remove.png" />
+    <Content Include="distribution\img\favicon.png" />
+    <Content Include="distribution\img\favorite_add.png" />
+    <Content Include="distribution\img\favorite_delete.png" />
+    <Content Include="distribution\img\favouriteIcon.png" />
+    <Content Include="distribution\img\ic_search_black_24px.svg" />
+    <Content Include="distribution\img\Ideas Logo.png" />
+    <Content Include="distribution\img\infoIcon.png" />
+    <Content Include="distribution\img\loader.gif" />
+    <Content Include="distribution\img\lock-shield-20.png" />
+    <Content Include="distribution\img\lock_safe.png" />
+    <Content Include="distribution\img\Maison-Logo.png" />
+    <Content Include="distribution\img\map-close.png" />
+    <Content Include="distribution\img\map-marker-blue.png" />
+    <Content Include="distribution\img\map-marker-default.png" />
+    <Content Include="distribution\img\map-marker-green.png" />
+    <Content Include="distribution\img\map-marker-pink.png" />
+    <Content Include="distribution\img\map-marker-red.png" />
+    <Content Include="distribution\img\map-marker.png" />
+    <Content Include="distribution\img\menu-down.png" />
+    <Content Include="distribution\img\Missing1.png" />
+    <Content Include="distribution\img\Missing2.png" />
+    <Content Include="distribution\img\more-details.png" />
+    <Content Include="distribution\img\New.png" />
+    <Content Include="distribution\img\Portrait-Maison-Logo-small.png" />
+    <Content Include="distribution\img\Portrait-Maison-Logo.png" />
+    <Content Include="distribution\img\safe_password.png" />
+    <Content Include="distribution\img\Save.png" />
+    <Content Include="distribution\img\Save1.png" />
+    <Content Include="distribution\img\Save2.png" />
+    <Content Include="distribution\img\select001.png" />
+    <Content Include="distribution\img\sort-down.png" />
+    <Content Include="distribution\img\sort-up.png" />
+    <Content Include="distribution\img\Stylo Logo.jpg" />
+    <Content Include="distribution\img\submit-for-approval-20.png" />
+    <Content Include="distribution\img\submit-for-approval-24.png" />
+    <Content Include="distribution\img\successIcon.png" />
+    <Content Include="distribution\img\Update.png" />
+    <Content Include="distribution\img\Update02.png" />
+    <Content Include="distribution\img\Update03.png" />
+    <Content Include="distribution\img\Update04.png" />
+    <Content Include="distribution\img\upload01.png" />
+    <Content Include="distribution\img\upload02.png" />
+    <Content Include="distribution\img\upload03.png" />
+    <Content Include="distribution\img\User-flat.png" />
+    <Content Include="distribution\img\user-icon.png" />
+    <Content Include="distribution\img\User.png" />
+    <Content Include="distribution\js\charts-custom.js" />
+    <Content Include="distribution\js\charts-home.js" />
+    <Content Include="distribution\js\custom.js" />
+    <Content Include="distribution\js\front.js" />
+    <Content Include="distribution\js\grasp_mobile_progress_circle-1.0.0.min.js" />
+    <Content Include="distribution\js\jquery-3.3.1.min.js" />
+    <Content Include="distribution\js\jquery-ui-timepicker-addon.js" />
+    <Content Include="distribution\js\jquery.blockUI.js" />
+    <Content Include="distribution\js\slimtable.js" />
+    <Content Include="distribution\js\sort-paginationTable.js" />
+    <Content Include="distribution\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="distribution\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="distribution\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="distribution\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="distribution\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="distribution\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="distribution\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="distribution\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="distribution\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="distribution\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="distribution\vendor\calendar-master\css\demo.css" />
+    <Content Include="distribution\vendor\calendar-master\css\theme1.css" />
+    <Content Include="distribution\vendor\calendar-master\css\theme2.css" />
+    <Content Include="distribution\vendor\calendar-master\css\theme3.css" />
+    <Content Include="distribution\vendor\calendar-master\demo.html" />
+    <Content Include="distribution\vendor\calendar-master\js\caleandar.js" />
+    <Content Include="distribution\vendor\calendar-master\js\caleandar.min.js" />
+    <Content Include="distribution\vendor\calendar-master\js\demo.js" />
+    <Content Include="distribution\vendor\chart.js\Chart.bundle.js" />
+    <Content Include="distribution\vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="distribution\vendor\chart.js\Chart.js" />
+    <Content Include="distribution\vendor\chart.js\Chart.min.js" />
+    <Content Include="distribution\vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="distribution\vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="distribution\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="distribution\vendor\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\external\jquery\jquery.js" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\images\ui-icons_444444_256x240.png" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\images\ui-icons_555555_256x240.png" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\images\ui-icons_777620_256x240.png" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\images\ui-icons_777777_256x240.png" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\index.html" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\jquery-ui.css" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\jquery-ui.js" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\jquery-ui.min.css" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\jquery-ui.min.js" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\jquery-ui.structure.css" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\jquery-ui.structure.min.css" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\jquery-ui.theme.css" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\jquery-ui.theme.min.css" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\LICENSE.txt" />
+    <Content Include="distribution\vendor\jquery-validation\additional-methods.js" />
+    <Content Include="distribution\vendor\jquery-validation\jquery.validate.js" />
+    <Content Include="distribution\vendor\jquery-validation\jquery.validate.min.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_ar.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_az.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_bg.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_bn_BD.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_ca.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_cs.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_da.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_de.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_el.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_es.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_es_AR.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_es_PE.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_et.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_eu.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_fa.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_fi.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_fr.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_ge.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_gl.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_he.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_hr.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_hu.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_hy_AM.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_id.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_is.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_it.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_ja.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_ka.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_kk.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_ko.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_lt.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_lv.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_mk.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_my.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_nl.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_no.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_pl.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_pt_BR.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_pt_PT.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_ro.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_ru.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_sd.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_si.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_sk.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_sl.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_sr.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_sr_lat.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_sv.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_th.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_tj.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_tr.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_uk.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_ur.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_vi.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_zh.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\messages_zh_TW.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\methods_de.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\methods_es_CL.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\methods_fi.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\methods_nl.js" />
+    <Content Include="distribution\vendor\jquery-validation\localization\methods_pt.js" />
+    <Content Include="distribution\vendor\jquery.cookie\jquery.cookie.js" />
+    <Content Include="distribution\vendor\jquery.cookie\MIT-LICENSE.txt" />
+    <Content Include="distribution\vendor\jquery\core.js" />
+    <Content Include="distribution\vendor\jquery\jquery.js" />
+    <Content Include="distribution\vendor\jquery\jquery.min.js" />
+    <Content Include="distribution\vendor\jquery\jquery.slim.js" />
+    <Content Include="distribution\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="distribution\vendor\malihu-custom-scrollbar-plugin\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="distribution\vendor\malihu-custom-scrollbar-plugin\jquery.mCustomScrollbar.css" />
+    <Content Include="distribution\vendor\malihu-custom-scrollbar-plugin\jquery.mCustomScrollbar.js" />
+    <Content Include="distribution\vendor\malihu-custom-scrollbar-plugin\mCSB_buttons.png" />
+    <Content Include="DropDownList_AllActiveFinancialDims.ascx" />
+    <Content Include="DropDownList_AllEmployeeDetails.ascx" />
+    <Content Include="DropDownList_PayGroupPayPeriods.ascx" />
+    <Content Include="DropDownList_EmployeeDetails.ascx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="ErrorPages\400.aspx" />
+    <Content Include="ErrorPages\401.aspx" />
+    <Content Include="ErrorPages\500.aspx" />
+    <Content Include="ErrorPages\503.aspx" />
+    <Content Include="ErrorPages\508.aspx" />
+    <Content Include="ErrorPages\511.aspx" />
+    <Content Include="ErrorPages\403.aspx" />
+    <Content Include="ErrorPages\CustomErrorPage.aspx" />
+    <Content Include="ErrorPages\404.aspx" />
+    <Content Include="ErrorPages\WebForm1.aspx" />
+    <Content Include="ESS\Dashboard.aspx" />
+    <Content Include="ESS\HR\ESSHcmPersonEducation.aspx" />
+    <Content Include="ESS\HR\ESSHRSubDepartment.aspx" />
+    <Content Include="ESS\HR\ESSHRSubDepartment_ListPage.aspx" />
+    <Content Include="ESS\HR\EssWorkerBankAccount_Create.aspx" />
+    <Content Include="ESS\HR\EssWorkerBankAccount_ListPage.aspx" />
+    <Content Include="ESS\PR\ESSPREmployeeLoanReq_Create.aspx" />
+    <Content Include="ESS\PR\PREmployeePFRequest_Create.aspx" />
+    <Content Include="ESS\PR\PREmployeePFRequest_ListPage.aspx" />
+    <Content Include="ESS\PR\PREmployeePFWithDrawl_Create.aspx" />
+    <Content Include="ESS\PR\PREmployeePFWithDrawl_ListPage.aspx" />
+    <Content Include="ESS\Reports\ESSJmgAttendanceRegister_TimeSheet_MyTeam.aspx" />
+    <Content Include="ESS\Reports\ESSJmgAttendanceRegister_TimeSheet.aspx" />
+    <Content Include="ESS\Reports\ESSJmgInOutSheet_MyTeam.aspx" />
+    <Content Include="ESS\Reports\ESSJmgInOutSheet.aspx" />
+    <Content Include="ESS\TA\ESSJmgProfileCalendar_ListPage.aspx" />
+    <Content Include="ESS\TA\ESSJmgTimecardTable_ListPage_del.aspx" />
+    <Content Include="ESS\TA\ESSJmgTimecardTable_ListPage.aspx" />
+    <Content Include="ESS\HR\ESSAPDailyGroomingAppraisalsAssignedToMe_ListPage.aspx" />
+    <Content Include="ESS\HR\ESSAPEmployeeAppraisalsAssignedToMe_ListPage.aspx" />
+    <Content Include="ESS\HR\ESSHRPolicies_ListPage.aspx" />
+    <Content Include="ESS\HR\HcmEmployeeTransferRequests_Create.aspx" />
+    <Content Include="ESS\HR\HREmployeesReportToMe_ListPage.aspx" />
+    <Content Include="ESS\HR\ESSHcmOpenCourse_ListPage.aspx" />
+    <Content Include="ESS\HR\ESSHcmPersonIdentificationNumber.aspx" />
+    <Content Include="ESS\ESSDocumentAttachment.aspx" />
+    <Content Include="ESS\HR\ESSHcmPersonImage.aspx" />
+    <Content Include="ESS\HR\ESSHRHiringRequisition_ListPage.aspx" />
+    <Content Include="ESS\HR\ESSHRHiringRequisition_Create.aspx" />
+    <Content Include="ESS\HR\ESSLogisticsElectronicAddress.aspx" />
+    <Content Include="ESS\HR\ESSLogisticsLocation.aspx" />
+    <Content Include="ESS\PR\ESSPREmployeeAdvance_Create.aspx" />
+    <Content Include="ESS\PR\ESSPREmployeeAdvance_ListPage.aspx" />
+    <Content Include="ESS\PR\ESSPREmployeeEOS_Create.aspx" />
+    <Content Include="ESS\PR\ESSPREmployeeEOS_ListPage.aspx" />
+    <Content Include="ESS\PR\ESSPREmployeeLeave_Create.aspx" />
+    <Content Include="ESS\PR\ESSPREmployeeLeave_ListPage.aspx" />
+    <Content Include="ESS\PR\ESSPREmployeeLoan_Create.aspx" />
+    <Content Include="ESS\PR\ESSPRProvidentFund_MyInquiry.aspx" />
+    <Content Include="ESS\PR\ESSPRProvidentFund_MyTeamInquiry.aspx" />
+    <Content Include="ESS\PR\ESSPREntitlementBalance.aspx" />
+    <Content Include="ESS\PR\ESSPREmployeeLoan_ListPage.aspx" />
+    <Content Include="ESS\HR\ESSHRBusinessTrip_Create.aspx" />
+    <Content Include="ESS\HR\ESSBusinessTrip_ListPage.aspx" />
+    <Content Include="ESS\HR\ESSHRHelpDeskRequest_Create.aspx" />
+    <Content Include="ESS\HR\ESSHRHelpDeskRequest_ListPage.aspx" />
+    <Content Include="ESS\HR\ESSHRPersonalDetails.aspx" />
+    <Content Include="ESS\HR\ESSHRProfessionChange_Create.aspx" />
+    <Content Include="ESS\HR\ESSHRProfessionChange_ListPage.aspx" />
+    <Content Include="ESS\HR\ESSHRRejoining_Create.aspx" />
+    <Content Include="ESS\HR\ESSHRRejoining_ListPage.aspx" />
+    <Content Include="ESS\HR\ESSHRRequestForLetter_Create.aspx" />
+    <Content Include="ESS\HR\ESSHRRequestForLetter_ListPage.aspx" />
+    <Content Include="ESS\Reports\ESSPRTaxCertificate.aspx" />
+    <Content Include="ESS\TA\JmgCompensatoryLeave_Create.aspx" />
+    <Content Include="ESS\TA\JmgCompensatoryLeave_ListPage.aspx" />
+    <Content Include="ESS\TA\JmgOffDayAllowance_Create.aspx" />
+    <Content Include="ESS\TA\JmgOffDayAllowance_listPage.aspx" />
+    <Content Include="MainForm.aspx" />
+    <Content Include="ESS\Reports\ESSPRSalarySlip.aspx" />
+    <Content Include="distribution\fonts\dashboard.eot" />
+    <Content Include="distribution\fonts\dashboard.ttf" />
+    <Content Include="distribution\fonts\dashboard.woff" />
+    <Content Include="distribution\icons-reference\fonts\dashboard.eot" />
+    <Content Include="distribution\icons-reference\fonts\dashboard.ttf" />
+    <Content Include="distribution\icons-reference\fonts\dashboard.woff" />
+    <Content Include="distribution\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="distribution\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="distribution\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="distribution\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="distribution\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="distribution\vendor\jquery.cookie\component.json" />
+    <Content Include="distribution\vendor\jquery.cookie\cookie.jquery.json" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\.github\ISSUE_TEMPLATE.md" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\bower.json" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\css\materialdesignicons.css.map" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\css\materialdesignicons.min.css.map" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\fonts\materialdesignicons-webfont.woff2" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\license.md" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\package.json" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\README.md" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\scss\materialdesignicons.scss" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\scss\_animated.scss" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\scss\_core.scss" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\scss\_extras.scss" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\scss\_functions.scss" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\scss\_icons.scss" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\scss\_path.scss" />
+    <Content Include="distribution\icons-reference\MaterialDesign-Webfont-master\scss\_variables.scss" />
+    <Content Include="ModalForm.aspx" />
+    <Content Include="Site.Master" />
+    <Content Include="Administration\UserLogin.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="distribution\vendor\jquery-ui-1.12.1.custom\package.json" />
+    <Content Include="Modal.Master" />
+    <Content Include="distribution\vendor\calendar-master\LICENSE" />
+    <Content Include="distribution\vendor\calendar-master\README.md" />
+    <Content Include="DynamicsPortal.pfx" />
+    <Content Include="ErrorLog.log" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administration\User Management\SysRolesMenuItems_ListPage.aspx.cs">
+      <DependentUpon>SysRolesMenuItems_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\User Management\SysRolesMenuItems_ListPage.aspx.designer.cs">
+      <DependentUpon>SysRolesMenuItems_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\User Management\SysUserRoles_ListPage.aspx.cs">
+      <DependentUpon>SysUserRoles_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\User Management\SysUserRoles_ListPage.aspx.designer.cs">
+      <DependentUpon>SysUserRoles_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\User Management\SysRoles_ListPage.aspx.cs">
+      <DependentUpon>SysRoles_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\User Management\SysRoles_ListPage.aspx.designer.cs">
+      <DependentUpon>SysRoles_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\User Management\SysUserInfo_ResetPassword.aspx.cs">
+      <DependentUpon>SysUserInfo_ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\User Management\SysUserInfo_ResetPassword.aspx.designer.cs">
+      <DependentUpon>SysUserInfo_ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\User Management\SysUserInfo_ChangePassword.aspx.cs">
+      <DependentUpon>SysUserInfo_ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\User Management\SysUserInfo_ChangePassword.aspx.designer.cs">
+      <DependentUpon>SysUserInfo_ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\User Management\SysUserInfo_ListPage.aspx.cs">
+      <DependentUpon>SysUserInfo_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\User Management\SysUserInfo_ListPage.aspx.designer.cs">
+      <DependentUpon>SysUserInfo_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\User Management\SysUserInfo_Create.aspx.cs">
+      <DependentUpon>SysUserInfo_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\User Management\SysUserInfo_Create.aspx.designer.cs">
+      <DependentUpon>SysUserInfo_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClearControls.cs" />
+    <Compile Include="ControlsHelper.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownList_AllActiveFinancialDims.ascx.cs">
+      <DependentUpon>DropDownList_AllActiveFinancialDims.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownList_AllActiveFinancialDims.ascx.designer.cs">
+      <DependentUpon>DropDownList_AllActiveFinancialDims.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownList_AllEmployeeDetails.ascx.cs">
+      <DependentUpon>DropDownList_AllEmployeeDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownList_AllEmployeeDetails.ascx.designer.cs">
+      <DependentUpon>DropDownList_AllEmployeeDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownList_PayGroupPayPeriods.ascx.cs">
+      <DependentUpon>DropDownList_PayGroupPayPeriods.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownList_PayGroupPayPeriods.ascx.designer.cs">
+      <DependentUpon>DropDownList_PayGroupPayPeriods.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownList_EmployeeDetails.ascx.cs">
+      <DependentUpon>DropDownList_EmployeeDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownList_EmployeeDetails.ascx.designer.cs">
+      <DependentUpon>DropDownList_EmployeeDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\400.aspx.cs">
+      <DependentUpon>400.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\400.aspx.designer.cs">
+      <DependentUpon>400.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\401.aspx.cs">
+      <DependentUpon>401.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\401.aspx.designer.cs">
+      <DependentUpon>401.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\500.aspx.cs">
+      <DependentUpon>500.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\500.aspx.designer.cs">
+      <DependentUpon>500.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\503.aspx.cs">
+      <DependentUpon>503.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\503.aspx.designer.cs">
+      <DependentUpon>503.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\508.aspx.cs">
+      <DependentUpon>508.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\508.aspx.designer.cs">
+      <DependentUpon>508.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\511.aspx.cs">
+      <DependentUpon>511.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\511.aspx.designer.cs">
+      <DependentUpon>511.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\403.aspx.cs">
+      <DependentUpon>403.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\403.aspx.designer.cs">
+      <DependentUpon>403.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\CustomErrorPage.aspx.cs">
+      <DependentUpon>CustomErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\CustomErrorPage.aspx.designer.cs">
+      <DependentUpon>CustomErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHcmPersonEducation.aspx.cs">
+      <DependentUpon>ESSHcmPersonEducation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHcmPersonEducation.aspx.designer.cs">
+      <DependentUpon>ESSHcmPersonEducation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRSubDepartment.aspx.cs">
+      <DependentUpon>ESSHRSubDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRSubDepartment.aspx.designer.cs">
+      <DependentUpon>ESSHRSubDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRSubDepartment_ListPage.aspx.cs">
+      <DependentUpon>ESSHRSubDepartment_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRSubDepartment_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSHRSubDepartment_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\EssWorkerBankAccount_Create.aspx.cs">
+      <DependentUpon>EssWorkerBankAccount_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\EssWorkerBankAccount_Create.aspx.designer.cs">
+      <DependentUpon>EssWorkerBankAccount_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\EssWorkerBankAccount_ListPage.aspx.cs">
+      <DependentUpon>EssWorkerBankAccount_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\EssWorkerBankAccount_ListPage.aspx.designer.cs">
+      <DependentUpon>EssWorkerBankAccount_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeLoanReq_Create.aspx.cs">
+      <DependentUpon>ESSPREmployeeLoanReq_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeLoanReq_Create.aspx.designer.cs">
+      <DependentUpon>ESSPREmployeeLoanReq_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\PREmployeePFRequest_Create.aspx.cs">
+      <DependentUpon>PREmployeePFRequest_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\PREmployeePFRequest_Create.aspx.designer.cs">
+      <DependentUpon>PREmployeePFRequest_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\PREmployeePFRequest_ListPage.aspx.cs">
+      <DependentUpon>PREmployeePFRequest_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\PREmployeePFRequest_ListPage.aspx.designer.cs">
+      <DependentUpon>PREmployeePFRequest_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\PREmployeePFWithDrawl_Create.aspx.cs">
+      <DependentUpon>PREmployeePFWithDrawl_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\PREmployeePFWithDrawl_Create.aspx.designer.cs">
+      <DependentUpon>PREmployeePFWithDrawl_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\PREmployeePFWithDrawl_ListPage.aspx.cs">
+      <DependentUpon>PREmployeePFWithDrawl_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\PREmployeePFWithDrawl_ListPage.aspx.designer.cs">
+      <DependentUpon>PREmployeePFWithDrawl_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\Reports\ESSJmgAttendanceRegister_TimeSheet_MyTeam.aspx.cs">
+      <DependentUpon>ESSJmgAttendanceRegister_TimeSheet_MyTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\Reports\ESSJmgAttendanceRegister_TimeSheet_MyTeam.aspx.designer.cs">
+      <DependentUpon>ESSJmgAttendanceRegister_TimeSheet_MyTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\Reports\ESSJmgAttendanceRegister_TimeSheet.aspx.cs">
+      <DependentUpon>ESSJmgAttendanceRegister_TimeSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\Reports\ESSJmgAttendanceRegister_TimeSheet.aspx.designer.cs">
+      <DependentUpon>ESSJmgAttendanceRegister_TimeSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\Reports\ESSJmgInOutSheet_MyTeam.aspx.cs">
+      <DependentUpon>ESSJmgInOutSheet_MyTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\Reports\ESSJmgInOutSheet_MyTeam.aspx.designer.cs">
+      <DependentUpon>ESSJmgInOutSheet_MyTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\Reports\ESSJmgInOutSheet.aspx.cs">
+      <DependentUpon>ESSJmgInOutSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\Reports\ESSJmgInOutSheet.aspx.designer.cs">
+      <DependentUpon>ESSJmgInOutSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\TA\ESSJmgProfileCalendar_ListPage.aspx.cs">
+      <DependentUpon>ESSJmgProfileCalendar_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\TA\ESSJmgProfileCalendar_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSJmgProfileCalendar_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\TA\ESSJmgTimecardTable_ListPage_del.aspx.cs">
+      <DependentUpon>ESSJmgTimecardTable_ListPage_del.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\TA\ESSJmgTimecardTable_ListPage_del.aspx.designer.cs">
+      <DependentUpon>ESSJmgTimecardTable_ListPage_del.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\TA\ESSJmgTimecardTable_ListPage.aspx.cs">
+      <DependentUpon>ESSJmgTimecardTable_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\TA\ESSJmgTimecardTable_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSJmgTimecardTable_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSAPDailyGroomingAppraisalsAssignedToMe_ListPage.aspx.cs">
+      <DependentUpon>ESSAPDailyGroomingAppraisalsAssignedToMe_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSAPDailyGroomingAppraisalsAssignedToMe_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSAPDailyGroomingAppraisalsAssignedToMe_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSAPEmployeeAppraisalsAssignedToMe_ListPage.aspx.cs">
+      <DependentUpon>ESSAPEmployeeAppraisalsAssignedToMe_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSAPEmployeeAppraisalsAssignedToMe_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSAPEmployeeAppraisalsAssignedToMe_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRPolicies_ListPage.aspx.cs">
+      <DependentUpon>ESSHRPolicies_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRPolicies_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSHRPolicies_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\HcmEmployeeTransferRequests_Create.aspx.cs">
+      <DependentUpon>HcmEmployeeTransferRequests_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\HcmEmployeeTransferRequests_Create.aspx.designer.cs">
+      <DependentUpon>HcmEmployeeTransferRequests_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\HREmployeesReportToMe_ListPage.aspx.cs">
+      <DependentUpon>HREmployeesReportToMe_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\HREmployeesReportToMe_ListPage.aspx.designer.cs">
+      <DependentUpon>HREmployeesReportToMe_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHcmOpenCourse_ListPage.aspx.cs">
+      <DependentUpon>ESSHcmOpenCourse_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHcmOpenCourse_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSHcmOpenCourse_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHcmPersonIdentificationNumber.aspx.cs">
+      <DependentUpon>ESSHcmPersonIdentificationNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHcmPersonIdentificationNumber.aspx.designer.cs">
+      <DependentUpon>ESSHcmPersonIdentificationNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\ESSDocumentAttachment.aspx.cs">
+      <DependentUpon>ESSDocumentAttachment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\ESSDocumentAttachment.aspx.designer.cs">
+      <DependentUpon>ESSDocumentAttachment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHcmPersonImage.aspx.cs">
+      <DependentUpon>ESSHcmPersonImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHcmPersonImage.aspx.designer.cs">
+      <DependentUpon>ESSHcmPersonImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRHiringRequisition_ListPage.aspx.cs">
+      <DependentUpon>ESSHRHiringRequisition_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRHiringRequisition_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSHRHiringRequisition_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRHiringRequisition_Create.aspx.cs">
+      <DependentUpon>ESSHRHiringRequisition_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRHiringRequisition_Create.aspx.designer.cs">
+      <DependentUpon>ESSHRHiringRequisition_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSLogisticsElectronicAddress.aspx.cs">
+      <DependentUpon>ESSLogisticsElectronicAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSLogisticsElectronicAddress.aspx.designer.cs">
+      <DependentUpon>ESSLogisticsElectronicAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSLogisticsLocation.aspx.cs">
+      <DependentUpon>ESSLogisticsLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSLogisticsLocation.aspx.designer.cs">
+      <DependentUpon>ESSLogisticsLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeAdvance_Create.aspx.cs">
+      <DependentUpon>ESSPREmployeeAdvance_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeAdvance_Create.aspx.designer.cs">
+      <DependentUpon>ESSPREmployeeAdvance_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeAdvance_ListPage.aspx.cs">
+      <DependentUpon>ESSPREmployeeAdvance_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeAdvance_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSPREmployeeAdvance_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeEOS_Create.aspx.cs">
+      <DependentUpon>ESSPREmployeeEOS_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeEOS_Create.aspx.designer.cs">
+      <DependentUpon>ESSPREmployeeEOS_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeEOS_ListPage.aspx.cs">
+      <DependentUpon>ESSPREmployeeEOS_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeEOS_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSPREmployeeEOS_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeLeave_Create.aspx.cs">
+      <DependentUpon>ESSPREmployeeLeave_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeLeave_Create.aspx.designer.cs">
+      <DependentUpon>ESSPREmployeeLeave_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeLeave_ListPage.aspx.cs">
+      <DependentUpon>ESSPREmployeeLeave_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeLeave_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSPREmployeeLeave_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeLoan_Create.aspx.cs">
+      <DependentUpon>ESSPREmployeeLoan_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeLoan_Create.aspx.designer.cs">
+      <DependentUpon>ESSPREmployeeLoan_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPRProvidentFund_MyInquiry.aspx.cs">
+      <DependentUpon>ESSPRProvidentFund_MyInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPRProvidentFund_MyInquiry.aspx.designer.cs">
+      <DependentUpon>ESSPRProvidentFund_MyInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPRProvidentFund_MyTeamInquiry.aspx.cs">
+      <DependentUpon>ESSPRProvidentFund_MyTeamInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPRProvidentFund_MyTeamInquiry.aspx.designer.cs">
+      <DependentUpon>ESSPRProvidentFund_MyTeamInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREntitlementBalance.aspx.cs">
+      <DependentUpon>ESSPREntitlementBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREntitlementBalance.aspx.designer.cs">
+      <DependentUpon>ESSPREntitlementBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeLoan_ListPage.aspx.cs">
+      <DependentUpon>ESSPREmployeeLoan_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\PR\ESSPREmployeeLoan_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSPREmployeeLoan_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRBusinessTrip_Create.aspx.cs">
+      <DependentUpon>ESSHRBusinessTrip_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRBusinessTrip_Create.aspx.designer.cs">
+      <DependentUpon>ESSHRBusinessTrip_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSBusinessTrip_ListPage.aspx.cs">
+      <DependentUpon>ESSBusinessTrip_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSBusinessTrip_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSBusinessTrip_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRHelpDeskRequest_Create.aspx.cs">
+      <DependentUpon>ESSHRHelpDeskRequest_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRHelpDeskRequest_Create.aspx.designer.cs">
+      <DependentUpon>ESSHRHelpDeskRequest_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRHelpDeskRequest_ListPage.aspx.cs">
+      <DependentUpon>ESSHRHelpDeskRequest_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRHelpDeskRequest_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSHRHelpDeskRequest_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRPersonalDetails.aspx.cs">
+      <DependentUpon>ESSHRPersonalDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRPersonalDetails.aspx.designer.cs">
+      <DependentUpon>ESSHRPersonalDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRProfessionChange_Create.aspx.cs">
+      <DependentUpon>ESSHRProfessionChange_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRProfessionChange_Create.aspx.designer.cs">
+      <DependentUpon>ESSHRProfessionChange_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRProfessionChange_ListPage.aspx.cs">
+      <DependentUpon>ESSHRProfessionChange_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRProfessionChange_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSHRProfessionChange_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRRejoining_Create.aspx.cs">
+      <DependentUpon>ESSHRRejoining_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRRejoining_Create.aspx.designer.cs">
+      <DependentUpon>ESSHRRejoining_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRRejoining_ListPage.aspx.cs">
+      <DependentUpon>ESSHRRejoining_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRRejoining_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSHRRejoining_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRRequestForLetter_Create.aspx.cs">
+      <DependentUpon>ESSHRRequestForLetter_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRRequestForLetter_Create.aspx.designer.cs">
+      <DependentUpon>ESSHRRequestForLetter_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRRequestForLetter_ListPage.aspx.cs">
+      <DependentUpon>ESSHRRequestForLetter_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\HR\ESSHRRequestForLetter_ListPage.aspx.designer.cs">
+      <DependentUpon>ESSHRRequestForLetter_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\Reports\ESSPRTaxCertificate.aspx.cs">
+      <DependentUpon>ESSPRTaxCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\Reports\ESSPRTaxCertificate.aspx.designer.cs">
+      <DependentUpon>ESSPRTaxCertificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\TA\JmgCompensatoryLeave_Create.aspx.cs">
+      <DependentUpon>JmgCompensatoryLeave_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\TA\JmgCompensatoryLeave_Create.aspx.designer.cs">
+      <DependentUpon>JmgCompensatoryLeave_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\TA\JmgCompensatoryLeave_ListPage.aspx.cs">
+      <DependentUpon>JmgCompensatoryLeave_ListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\TA\JmgCompensatoryLeave_ListPage.aspx.designer.cs">
+      <DependentUpon>JmgCompensatoryLeave_ListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\TA\JmgOffDayAllowance_Create.aspx.cs">
+      <DependentUpon>JmgOffDayAllowance_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\TA\JmgOffDayAllowance_Create.aspx.designer.cs">
+      <DependentUpon>JmgOffDayAllowance_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\TA\JmgOffDayAllowance_listPage.aspx.cs">
+      <DependentUpon>JmgOffDayAllowance_listPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\TA\JmgOffDayAllowance_listPage.aspx.designer.cs">
+      <DependentUpon>JmgOffDayAllowance_listPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Favourites.cs" />
+    <Compile Include="FlushOperationResults.cs" />
+    <Compile Include="GenerateMenu.cs" />
+    <Compile Include="GenerateRandomPassword.cs" />
+    <Compile Include="ImportUsers.cs" />
+    <Compile Include="MainForm.aspx.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainForm.aspx.designer.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS\Reports\ESSPRSalarySlip.aspx.cs">
+      <DependentUpon>ESSPRSalarySlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS\Reports\ESSPRSalarySlip.aspx.designer.cs">
+      <DependentUpon>ESSPRSalarySlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Modal.Master.cs">
+      <DependentUpon>Modal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modal.Master.designer.cs">
+      <DependentUpon>Modal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ModalForm.aspx.cs">
+      <DependentUpon>ModalForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModalForm.aspx.designer.cs">
+      <DependentUpon>ModalForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecureQueryString.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysUserInfo.cs" />
+    <Compile Include="UserCompanyDetails.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AuthenticationHelper\AuthenticationHelper.csproj">
+      <Project>{8bb6daec-e331-4785-99ae-12345948347e}</Project>
+      <Name>AuthenticationHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BussinessLogic\BussinessLogic.csproj">
+      <Project>{3ad9cbc4-1188-462d-b8ad-cee6ff840521}</Project>
+      <Name>BussinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BussinessObject\BussinessObject.csproj">
+      <Project>{4c284728-8557-4b19-8128-2267e122acc4}</Project>
+      <Name>BussinessObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{57c0bbcb-b1b2-4b26-8c07-cd1af318b2eb}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeneralAuxiliary\GeneralAuxiliary.csproj">
+      <Project>{4f2f3e73-5aa0-42d0-affb-126493b475ac}</Project>
+      <Name>GeneralAuxiliary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PortalIntegration\PortalIntegration.csproj">
+      <Project>{a7f35c8b-33ae-4927-b047-fe245c09e1d2}</Project>
+      <Name>PortalIntegration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="distribution\vendor\font-awesome\less\" />
+    <Folder Include="distribution\vendor\font-awesome\scss\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DynamicsPortal.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>38474</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:38474/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

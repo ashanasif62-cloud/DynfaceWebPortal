@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="da85d68b-d0d0-4013-b04a-4c683af962aa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/JmgAttendanceIntegrationSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="JmgAttendanceIntegrationSvcGroup4.xsd" MetadataType="Schema" ID="6bd2f532-d193-4d6a-8296-01a43c272723" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgAttendanceIntegrationSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="JmgAttendanceIntegrationSvcGroup3.xsd" MetadataType="Schema" ID="e67c604e-771b-48fb-be45-b9062936f806" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgAttendanceIntegrationSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="JmgAttendanceIntegrationSvcGroup6.xsd" MetadataType="Schema" ID="e673e373-47a8-4b3c-996b-411404cc31a0" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgAttendanceIntegrationSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="JmgAttendanceIntegrationSvcGroup.xsd" MetadataType="Schema" ID="3e3175c3-8cf8-4ce9-9056-e4a9c40bebdd" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgAttendanceIntegrationSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="JmgAttendanceIntegrationSvcGroup2.xsd" MetadataType="Schema" ID="59792b8a-2613-4d5a-b282-4413d96d82a5" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgAttendanceIntegrationSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="JmgAttendanceIntegrationSvcGroup.disco" MetadataType="Disco" ID="acb60904-e306-4015-bdcf-42f51cf35dbe" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgAttendanceIntegrationSvcGroup?disco" />
+    <MetadataFile FileName="JmgAttendanceIntegrationSvcGroup1.xsd" MetadataType="Schema" ID="15198f97-3e6c-4ad6-bf64-1fcb6ebf45e7" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgAttendanceIntegrationSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="JmgAttendanceIntegrationSvcGroup.wsdl" MetadataType="Wsdl" ID="1eb60e88-3127-4f5f-b4a9-17c28ea3d74c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgAttendanceIntegrationSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="JmgAttendanceIntegrationSvcGroup1.wsdl" MetadataType="Wsdl" ID="da468bfc-0feb-4b87-b9f0-caace2c2230e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgAttendanceIntegrationSvcGroup?wsdl" />
+    <MetadataFile FileName="JmgAttendanceIntegrationSvcGroup5.xsd" MetadataType="Schema" ID="7841347c-d43f-4175-a4e1-292d7838f1dc" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgAttendanceIntegrationSvcGroup?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

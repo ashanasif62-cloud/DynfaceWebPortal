@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2c6c0ba6-5a79-4b55-a95c-41a02607a1e1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/HRSendEmailSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HRSendEmailSvcGroup4.xsd" MetadataType="Schema" ID="941d8862-0cfc-4cb7-b33d-b1a1341504ba" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HRSendEmailSvcGroup2.xsd" MetadataType="Schema" ID="65ee246c-0825-493a-826c-4e01e53e418c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HRSendEmailSvcGroup.wsdl" MetadataType="Wsdl" ID="03b8c751-fc51-44b0-9402-68171e9a390c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HRSendEmailSvcGroup3.xsd" MetadataType="Schema" ID="7f86048f-8c15-437d-a4fa-68656cfc9562" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HRSendEmailSvcGroup6.xsd" MetadataType="Schema" ID="c4044349-7b86-489a-851a-687b227f22a3" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HRSendEmailSvcGroup.disco" MetadataType="Disco" ID="2ae4f726-c80e-4bd6-98dc-419711b88cbb" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?disco" />
+    <MetadataFile FileName="HRSendEmailSvcGroup5.xsd" MetadataType="Schema" ID="c0ea2e3a-d47e-4141-9292-c4c0af5537dc" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HRSendEmailSvcGroup1.xsd" MetadataType="Schema" ID="b63e77c8-7b9a-4ad0-82e9-db6cbf69093f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HRSendEmailSvcGroup.xsd" MetadataType="Schema" ID="108ad937-f321-45ff-baf8-57696bf33bb2" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HRSendEmailSvcGroup1.wsdl" MetadataType="Wsdl" ID="1201d1c1-41bd-4cae-be17-41e96abeb072" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

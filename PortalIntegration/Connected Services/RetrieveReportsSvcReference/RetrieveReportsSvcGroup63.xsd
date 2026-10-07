@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.IO" />
+  <xs:element name="RetrieveSalarySlipReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_payPeriodCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveSalarySlipReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="result" nillable="true" type="q1:MemoryStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveTaxCertificateReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_payperiodyear" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveTaxCertificateReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="result" nillable="true" type="q2:MemoryStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewSalarySlipReportString">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_payPeriodCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewSalarySlipReportStringResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendSalarySlipEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_payPeriodCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendSalarySlipEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendTaxCertificateEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_payPeriodYear" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendTaxCertificateEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewTransferOrderOverViewReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_inventColorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_inventLocationId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_inventSizeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_inventStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_inventStyleId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_licensePlateId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_showLines" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_showReservation" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_showTaxInformation" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_transferId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewConfigId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_wmsLocationId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewTransferOrderOverViewReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="result" nillable="true" type="q3:MemoryStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewOnHandInventory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewConfigId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventBatchId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventColorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventLocationId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventOwnerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventSerialId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventSiteId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventSizeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventStyleId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventVersion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewLicensePlate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewWMSLocationId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewOnHandInventoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="result" nillable="true" type="q4:MemoryStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewAttendanceRegister">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_toDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewAttendanceRegisterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="result" nillable="true" type="q5:MemoryStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendTASAttendanceRegister">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_toDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendTASAttendanceRegisterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewTASEmployeeWiseDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_toDadate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewTASEmployeeWiseDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="result" nillable="true" type="q6:MemoryStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendTASEmployeeWiseAttendanceDetailReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_toDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendTASEmployeeWiseAttendanceDetailReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewTASEmployeeAttendanceSummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_toDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewTASEmployeeAttendanceSummaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="result" nillable="true" type="q7:MemoryStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendTASEmployeeWiseAttendanceSummaryReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_toDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendTASEmployeeWiseAttendanceSummaryReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewInventTransferJournalReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_journalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewConfigId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventBatchId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventColorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventLocationId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventOwnerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventSerialId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventSiteId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventSizeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventStyleId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventVersion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewLicensePlate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewWMSLocationId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewInventTransferJournalReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="result" nillable="true" type="q8:MemoryStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewTransferJournalShipment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_transDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_transferId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewConfigId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventBatchId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventColorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventLocationId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventOwnerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventSerialId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventSiteId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventSizeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventStyleId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventVersion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewLicensePlate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewWMSLocationId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_voucherId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewTransferJournalShipmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="result" nillable="true" type="q9:MemoryStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewTransferJournalReceive">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_transDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_transferId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewConfigId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventBatchId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventColorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventLocationId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventOwnerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventSerialId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventSiteId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventSizeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventStyleId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewInventVersion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewLicensePlate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_viewWMSLocationId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_voucherId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewTransferJournalReceiveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="result" nillable="true" type="q10:MemoryStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

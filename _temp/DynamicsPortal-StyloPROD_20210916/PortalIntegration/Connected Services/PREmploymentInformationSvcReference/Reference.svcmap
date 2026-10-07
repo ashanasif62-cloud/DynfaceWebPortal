@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="917e27c4-2036-4035-b16c-acf1e06342f8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PREmploymentInformationSvcGroup2.wsdl" MetadataType="Wsdl" ID="02eb7422-3c8d-4cf0-ac31-9a84ae29a92f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?wsdl" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup1.disco" MetadataType="Disco" ID="22161862-9937-405d-a9da-d9629ed8b728" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?disco" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup33.xsd" MetadataType="Schema" ID="aa889bb3-d081-406e-9bb0-39a9f55bb248" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup32.xsd" MetadataType="Schema" ID="31880ccc-ff06-4a00-8aea-986c0e4de263" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup31.xsd" MetadataType="Schema" ID="f2bdbc18-90e9-41b2-b0c6-fe3f520517f0" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup3.xsd" MetadataType="Schema" ID="f00cd019-376d-412d-a54c-1362873d2bd1" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup36.xsd" MetadataType="Schema" ID="5e9f2993-b39a-4dc5-9651-eb0e5c7537a1" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup34.xsd" MetadataType="Schema" ID="4917b561-042c-4635-8de0-f4138ee4476c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup21.wsdl" MetadataType="Wsdl" ID="274729fb-2bf6-4d9d-95a5-9daff1edb0fe" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup35.xsd" MetadataType="Schema" ID="be6b2995-5286-42a4-8546-ff8282439a6c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

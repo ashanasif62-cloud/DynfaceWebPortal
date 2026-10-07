@@ -1,0 +1,9 @@
+{
+    "Title": "UAT",
+    // "ActiveDirectoryResource": "https://maison-uat.sandbox.operations.dynamics.com/",
+    "ActiveDirectoryResource": "https://usnconeboxax1aos.cloud.onebox.dynamics.com/",
+    "ActiveDirectoryTenant": "beec7e8a-5c23-49d2-a272-12b71dc561ab",
+    "ActiveDirectoryClientAppId": "3fd6560a-e886-4f2f-8662-153e0b6b3bfd",
+    "ActiveDirectoryClientAppSecret": "sHR8Q~iNtnXtmxCBilgIZWVmhkrI20ygHLBtvb5s"
+
+}

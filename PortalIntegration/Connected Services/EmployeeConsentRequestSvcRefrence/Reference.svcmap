@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="a3216d54-13ec-4694-99e4-b791e3394c09" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeConsentRequuestSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PREmployeeConsentRequuestSvcGroup.xsd" MetadataType="Schema" ID="ed8180e5-64bc-413a-807e-d20d7b9d7bd9" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeConsentRequuestSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PREmployeeConsentRequuestSvcGroup.disco" MetadataType="Disco" ID="390142b1-9d1e-4130-8262-defb8de5db7b" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeConsentRequuestSvcGroup?disco" />
+    <MetadataFile FileName="PREmployeeConsentRequuestSvcGroup1.xsd" MetadataType="Schema" ID="9080d8ab-1e19-45e1-9b43-4d0eb8c5a9be" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeConsentRequuestSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PREmployeeConsentRequuestSvcGroup2.xsd" MetadataType="Schema" ID="1e30432a-bf4a-4291-ba69-0271b7131ad1" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeConsentRequuestSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PREmployeeConsentRequuestSvcGroup3.xsd" MetadataType="Schema" ID="d99b4e31-5b59-47ac-adee-41af3529f229" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeConsentRequuestSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PREmployeeConsentRequuestSvcGroup4.xsd" MetadataType="Schema" ID="37adecc7-32ee-491b-ba5c-90def15b2015" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeConsentRequuestSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PREmployeeConsentRequuestSvcGroup5.xsd" MetadataType="Schema" ID="e184d43f-456d-42c4-887a-2a786d1516b0" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeConsentRequuestSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PREmployeeConsentRequuestSvcGroup6.xsd" MetadataType="Schema" ID="f9d7d247-a246-4c72-b585-65d10ebde386" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeConsentRequuestSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PREmployeeConsentRequuestSvcGroup.wsdl" MetadataType="Wsdl" ID="9fc78958-a960-4890-b320-76fd1f5abeb2" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeConsentRequuestSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PREmployeeConsentRequuestSvcGroup1.wsdl" MetadataType="Wsdl" ID="df7681d5-f8ad-44f5-9fef-a17ce575231e" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREmployeeConsentRequuestSvcGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

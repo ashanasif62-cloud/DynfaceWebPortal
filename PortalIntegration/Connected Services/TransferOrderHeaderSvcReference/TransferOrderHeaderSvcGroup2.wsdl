@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="http://tempuri.org" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="TransferOrderHeaderSvcGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_TransferOrderHeaderSvc_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="https://maison-uat.sandbox.operations.dynamics.com/soap/services/TransferOrderHeaderSvcGroup?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_TransferOrderHeaderSvc" type="i0:TransferOrderHeaderSvc">
+    <wsp:PolicyReference URI="#BasicHttpBinding_TransferOrderHeaderSvc_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="create">
+      <soap:operation soapAction="http://tempuri.org/TransferOrderHeaderSvc/create" style="document" />
+      <wsdl:input name="create">
+        <soap:header message="i0:create_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="createResponse">
+        <soap:header message="i0:createResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="shipTransferOrderMultiple">
+      <soap:operation soapAction="http://tempuri.org/TransferOrderHeaderSvc/shipTransferOrderMultiple" style="document" />
+      <wsdl:input name="shipTransferOrderMultiple">
+        <soap:header message="i0:shipTransferOrderMultiple_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="shipTransferOrderMultipleResponse">
+        <soap:header message="i0:shipTransferOrderMultipleResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="shipTransferOrder">
+      <soap:operation soapAction="http://tempuri.org/TransferOrderHeaderSvc/shipTransferOrder" style="document" />
+      <wsdl:input name="shipTransferOrder">
+        <soap:header message="i0:shipTransferOrder_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="shipTransferOrderResponse">
+        <soap:header message="i0:shipTransferOrderResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAll">
+      <soap:operation soapAction="http://tempuri.org/TransferOrderHeaderSvc/retrieveAll" style="document" />
+      <wsdl:input name="retrieveAll">
+        <soap:header message="i0:retrieveAll_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveAllResponse">
+        <soap:header message="i0:retrieveAllResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <soap:operation soapAction="http://tempuri.org/TransferOrderHeaderSvc/update" style="document" />
+      <wsdl:input name="update">
+        <soap:header message="i0:update_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateResponse">
+        <soap:header message="i0:updateResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromwarehouses">
+      <soap:operation soapAction="http://tempuri.org/TransferOrderHeaderSvc/retrieveFromwarehouses" style="document" />
+      <wsdl:input name="retrieveFromwarehouses">
+        <soap:header message="i0:retrieveFromwarehouses_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveFromwarehousesResponse">
+        <soap:header message="i0:retrieveFromwarehousesResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrievetowarehouses">
+      <soap:operation soapAction="http://tempuri.org/TransferOrderHeaderSvc/retrievetowarehouses" style="document" />
+      <wsdl:input name="retrievetowarehouses">
+        <soap:header message="i0:retrievetowarehouses_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrievetowarehousesResponse">
+        <soap:header message="i0:retrievetowarehousesResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="http://tempuri.org/TransferOrderHeaderSvc/delete" style="document" />
+      <wsdl:input name="delete">
+        <soap:header message="i0:delete_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteResponse">
+        <soap:header message="i0:deleteResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="FindByTransferID">
+      <soap:operation soapAction="http://tempuri.org/TransferOrderHeaderSvc/FindByTransferID" style="document" />
+      <wsdl:input name="FindByTransferID">
+        <soap:header message="i0:FindByTransferID_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="FindByTransferIDResponse">
+        <soap:header message="i0:FindByTransferIDResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="receiveTransferOrderMultiple">
+      <soap:operation soapAction="http://tempuri.org/TransferOrderHeaderSvc/receiveTransferOrderMultiple" style="document" />
+      <wsdl:input name="receiveTransferOrderMultiple">
+        <soap:header message="i0:receiveTransferOrderMultiple_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="receiveTransferOrderMultipleResponse">
+        <soap:header message="i0:receiveTransferOrderMultipleResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="recieveTransferOrder">
+      <soap:operation soapAction="http://tempuri.org/TransferOrderHeaderSvc/recieveTransferOrder" style="document" />
+      <wsdl:input name="recieveTransferOrder">
+        <soap:header message="i0:recieveTransferOrder_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="recieveTransferOrderResponse">
+        <soap:header message="i0:recieveTransferOrderResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TransferOrderHeaderSvcGroup">
+    <wsdl:port name="BasicHttpBinding_TransferOrderHeaderSvc" binding="tns:BasicHttpBinding_TransferOrderHeaderSvc">
+      <soap:address location="https://maison-uat.sandbox.operations.dynamics.com/soap/services/TransferOrderHeaderSvcGroup" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

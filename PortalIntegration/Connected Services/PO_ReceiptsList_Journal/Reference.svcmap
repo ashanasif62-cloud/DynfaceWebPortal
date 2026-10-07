@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="ffd8613e-3d19-46ad-9c3e-d98604280fe3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PO_ReceiptsList_JournalSvcServiceGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PO_ReceiptsList_JournalSvcServiceGroup2.wsdl" MetadataType="Wsdl" ID="52369a79-8d72-4859-917f-2ab1e1c74b4c" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PO_ReceiptsList_JournalSvcServiceGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PO_ReceiptsList_JournalSvcServiceGroup7.xsd" MetadataType="Schema" ID="e255e305-8201-40b5-8d48-de10e839ae42" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PO_ReceiptsList_JournalSvcServiceGroup?xsd=xsd5" />
+    <MetadataFile FileName="PO_ReceiptsList_JournalSvcServiceGroup71.xsd" MetadataType="Schema" ID="aa2ad065-c20a-411e-bcc0-98ad99a453d2" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PO_ReceiptsList_JournalSvcServiceGroup?xsd=xsd6" />
+    <MetadataFile FileName="PO_ReceiptsList_JournalSvcServiceGroup72.xsd" MetadataType="Schema" ID="858cba68-78c5-4f18-8421-be1197334bca" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PO_ReceiptsList_JournalSvcServiceGroup?xsd=xsd0" />
+    <MetadataFile FileName="PO_ReceiptsList_JournalSvcServiceGroup21.wsdl" MetadataType="Wsdl" ID="d1968779-dc40-4132-bbbb-f618cb6d48cc" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PO_ReceiptsList_JournalSvcServiceGroup?wsdl" />
+    <MetadataFile FileName="PO_ReceiptsList_JournalSvcServiceGroup73.xsd" MetadataType="Schema" ID="c8c83a6e-12e2-4c1a-81c0-71c13ea8609e" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PO_ReceiptsList_JournalSvcServiceGroup?xsd=xsd1" />
+    <MetadataFile FileName="PO_ReceiptsList_JournalSvcServiceGroup74.xsd" MetadataType="Schema" ID="67fb59ec-cd4b-4be4-b463-a2a009ee4350" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PO_ReceiptsList_JournalSvcServiceGroup?xsd=xsd3" />
+    <MetadataFile FileName="PO_ReceiptsList_JournalSvcServiceGroup1.disco" MetadataType="Disco" ID="f7d6392c-16a4-4879-a355-38937db7fc63" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PO_ReceiptsList_JournalSvcServiceGroup?disco" />
+    <MetadataFile FileName="PO_ReceiptsList_JournalSvcServiceGroup75.xsd" MetadataType="Schema" ID="835aed9d-e70b-4e4d-8076-e01744f98f25" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PO_ReceiptsList_JournalSvcServiceGroup?xsd=xsd2" />
+    <MetadataFile FileName="PO_ReceiptsList_JournalSvcServiceGroup76.xsd" MetadataType="Schema" ID="5e260bf8-9d6b-492a-9c99-a4676e97b18f" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PO_ReceiptsList_JournalSvcServiceGroup?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

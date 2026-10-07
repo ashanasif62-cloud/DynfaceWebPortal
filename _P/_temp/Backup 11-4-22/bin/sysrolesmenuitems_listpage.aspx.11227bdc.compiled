@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Administration/User Management/SysRolesMenuItems_ListPage.aspx" hash="ffffffefe3a9c958" filehash="25c70b5ef102008b" flags="110000" assembly="MaisonPortal" type="ASP.administration_user_management_sysrolesmenuitems_listpage_aspx">
+  <filedeps>
+    <filedep name="/Administration/User Management/SysRolesMenuItems_ListPage.aspx" />
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

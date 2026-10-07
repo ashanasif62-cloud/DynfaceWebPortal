@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DropDownList_PayGroupPayPeriods.ascx" hash="ffffffefe3a9c958" filehash="ffffc56ca23835e2" flags="110000" assembly="MaisonPortal" type="ASP.dropdownlist_paygrouppayperiods_ascx">
+  <filedeps>
+    <filedep name="/DropDownList_PayGroupPayPeriods.ascx" />
+  </filedeps>
+</preserve>

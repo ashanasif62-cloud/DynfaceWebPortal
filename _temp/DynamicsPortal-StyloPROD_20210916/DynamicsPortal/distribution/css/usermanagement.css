@@ -1,0 +1,115 @@
+﻿
+span {
+    text-align: center;
+    font: 12px,large;
+    font-family: Arial;
+    font-weight: 400;
+}
+
+
+form {
+    padding: 19px;
+    margin-bottom: 20px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 0px solid #0c0d0e;
+    border-radius: 8px;
+    display: block;
+    margin-top: 0em;
+    margin-left: 20px;
+}
+
+.tb {
+    border: 1px solid #717171;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #272b30;
+    width: 143px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.btn {
+    height: 28px;
+    width: 80px;
+    color: gray;
+    margin-top: 10px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+    .btn:hover {
+        background: #8f8e8e;
+        color: white;
+    }
+
+.btn-cancel {
+    margin-left: 0px;
+}
+
+.btn-add {
+    margin-left: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px 0 5px;
+}
+
+.lead {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.tbl {
+    border-spacing: 10px 2px;
+}
+
+.tbl_btn {
+    margin-left: 10px;
+}
+
+.page-header {
+    padding-bottom: 3px;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #1c1e22;
+}
+
+.ddl {
+    width: 155px;
+    height: 25px;
+    padding: 1px 1px;
+    padding-left: 10px;
+    border: 1px solid #717171;
+    padding: 3px 12px;
+}
+
+label {
+    text-align: center;
+    font: 10px,large;
+    font-family: Arial;
+    font-weight: 700;
+}
+
+.group_detail {
+    height: 0px;
+    padding-bottom: 0px;
+}
+
+.group_header {
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-top: 10px;
+    height: 20px;
+}
+
+tr {
+    margin-right: 10px;
+}

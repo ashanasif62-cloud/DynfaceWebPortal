@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="1f4daa2c-5b1e-4bd2-b8d5-82e0ddbd73d3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PurchaseOrder_InvoiceSvcServiceGroup2.wsdl" MetadataType="Wsdl" ID="cfacb51f-6935-4320-b97f-9ed04494ca5b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup?wsdl" />
+    <MetadataFile FileName="PurchaseOrder_InvoiceSvcServiceGroup21.wsdl" MetadataType="Wsdl" ID="d14b0d38-75ef-4930-a36b-65634349cb55" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PurchaseOrder_InvoiceSvcServiceGroup7.xsd" MetadataType="Schema" ID="3ec76f3e-e8f8-4d34-a8c6-b861bfc81d9c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup?xsd=xsd0" />
+    <MetadataFile FileName="PurchaseOrder_InvoiceSvcServiceGroup71.xsd" MetadataType="Schema" ID="c91a3082-f9f1-478c-88bb-ca780b687a84" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup?xsd=xsd1" />
+    <MetadataFile FileName="PurchaseOrder_InvoiceSvcServiceGroup72.xsd" MetadataType="Schema" ID="fbb1af53-1982-4534-896e-f2bfaabaca98" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup?xsd=xsd2" />
+    <MetadataFile FileName="PurchaseOrder_InvoiceSvcServiceGroup1.disco" MetadataType="Disco" ID="ee3b5901-931a-4cc1-88a5-f560e4943d67" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup?disco" />
+    <MetadataFile FileName="PurchaseOrder_InvoiceSvcServiceGroup73.xsd" MetadataType="Schema" ID="53d1c68e-624b-4a68-b42e-d97fd1dd99cf" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup?xsd=xsd4" />
+    <MetadataFile FileName="PurchaseOrder_InvoiceSvcServiceGroup74.xsd" MetadataType="Schema" ID="222f2b45-5f8e-4bd6-9337-80f87b82f93b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup?xsd=xsd5" />
+    <MetadataFile FileName="PurchaseOrder_InvoiceSvcServiceGroup75.xsd" MetadataType="Schema" ID="0a0494af-bd09-447d-ad77-4a29ee002e55" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup?xsd=xsd6" />
+    <MetadataFile FileName="PurchaseOrder_InvoiceSvcServiceGroup76.xsd" MetadataType="Schema" ID="ad475b2b-10dc-40b7-b2e9-e66ea05edc23" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

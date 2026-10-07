@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/System.IO" />
+  <xs:element name="AddAttachment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_base64Str" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_fileExt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_fileName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_recordRefRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_tableName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddAttachmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAttachment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="_contract" nillable="true" type="q1:DocumentAttachmentSvcContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAttachmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q2:GeneralContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveAttachment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_docuRefRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveAttachmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="result" nillable="true" type="q3:MemoryStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAttachmentURL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_docuRefRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAttachmentURLResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieve">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_recordRefRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_tableName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q4:ArrayOfDocuRefContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAttachmentByteArray">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="_contract" nillable="true" type="q5:DocumentAttachmentSvcContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAttachmentByteArrayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q6:GeneralContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_recId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q7:GeneralContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveAttachmentBase64">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_docuRefRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveAttachmentBase64Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

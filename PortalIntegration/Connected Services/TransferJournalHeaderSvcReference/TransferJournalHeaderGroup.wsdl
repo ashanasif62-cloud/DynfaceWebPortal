@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="http://tempuri.org" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="TransferJournalHeaderGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_TransferJournalHeaderSvc_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_TransferJournalHeaderSvc" type="i0:TransferJournalHeaderSvc">
+    <wsp:PolicyReference URI="#BasicHttpBinding_TransferJournalHeaderSvc_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="retrieveAll">
+      <soap:operation soapAction="http://tempuri.org/TransferJournalHeaderSvc/retrieveAll" style="document" />
+      <wsdl:input name="retrieveAll">
+        <soap:header message="i0:retrieveAll_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveAllResponse">
+        <soap:header message="i0:retrieveAllResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <soap:operation soapAction="http://tempuri.org/TransferJournalHeaderSvc/create" style="document" />
+      <wsdl:input name="create">
+        <soap:header message="i0:create_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="createResponse">
+        <soap:header message="i0:createResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="http://tempuri.org/TransferJournalHeaderSvc/delete" style="document" />
+      <wsdl:input name="delete">
+        <soap:header message="i0:delete_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteResponse">
+        <soap:header message="i0:deleteResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveJounralIdNumSeq">
+      <soap:operation soapAction="http://tempuri.org/TransferJournalHeaderSvc/retrieveJounralIdNumSeq" style="document" />
+      <wsdl:input name="retrieveJounralIdNumSeq">
+        <soap:header message="i0:retrieveJounralIdNumSeq_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveJounralIdNumSeqResponse">
+        <soap:header message="i0:retrieveJounralIdNumSeqResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveJournalNameId">
+      <soap:operation soapAction="http://tempuri.org/TransferJournalHeaderSvc/retrieveJournalNameId" style="document" />
+      <wsdl:input name="retrieveJournalNameId">
+        <soap:header message="i0:retrieveJournalNameId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveJournalNameIdResponse">
+        <soap:header message="i0:retrieveJournalNameIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveJournalNameIdDetails">
+      <soap:operation soapAction="http://tempuri.org/TransferJournalHeaderSvc/retrieveJournalNameIdDetails" style="document" />
+      <wsdl:input name="retrieveJournalNameIdDetails">
+        <soap:header message="i0:retrieveJournalNameIdDetails_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveJournalNameIdDetailsResponse">
+        <soap:header message="i0:retrieveJournalNameIdDetailsResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveVoucherSeriesNumberSequence">
+      <soap:operation soapAction="http://tempuri.org/TransferJournalHeaderSvc/retrieveVoucherSeriesNumberSequence" style="document" />
+      <wsdl:input name="retrieveVoucherSeriesNumberSequence">
+        <soap:header message="i0:retrieveVoucherSeriesNumberSequence_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveVoucherSeriesNumberSequenceResponse">
+        <soap:header message="i0:retrieveVoucherSeriesNumberSequenceResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveSiteId">
+      <soap:operation soapAction="http://tempuri.org/TransferJournalHeaderSvc/retrieveSiteId" style="document" />
+      <wsdl:input name="retrieveSiteId">
+        <soap:header message="i0:retrieveSiteId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveSiteIdResponse">
+        <soap:header message="i0:retrieveSiteIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveLocationId">
+      <soap:operation soapAction="http://tempuri.org/TransferJournalHeaderSvc/retrieveLocationId" style="document" />
+      <wsdl:input name="retrieveLocationId">
+        <soap:header message="i0:retrieveLocationId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveLocationIdResponse">
+        <soap:header message="i0:retrieveLocationIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="postTransferJournal">
+      <soap:operation soapAction="http://tempuri.org/TransferJournalHeaderSvc/postTransferJournal" style="document" />
+      <wsdl:input name="postTransferJournal">
+        <soap:header message="i0:postTransferJournal_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="postTransferJournalResponse">
+        <soap:header message="i0:postTransferJournalResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TransferJournalHeaderGroup">
+    <wsdl:port name="BasicHttpBinding_TransferJournalHeaderSvc" binding="tns:BasicHttpBinding_TransferJournalHeaderSvc">
+      <soap:address location="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="dd268819-1be6-4457-9146-d613864916ba" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RFQSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RFQSvcGroup7.xsd" MetadataType="Schema" ID="5b121bfc-10bb-4b0f-b69a-f5361758375b" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RFQSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="RFQSvcGroup71.xsd" MetadataType="Schema" ID="28076078-44f9-4498-9cfd-f746d9942000" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RFQSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="RFQSvcGroup72.xsd" MetadataType="Schema" ID="c094a867-852c-4158-9103-cdc90c65169a" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RFQSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="RFQSvcGroup73.xsd" MetadataType="Schema" ID="6b2e9da2-d454-4691-805d-630fca18048d" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RFQSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="RFQSvcGroup2.wsdl" MetadataType="Wsdl" ID="5a5c6604-8109-4efa-9b62-e7d7464cef53" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RFQSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="RFQSvcGroup74.xsd" MetadataType="Schema" ID="0920c9d8-af9d-449f-9c60-98ff4159d031" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RFQSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="RFQSvcGroup1.disco" MetadataType="Disco" ID="73d29575-9d36-48b7-a2d9-eac7321cc9a8" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RFQSvcGroup?disco" />
+    <MetadataFile FileName="RFQSvcGroup75.xsd" MetadataType="Schema" ID="e9f54333-b95d-4212-bc96-3b117c423470" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RFQSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="RFQSvcGroup76.xsd" MetadataType="Schema" ID="5272feaf-facf-4395-ac16-768fb032d118" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RFQSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="RFQSvcGroup21.wsdl" MetadataType="Wsdl" ID="09a07ae5-062b-4d80-874a-29d186ee7836" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RFQSvcGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="0cedc6a9-e33f-4523-b5a6-90361c6296e8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREntitlementBalanceSvcGroup?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PREntitlementBalanceSvcGroup2.wsdl" MetadataType="Wsdl" ID="ce717d76-3942-4b54-849d-95e8f5ddcd9b" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREntitlementBalanceSvcGroup?wsdl" />
+    <MetadataFile FileName="PREntitlementBalanceSvcGroup7.xsd" MetadataType="Schema" ID="35691d4c-c0c7-41bc-86fe-ac8d7a1f56df" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREntitlementBalanceSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PREntitlementBalanceSvcGroup71.xsd" MetadataType="Schema" ID="3b4f677d-d980-4d96-9607-13c23c1c2c08" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREntitlementBalanceSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PREntitlementBalanceSvcGroup72.xsd" MetadataType="Schema" ID="0bb0a3c1-b37c-42b8-9230-1793d1d64f87" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREntitlementBalanceSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PREntitlementBalanceSvcGroup73.xsd" MetadataType="Schema" ID="27133aef-7a59-4cf5-9f0d-5ea5434c604d" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREntitlementBalanceSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PREntitlementBalanceSvcGroup74.xsd" MetadataType="Schema" ID="e2489e37-8b71-4bcd-beac-7deed4da216a" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREntitlementBalanceSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PREntitlementBalanceSvcGroup21.wsdl" MetadataType="Wsdl" ID="26fc6658-2b8e-4d39-aecb-199d4a3e0292" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREntitlementBalanceSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PREntitlementBalanceSvcGroup75.xsd" MetadataType="Schema" ID="2631559f-a5a1-4c0c-bcbe-435b2b3eea56" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREntitlementBalanceSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PREntitlementBalanceSvcGroup76.xsd" MetadataType="Schema" ID="98e0d18c-55c7-4b00-92c2-22434ce93956" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREntitlementBalanceSvcGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

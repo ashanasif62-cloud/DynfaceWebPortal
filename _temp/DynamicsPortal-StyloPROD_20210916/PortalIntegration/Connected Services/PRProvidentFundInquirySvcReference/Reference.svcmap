@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9a7d4c58-249c-4ba3-ae7d-333f9ff8361f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/PRProvidentFundInquirySvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PRProvidentFundInquirySvcGroup5.xsd" MetadataType="Schema" ID="754ad169-374f-445f-81e4-fd4bcd8df5c4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRProvidentFundInquirySvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PRProvidentFundInquirySvcGroup6.xsd" MetadataType="Schema" ID="67968f8e-1714-422f-b750-75055c501f17" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRProvidentFundInquirySvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PRProvidentFundInquirySvcGroup3.xsd" MetadataType="Schema" ID="86b55f23-f5d9-4b2c-9b51-8da4c00049eb" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRProvidentFundInquirySvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PRProvidentFundInquirySvcGroup4.xsd" MetadataType="Schema" ID="bcd9d565-2579-43b2-9cc6-31df06fd7b38" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRProvidentFundInquirySvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PRProvidentFundInquirySvcGroup1.xsd" MetadataType="Schema" ID="77ed8fbf-4d4c-4596-90ae-a7a30d1d2830" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRProvidentFundInquirySvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PRProvidentFundInquirySvcGroup2.xsd" MetadataType="Schema" ID="d2ee2f26-8061-448a-8990-ce8159cff099" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRProvidentFundInquirySvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PRProvidentFundInquirySvcGroup.xsd" MetadataType="Schema" ID="4fab1f29-dc18-4308-a3bd-746dea0a06de" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRProvidentFundInquirySvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PRProvidentFundInquirySvcGroup.disco" MetadataType="Disco" ID="0caddc24-9d72-4b87-87f2-a758038e3f10" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRProvidentFundInquirySvcGroup?disco" />
+    <MetadataFile FileName="PRProvidentFundInquirySvcGroup.wsdl" MetadataType="Wsdl" ID="a08cf0af-8c01-4397-beec-2b3f8038e48d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRProvidentFundInquirySvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PRProvidentFundInquirySvcGroup1.wsdl" MetadataType="Wsdl" ID="de68063b-4424-4888-b75e-672d4185bf4a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRProvidentFundInquirySvcGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bec670cc-98ef-4375-b316-e9c820223ac7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsAddressCountryRegionSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LogisticsAddressCountryRegionSvcGroup3.xsd" MetadataType="Schema" ID="2f02e3be-49fb-4515-9541-baa6aeeb3f77" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsAddressCountryRegionSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="LogisticsAddressCountryRegionSvcGroup2.xsd" MetadataType="Schema" ID="798fd08e-0d81-4213-b247-8702c8a96915" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsAddressCountryRegionSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="LogisticsAddressCountryRegionSvcGroup5.xsd" MetadataType="Schema" ID="4c639955-fda9-46fd-8a0e-c8c5308c9535" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsAddressCountryRegionSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="LogisticsAddressCountryRegionSvcGroup.disco" MetadataType="Disco" ID="574240d8-ad8b-4bed-846d-eca623222c3f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsAddressCountryRegionSvcGroup?disco" />
+    <MetadataFile FileName="LogisticsAddressCountryRegionSvcGroup1.wsdl" MetadataType="Wsdl" ID="6fab9f3e-1300-4611-93aa-1a50add61ce6" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsAddressCountryRegionSvcGroup?wsdl" />
+    <MetadataFile FileName="LogisticsAddressCountryRegionSvcGroup.wsdl" MetadataType="Wsdl" ID="47869c1a-73cf-40e2-915d-b671896eab80" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsAddressCountryRegionSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="LogisticsAddressCountryRegionSvcGroup6.xsd" MetadataType="Schema" ID="46c44525-26a6-4f39-9418-184e2e31329a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsAddressCountryRegionSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="LogisticsAddressCountryRegionSvcGroup.xsd" MetadataType="Schema" ID="8e82b665-e539-45fd-9d88-f21448491b44" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsAddressCountryRegionSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="LogisticsAddressCountryRegionSvcGroup1.xsd" MetadataType="Schema" ID="3abfd992-8e37-409c-a028-43e0b08304cc" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsAddressCountryRegionSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="LogisticsAddressCountryRegionSvcGroup4.xsd" MetadataType="Schema" ID="6f1eea09-afc4-410e-a56a-1c398a91909b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsAddressCountryRegionSvcGroup?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

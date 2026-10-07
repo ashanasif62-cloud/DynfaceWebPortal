@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/HR/ESSHcmPersonImage.aspx" hash="ffffffefe3a9c958" filehash="36e85d414f94d5ad" flags="110000" assembly="MaisonPortal" type="ASP.ess_hr_esshcmpersonimage_aspx">
+  <filedeps>
+    <filedep name="/ESS/HR/ESSHcmPersonImage.aspx" />
+    <filedep name="/Modal.Master" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2210312a-28d1-48b7-9aba-d691acb150db" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup1.disco" MetadataType="Disco" ID="d8d3e523-a2c0-46a7-b389-0d27050693ca" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?disco" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup2.wsdl" MetadataType="Wsdl" ID="ba4282b1-b197-45bc-8a7e-618661180ea8" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?wsdl" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup74.xsd" MetadataType="Schema" ID="cb7b5b1d-525c-41ab-adcb-f4a385b4d7bc" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup75.xsd" MetadataType="Schema" ID="56b5fd26-8d0d-4144-91db-ce847d4bbf05" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup76.xsd" MetadataType="Schema" ID="3f7dfcab-32d7-443c-8a41-9a80b5193acf" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup73.xsd" MetadataType="Schema" ID="357c63d0-7bb3-4f06-89b7-c1a2199f9c9e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup71.xsd" MetadataType="Schema" ID="690556ae-8c88-4468-b496-f4de00e42e1f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup21.wsdl" MetadataType="Wsdl" ID="0e738160-9ff7-4a59-ba57-ef2f2d60e30b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup7.xsd" MetadataType="Schema" ID="eaba7ce0-1589-4643-8d62-8605b1f1fefb" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup72.xsd" MetadataType="Schema" ID="1bb971d3-d54f-4ec3-af76-5af3c91fceac" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

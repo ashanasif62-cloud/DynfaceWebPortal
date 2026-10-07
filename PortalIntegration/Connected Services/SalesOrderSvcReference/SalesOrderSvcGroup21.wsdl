@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="retrieveAll">
+    <wsdl:part name="parameters" element="tns:retrieveAll" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveAll_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="create">
+    <wsdl:part name="parameters" element="tns:create" />
+  </wsdl:message>
+  <wsdl:message name="create_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="createResponse">
+    <wsdl:part name="parameters" element="tns:createResponse" />
+  </wsdl:message>
+  <wsdl:message name="createResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_create_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesIDnumsequence">
+    <wsdl:part name="parameters" element="tns:retrieveSalesIDnumsequence" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesIDnumsequence_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesIDnumsequenceResponse">
+    <wsdl:part name="parameters" element="tns:retrieveSalesIDnumsequenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesIDnumsequenceResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveSalesIDnumsequence_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveCustomerAccount">
+    <wsdl:part name="parameters" element="tns:retrieveCustomerAccount" />
+  </wsdl:message>
+  <wsdl:message name="retrieveCustomerAccount_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveCustomerAccountResponse">
+    <wsdl:part name="parameters" element="tns:retrieveCustomerAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveCustomerAccountResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveCustomerAccount_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveCurrency">
+    <wsdl:part name="parameters" element="tns:retrieveCurrency" />
+  </wsdl:message>
+  <wsdl:message name="retrieveCurrency_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveCurrencyResponse">
+    <wsdl:part name="parameters" element="tns:retrieveCurrencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveCurrencyResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveCurrency_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSiteId">
+    <wsdl:part name="parameters" element="tns:retrieveSiteId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSiteId_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSiteIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveSiteIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSiteIdResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveSiteId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveWarehouse">
+    <wsdl:part name="parameters" element="tns:retrieveWarehouse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveWarehouse_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveWarehouseResponse">
+    <wsdl:part name="parameters" element="tns:retrieveWarehouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveWarehouseResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveWarehouse_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDeliveryMode">
+    <wsdl:part name="parameters" element="tns:retrieveDeliveryMode" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDeliveryMode_Headers">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q22:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDeliveryModeResponse">
+    <wsdl:part name="parameters" element="tns:retrieveDeliveryModeResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDeliveryModeResponse_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q23:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveDeliveryMode_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q24:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDeliveryTerm">
+    <wsdl:part name="parameters" element="tns:retrieveDeliveryTerm" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDeliveryTerm_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDeliveryTermResponse">
+    <wsdl:part name="parameters" element="tns:retrieveDeliveryTermResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDeliveryTermResponse_Headers">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q26:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveDeliveryTerm_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q27:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrievePool">
+    <wsdl:part name="parameters" element="tns:retrievePool" />
+  </wsdl:message>
+  <wsdl:message name="retrievePool_Headers">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q28:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrievePoolResponse">
+    <wsdl:part name="parameters" element="tns:retrievePoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrievePoolResponse_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q29:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrievePool_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q30:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrievelangaugeId">
+    <wsdl:part name="parameters" element="tns:retrievelangaugeId" />
+  </wsdl:message>
+  <wsdl:message name="retrievelangaugeId_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrievelangaugeIdResponse">
+    <wsdl:part name="parameters" element="tns:retrievelangaugeIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrievelangaugeIdResponse_Headers">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q32:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrievelangaugeId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q33:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesOrigin">
+    <wsdl:part name="parameters" element="tns:retrieveSalesOrigin" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesOrigin_Headers">
+    <wsdl:part xmlns:q34="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q34:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesOriginResponse">
+    <wsdl:part name="parameters" element="tns:retrieveSalesOriginResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesOriginResponse_Headers">
+    <wsdl:part xmlns:q35="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q35:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveSalesOrigin_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q36:Fault" />
+  </wsdl:message>
+  <wsdl:message name="CustAccountLookup">
+    <wsdl:part name="parameters" element="tns:CustAccountLookup" />
+  </wsdl:message>
+  <wsdl:message name="CustAccountLookup_Headers">
+    <wsdl:part xmlns:q37="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q37:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="CustAccountLookupResponse">
+    <wsdl:part name="parameters" element="tns:CustAccountLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustAccountLookupResponse_Headers">
+    <wsdl:part xmlns:q38="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q38:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_CustAccountLookup_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q39="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q39:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveContactPersonId">
+    <wsdl:part name="parameters" element="tns:retrieveContactPersonId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveContactPersonId_Headers">
+    <wsdl:part xmlns:q40="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q40:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveContactPersonIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveContactPersonIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveContactPersonIdResponse_Headers">
+    <wsdl:part xmlns:q41="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q41:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveContactPersonId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q42:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveProj">
+    <wsdl:part name="parameters" element="tns:retrieveProj" />
+  </wsdl:message>
+  <wsdl:message name="retrieveProj_Headers">
+    <wsdl:part xmlns:q43="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q43:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveProjResponse">
+    <wsdl:part name="parameters" element="tns:retrieveProjResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveProjResponse_Headers">
+    <wsdl:part xmlns:q44="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q44:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveProj_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q45="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q45:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesUnit">
+    <wsdl:part name="parameters" element="tns:retrieveSalesUnit" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesUnit_Headers">
+    <wsdl:part xmlns:q46="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q46:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesUnitResponse">
+    <wsdl:part name="parameters" element="tns:retrieveSalesUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesUnitResponse_Headers">
+    <wsdl:part xmlns:q47="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q47:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveSalesUnit_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q48="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q48:Fault" />
+  </wsdl:message>
+  <wsdl:message name="createInventDim">
+    <wsdl:part name="parameters" element="tns:createInventDim" />
+  </wsdl:message>
+  <wsdl:message name="createInventDim_Headers">
+    <wsdl:part xmlns:q49="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q49:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="createInventDimResponse">
+    <wsdl:part name="parameters" element="tns:createInventDimResponse" />
+  </wsdl:message>
+  <wsdl:message name="createInventDimResponse_Headers">
+    <wsdl:part xmlns:q50="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q50:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_createInventDim_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q51="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q51:Fault" />
+  </wsdl:message>
+  <wsdl:message name="createlines">
+    <wsdl:part name="parameters" element="tns:createlines" />
+  </wsdl:message>
+  <wsdl:message name="createlines_Headers">
+    <wsdl:part xmlns:q52="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q52:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="createlinesResponse">
+    <wsdl:part name="parameters" element="tns:createlinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="createlinesResponse_Headers">
+    <wsdl:part xmlns:q53="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q53:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_createlines_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q54="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q54:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveUnit">
+    <wsdl:part name="parameters" element="tns:retrieveUnit" />
+  </wsdl:message>
+  <wsdl:message name="retrieveUnit_Headers">
+    <wsdl:part xmlns:q55="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q55:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveUnitResponse">
+    <wsdl:part name="parameters" element="tns:retrieveUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveUnitResponse_Headers">
+    <wsdl:part xmlns:q56="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q56:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveUnit_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q57="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q57:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveItemTax">
+    <wsdl:part name="parameters" element="tns:retrieveItemTax" />
+  </wsdl:message>
+  <wsdl:message name="retrieveItemTax_Headers">
+    <wsdl:part xmlns:q58="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q58:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveItemTaxResponse">
+    <wsdl:part name="parameters" element="tns:retrieveItemTaxResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveItemTaxResponse_Headers">
+    <wsdl:part xmlns:q59="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q59:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveItemTax_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q60="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q60:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSaleTax">
+    <wsdl:part name="parameters" element="tns:retrieveSaleTax" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSaleTax_Headers">
+    <wsdl:part xmlns:q61="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q61:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSaleTaxResponse">
+    <wsdl:part name="parameters" element="tns:retrieveSaleTaxResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSaleTaxResponse_Headers">
+    <wsdl:part xmlns:q62="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q62:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveSaleTax_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q63="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q63:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesgroup">
+    <wsdl:part name="parameters" element="tns:retrieveSalesgroup" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesgroup_Headers">
+    <wsdl:part xmlns:q64="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q64:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesgroupResponse">
+    <wsdl:part name="parameters" element="tns:retrieveSalesgroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSalesgroupResponse_Headers">
+    <wsdl:part xmlns:q65="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q65:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveSalesgroup_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q66="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q66:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveNumSeqGroup">
+    <wsdl:part name="parameters" element="tns:retrieveNumSeqGroup" />
+  </wsdl:message>
+  <wsdl:message name="retrieveNumSeqGroup_Headers">
+    <wsdl:part xmlns:q67="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q67:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveNumSeqGroupResponse">
+    <wsdl:part name="parameters" element="tns:retrieveNumSeqGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveNumSeqGroupResponse_Headers">
+    <wsdl:part xmlns:q68="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q68:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveNumSeqGroup_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q69="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q69:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrievePaymentMethod">
+    <wsdl:part name="parameters" element="tns:retrievePaymentMethod" />
+  </wsdl:message>
+  <wsdl:message name="retrievePaymentMethod_Headers">
+    <wsdl:part xmlns:q70="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q70:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrievePaymentMethodResponse">
+    <wsdl:part name="parameters" element="tns:retrievePaymentMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrievePaymentMethodResponse_Headers">
+    <wsdl:part xmlns:q71="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q71:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrievePaymentMethod_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q72="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q72:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrievePaymentSchedule">
+    <wsdl:part name="parameters" element="tns:retrievePaymentSchedule" />
+  </wsdl:message>
+  <wsdl:message name="retrievePaymentSchedule_Headers">
+    <wsdl:part xmlns:q73="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q73:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrievePaymentScheduleResponse">
+    <wsdl:part name="parameters" element="tns:retrievePaymentScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrievePaymentScheduleResponse_Headers">
+    <wsdl:part xmlns:q74="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q74:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrievePaymentSchedule_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q75="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q75:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveCashDiscount">
+    <wsdl:part name="parameters" element="tns:retrieveCashDiscount" />
+  </wsdl:message>
+  <wsdl:message name="retrieveCashDiscount_Headers">
+    <wsdl:part xmlns:q76="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q76:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveCashDiscountResponse">
+    <wsdl:part name="parameters" element="tns:retrieveCashDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveCashDiscountResponse_Headers">
+    <wsdl:part xmlns:q77="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q77:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveCashDiscount_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q78="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q78:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLineDscGroup">
+    <wsdl:part name="parameters" element="tns:retrieveLineDscGroup" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLineDscGroup_Headers">
+    <wsdl:part xmlns:q79="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q79:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLineDscGroupResponse">
+    <wsdl:part name="parameters" element="tns:retrieveLineDscGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLineDscGroupResponse_Headers">
+    <wsdl:part xmlns:q80="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q80:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveLineDscGroup_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q81="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q81:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLines">
+    <wsdl:part name="parameters" element="tns:retrieveLines" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLines_Headers">
+    <wsdl:part xmlns:q82="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q82:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLinesResponse">
+    <wsdl:part name="parameters" element="tns:retrieveLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLinesResponse_Headers">
+    <wsdl:part xmlns:q83="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q83:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveLines_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q84="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q84:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInvoiceAccount">
+    <wsdl:part name="parameters" element="tns:retrieveInvoiceAccount" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInvoiceAccount_Headers">
+    <wsdl:part xmlns:q85="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q85:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInvoiceAccountResponse">
+    <wsdl:part name="parameters" element="tns:retrieveInvoiceAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInvoiceAccountResponse_Headers">
+    <wsdl:part xmlns:q86="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q86:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveInvoiceAccount_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q87="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q87:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveitemNumber">
+    <wsdl:part name="parameters" element="tns:retrieveitemNumber" />
+  </wsdl:message>
+  <wsdl:message name="retrieveitemNumber_Headers">
+    <wsdl:part xmlns:q88="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q88:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveitemNumberResponse">
+    <wsdl:part name="parameters" element="tns:retrieveitemNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveitemNumberResponse_Headers">
+    <wsdl:part xmlns:q89="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q89:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveitemNumber_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q90="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q90:Fault" />
+  </wsdl:message>
+  <wsdl:message name="delete">
+    <wsdl:part name="parameters" element="tns:delete" />
+  </wsdl:message>
+  <wsdl:message name="delete_Headers">
+    <wsdl:part xmlns:q91="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q91:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="deleteResponse">
+    <wsdl:part name="parameters" element="tns:deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteResponse_Headers">
+    <wsdl:part xmlns:q92="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q92:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_delete_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q93="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q93:Fault" />
+  </wsdl:message>
+  <wsdl:message name="deleteline">
+    <wsdl:part name="parameters" element="tns:deleteline" />
+  </wsdl:message>
+  <wsdl:message name="deleteline_Headers">
+    <wsdl:part xmlns:q94="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q94:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="deletelineResponse">
+    <wsdl:part name="parameters" element="tns:deletelineResponse" />
+  </wsdl:message>
+  <wsdl:message name="deletelineResponse_Headers">
+    <wsdl:part xmlns:q95="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q95:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_deleteline_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q96="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q96:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveItemName">
+    <wsdl:part name="parameters" element="tns:retrieveItemName" />
+  </wsdl:message>
+  <wsdl:message name="retrieveItemName_Headers">
+    <wsdl:part xmlns:q97="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q97:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveItemNameResponse">
+    <wsdl:part name="parameters" element="tns:retrieveItemNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveItemNameResponse_Headers">
+    <wsdl:part xmlns:q98="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q98:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveItemName_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q99="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q99:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventLocationIds">
+    <wsdl:part name="parameters" element="tns:retrieveInventLocationIds" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventLocationIds_Headers">
+    <wsdl:part xmlns:q100="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q100:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventLocationIdsResponse">
+    <wsdl:part name="parameters" element="tns:retrieveInventLocationIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventLocationIdsResponse_Headers">
+    <wsdl:part xmlns:q101="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q101:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveInventLocationIds_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q102="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q102:Fault" />
+  </wsdl:message>
+  <wsdl:message name="findSitebyLocation">
+    <wsdl:part name="parameters" element="tns:findSitebyLocation" />
+  </wsdl:message>
+  <wsdl:message name="findSitebyLocation_Headers">
+    <wsdl:part xmlns:q103="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q103:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="findSitebyLocationResponse">
+    <wsdl:part name="parameters" element="tns:findSitebyLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="findSitebyLocationResponse_Headers">
+    <wsdl:part xmlns:q104="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q104:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_findSitebyLocation_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q105="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q105:Fault" />
+  </wsdl:message>
+  <wsdl:message name="update">
+    <wsdl:part name="parameters" element="tns:update" />
+  </wsdl:message>
+  <wsdl:message name="update_Headers">
+    <wsdl:part xmlns:q106="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q106:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="updateResponse">
+    <wsdl:part name="parameters" element="tns:updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateResponse_Headers">
+    <wsdl:part xmlns:q107="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q107:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_update_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q108="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q108:Fault" />
+  </wsdl:message>
+  <wsdl:message name="updateLineDetail">
+    <wsdl:part name="parameters" element="tns:updateLineDetail" />
+  </wsdl:message>
+  <wsdl:message name="updateLineDetail_Headers">
+    <wsdl:part xmlns:q109="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q109:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="updateLineDetailResponse">
+    <wsdl:part name="parameters" element="tns:updateLineDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateLineDetailResponse_Headers">
+    <wsdl:part xmlns:q110="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q110:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_updateLineDetail_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q111="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q111:Fault" />
+  </wsdl:message>
+  <wsdl:message name="updateHeader">
+    <wsdl:part name="parameters" element="tns:updateHeader" />
+  </wsdl:message>
+  <wsdl:message name="updateHeader_Headers">
+    <wsdl:part xmlns:q112="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q112:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="updateHeaderResponse">
+    <wsdl:part name="parameters" element="tns:updateHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateHeaderResponse_Headers">
+    <wsdl:part xmlns:q113="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q113:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_updateHeader_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q114="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q114:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventSizeIds">
+    <wsdl:part name="parameters" element="tns:retrieveInventSizeIds" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventSizeIds_Headers">
+    <wsdl:part xmlns:q115="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q115:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventSizeIdsResponse">
+    <wsdl:part name="parameters" element="tns:retrieveInventSizeIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventSizeIdsResponse_Headers">
+    <wsdl:part xmlns:q116="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q116:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveInventSizeIds_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q117="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q117:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLinesDetail">
+    <wsdl:part name="parameters" element="tns:retrieveLinesDetail" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLinesDetail_Headers">
+    <wsdl:part xmlns:q118="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q118:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLinesDetailResponse">
+    <wsdl:part name="parameters" element="tns:retrieveLinesDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLinesDetailResponse_Headers">
+    <wsdl:part xmlns:q119="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q119:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveLinesDetail_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q120="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q120:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveHeader">
+    <wsdl:part name="parameters" element="tns:retrieveHeader" />
+  </wsdl:message>
+  <wsdl:message name="retrieveHeader_Headers">
+    <wsdl:part xmlns:q121="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q121:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveHeaderResponse">
+    <wsdl:part name="parameters" element="tns:retrieveHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveHeaderResponse_Headers">
+    <wsdl:part xmlns:q122="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q122:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveHeader_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q123="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q123:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveTotalDisc">
+    <wsdl:part name="parameters" element="tns:retrieveTotalDisc" />
+  </wsdl:message>
+  <wsdl:message name="retrieveTotalDisc_Headers">
+    <wsdl:part xmlns:q124="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q124:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveTotalDiscResponse">
+    <wsdl:part name="parameters" element="tns:retrieveTotalDiscResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveTotalDiscResponse_Headers">
+    <wsdl:part xmlns:q125="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q125:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrieveTotalDisc_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q126="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q126:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrievePayment">
+    <wsdl:part name="parameters" element="tns:retrievePayment" />
+  </wsdl:message>
+  <wsdl:message name="retrievePayment_Headers">
+    <wsdl:part xmlns:q127="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q127:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrievePaymentResponse">
+    <wsdl:part name="parameters" element="tns:retrievePaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrievePaymentResponse_Headers">
+    <wsdl:part xmlns:q128="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q128:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_retrievePayment_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q129="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q129:Fault" />
+  </wsdl:message>
+  <wsdl:message name="salesLineItemModified">
+    <wsdl:part name="parameters" element="tns:salesLineItemModified" />
+  </wsdl:message>
+  <wsdl:message name="salesLineItemModified_Headers">
+    <wsdl:part xmlns:q130="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q130:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="salesLineItemModifiedResponse">
+    <wsdl:part name="parameters" element="tns:salesLineItemModifiedResponse" />
+  </wsdl:message>
+  <wsdl:message name="salesLineItemModifiedResponse_Headers">
+    <wsdl:part xmlns:q131="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q131:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="SalesOrderSvc_salesLineItemModified_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q132="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q132:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="SalesOrderSvc">
+    <wsdl:operation name="retrieveAll">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveAll" name="retrieveAll" message="tns:retrieveAll" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveAllResponse" name="retrieveAllResponse" message="tns:retrieveAllResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveAll_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/create" name="create" message="tns:create" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/createResponse" name="createResponse" message="tns:createResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_create_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveSalesIDnumsequence">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveSalesIDnumsequence" name="retrieveSalesIDnumsequence" message="tns:retrieveSalesIDnumsequence" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveSalesIDnumsequenceResponse" name="retrieveSalesIDnumsequenceResponse" message="tns:retrieveSalesIDnumsequenceResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveSalesIDnumsequence_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveCustomerAccount">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveCustomerAccount" name="retrieveCustomerAccount" message="tns:retrieveCustomerAccount" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveCustomerAccountResponse" name="retrieveCustomerAccountResponse" message="tns:retrieveCustomerAccountResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveCustomerAccount_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveCurrency">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveCurrency" name="retrieveCurrency" message="tns:retrieveCurrency" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveCurrencyResponse" name="retrieveCurrencyResponse" message="tns:retrieveCurrencyResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveCurrency_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveSiteId">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveSiteId" name="retrieveSiteId" message="tns:retrieveSiteId" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveSiteIdResponse" name="retrieveSiteIdResponse" message="tns:retrieveSiteIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveSiteId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveWarehouse">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveWarehouse" name="retrieveWarehouse" message="tns:retrieveWarehouse" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveWarehouseResponse" name="retrieveWarehouseResponse" message="tns:retrieveWarehouseResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveWarehouse_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveDeliveryMode">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveDeliveryMode" name="retrieveDeliveryMode" message="tns:retrieveDeliveryMode" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveDeliveryModeResponse" name="retrieveDeliveryModeResponse" message="tns:retrieveDeliveryModeResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveDeliveryMode_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveDeliveryTerm">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveDeliveryTerm" name="retrieveDeliveryTerm" message="tns:retrieveDeliveryTerm" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveDeliveryTermResponse" name="retrieveDeliveryTermResponse" message="tns:retrieveDeliveryTermResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveDeliveryTerm_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrievePool">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrievePool" name="retrievePool" message="tns:retrievePool" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrievePoolResponse" name="retrievePoolResponse" message="tns:retrievePoolResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrievePool_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrievelangaugeId">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrievelangaugeId" name="retrievelangaugeId" message="tns:retrievelangaugeId" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrievelangaugeIdResponse" name="retrievelangaugeIdResponse" message="tns:retrievelangaugeIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrievelangaugeId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveSalesOrigin">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveSalesOrigin" name="retrieveSalesOrigin" message="tns:retrieveSalesOrigin" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveSalesOriginResponse" name="retrieveSalesOriginResponse" message="tns:retrieveSalesOriginResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveSalesOrigin_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustAccountLookup">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/CustAccountLookup" name="CustAccountLookup" message="tns:CustAccountLookup" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/CustAccountLookupResponse" name="CustAccountLookupResponse" message="tns:CustAccountLookupResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_CustAccountLookup_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveContactPersonId">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveContactPersonId" name="retrieveContactPersonId" message="tns:retrieveContactPersonId" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveContactPersonIdResponse" name="retrieveContactPersonIdResponse" message="tns:retrieveContactPersonIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveContactPersonId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveProj">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveProj" name="retrieveProj" message="tns:retrieveProj" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveProjResponse" name="retrieveProjResponse" message="tns:retrieveProjResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveProj_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveSalesUnit">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveSalesUnit" name="retrieveSalesUnit" message="tns:retrieveSalesUnit" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveSalesUnitResponse" name="retrieveSalesUnitResponse" message="tns:retrieveSalesUnitResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveSalesUnit_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createInventDim">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/createInventDim" name="createInventDim" message="tns:createInventDim" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/createInventDimResponse" name="createInventDimResponse" message="tns:createInventDimResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_createInventDim_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createlines">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/createlines" name="createlines" message="tns:createlines" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/createlinesResponse" name="createlinesResponse" message="tns:createlinesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_createlines_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveUnit">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveUnit" name="retrieveUnit" message="tns:retrieveUnit" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveUnitResponse" name="retrieveUnitResponse" message="tns:retrieveUnitResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveUnit_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveItemTax">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveItemTax" name="retrieveItemTax" message="tns:retrieveItemTax" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveItemTaxResponse" name="retrieveItemTaxResponse" message="tns:retrieveItemTaxResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveItemTax_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveSaleTax">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveSaleTax" name="retrieveSaleTax" message="tns:retrieveSaleTax" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveSaleTaxResponse" name="retrieveSaleTaxResponse" message="tns:retrieveSaleTaxResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveSaleTax_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveSalesgroup">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveSalesgroup" name="retrieveSalesgroup" message="tns:retrieveSalesgroup" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveSalesgroupResponse" name="retrieveSalesgroupResponse" message="tns:retrieveSalesgroupResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveSalesgroup_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveNumSeqGroup">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveNumSeqGroup" name="retrieveNumSeqGroup" message="tns:retrieveNumSeqGroup" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveNumSeqGroupResponse" name="retrieveNumSeqGroupResponse" message="tns:retrieveNumSeqGroupResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveNumSeqGroup_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrievePaymentMethod">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrievePaymentMethod" name="retrievePaymentMethod" message="tns:retrievePaymentMethod" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrievePaymentMethodResponse" name="retrievePaymentMethodResponse" message="tns:retrievePaymentMethodResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrievePaymentMethod_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrievePaymentSchedule">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrievePaymentSchedule" name="retrievePaymentSchedule" message="tns:retrievePaymentSchedule" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrievePaymentScheduleResponse" name="retrievePaymentScheduleResponse" message="tns:retrievePaymentScheduleResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrievePaymentSchedule_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveCashDiscount">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveCashDiscount" name="retrieveCashDiscount" message="tns:retrieveCashDiscount" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveCashDiscountResponse" name="retrieveCashDiscountResponse" message="tns:retrieveCashDiscountResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveCashDiscount_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveLineDscGroup">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveLineDscGroup" name="retrieveLineDscGroup" message="tns:retrieveLineDscGroup" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveLineDscGroupResponse" name="retrieveLineDscGroupResponse" message="tns:retrieveLineDscGroupResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveLineDscGroup_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveLines">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveLines" name="retrieveLines" message="tns:retrieveLines" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveLinesResponse" name="retrieveLinesResponse" message="tns:retrieveLinesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveLines_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveInvoiceAccount">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveInvoiceAccount" name="retrieveInvoiceAccount" message="tns:retrieveInvoiceAccount" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveInvoiceAccountResponse" name="retrieveInvoiceAccountResponse" message="tns:retrieveInvoiceAccountResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveInvoiceAccount_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveitemNumber">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveitemNumber" name="retrieveitemNumber" message="tns:retrieveitemNumber" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveitemNumberResponse" name="retrieveitemNumberResponse" message="tns:retrieveitemNumberResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveitemNumber_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/delete" name="delete" message="tns:delete" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/deleteResponse" name="deleteResponse" message="tns:deleteResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_delete_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteline">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/deleteline" name="deleteline" message="tns:deleteline" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/deletelineResponse" name="deletelineResponse" message="tns:deletelineResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_deleteline_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveItemName">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveItemName" name="retrieveItemName" message="tns:retrieveItemName" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveItemNameResponse" name="retrieveItemNameResponse" message="tns:retrieveItemNameResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveItemName_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveInventLocationIds">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveInventLocationIds" name="retrieveInventLocationIds" message="tns:retrieveInventLocationIds" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveInventLocationIdsResponse" name="retrieveInventLocationIdsResponse" message="tns:retrieveInventLocationIdsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveInventLocationIds_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="findSitebyLocation">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/findSitebyLocation" name="findSitebyLocation" message="tns:findSitebyLocation" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/findSitebyLocationResponse" name="findSitebyLocationResponse" message="tns:findSitebyLocationResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_findSitebyLocation_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/update" name="update" message="tns:update" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/updateResponse" name="updateResponse" message="tns:updateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_update_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateLineDetail">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/updateLineDetail" name="updateLineDetail" message="tns:updateLineDetail" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/updateLineDetailResponse" name="updateLineDetailResponse" message="tns:updateLineDetailResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_updateLineDetail_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateHeader">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/updateHeader" name="updateHeader" message="tns:updateHeader" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/updateHeaderResponse" name="updateHeaderResponse" message="tns:updateHeaderResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_updateHeader_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveInventSizeIds">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveInventSizeIds" name="retrieveInventSizeIds" message="tns:retrieveInventSizeIds" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveInventSizeIdsResponse" name="retrieveInventSizeIdsResponse" message="tns:retrieveInventSizeIdsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveInventSizeIds_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveLinesDetail">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveLinesDetail" name="retrieveLinesDetail" message="tns:retrieveLinesDetail" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveLinesDetailResponse" name="retrieveLinesDetailResponse" message="tns:retrieveLinesDetailResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveLinesDetail_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveHeader">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveHeader" name="retrieveHeader" message="tns:retrieveHeader" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveHeaderResponse" name="retrieveHeaderResponse" message="tns:retrieveHeaderResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveHeader_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveTotalDisc">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveTotalDisc" name="retrieveTotalDisc" message="tns:retrieveTotalDisc" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrieveTotalDiscResponse" name="retrieveTotalDiscResponse" message="tns:retrieveTotalDiscResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrieveTotalDisc_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrievePayment">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/retrievePayment" name="retrievePayment" message="tns:retrievePayment" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/retrievePaymentResponse" name="retrievePaymentResponse" message="tns:retrievePaymentResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_retrievePayment_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="salesLineItemModified">
+      <wsdl:input wsam:Action="http://tempuri.org/SalesOrderSvc/salesLineItemModified" name="salesLineItemModified" message="tns:salesLineItemModified" />
+      <wsdl:output wsam:Action="http://tempuri.org/SalesOrderSvc/salesLineItemModifiedResponse" name="salesLineItemModifiedResponse" message="tns:salesLineItemModifiedResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/SalesOrderSvc/Fault" name="SoapServiceFaultFault" message="tns:SalesOrderSvc_salesLineItemModified_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

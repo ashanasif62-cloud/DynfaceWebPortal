@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfPREmploymentInformationSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PREmploymentInformationSvcContract" nillable="true" type="tns:PREmploymentInformationSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPREmploymentInformationSvcContract" nillable="true" type="tns:ArrayOfPREmploymentInformationSvcContract" />
+  <xs:complexType name="PREmploymentInformationSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActivePayPeriodCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BasicSalary" type="xs:decimal" />
+          <xs:element minOccurs="0" name="BenDedRuleCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DailyWorkingHours" type="xs:int" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DefaultLegalEntity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Dimension" type="xs:long" />
+          <xs:element minOccurs="0" name="EarningRuleCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeLegalEntities" nillable="true" type="tns:ArrayOfDFEmployeeLegalEntitiesContract" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmploymentStatus" type="tns:PREmploymentStatus" />
+          <xs:element minOccurs="0" name="EmploymentType" type="tns:PREmploymentType" />
+          <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EntitlementRuleCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GenerationType" type="tns:PREmpInfoGenerationType" />
+          <xs:element minOccurs="0" name="JobId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="PayGroupCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentMethod" type="tns:PRPaymentMethod" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="SalaryStatus" type="tns:PRSalaryStatus" />
+          <xs:element minOccurs="0" name="ServiceDuration" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="WorkerRecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PREmploymentInformationSvcContract" nillable="true" type="tns:PREmploymentInformationSvcContract" />
+  <xs:complexType name="ArrayOfDFEmployeeLegalEntitiesContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DFEmployeeLegalEntitiesContract" nillable="true" type="tns:DFEmployeeLegalEntitiesContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDFEmployeeLegalEntitiesContract" nillable="true" type="tns:ArrayOfDFEmployeeLegalEntitiesContract" />
+  <xs:complexType name="DFEmployeeLegalEntitiesContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DFEmployeeLegalEntitiesContract" nillable="true" type="tns:DFEmployeeLegalEntitiesContract" />
+  <xs:simpleType name="PREmploymentStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Active" />
+      <xs:enumeration value="Hold" />
+      <xs:enumeration value="Stopped" />
+      <xs:enumeration value="Terminated" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PREmploymentStatus" nillable="true" type="tns:PREmploymentStatus" />
+  <xs:simpleType name="PREmploymentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Permanent" />
+      <xs:enumeration value="Contract" />
+      <xs:enumeration value="Probation" />
+      <xs:enumeration value="DailyWages" />
+      <xs:enumeration value="Trainee" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PREmploymentType" nillable="true" type="tns:PREmploymentType" />
+  <xs:simpleType name="PREmpInfoGenerationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Enrollment" />
+      <xs:enumeration value="Start" />
+      <xs:enumeration value="Stop" />
+      <xs:enumeration value="Increment" />
+      <xs:enumeration value="EditInfo" />
+      <xs:enumeration value="Transfer" />
+      <xs:enumeration value="ProbationExtension" />
+      <xs:enumeration value="Promotion" />
+      <xs:enumeration value="SalaryRevision" />
+      <xs:enumeration value="Confirmation" />
+      <xs:enumeration value="Demotion" />
+      <xs:enumeration value="ChangeEmploymentType" />
+      <xs:enumeration value="ContractRenew" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PREmpInfoGenerationType" nillable="true" type="tns:PREmpInfoGenerationType" />
+  <xs:simpleType name="PRPaymentMethod">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BankTransfer" />
+      <xs:enumeration value="Cash" />
+      <xs:enumeration value="Cheque" />
+      <xs:enumeration value="OnlineBankTransfer" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PRPaymentMethod" nillable="true" type="tns:PRPaymentMethod" />
+  <xs:simpleType name="PRSalaryStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Started" />
+      <xs:enumeration value="Stoped" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PRSalaryStatus" nillable="true" type="tns:PRSalaryStatus" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q3:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

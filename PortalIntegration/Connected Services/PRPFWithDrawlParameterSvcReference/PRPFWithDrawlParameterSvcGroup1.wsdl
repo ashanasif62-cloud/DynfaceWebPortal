@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/PRPFWithDrawlParameterSvcGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="find">
+    <wsdl:part name="parameters" element="tns:find" />
+  </wsdl:message>
+  <wsdl:message name="find_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="findResponse">
+    <wsdl:part name="parameters" element="tns:findResponse" />
+  </wsdl:message>
+  <wsdl:message name="findResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PRPFWithDrawlParameterSvc_find_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll">
+    <wsdl:part name="parameters" element="tns:retrieveAll" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PRPFWithDrawlParameterSvc_retrieveAll_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="PRPFWithDrawlParameterSvc">
+    <wsdl:operation name="find">
+      <wsdl:input wsam:Action="http://tempuri.org/PRPFWithDrawlParameterSvc/find" name="find" message="tns:find" />
+      <wsdl:output wsam:Action="http://tempuri.org/PRPFWithDrawlParameterSvc/findResponse" name="findResponse" message="tns:findResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PRPFWithDrawlParameterSvc/Fault" name="SoapServiceFaultFault" message="tns:PRPFWithDrawlParameterSvc_find_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAll">
+      <wsdl:input wsam:Action="http://tempuri.org/PRPFWithDrawlParameterSvc/retrieveAll" name="retrieveAll" message="tns:retrieveAll" />
+      <wsdl:output wsam:Action="http://tempuri.org/PRPFWithDrawlParameterSvc/retrieveAllResponse" name="retrieveAllResponse" message="tns:retrieveAllResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PRPFWithDrawlParameterSvc/Fault" name="SoapServiceFaultFault" message="tns:PRPFWithDrawlParameterSvc_retrieveAll_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

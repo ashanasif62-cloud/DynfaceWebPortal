@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="270ebd10-92be-4018-b6b4-29db38bf5aba" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisition_DetailsSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HRHiringRequisition_DetailsSvcGroup76.xsd" MetadataType="Schema" ID="ea1774bf-8fad-4097-8c63-c717c0e7fcd6" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisition_DetailsSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HRHiringRequisition_DetailsSvcGroup72.xsd" MetadataType="Schema" ID="f55c412b-1087-44d2-b3f8-85dc858709df" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisition_DetailsSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HRHiringRequisition_DetailsSvcGroup2.wsdl" MetadataType="Wsdl" ID="4ce1de91-8fdb-45a1-b35e-ee8333d246a6" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisition_DetailsSvcGroup?wsdl" />
+    <MetadataFile FileName="HRHiringRequisition_DetailsSvcGroup71.xsd" MetadataType="Schema" ID="fc6703ba-5d46-4b48-bd28-1e010b0896c6" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisition_DetailsSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HRHiringRequisition_DetailsSvcGroup74.xsd" MetadataType="Schema" ID="5672837e-3ca9-4551-b8a8-ad1cb52ee3ee" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisition_DetailsSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HRHiringRequisition_DetailsSvcGroup75.xsd" MetadataType="Schema" ID="4da903c2-c82a-4dbf-8465-9c739d27ea81" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisition_DetailsSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HRHiringRequisition_DetailsSvcGroup73.xsd" MetadataType="Schema" ID="89672f08-1ff1-4e8a-b21c-8f439daf2df4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisition_DetailsSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HRHiringRequisition_DetailsSvcGroup1.disco" MetadataType="Disco" ID="022f5769-4bdd-401b-911c-bbd03ec0d9b5" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisition_DetailsSvcGroup?disco" />
+    <MetadataFile FileName="HRHiringRequisition_DetailsSvcGroup7.xsd" MetadataType="Schema" ID="dc7ad1aa-55e9-492c-be55-35e22e4c4ada" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisition_DetailsSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HRHiringRequisition_DetailsSvcGroup21.wsdl" MetadataType="Wsdl" ID="05a86ba9-7e9e-4726-baaf-2064d02e73c8" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisition_DetailsSvcGroup?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

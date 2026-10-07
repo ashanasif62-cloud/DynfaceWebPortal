@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="d5aa215a-f27b-449c-a29d-9feab59894df" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WorkflowTrackingStatusTableSvcGroup.wsdl" MetadataType="Wsdl" ID="d64d78c0-9c23-4eb4-9502-f58429334a31" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup?wsdl" />
+    <MetadataFile FileName="WorkflowTrackingStatusTableSvcGroup.xsd" MetadataType="Schema" ID="175c12bc-addb-44a7-9195-ebaff55564b8" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="WorkflowTrackingStatusTableSvcGroup1.xsd" MetadataType="Schema" ID="a4a07f08-53f2-44b2-9ad8-c72d5a6ff82e" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="WorkflowTrackingStatusTableSvcGroup2.xsd" MetadataType="Schema" ID="2f2ca615-6f5e-455d-beea-f5a97bb44468" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="WorkflowTrackingStatusTableSvcGroup3.xsd" MetadataType="Schema" ID="8ad2fe30-bf25-4bb3-9c33-f01f535305fe" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="WorkflowTrackingStatusTableSvcGroup4.xsd" MetadataType="Schema" ID="7acd56d9-69df-476c-a895-cb240b7f290c" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="WorkflowTrackingStatusTableSvcGroup5.xsd" MetadataType="Schema" ID="25dc853e-8d60-45e9-b272-feb776390d4e" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="WorkflowTrackingStatusTableSvcGroup6.xsd" MetadataType="Schema" ID="4bae23e0-2f78-4035-89ef-49533d8eb517" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="WorkflowTrackingStatusTableSvcGroup1.wsdl" MetadataType="Wsdl" ID="7b6373d3-37a8-47da-bc1f-4f009866d859" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="WorkflowTrackingStatusTableSvcGroup.disco" MetadataType="Disco" ID="d35831fc-d7e5-4a22-8c99-68cc4c912913" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/WorkflowTrackingStatusTableSvcGroup?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

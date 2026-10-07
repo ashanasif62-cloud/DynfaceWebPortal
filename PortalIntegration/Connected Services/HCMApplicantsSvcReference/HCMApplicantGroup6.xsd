@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="HCMApplicantContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddressBooks" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Applicant" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactEmailDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactEmailIsIM" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="ContactEmailIsPrivate" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="ContactFacebook" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactFacebookDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactFacebookIsPrivate" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="ContactFax" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactFaxDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactFaxExtension" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactFaxIsPrivate" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="ContactLinkedIn" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactLinkedInDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactLinkedInIsPrivate" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="ContactPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactPhoneDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactPhoneExtension" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactPhoneIsMobile" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="ContactPhoneIsPrivate" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="ContactTelex" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactTelexDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactTelexIsPrivate" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="ContactTwitter" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactTwitterDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactTwitterIsPrivate" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="ContactURL" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactURLDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactURLIsPrivate" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="CountryRegionISOCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryRegionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrentJobTitle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EducationLevelId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ElectronicLocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmploymentType" type="tns:HcmEmploymentType" />
+          <xs:element minOccurs="0" name="EmploymentValidFrom" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EmploymentValidTo" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EthnicOriginId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FutureConsideration" type="tns:HrmBlankYesNo" />
+          <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Initials" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsPrivate" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="IsSkillMappingEnabaled" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="KnownAs" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastNamePrefix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LocationRoles" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaritalStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NameAlias" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NameSequenceDisplayAs" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NameValidFrom" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="NameValidTo" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="NativeLanguageId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PartyNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PerosnDetailsValidTo" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PersonDetailsValidFrom" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PhoneticFirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneticLastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneticMiddleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalAddressValidFrom" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PostalAddressValidTo" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PreviousEmployee" type="tns:HrmBlankYesNo" />
+          <xs:element minOccurs="0" name="ProfessionalSuffix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProfessionalTitle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReasonCodeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VeteranStatusId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="applicantType" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HCMApplicantContract" nillable="true" type="tns:HCMApplicantContract" />
+  <xs:simpleType name="HcmEmploymentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Employee" />
+      <xs:enumeration value="Contractor" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HcmEmploymentType" nillable="true" type="tns:HcmEmploymentType" />
+  <xs:simpleType name="HrmBlankYesNo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Blank" />
+      <xs:enumeration value="Yes" />
+      <xs:enumeration value="No" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HrmBlankYesNo" nillable="true" type="tns:HrmBlankYesNo" />
+  <xs:complexType name="ArrayOfHCMApplicantContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HCMApplicantContract" nillable="true" type="tns:HCMApplicantContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHCMApplicantContract" nillable="true" type="tns:ArrayOfHCMApplicantContract" />
+</xs:schema>

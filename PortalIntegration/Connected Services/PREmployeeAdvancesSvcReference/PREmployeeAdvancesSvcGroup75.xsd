@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfPREmployeeAdvancesSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PREmployeeAdvancesSvcContract" nillable="true" type="tns:PREmployeeAdvancesSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPREmployeeAdvancesSvcContract" nillable="true" type="tns:ArrayOfPREmployeeAdvancesSvcContract" />
+  <xs:complexType name="PREmployeeAdvancesSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdvanceAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="AdvanceAmountlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AdvanceId" type="xs:int" />
+          <xs:element minOccurs="0" name="AdvanceIdlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AdvanceStatus" type="tns:PRAdvanceStatus" />
+          <xs:element minOccurs="0" name="AdvanceStatuslbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AdvanceTypeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AdvanceTypeCodelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeIdlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeNamelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EndDatelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PayGroupCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PayGroupCodelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PayPeriodCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PayPeriodCodelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PaymentDatelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentStatus" type="tns:PRPaymentStatus" />
+          <xs:element minOccurs="0" name="PaymentStatuslbl" nillable="true" type="xs:string" />
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Recoveries" nillable="true" type="q2:ArrayOfanyType" />
+          <xs:element minOccurs="0" name="RecoveryAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RecoveryAmountlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecoveryDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RecoveryDatelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RemainingAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RemainingAmountlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StartDatelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TotalRecovered" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalRecoveredlbl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PREmployeeAdvancesSvcContract" nillable="true" type="tns:PREmployeeAdvancesSvcContract" />
+  <xs:simpleType name="PRAdvanceStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Blank" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Paid" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="Posted" />
+      <xs:enumeration value="Recovered" />
+      <xs:enumeration value="All" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PRAdvanceStatus" nillable="true" type="tns:PRAdvanceStatus" />
+  <xs:simpleType name="PRPaymentStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Posted" />
+      <xs:enumeration value="Generated" />
+      <xs:enumeration value="ApprovedPosted" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="OutsideSystem" />
+      <xs:enumeration value="BookedOutSide" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PRPaymentStatus" nillable="true" type="tns:PRPaymentStatus" />
+</xs:schema>

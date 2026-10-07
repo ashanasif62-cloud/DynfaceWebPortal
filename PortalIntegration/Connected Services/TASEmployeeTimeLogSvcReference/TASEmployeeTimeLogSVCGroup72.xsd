@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/TASEmployeeTimeLogSVCGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="TASEmployeeTimeLogContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Absent" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClockIn" type="xs:int" />
+          <xs:element minOccurs="0" name="ClockOut" type="xs:int" />
+          <xs:element minOccurs="0" name="EarlyOut" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GenerationType" type="tns:TASGenerationType" />
+          <xs:element minOccurs="0" name="InOutType" type="tns:TASInOutType" />
+          <xs:element minOccurs="0" name="LateArrival" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MachineId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Present" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PunchDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ShiftHours" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TASEmployeeTimeLogContract" nillable="true" type="tns:TASEmployeeTimeLogContract" />
+  <xs:simpleType name="TASGenerationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Manual" />
+      <xs:enumeration value="AttendanceMachine" />
+      <xs:enumeration value="EssPotral" />
+      <xs:enumeration value="Import" />
+      <xs:enumeration value="Request" />
+      <xs:enumeration value="ShiftChange" />
+      <xs:enumeration value="Dynaface" />
+      <xs:enumeration value="None" />
+      <xs:enumeration value="MobileApp" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TASGenerationType" nillable="true" type="tns:TASGenerationType" />
+  <xs:simpleType name="TASInOutType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="TimeIn" />
+      <xs:enumeration value="TimeOut" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TASInOutType" nillable="true" type="tns:TASInOutType" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfTASEmployeeTimeLogContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TASEmployeeTimeLogContract" nillable="true" type="tns:TASEmployeeTimeLogContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTASEmployeeTimeLogContract" nillable="true" type="tns:ArrayOfTASEmployeeTimeLogContract" />
+</xs:schema>

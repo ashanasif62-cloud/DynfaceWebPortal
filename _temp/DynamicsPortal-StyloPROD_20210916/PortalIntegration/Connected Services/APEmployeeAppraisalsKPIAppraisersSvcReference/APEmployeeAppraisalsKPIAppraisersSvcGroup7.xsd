@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalsKPIAppraisersSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfAPEmployeeAppraisalsKPIAppraisersSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="APEmployeeAppraisalsKPIAppraisersSvcContract" nillable="true" type="tns:APEmployeeAppraisalsKPIAppraisersSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAPEmployeeAppraisalsKPIAppraisersSvcContract" nillable="true" type="tns:ArrayOfAPEmployeeAppraisalsKPIAppraisersSvcContract" />
+  <xs:complexType name="APEmployeeAppraisalsKPIAppraisersSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AppraiserStatus" type="tns:APAppraiserStatus" />
+          <xs:element minOccurs="0" name="Appraisers" type="tns:APAppraisers" />
+          <xs:element minOccurs="0" name="AssignedTo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FinalScore" type="xs:decimal" />
+          <xs:element minOccurs="0" name="KPIDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="KPIWeightage" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RefRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="Score" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Weightage" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="APEmployeeAppraisalsKPIAppraisersSvcContract" nillable="true" type="tns:APEmployeeAppraisalsKPIAppraisersSvcContract" />
+  <xs:simpleType name="APAppraiserStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Created" />
+      <xs:enumeration value="InProcess" />
+      <xs:enumeration value="Completed" />
+      <xs:enumeration value="Cancelled" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="APAppraiserStatus" nillable="true" type="tns:APAppraiserStatus" />
+  <xs:simpleType name="APAppraisers">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Employee" />
+      <xs:enumeration value="Position" />
+      <xs:enumeration value="LineManager" />
+      <xs:enumeration value="DepartmentHead" />
+      <xs:enumeration value="Self" />
+      <xs:enumeration value="Job" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="APAppraisers" nillable="true" type="tns:APAppraisers" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+</xs:schema>

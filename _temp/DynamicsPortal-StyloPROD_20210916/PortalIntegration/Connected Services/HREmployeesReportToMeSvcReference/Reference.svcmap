@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a76b7c3c-666e-4af1-be8a-ef982ddbfa2f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/HREmployeesListReportToMeSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="tempuri.org11.wsdl" MetadataType="Wsdl" ID="82afb52e-d14d-4e3c-b46b-b824a91cd945" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HREmployeesListReportToMeSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="service11.wsdl" MetadataType="Wsdl" ID="6c0f3f82-2661-4219-9939-32133b00be74" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HREmployeesListReportToMeSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="service11.xsd" MetadataType="Schema" ID="680324b3-4c17-4576-b30f-6a6cf4fa749b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HREmployeesListReportToMeSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="Arrays11.xsd" MetadataType="Schema" ID="6f6ed155-0944-4652-aca2-108ec0d999f4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HREmployeesListReportToMeSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="tempuri.org11.xsd" MetadataType="Schema" ID="38f6b757-a48c-473d-bf78-5588d4d6210b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HREmployeesListReportToMeSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="datacontracts11.xsd" MetadataType="Schema" ID="1f984675-c521-42dc-88c2-300e2c5f1569" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HREmployeesListReportToMeSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="Dynamics.AX.Application11.xsd" MetadataType="Schema" ID="ed9c3c1a-92f2-4d1c-bc4f-2231bc635ba5" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HREmployeesListReportToMeSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="Microsoft.Dynamics.Ax.Xpp11.xsd" MetadataType="Schema" ID="fa2385c2-60fe-49a4-8e50-1eb4795d99ea" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HREmployeesListReportToMeSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+    <MetadataFile FileName="Microsoft.Dynamics.AX.KernelInterop11.xsd" MetadataType="Schema" ID="29dd72cb-4026-41db-9e3f-0d62eabb048a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HREmployeesListReportToMeSvcGroup/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ec60c277-65d9-46be-b957-2cabbeda6d33" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/JmgImportSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="JmgImportSvcGroup6.xsd" MetadataType="Schema" ID="b0a7cf0b-241d-4b83-b7be-f731def98409" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgImportSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="JmgImportSvcGroup4.xsd" MetadataType="Schema" ID="8a24c9b0-1753-4579-9214-225d6d31c590" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgImportSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="JmgImportSvcGroup.xsd" MetadataType="Schema" ID="dc76dbc6-136c-41a2-81c4-fed6d2461ea2" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgImportSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="JmgImportSvcGroup3.xsd" MetadataType="Schema" ID="8bab9f76-8366-49ca-b849-8835f8e853cd" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgImportSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="JmgImportSvcGroup1.xsd" MetadataType="Schema" ID="634a1521-86c1-4aa9-a59a-50b115a16691" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgImportSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="JmgImportSvcGroup5.xsd" MetadataType="Schema" ID="88491b7c-7999-47d4-beee-9d9bb7d45e1a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgImportSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="JmgImportSvcGroup.disco" MetadataType="Disco" ID="b2520cf8-e396-4501-9b93-95b37988803a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgImportSvcGroup?disco" />
+    <MetadataFile FileName="JmgImportSvcGroup.wsdl" MetadataType="Wsdl" ID="79c222c1-f1e6-4f51-a034-e73162cff4cf" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgImportSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="JmgImportSvcGroup1.wsdl" MetadataType="Wsdl" ID="e06e7dca-7bca-4b74-a4b1-69d2b8d36c94" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgImportSvcGroup?wsdl" />
+    <MetadataFile FileName="JmgImportSvcGroup2.xsd" MetadataType="Schema" ID="b306aa73-6fb7-4cb6-a445-4be5ceb8bfa3" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgImportSvcGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

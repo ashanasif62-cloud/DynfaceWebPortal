@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modal.Master" hash="ffffffefe3a9c958" filehash="fffffd0e1feec208" flags="110000" assembly="MaisonPortal" type="ASP.modal_master">
+  <filedeps>
+    <filedep name="/Modal.Master" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="27350885-c4ae-4818-b77a-c92061be3965" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ExpenseManagmentSvcGroup7.xsd" MetadataType="Schema" ID="029603ae-26d3-4ea5-bcb3-4a34540c387a" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="ExpenseManagmentSvcGroup2.wsdl" MetadataType="Wsdl" ID="7dc29e32-65a9-49dd-8805-9c68a98b6c01" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?wsdl" />
+    <MetadataFile FileName="ExpenseManagmentSvcGroup71.xsd" MetadataType="Schema" ID="b2983334-cce0-438d-b78f-b7c35e01624e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="ExpenseManagmentSvcGroup21.wsdl" MetadataType="Wsdl" ID="1d88af69-ad7e-4c7c-a265-ca96fe10ddd7" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ExpenseManagmentSvcGroup72.xsd" MetadataType="Schema" ID="063e4637-c208-421c-9bd6-8167e2e7d3dd" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="ExpenseManagmentSvcGroup1.disco" MetadataType="Disco" ID="67b4e39d-a337-4b77-8d6b-0f8d8a125ef1" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?disco" />
+    <MetadataFile FileName="ExpenseManagmentSvcGroup73.xsd" MetadataType="Schema" ID="93c223b2-98ff-43c3-814a-8c8e3c5bd866" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="ExpenseManagmentSvcGroup74.xsd" MetadataType="Schema" ID="1ba65869-42a0-46cd-a8cc-c340c02be1e2" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="ExpenseManagmentSvcGroup75.xsd" MetadataType="Schema" ID="fe0c0def-3a55-4e74-8545-2422679ac706" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="ExpenseManagmentSvcGroup76.xsd" MetadataType="Schema" ID="47e43877-8b0e-4595-8a38-e55027607d43" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

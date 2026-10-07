@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="0e8d7ae9-feb3-45d7-9096-9552690652d5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchPrePaymentServiceGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PurchPrePaymentServiceGroup.xsd" MetadataType="Schema" ID="55c666f3-397b-4795-8212-8d1038b3b189" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchPrePaymentServiceGroup?xsd=xsd3" />
+    <MetadataFile FileName="PurchPrePaymentServiceGroup1.xsd" MetadataType="Schema" ID="0f548a29-c581-4ed1-ba02-0c493d1fcb63" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchPrePaymentServiceGroup?xsd=xsd0" />
+    <MetadataFile FileName="PurchPrePaymentServiceGroup.wsdl" MetadataType="Wsdl" ID="ca3efc5b-6728-4cb6-8ce5-7f7f7a24e87f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchPrePaymentServiceGroup?wsdl" />
+    <MetadataFile FileName="PurchPrePaymentServiceGroup2.xsd" MetadataType="Schema" ID="93443304-9c41-4230-ba7f-8b8444011609" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchPrePaymentServiceGroup?xsd=xsd4" />
+    <MetadataFile FileName="PurchPrePaymentServiceGroup3.xsd" MetadataType="Schema" ID="4e794c73-204b-4f3a-a6fa-b29bdb53b28a" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchPrePaymentServiceGroup?xsd=xsd1" />
+    <MetadataFile FileName="PurchPrePaymentServiceGroup.disco" MetadataType="Disco" ID="04418e8c-69ec-4d61-9e82-7ea506e7d69f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchPrePaymentServiceGroup?disco" />
+    <MetadataFile FileName="PurchPrePaymentServiceGroup4.xsd" MetadataType="Schema" ID="c6b82b99-6c30-4467-a37d-c3a8236cae22" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchPrePaymentServiceGroup?xsd=xsd5" />
+    <MetadataFile FileName="PurchPrePaymentServiceGroup5.xsd" MetadataType="Schema" ID="d0bb106a-b71b-499f-90bd-905a78b24cb2" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchPrePaymentServiceGroup?xsd=xsd6" />
+    <MetadataFile FileName="PurchPrePaymentServiceGroup6.xsd" MetadataType="Schema" ID="bbad16e8-92a9-4b1f-a0cd-42ce10ccc4fa" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchPrePaymentServiceGroup?xsd=xsd2" />
+    <MetadataFile FileName="PurchPrePaymentServiceGroup1.wsdl" MetadataType="Wsdl" ID="9d695e8e-d001-4047-b623-0039dc0f0e43" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchPrePaymentServiceGroup?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

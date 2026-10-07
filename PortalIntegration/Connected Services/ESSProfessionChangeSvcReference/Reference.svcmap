@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="d93502dd-4aac-477e-9485-e0e97b7ef396" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/ESSProfessionChangeSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ESSProfessionChangeSvcGroup2.wsdl" MetadataType="Wsdl" ID="975b51ca-308b-474d-9763-498e53891309" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSProfessionChangeSvcGroup?wsdl" />
+    <MetadataFile FileName="ESSProfessionChangeSvcGroup72.xsd" MetadataType="Schema" ID="3ce7c7a9-122f-42e3-85cd-40f2454981a9" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSProfessionChangeSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="ESSProfessionChangeSvcGroup7.xsd" MetadataType="Schema" ID="7f8d244b-ad6e-40ce-98e0-6600f054e2a6" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSProfessionChangeSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="ESSProfessionChangeSvcGroup1.disco" MetadataType="Disco" ID="66d23865-dc54-46f5-9b07-34cbcf98c4c8" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSProfessionChangeSvcGroup?disco" />
+    <MetadataFile FileName="ESSProfessionChangeSvcGroup71.xsd" MetadataType="Schema" ID="3f7d550e-f350-4a64-832b-7812482597aa" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSProfessionChangeSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="ESSProfessionChangeSvcGroup21.wsdl" MetadataType="Wsdl" ID="a1619463-f11a-4e9f-adbd-8969e33bd4f2" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSProfessionChangeSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ESSProfessionChangeSvcGroup73.xsd" MetadataType="Schema" ID="e7a96f5b-8ff7-4d59-8688-a69d7e0bcdf0" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSProfessionChangeSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="ESSProfessionChangeSvcGroup75.xsd" MetadataType="Schema" ID="658a9d53-9863-4762-8ba6-5a6d08d62023" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSProfessionChangeSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="ESSProfessionChangeSvcGroup74.xsd" MetadataType="Schema" ID="25ceb2ad-f75a-45ac-b96b-4b987e6891c7" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSProfessionChangeSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="ESSProfessionChangeSvcGroup76.xsd" MetadataType="Schema" ID="eec6c503-4127-4811-8e4a-f062ab23f136" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSProfessionChangeSvcGroup?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="http://tempuri.org" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="PurchaseOrderHeaderGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_PurchaseOrderService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_PurchaseOrderService" type="i0:PurchaseOrderService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_PurchaseOrderService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="retrieveAll">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveAll" style="document" />
+      <wsdl:input name="retrieveAll">
+        <soap:header message="i0:retrieveAll_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveAllResponse">
+        <soap:header message="i0:retrieveAllResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/create" style="document" />
+      <wsdl:input name="create">
+        <soap:header message="i0:create_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="createResponse">
+        <soap:header message="i0:createResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/delete" style="document" />
+      <wsdl:input name="delete">
+        <soap:header message="i0:delete_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteResponse">
+        <soap:header message="i0:deleteResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="VendorLookup">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/VendorLookup" style="document" />
+      <wsdl:input name="VendorLookup">
+        <soap:header message="i0:VendorLookup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="VendorLookupResponse">
+        <soap:header message="i0:VendorLookupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ContactDetailsLookup">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/ContactDetailsLookup" style="document" />
+      <wsdl:input name="ContactDetailsLookup">
+        <soap:header message="i0:ContactDetailsLookup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ContactDetailsLookupResponse">
+        <soap:header message="i0:ContactDetailsLookupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveProjID">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveProjID" style="document" />
+      <wsdl:input name="retrieveProjID">
+        <soap:header message="i0:retrieveProjID_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveProjIDResponse">
+        <soap:header message="i0:retrieveProjIDResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrievelocationinfo">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrievelocationinfo" style="document" />
+      <wsdl:input name="retrievelocationinfo">
+        <soap:header message="i0:retrievelocationinfo_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrievelocationinfoResponse">
+        <soap:header message="i0:retrievelocationinfoResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveBuyerInformation">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveBuyerInformation" style="document" />
+      <wsdl:input name="retrieveBuyerInformation">
+        <soap:header message="i0:retrieveBuyerInformation_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveBuyerInformationResponse">
+        <soap:header message="i0:retrieveBuyerInformationResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveWorkerInfo">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveWorkerInfo" style="document" />
+      <wsdl:input name="retrieveWorkerInfo">
+        <soap:header message="i0:retrieveWorkerInfo_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveWorkerInfoResponse">
+        <soap:header message="i0:retrieveWorkerInfoResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrievelangaugeId">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrievelangaugeId" style="document" />
+      <wsdl:input name="retrievelangaugeId">
+        <soap:header message="i0:retrievelangaugeId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrievelangaugeIdResponse">
+        <soap:header message="i0:retrievelangaugeIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveByPurchId">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveByPurchId" style="document" />
+      <wsdl:input name="retrieveByPurchId">
+        <soap:header message="i0:retrieveByPurchId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveByPurchIdResponse">
+        <soap:header message="i0:retrieveByPurchIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateRecordPOGeneral">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/updateRecordPOGeneral" style="document" />
+      <wsdl:input name="updateRecordPOGeneral">
+        <soap:header message="i0:updateRecordPOGeneral_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateRecordPOGeneralResponse">
+        <soap:header message="i0:updateRecordPOGeneralResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveReasonCode">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveReasonCode" style="document" />
+      <wsdl:input name="retrieveReasonCode">
+        <soap:header message="i0:retrieveReasonCode_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveReasonCodeResponse">
+        <soap:header message="i0:retrieveReasonCodeResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveWarehouse">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveWarehouse" style="document" />
+      <wsdl:input name="retrieveWarehouse">
+        <soap:header message="i0:retrieveWarehouse_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveWarehouseResponse">
+        <soap:header message="i0:retrieveWarehouseResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateRecordPOSetup">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/updateRecordPOSetup" style="document" />
+      <wsdl:input name="updateRecordPOSetup">
+        <soap:header message="i0:updateRecordPOSetup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateRecordPOSetupResponse">
+        <soap:header message="i0:updateRecordPOSetupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrievesiteinfo">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrievesiteinfo" style="document" />
+      <wsdl:input name="retrievesiteinfo">
+        <soap:header message="i0:retrievesiteinfo_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrievesiteinfoResponse">
+        <soap:header message="i0:retrievesiteinfoResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveSite">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveSite" style="document" />
+      <wsdl:input name="retrieveSite">
+        <soap:header message="i0:retrieveSite_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveSiteResponse">
+        <soap:header message="i0:retrieveSiteResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateRecordPOPriceandDiscoun">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/updateRecordPOPriceandDiscoun" style="document" />
+      <wsdl:input name="updateRecordPOPriceandDiscoun">
+        <soap:header message="i0:updateRecordPOPriceandDiscoun_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateRecordPOPriceandDiscounResponse">
+        <soap:header message="i0:updateRecordPOPriceandDiscounResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateRecordPODelivery">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/updateRecordPODelivery" style="document" />
+      <wsdl:input name="updateRecordPODelivery">
+        <soap:header message="i0:updateRecordPODelivery_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateRecordPODeliveryResponse">
+        <soap:header message="i0:updateRecordPODeliveryResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateRecordPOAddress">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/updateRecordPOAddress" style="document" />
+      <wsdl:input name="updateRecordPOAddress">
+        <soap:header message="i0:updateRecordPOAddress_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateRecordPOAddressResponse">
+        <soap:header message="i0:updateRecordPOAddressResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveModeOfDelivery">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveModeOfDelivery" style="document" />
+      <wsdl:input name="retrieveModeOfDelivery">
+        <soap:header message="i0:retrieveModeOfDelivery_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveModeOfDeliveryResponse">
+        <soap:header message="i0:retrieveModeOfDeliveryResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveDeliveryTerm">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveDeliveryTerm" style="document" />
+      <wsdl:input name="retrieveDeliveryTerm">
+        <soap:header message="i0:retrieveDeliveryTerm_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveDeliveryTermResponse">
+        <soap:header message="i0:retrieveDeliveryTermResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveCarrierCode">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveCarrierCode" style="document" />
+      <wsdl:input name="retrieveCarrierCode">
+        <soap:header message="i0:retrieveCarrierCode_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveCarrierCodeResponse">
+        <soap:header message="i0:retrieveCarrierCodeResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveTermOfPayment">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveTermOfPayment" style="document" />
+      <wsdl:input name="retrieveTermOfPayment">
+        <soap:header message="i0:retrieveTermOfPayment_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveTermOfPaymentResponse">
+        <soap:header message="i0:retrieveTermOfPaymentResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveMethodOfPayment">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveMethodOfPayment" style="document" />
+      <wsdl:input name="retrieveMethodOfPayment">
+        <soap:header message="i0:retrieveMethodOfPayment_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveMethodOfPaymentResponse">
+        <soap:header message="i0:retrieveMethodOfPaymentResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveSchedulePayment">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveSchedulePayment" style="document" />
+      <wsdl:input name="retrieveSchedulePayment">
+        <soap:header message="i0:retrieveSchedulePayment_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveSchedulePaymentResponse">
+        <soap:header message="i0:retrieveSchedulePaymentResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveCashDiscount">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveCashDiscount" style="document" />
+      <wsdl:input name="retrieveCashDiscount">
+        <soap:header message="i0:retrieveCashDiscount_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveCashDiscountResponse">
+        <soap:header message="i0:retrieveCashDiscountResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrievePriceGroup">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrievePriceGroup" style="document" />
+      <wsdl:input name="retrievePriceGroup">
+        <soap:header message="i0:retrievePriceGroup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrievePriceGroupResponse">
+        <soap:header message="i0:retrievePriceGroupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveTaxGroup">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveTaxGroup" style="document" />
+      <wsdl:input name="retrieveTaxGroup">
+        <soap:header message="i0:retrieveTaxGroup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveTaxGroupResponse">
+        <soap:header message="i0:retrieveTaxGroupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveBuyerGroup">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveBuyerGroup" style="document" />
+      <wsdl:input name="retrieveBuyerGroup">
+        <soap:header message="i0:retrieveBuyerGroup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveBuyerGroupResponse">
+        <soap:header message="i0:retrieveBuyerGroupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrievePool">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrievePool" style="document" />
+      <wsdl:input name="retrievePool">
+        <soap:header message="i0:retrievePool_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrievePoolResponse">
+        <soap:header message="i0:retrievePoolResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrievePoolInfo">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrievePoolInfo" style="document" />
+      <wsdl:input name="retrievePoolInfo">
+        <soap:header message="i0:retrievePoolInfo_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrievePoolInfoResponse">
+        <soap:header message="i0:retrievePoolInfoResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveVenderAccount">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveVenderAccount" style="document" />
+      <wsdl:input name="retrieveVenderAccount">
+        <soap:header message="i0:retrieveVenderAccount_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveVenderAccountResponse">
+        <soap:header message="i0:retrieveVenderAccountResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveInvoiceAccount">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveInvoiceAccount" style="document" />
+      <wsdl:input name="retrieveInvoiceAccount">
+        <soap:header message="i0:retrieveInvoiceAccount_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveInvoiceAccountResponse">
+        <soap:header message="i0:retrieveInvoiceAccountResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveContactId">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveContactId" style="document" />
+      <wsdl:input name="retrieveContactId">
+        <soap:header message="i0:retrieveContactId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveContactIdResponse">
+        <soap:header message="i0:retrieveContactIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrievepurchnumsequence">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrievepurchnumsequence" style="document" />
+      <wsdl:input name="retrievepurchnumsequence">
+        <soap:header message="i0:retrievepurchnumsequence_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrievepurchnumsequenceResponse">
+        <soap:header message="i0:retrievepurchnumsequenceResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrievePostingProfile">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrievePostingProfile" style="document" />
+      <wsdl:input name="retrievePostingProfile">
+        <soap:header message="i0:retrievePostingProfile_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrievePostingProfileResponse">
+        <soap:header message="i0:retrievePostingProfileResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveNumberSequence">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveNumberSequence" style="document" />
+      <wsdl:input name="retrieveNumberSequence">
+        <soap:header message="i0:retrieveNumberSequence_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveNumberSequenceResponse">
+        <soap:header message="i0:retrieveNumberSequenceResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveRequester">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveRequester" style="document" />
+      <wsdl:input name="retrieveRequester">
+        <soap:header message="i0:retrieveRequester_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveRequesterResponse">
+        <soap:header message="i0:retrieveRequesterResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveOrderer">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveOrderer" style="document" />
+      <wsdl:input name="retrieveOrderer">
+        <soap:header message="i0:retrieveOrderer_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveOrdererResponse">
+        <soap:header message="i0:retrieveOrdererResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveEmail">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveEmail" style="document" />
+      <wsdl:input name="retrieveEmail">
+        <soap:header message="i0:retrieveEmail_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveEmailResponse">
+        <soap:header message="i0:retrieveEmailResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeRequest_PO">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/ChangeRequest_PO" style="document" />
+      <wsdl:input name="ChangeRequest_PO">
+        <soap:header message="i0:ChangeRequest_PO_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ChangeRequest_POResponse">
+        <soap:header message="i0:ChangeRequest_POResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrievePurchTotal">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrievePurchTotal" style="document" />
+      <wsdl:input name="retrievePurchTotal">
+        <soap:header message="i0:retrievePurchTotal_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrievePurchTotalResponse">
+        <soap:header message="i0:retrievePurchTotalResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateRecordDelivery">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/updateRecordDelivery" style="document" />
+      <wsdl:input name="updateRecordDelivery">
+        <soap:header message="i0:updateRecordDelivery_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateRecordDeliveryResponse">
+        <soap:header message="i0:updateRecordDeliveryResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveCarrierGroupCode">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/retrieveCarrierGroupCode" style="document" />
+      <wsdl:input name="retrieveCarrierGroupCode">
+        <soap:header message="i0:retrieveCarrierGroupCode_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveCarrierGroupCodeResponse">
+        <soap:header message="i0:retrieveCarrierGroupCodeResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateFinancialDimensionheader">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/updateFinancialDimensionheader" style="document" />
+      <wsdl:input name="updateFinancialDimensionheader">
+        <soap:header message="i0:updateFinancialDimensionheader_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateFinancialDimensionheaderResponse">
+        <soap:header message="i0:updateFinancialDimensionheaderResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="confirmPurchaseOrder">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/confirmPurchaseOrder" style="document" />
+      <wsdl:input name="confirmPurchaseOrder">
+        <soap:header message="i0:confirmPurchaseOrder_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="confirmPurchaseOrderResponse">
+        <soap:header message="i0:confirmPurchaseOrderResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPOSalesTax">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/getPOSalesTax" style="document" />
+      <wsdl:input name="getPOSalesTax">
+        <soap:header message="i0:getPOSalesTax_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getPOSalesTaxResponse">
+        <soap:header message="i0:getPOSalesTaxResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPOLabels">
+      <soap:operation soapAction="http://tempuri.org/PurchaseOrderService/getPOLabels" style="document" />
+      <wsdl:input name="getPOLabels">
+        <soap:header message="i0:getPOLabels_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getPOLabelsResponse">
+        <soap:header message="i0:getPOLabelsResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PurchaseOrderHeaderGroup">
+    <wsdl:port name="BasicHttpBinding_PurchaseOrderService" binding="tns:BasicHttpBinding_PurchaseOrderService">
+      <soap:address location="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderHeaderGroup" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

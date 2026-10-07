@@ -1,0 +1,365 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DynamicsPortal.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="/distribution/img/favicon.png">
+    <!-- Site Title -->
+    <title id="siteTitle" runat="server">Maison Consulting & Solutions</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="/distribution/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css" />
+    <!-- spinners-->
+    <link href="/distribution/css/spinners.css" rel="stylesheet" />
+    <%--<link href="/distribution/css/animate.css" rel="stylesheet" />--%>
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="/distribution/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="/distribution/css/fontastic.css">
+    <link rel="stylesheet" href="/distribution/icons-reference/MaterialDesign-Webfont-master/css/materialdesignicons.css" />
+
+    <link rel="stylesheet" href="/distribution/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+
+    <!-- clalnder theme stylesheet-->
+    <link href="/distribution/vendor/calendar-master/css/theme1.css" rel="stylesheet" />
+
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="/distribution/css/style.default.css" id="themeStylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/distribution/css/style.blue.css" />
+    <!--style.pink  style.red     style.sea       style.violet         style.blue-->
+    <link rel="stylesheet" href="/distribution/css/custom.css">
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server">
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div>
+    <!-- Preloader End -->
+
+    <form id="form1" runat="server">
+        <asp:HiddenField ID="hdnGridSortable" runat="server" />
+        <asp:HiddenField ID="hdnGridPaginationable" runat="server" />
+
+        <div id="modal_dialog" style="display: none;" runat="server">
+            <iframe style="margin: 0px; border: none; width: 100%; height: 100%;"></iframe>
+        </div>
+
+        <!-- Left Side Navbar Start-->
+        <nav id="nav_userMenuItems" runat="server" class="main-menu mCustomScrollbar" data-mcs-axis="yx" data-mcs-theme="blue">
+            <ul id="userMenuItems_fav" runat="server">
+            </ul>
+            <ul>
+                <li><a href="/Default.aspx"><i class="mdi mdi-home-outline"></i><span class="nav-text">ESS Home</span></a></li>
+            </ul>
+        </nav>
+
+        <nav class="side-navbar shrink">
+            <div class="side-navbar-wrapper">
+                <!-- Sidebar Header    -->
+                <div class="sidenav-header d-flex align-items-center justify-content-center">
+                    <!-- User Info-->
+                    <div style="display: none;" class="sidenav-header-inner text-center">
+                    </div>
+                    <!-- Small Brand information, appears on minimized sidebar-->
+                    <div class="sidenav-header-logo">
+                        <a class="brand-small text-center" href="http://maisonconsulting.com/">
+                            <img id="companyLogo_img" runat="server" src="/distribution/img/favicon.png" />
+                        </a>
+                    </div>
+                </div>
+                <!-- Sidebar Navigation Menus-->
+            </div>
+        </nav>
+
+        <!-- Left Side Navbar End -->
+
+        <div class="page active">
+            <!--Top Navbar Start-->
+            <header class="header">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-holder d-flex align-items-center justify-content-between">
+                            <div class="navbar-header">
+                                <a id="toggle-btn" style="display: none;" href="#" class="menu-btn"><i class="icon-bars"></i></a>
+                                <a href="http://maisonconsulting.com/" class="navbar-brand">
+                                    <div class="brand-text d-none d-md-inline-block">
+                                        <span id="companyLogo_title" runat="server">Maison Consulting & Solutions</span>
+                                    </div>
+                                </a>
+                                <div class="separator-vertical"></div>
+                                <a class="navbar-brand" href="/Default.aspx">
+                                    <div class="brand-text d-none d-md-inline-block">
+                                        <span>Employee Self Service</span>
+                                    </div>
+                                </a>
+                                <div class="separator-vertical"></div>
+                                <div id="breadcrumbPanel" class="navbar-brand d-none d-md-inline-block">
+                                </div>
+                                <!-- Breadcrumb-->
+                            </div>
+
+                            <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                                <!-- Notifications dropdown-->
+                                <li class="nav-item dropdown">
+                                    <a id="companies" class="nav-link navbar-top" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span runat="server" id="currentCompanyId"></span>
+                                    </a>
+                                    <ul id="companyDetails" runat="server" aria-labelledby="companies" class="dropdown-menu">
+                                    </ul>
+                                </li>
+                                <!-- Log out-->
+                                <li class="nav-item">
+                                    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                                        <AnonymousTemplate>
+                                            <a class="nav-link logout navbar-top" href="/Administration/UserLogin.aspx" id="HeadLoginStatus" runat="server">
+                                                <span class="d-none d-sm-inline-block">Login</span><i class="mdi mdi-login"></i>
+                                            </a>
+                                        </AnonymousTemplate>
+                                        <LoggedInTemplate>
+                                            <a href="javascript:;" runat="server" class="nav-link logout navbar-top" data-toggle="dropdown" aria-expanded="false">
+                                                <img id="imgUser" runat="server" class="img-fluid rounded-circle mCS_img_loaded"
+                                                    style="width: 18px; height: 18px;"
+                                                    src="/distribution/img/User-flat.png" alt="" />
+
+                                                <asp:LoginName ID="HeadLoginName" runat="server" />
+                                                <span class=" fa fa-angle-down"></span>
+                                            </a>
+                                            <ul aria-labelledby="notifications" class="dropdown-menu">
+                                                <li>
+                                                    <a href="javascript:;" class="dropdown-item user-login" onclick="javascript: return openPopupPanel('/Administration/User Management/SysUserInfo_ChangePassword.aspx');">
+                                                        <%--<i class="mdi mdi-file-tree"></i>--%>
+                                                        <span class="nav-text">Change Password</span></a>
+                                                </li>
+                                                <li>
+                                                    <asp:LoginStatus ID="HeadLoginStatus" runat="server" class="dropdown-item user-login" Style="text-align: left;" LogoutAction="Redirect" LogoutText="Logout" LogoutPageUrl="/Administration/UserLogin.aspx" />
+                                                </li>
+                                            </ul>
+                                        </LoggedInTemplate>
+                                    </asp:LoginView>
+                                </li>
+                                <%-- <li class="nav-item"><a href="login.html" class="nav-link logout navbar-top"><span class="d-none d-sm-inline-block">Logout</span><i class="mdi mdi-power"></i></a></li>--%>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!--Top Navbar End-->
+
+            <!-- Contant Area Start-->
+            <div class="container-fluid">
+                <div class="page-area">
+
+                    <!-- Action Panel Start-->
+                    <div id="actionPanelContainer" runat="server" class="action-panel">
+                        <asp:ContentPlaceHolder ID="ActionPanel" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <div class=" float-right">
+                            <div class="action-items" data-toggle="tooltip" title="Refresh"><a onclick="javascript:refreshPage();"><i class="mdi mdi-refresh"></i></a></div>
+                            <div class="action-items" data-toggle="tooltip" title="Fullscreen"><a onclick="javascript:toggleFullscreen();"><i class="mdi mdi-fullscreen"></i></a></div>
+                            <%--<div class="action-items" data-toggle="tooltip" title="Close"><a onclick=""><i class="mdi mdi-close"></i></a></div>--%>
+                        </div>
+                    </div>
+                    <!-- Action Panel End-->
+
+                    <!-- Notification Panel Start-->
+                    <div id="notificationPanel" style="display: none;" class="notification-panel">
+                        <div class="notification-container float-left">
+                            <p></p>
+                        </div>
+                        <div class="float-right">
+                            <div class="action-items" data-toggle="tooltip" title="Close"><a onclick="$('#notificationPanel').hide();"><i class="mdi mdi-close"></i></a></div>
+                        </div>
+                    </div>
+                    <!-- Notification Panel End-->
+
+                    <!-- Page Panel Start-->
+                    <div class="page-contents">
+                        <div class="card card-header" style="display: inline-block; width: 100%;">
+                            <div class="page-title" style="display: inline-block;" id="pageTitle" runat="server">Page</div>
+
+                            <div id="searchPanel" class="search-container" style="display: none; display: inline-block; position: absolute; right: 35px;">
+                                <input class="search-input" style="display: none;" type="text" data-table="searchable" placeholder="Search">
+                            </div>
+                            <asp:LinkButton ID="btnFavourite" Visible="false" runat="server" CssClass="btn-favourite" />
+                            <%-- Text="Add to favourite" data-toggle="tooltip" title="Add to favourite" --%>
+                        </div>
+                        <div class="page-placeholder mCustomScrollbar" data-mcs-axis="yx" data-mcs-theme="dark">
+                            <asp:ContentPlaceHolder ID="PageContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <!-- Page Panel End-->
+
+                </div>
+            </div>
+            <!-- Contant Area End-->
+
+
+            <!-- Footer Section Start-->
+            <footer class="main-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>&copy; Maison Consulting & Solutions <%= DateTime.Now.Year %> | All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer Section End-->
+
+        </div>
+
+        <!-- JavaScript files-->
+        <script src="/distribution/js/jquery-3.3.1.min.js"></script>
+        <script src="/distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="/distribution/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/distribution/vendor/jquery-validation/jquery.validate.min.js"></script>
+        <script src="/distribution/vendor/chart.js/Chart.min.js"></script>
+        <script src="/distribution/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script src="/distribution/js/sort-paginationTable.js"></script>
+        <script src="/distribution/js/custom.js"></script>
+        <script src="/distribution/js/jquery-ui-timepicker-addon.js"></script>
+        <script src="/distribution/vendor/calendar-master/js/caleandar.min.js"></script>
+
+
+        <script type="text/javascript">
+            try {
+                Chart.plugins.register({
+                    afterDraw: function (chart) {
+                        var noData = false;
+                        //debugger;
+                        if (chart.data.datasets.length === 0)
+                            noData = true;
+                        if (chart.data.datasets.length > 0)
+                            if (chart.data.datasets[0].data.length === 0)
+                                noData = true;
+
+                        if (noData) {
+                            // No data is present
+                            var chartCTX = chart.chart.ctx;
+                            var width = chart.chart.width;
+                            var height = chart.chart.height;
+                            chart.clear();
+
+                            chartCTX.save();
+                            chartCTX.textAlign = 'center';
+                            chartCTX.textBaseline = 'middle';
+                            chartCTX.font = "12px 'Segoe UI'";//"Segoe UI", tahoma, 
+                            chartCTX.fillStyle = "black";
+                            chartCTX.fillText('No data to display', width / 2, height / 2);
+                            chartCTX.restore();
+                        }
+                    }
+                });
+            }
+            catch (ex) {
+                var errorMsg = ex;
+                //alert(errorMsg);
+            }
+
+            $(document).ready(function () {
+                try {
+                    $("table[id*='gridView'] th").each(function () {
+
+                        var columnLength = this.innerText.length;
+
+                        if (this.innerText === 'Employee' || this.innerText === 'Employee Name') {
+                            columnLength = 130;
+                        }
+                        else if (columnLength === 0) {
+                            columnLength = 20;
+                        }
+                        else if (columnLength > 0 && columnLength < 13) {
+                            columnLength = (columnLength * 7) + 15;
+                        }
+                        //else if (columnLength > 6 && columnLength < 13) {
+                        //    columnLength = (columnLength * 8) + 5;
+                        //}
+                        else if (columnLength >= 13) {
+                            columnLength = (columnLength * 7) + 10;
+                        }
+
+                        $(this).css({ minWidth: columnLength });
+                        //this.style.minWidth = columnLength;
+                        //var step = 5;
+                        //$td = $(this);
+                        //$td.width(10 + (step * $td.index()));
+                    });
+
+                }
+                catch (ex) {
+                    var errorMsg = ex;
+                    //alert(errorMsg);
+                }
+            });
+
+
+
+            $(document).ready(function () {
+                var $searchPanel = $("#searchPanel");
+                $searchPanel.show();
+
+                var actionPanelContainer = $("#actionPanelContainer");
+                if (actionPanelContainer.length > 0)
+                    $(".page-contents").css("height", "calc(100vh - 90px)");
+                else
+                    $(".page-contents").css("height", "calc(100vh - 45px)");
+                //height: calc(100vh - 90px);
+
+            });
+
+            $(function () {
+                $("#mydiv").draggable();
+            });
+        </script>
+
+        <script>
+
+            $(document).ready(function () {
+                //new Date(2019, 1, 27) new Date("2019-01-07")
+                var events = [
+                    //{ 'Date': new Date(2019, 0, 7), 'Title': '<i>Half Day 1pm.</i>', 'Link': '#' },
+                    //{ 'Date': new Date(2019, 0, 15), 'Title': 'Absent', 'Link': '#' },
+                    //{ 'Date': new Date(2019, 0, 25), 'Title': 'Absent', 'Link': '#' }
+                ];
+                var settings = {
+                    //Color: '',
+                    //LinkColor: '',
+                    //NavShow: true,
+                    //NavVertical: false,
+                    //NavLocation: '',
+                    //DateTimeShow: true,
+                    //DateTimeFormat: 'mmm, yyyy',
+                    //DatetimeLocation: '',
+                    //EventClick: '',
+                    //EventTargetWholeDay: false,
+                    //DisabledDays: []
+                    //,ModelChange: model
+                };
+                var element = document.getElementById('caleandar');
+
+                if (element)
+                    caleandar(element, events, settings);
+            });
+        </script>
+
+        <%--<asp:ContentPlaceHolder ID="PageEnd" runat="server">
+    </asp:ContentPlaceHolder>--%>
+    </form>
+
+</body>
+</html>

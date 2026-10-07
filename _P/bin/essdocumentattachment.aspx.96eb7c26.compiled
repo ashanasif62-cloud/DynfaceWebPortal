@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/ESSDocumentAttachment.aspx" hash="ffffffefe3a9c958" filehash="fcaf51359261b1c2" flags="110000" assembly="MaisonPortal" type="ASP.ess_essdocumentattachment_aspx">
+  <filedeps>
+    <filedep name="/ESS/ESSDocumentAttachment.aspx" />
+    <filedep name="/Modal.Master" />
+  </filedeps>
+</preserve>

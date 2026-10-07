@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="c128ac59-2247-45e7-a26f-16c01ae81332" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/hcmjobsvcgroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="hcmjobsvcgroup.disco" MetadataType="Disco" ID="6d9c3c7b-3db4-4637-9341-b0057761fa92" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/hcmjobsvcgroup?disco" />
+    <MetadataFile FileName="hcmjobsvcgroup.wsdl" MetadataType="Wsdl" ID="210a6ead-20ef-4b41-bd4d-5ad6eebbbf2e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/hcmjobsvcgroup?wsdl" />
+    <MetadataFile FileName="hcmjobsvcgroup.xsd" MetadataType="Schema" ID="d87817ac-bd99-418d-994f-88ec33a1cc78" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd3" />
+    <MetadataFile FileName="hcmjobsvcgroup1.xsd" MetadataType="Schema" ID="3a207115-6630-43e2-9581-7383c53994ba" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd2" />
+    <MetadataFile FileName="hcmjobsvcgroup2.xsd" MetadataType="Schema" ID="dba7f610-84c1-49ef-9225-094e0ad2394c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd5" />
+    <MetadataFile FileName="hcmjobsvcgroup3.xsd" MetadataType="Schema" ID="a4b10877-f184-4fad-a381-7f386225689d" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd0" />
+    <MetadataFile FileName="hcmjobsvcgroup4.xsd" MetadataType="Schema" ID="5d0ff49b-53a1-45af-9f75-27cf1623898c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd1" />
+    <MetadataFile FileName="hcmjobsvcgroup5.xsd" MetadataType="Schema" ID="b3088251-07a0-49df-8c76-bd16db25d097" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd6" />
+    <MetadataFile FileName="hcmjobsvcgroup1.wsdl" MetadataType="Wsdl" ID="1b630c2e-36d5-4829-a99e-bfa0a9e9037e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/hcmjobsvcgroup?wsdl=wsdl0" />
+    <MetadataFile FileName="hcmjobsvcgroup6.xsd" MetadataType="Schema" ID="cdb36888-8886-468a-8827-f065356644de" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/hcmjobsvcgroup?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

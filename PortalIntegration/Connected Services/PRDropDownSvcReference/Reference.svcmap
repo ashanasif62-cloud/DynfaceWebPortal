@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="a224beb4-eea4-4d5e-b541-b2ce96051cd9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://siluat.sandbox.operations.dynamics.com/soap/services/PRDropDownsSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PRDropDownsSvcGroup1.disco" MetadataType="Disco" ID="43455481-3178-4984-b399-eee31371210e" SourceId="1" SourceUrl="https://siluat.sandbox.operations.dynamics.com/soap/services/PRDropDownsSvcGroup?disco" />
+    <MetadataFile FileName="PRDropDownsSvcGroup7.xsd" MetadataType="Schema" ID="ddfb1b45-7ef5-40cb-971d-cdf9c415444a" SourceId="1" SourceUrl="https://siluat.sandbox.operations.dynamics.com/soap/services/PRDropDownsSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PRDropDownsSvcGroup2.wsdl" MetadataType="Wsdl" ID="bc5c8997-941d-4d15-9fb0-b88244db9e74" SourceId="1" SourceUrl="https://siluat.sandbox.operations.dynamics.com/soap/services/PRDropDownsSvcGroup?wsdl" />
+    <MetadataFile FileName="PRDropDownsSvcGroup71.xsd" MetadataType="Schema" ID="31922a3e-bb70-460a-a27c-5263aef1716c" SourceId="1" SourceUrl="https://siluat.sandbox.operations.dynamics.com/soap/services/PRDropDownsSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PRDropDownsSvcGroup72.xsd" MetadataType="Schema" ID="e4afb8db-7b43-4745-87d2-7d868b66c969" SourceId="1" SourceUrl="https://siluat.sandbox.operations.dynamics.com/soap/services/PRDropDownsSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PRDropDownsSvcGroup73.xsd" MetadataType="Schema" ID="a8c39da7-554a-4feb-8a22-a0c0ebd6c7fa" SourceId="1" SourceUrl="https://siluat.sandbox.operations.dynamics.com/soap/services/PRDropDownsSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PRDropDownsSvcGroup21.wsdl" MetadataType="Wsdl" ID="6f6b4e93-8aa5-45d4-b456-6d30f310d6fb" SourceId="1" SourceUrl="https://siluat.sandbox.operations.dynamics.com/soap/services/PRDropDownsSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PRDropDownsSvcGroup74.xsd" MetadataType="Schema" ID="e95e0879-f436-46b2-8344-e0036be9af56" SourceId="1" SourceUrl="https://siluat.sandbox.operations.dynamics.com/soap/services/PRDropDownsSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PRDropDownsSvcGroup75.xsd" MetadataType="Schema" ID="0836f79d-bd13-4701-b3f1-1b2ee03f7357" SourceId="1" SourceUrl="https://siluat.sandbox.operations.dynamics.com/soap/services/PRDropDownsSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PRDropDownsSvcGroup76.xsd" MetadataType="Schema" ID="a28bc272-9553-4505-b428-3f138e3d7694" SourceId="1" SourceUrl="https://siluat.sandbox.operations.dynamics.com/soap/services/PRDropDownsSvcGroup?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

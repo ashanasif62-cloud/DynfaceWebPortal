@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="02c706e6-dba7-486e-bff3-f126f760860d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HCMApplicantGroup.xsd" MetadataType="Schema" ID="4b799dfa-c861-4dd0-994b-c190bd5535c0" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd0" />
+    <MetadataFile FileName="HCMApplicantGroup1.xsd" MetadataType="Schema" ID="956776f7-906b-458c-8550-79ef0db165b4" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd4" />
+    <MetadataFile FileName="HCMApplicantGroup.disco" MetadataType="Disco" ID="da183924-4246-4056-9fbf-39d96ebc8c16" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?disco" />
+    <MetadataFile FileName="HCMApplicantGroup2.xsd" MetadataType="Schema" ID="37730902-3e88-4fa2-be36-7411a16dd5f7" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd5" />
+    <MetadataFile FileName="HCMApplicantGroup.wsdl" MetadataType="Wsdl" ID="17c98183-7225-4181-9374-950a3892ba94" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HCMApplicantGroup3.xsd" MetadataType="Schema" ID="bc794023-4941-425e-9f6f-7dad6db7ddd6" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd2" />
+    <MetadataFile FileName="HCMApplicantGroup1.wsdl" MetadataType="Wsdl" ID="5dd9ce4e-a7f7-4b62-8274-7d35cb0e938f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?wsdl" />
+    <MetadataFile FileName="HCMApplicantGroup4.xsd" MetadataType="Schema" ID="427e1949-65e1-4443-a87e-b179d3dde307" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd6" />
+    <MetadataFile FileName="HCMApplicantGroup5.xsd" MetadataType="Schema" ID="7daa1f96-4a50-4f85-b2c5-1c76bfa6ac25" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd1" />
+    <MetadataFile FileName="HCMApplicantGroup6.xsd" MetadataType="Schema" ID="3a74605c-193d-42df-a518-88bb5e28ac24" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLinesGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLinesGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="retrieveAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_purchid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q1:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="create">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="contract" nillable="true" type="q2:PurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q3:GeneralContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_recordsRecId" nillable="true" type="q4:ArrayOflong" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q5:ArrayOfGeneralContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveitemid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveitemidResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q6:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventCombination">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventCombinationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q7:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventBatchIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventBatchIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q8:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveWMSLocationIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveWMSLocationIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q9:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveWMSPalletIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveWMSPalletIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q10:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventSerialIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventSerialIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q11:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventLocationIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_siteId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventLocationIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q12:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveConfigIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveConfigIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q13:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventSizeIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventSizeIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q14:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventColorIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventColorIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q15:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventstyleid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventstyleidResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q16:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventSiteIds">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveInventSiteIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q17:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="findSitebyLocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_locationId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="findSitebyLocationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q18:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveItemTaxGroup">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveItemTaxGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q19:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveSalesTaxGroup">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveSalesTaxGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q20:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateFinancialDimension">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="contract" nillable="true" type="q21:PurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateFinancialDimensionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q22:GeneralContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateInventDimRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="_contract" nillable="true" type="q23:PurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateInventDimRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q24:GeneralContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateItemTaxGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="_contract" nillable="true" type="q25:PurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateItemTaxGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q26:GeneralContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="applyUpdateRemain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="_contract" nillable="true" type="q27:PurchUpdateRemainContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="applyUpdateRemainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q28:GeneralContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cancelUpdateRemain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="_contract" nillable="true" type="q29:PurchUpdateRemainContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cancelUpdateRemainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q30:GeneralContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPurchaseOrderLine_SalesTax">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_PurchId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_recId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPurchaseOrderLine_SalesTaxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q31:ArrayOfPurchaseOrderLines_SalesTaxContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveUnitofConversion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_unitofMeasureSymbol" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveUnitofConversionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q32:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveItemPrice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_purchId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveItemPriceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q33:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="contract" nillable="true" type="q34:PurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q35:GeneralContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveModifiedPurchQty">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_lineAmount" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_linePercent" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_linedisc" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_purchprice" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_purchqty" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_recId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveModifiedPurchQtyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q36:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveModifiedPurchPrice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_linePercent" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_linedisc" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_purchPrice" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_purchqty" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_recId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveModifiedPurchPriceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q37:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveModifiedDiscAmount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_linePercent" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_linedisc" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_purchPrice" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_purchqty" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_recId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveModifiedDiscAmountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q38:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveModifiedDiscAmountPercent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_linePercent" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_linedisc" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_purchPrice" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_purchqty" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_recId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveModifiedDiscAmountPercentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q39:ArrayOfPurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPOLinesLabels">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPOLinesLabelsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q40:PurchaseOrderLinesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

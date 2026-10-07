@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="395f35b7-6069-4efa-aaa8-4a19b0bd5aa1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmIdentificationTypeSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HcmIdentificationTypeSvcGroup.xsd" MetadataType="Schema" ID="d395b81a-49b9-43b0-b05c-9ceef60edfcb" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmIdentificationTypeSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HcmIdentificationTypeSvcGroup1.xsd" MetadataType="Schema" ID="3a7a8631-3bdc-4d45-88c0-edf8a1257707" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmIdentificationTypeSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HcmIdentificationTypeSvcGroup.disco" MetadataType="Disco" ID="96692192-f03d-4e55-ab6b-d8de1d6faafc" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmIdentificationTypeSvcGroup?disco" />
+    <MetadataFile FileName="HcmIdentificationTypeSvcGroup.wsdl" MetadataType="Wsdl" ID="53ef3b7c-b56b-46be-b56f-215683df009e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmIdentificationTypeSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HcmIdentificationTypeSvcGroup1.wsdl" MetadataType="Wsdl" ID="da9746f5-26d1-4cba-9c9a-4768bb61063b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmIdentificationTypeSvcGroup?wsdl" />
+    <MetadataFile FileName="HcmIdentificationTypeSvcGroup2.xsd" MetadataType="Schema" ID="03f4b943-fad6-4a1f-811a-4c5be5fd2d46" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmIdentificationTypeSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HcmIdentificationTypeSvcGroup3.xsd" MetadataType="Schema" ID="d01f634e-d10b-4677-b32c-64e4200992f9" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmIdentificationTypeSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HcmIdentificationTypeSvcGroup4.xsd" MetadataType="Schema" ID="3fad1617-b611-4f6a-85db-526ad9e6f125" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmIdentificationTypeSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HcmIdentificationTypeSvcGroup5.xsd" MetadataType="Schema" ID="934643a9-9428-4912-9a84-2c4a8ad282fa" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmIdentificationTypeSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HcmIdentificationTypeSvcGroup6.xsd" MetadataType="Schema" ID="f9398e6f-0768-4fd3-b4b1-8a342d19a4df" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmIdentificationTypeSvcGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

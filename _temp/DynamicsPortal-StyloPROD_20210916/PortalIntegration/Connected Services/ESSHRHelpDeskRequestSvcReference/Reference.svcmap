@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="791d668c-2c4a-48a9-8ac8-14fbe6830496" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/ESSHRHelpDeskRequestSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ESSHRHelpDeskRequestSvcGroup2.wsdl" MetadataType="Wsdl" ID="2ad03c81-cded-41af-8daf-a52a9fe6e3b3" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSHRHelpDeskRequestSvcGroup?wsdl" />
+    <MetadataFile FileName="ESSHRHelpDeskRequestSvcGroup52.xsd" MetadataType="Schema" ID="e36fab43-d04e-4ab6-885d-0487638057dd" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSHRHelpDeskRequestSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="ESSHRHelpDeskRequestSvcGroup5.xsd" MetadataType="Schema" ID="e1c66d71-efcc-455a-8239-8201485c15f0" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSHRHelpDeskRequestSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="ESSHRHelpDeskRequestSvcGroup53.xsd" MetadataType="Schema" ID="24038dd8-17f4-4151-8e51-790ec50d04c1" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSHRHelpDeskRequestSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="ESSHRHelpDeskRequestSvcGroup54.xsd" MetadataType="Schema" ID="ad3f5940-90ae-40c2-ab00-0d76d2520c2c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSHRHelpDeskRequestSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="ESSHRHelpDeskRequestSvcGroup21.wsdl" MetadataType="Wsdl" ID="98d9b239-2bc2-4390-b5a7-771adf7c7b09" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSHRHelpDeskRequestSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ESSHRHelpDeskRequestSvcGroup1.disco" MetadataType="Disco" ID="5c3ccc2c-9c78-4fa8-bda2-986579912039" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSHRHelpDeskRequestSvcGroup?disco" />
+    <MetadataFile FileName="ESSHRHelpDeskRequestSvcGroup56.xsd" MetadataType="Schema" ID="ff195dee-bc9f-4bfd-826a-bbf629f81034" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSHRHelpDeskRequestSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="ESSHRHelpDeskRequestSvcGroup51.xsd" MetadataType="Schema" ID="f618b48e-5b0e-48c6-9742-74dccb2e69fc" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSHRHelpDeskRequestSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="ESSHRHelpDeskRequestSvcGroup55.xsd" MetadataType="Schema" ID="3a6b602f-3071-4b52-9d28-83e7731e9b51" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSHRHelpDeskRequestSvcGroup?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/PR/ESSPREmployeeLoan_Create.aspx" hash="ffffffefe3a9c958" filehash="48e9ec33ab23e7bd" flags="110000" assembly="MaisonPortal" type="ASP.ess_pr_esspremployeeloan_create_aspx">
+  <filedeps>
+    <filedep name="/DropDownList_AllEmployeeDetails.ascx" />
+    <filedep name="/DropDownList_EmployeeDetails.ascx" />
+    <filedep name="/ESS/PR/ESSPREmployeeLoan_Create.aspx" />
+    <filedep name="/Modal.Master" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="cd88c37e-a8f6-4101-b49b-c82759d69279" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ESSPersonTaskServiceGroup.wsdl" MetadataType="Wsdl" ID="a4badf9f-573e-4327-b76c-a315d7dcd723" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ESSPersonTaskServiceGroup1.wsdl" MetadataType="Wsdl" ID="4dc0795d-6416-4fc3-b58a-c3a0375e5919" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?wsdl" />
+    <MetadataFile FileName="ESSPersonTaskServiceGroup.disco" MetadataType="Disco" ID="95ba719b-76e5-4d77-959e-4efdfd0eca00" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?disco" />
+    <MetadataFile FileName="ESSPersonTaskServiceGroup.xsd" MetadataType="Schema" ID="18798571-f8e7-4710-a68f-9ee59e249bee" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd0" />
+    <MetadataFile FileName="ESSPersonTaskServiceGroup1.xsd" MetadataType="Schema" ID="7f79b8ee-a1ff-462c-87fe-7cae34210633" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd1" />
+    <MetadataFile FileName="ESSPersonTaskServiceGroup2.xsd" MetadataType="Schema" ID="1406702d-8635-43ff-8792-3da99118539c" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd2" />
+    <MetadataFile FileName="ESSPersonTaskServiceGroup3.xsd" MetadataType="Schema" ID="e07c23d1-8551-4a04-94e4-142bc8fed8c7" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd3" />
+    <MetadataFile FileName="ESSPersonTaskServiceGroup4.xsd" MetadataType="Schema" ID="4d8ec1d5-77be-4e7b-b391-a2fd29a7ae03" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd4" />
+    <MetadataFile FileName="ESSPersonTaskServiceGroup5.xsd" MetadataType="Schema" ID="831ee78d-6cc4-4854-be65-6fcec7eb0b9e" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd5" />
+    <MetadataFile FileName="ESSPersonTaskServiceGroup6.xsd" MetadataType="Schema" ID="34a6a396-0d62-4712-8ccd-8de174b272a0" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/TA/JmgOffDayAllowance_Create.aspx" hash="ffffffefe3a9c958" filehash="1f5fbf91a2466ee0" flags="110000" assembly="MaisonPortal" type="ASP.ess_ta_jmgoffdayallowance_create_aspx">
+  <filedeps>
+    <filedep name="/DropDownList_EmployeeDetails.ascx" />
+    <filedep name="/ESS/TA/JmgOffDayAllowance_Create.aspx" />
+    <filedep name="/Modal.Master" />
+  </filedeps>
+</preserve>

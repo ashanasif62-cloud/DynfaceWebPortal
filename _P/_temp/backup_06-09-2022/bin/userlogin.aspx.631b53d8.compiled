@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Administration/UserLogin.aspx" hash="ffffffefe3a9c958" filehash="3a8f09d997b7" flags="110000" assembly="MaisonPortal" type="ASP.administration_userlogin_aspx">
+  <filedeps>
+    <filedep name="/Administration/UserLogin.aspx" />
+  </filedeps>
+</preserve>

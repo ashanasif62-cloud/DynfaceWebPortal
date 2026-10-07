@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderHeaderSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderHeaderSvcGroup?xsd=xsd6" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderHeaderSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderHeaderSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderHeaderSvcGroup?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderHeaderSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderHeaderSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="create">
+    <wsdl:part name="parameters" element="tns:create" />
+  </wsdl:message>
+  <wsdl:message name="create_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="createResponse">
+    <wsdl:part name="parameters" element="tns:createResponse" />
+  </wsdl:message>
+  <wsdl:message name="createResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferOrderHeaderSvc_create_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="shipTransferOrderMultiple">
+    <wsdl:part name="parameters" element="tns:shipTransferOrderMultiple" />
+  </wsdl:message>
+  <wsdl:message name="shipTransferOrderMultiple_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="shipTransferOrderMultipleResponse">
+    <wsdl:part name="parameters" element="tns:shipTransferOrderMultipleResponse" />
+  </wsdl:message>
+  <wsdl:message name="shipTransferOrderMultipleResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferOrderHeaderSvc_shipTransferOrderMultiple_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="shipTransferOrder">
+    <wsdl:part name="parameters" element="tns:shipTransferOrder" />
+  </wsdl:message>
+  <wsdl:message name="shipTransferOrder_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="shipTransferOrderResponse">
+    <wsdl:part name="parameters" element="tns:shipTransferOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="shipTransferOrderResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferOrderHeaderSvc_shipTransferOrder_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll">
+    <wsdl:part name="parameters" element="tns:retrieveAll" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferOrderHeaderSvc_retrieveAll_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="update">
+    <wsdl:part name="parameters" element="tns:update" />
+  </wsdl:message>
+  <wsdl:message name="update_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="updateResponse">
+    <wsdl:part name="parameters" element="tns:updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferOrderHeaderSvc_update_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromwarehouses">
+    <wsdl:part name="parameters" element="tns:retrieveFromwarehouses" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromwarehouses_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromwarehousesResponse">
+    <wsdl:part name="parameters" element="tns:retrieveFromwarehousesResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromwarehousesResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferOrderHeaderSvc_retrieveFromwarehouses_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrievetowarehouses">
+    <wsdl:part name="parameters" element="tns:retrievetowarehouses" />
+  </wsdl:message>
+  <wsdl:message name="retrievetowarehouses_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrievetowarehousesResponse">
+    <wsdl:part name="parameters" element="tns:retrievetowarehousesResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrievetowarehousesResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferOrderHeaderSvc_retrievetowarehouses_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:message name="delete">
+    <wsdl:part name="parameters" element="tns:delete" />
+  </wsdl:message>
+  <wsdl:message name="delete_Headers">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q22:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="deleteResponse">
+    <wsdl:part name="parameters" element="tns:deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteResponse_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q23:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferOrderHeaderSvc_delete_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q24:Fault" />
+  </wsdl:message>
+  <wsdl:message name="FindByTransferID">
+    <wsdl:part name="parameters" element="tns:FindByTransferID" />
+  </wsdl:message>
+  <wsdl:message name="FindByTransferID_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="FindByTransferIDResponse">
+    <wsdl:part name="parameters" element="tns:FindByTransferIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindByTransferIDResponse_Headers">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q26:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferOrderHeaderSvc_FindByTransferID_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q27:Fault" />
+  </wsdl:message>
+  <wsdl:message name="receiveTransferOrderMultiple">
+    <wsdl:part name="parameters" element="tns:receiveTransferOrderMultiple" />
+  </wsdl:message>
+  <wsdl:message name="receiveTransferOrderMultiple_Headers">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q28:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="receiveTransferOrderMultipleResponse">
+    <wsdl:part name="parameters" element="tns:receiveTransferOrderMultipleResponse" />
+  </wsdl:message>
+  <wsdl:message name="receiveTransferOrderMultipleResponse_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q29:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferOrderHeaderSvc_receiveTransferOrderMultiple_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q30:Fault" />
+  </wsdl:message>
+  <wsdl:message name="recieveTransferOrder">
+    <wsdl:part name="parameters" element="tns:recieveTransferOrder" />
+  </wsdl:message>
+  <wsdl:message name="recieveTransferOrder_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="recieveTransferOrderResponse">
+    <wsdl:part name="parameters" element="tns:recieveTransferOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="recieveTransferOrderResponse_Headers">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q32:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferOrderHeaderSvc_recieveTransferOrder_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q33:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="TransferOrderHeaderSvc">
+    <wsdl:operation name="create">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/create" name="create" message="tns:create" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/createResponse" name="createResponse" message="tns:createResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferOrderHeaderSvc_create_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="shipTransferOrderMultiple">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/shipTransferOrderMultiple" name="shipTransferOrderMultiple" message="tns:shipTransferOrderMultiple" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/shipTransferOrderMultipleResponse" name="shipTransferOrderMultipleResponse" message="tns:shipTransferOrderMultipleResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferOrderHeaderSvc_shipTransferOrderMultiple_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="shipTransferOrder">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/shipTransferOrder" name="shipTransferOrder" message="tns:shipTransferOrder" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/shipTransferOrderResponse" name="shipTransferOrderResponse" message="tns:shipTransferOrderResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferOrderHeaderSvc_shipTransferOrder_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAll">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/retrieveAll" name="retrieveAll" message="tns:retrieveAll" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/retrieveAllResponse" name="retrieveAllResponse" message="tns:retrieveAllResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferOrderHeaderSvc_retrieveAll_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/update" name="update" message="tns:update" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/updateResponse" name="updateResponse" message="tns:updateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferOrderHeaderSvc_update_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromwarehouses">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/retrieveFromwarehouses" name="retrieveFromwarehouses" message="tns:retrieveFromwarehouses" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/retrieveFromwarehousesResponse" name="retrieveFromwarehousesResponse" message="tns:retrieveFromwarehousesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferOrderHeaderSvc_retrieveFromwarehouses_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrievetowarehouses">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/retrievetowarehouses" name="retrievetowarehouses" message="tns:retrievetowarehouses" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/retrievetowarehousesResponse" name="retrievetowarehousesResponse" message="tns:retrievetowarehousesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferOrderHeaderSvc_retrievetowarehouses_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/delete" name="delete" message="tns:delete" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/deleteResponse" name="deleteResponse" message="tns:deleteResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferOrderHeaderSvc_delete_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindByTransferID">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/FindByTransferID" name="FindByTransferID" message="tns:FindByTransferID" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/FindByTransferIDResponse" name="FindByTransferIDResponse" message="tns:FindByTransferIDResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferOrderHeaderSvc_FindByTransferID_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="receiveTransferOrderMultiple">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/receiveTransferOrderMultiple" name="receiveTransferOrderMultiple" message="tns:receiveTransferOrderMultiple" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/receiveTransferOrderMultipleResponse" name="receiveTransferOrderMultipleResponse" message="tns:receiveTransferOrderMultipleResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferOrderHeaderSvc_receiveTransferOrderMultiple_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="recieveTransferOrder">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/recieveTransferOrder" name="recieveTransferOrder" message="tns:recieveTransferOrder" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/recieveTransferOrderResponse" name="recieveTransferOrderResponse" message="tns:recieveTransferOrderResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferOrderHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferOrderHeaderSvc_recieveTransferOrder_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

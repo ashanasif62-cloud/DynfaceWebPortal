@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="retrieveAll">
+    <wsdl:part name="parameters" element="tns:retrieveAll" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalHeaderSvc_retrieveAll_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="create">
+    <wsdl:part name="parameters" element="tns:create" />
+  </wsdl:message>
+  <wsdl:message name="create_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="createResponse">
+    <wsdl:part name="parameters" element="tns:createResponse" />
+  </wsdl:message>
+  <wsdl:message name="createResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalHeaderSvc_create_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="delete">
+    <wsdl:part name="parameters" element="tns:delete" />
+  </wsdl:message>
+  <wsdl:message name="delete_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="deleteResponse">
+    <wsdl:part name="parameters" element="tns:deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalHeaderSvc_delete_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJounralIdNumSeq">
+    <wsdl:part name="parameters" element="tns:retrieveJounralIdNumSeq" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJounralIdNumSeq_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJounralIdNumSeqResponse">
+    <wsdl:part name="parameters" element="tns:retrieveJounralIdNumSeqResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJounralIdNumSeqResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalHeaderSvc_retrieveJounralIdNumSeq_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJournalNameId">
+    <wsdl:part name="parameters" element="tns:retrieveJournalNameId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJournalNameId_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJournalNameIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveJournalNameIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJournalNameIdResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalHeaderSvc_retrieveJournalNameId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJournalNameIdDetails">
+    <wsdl:part name="parameters" element="tns:retrieveJournalNameIdDetails" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJournalNameIdDetails_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJournalNameIdDetailsResponse">
+    <wsdl:part name="parameters" element="tns:retrieveJournalNameIdDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJournalNameIdDetailsResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalHeaderSvc_retrieveJournalNameIdDetails_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveVoucherSeriesNumberSequence">
+    <wsdl:part name="parameters" element="tns:retrieveVoucherSeriesNumberSequence" />
+  </wsdl:message>
+  <wsdl:message name="retrieveVoucherSeriesNumberSequence_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveVoucherSeriesNumberSequenceResponse">
+    <wsdl:part name="parameters" element="tns:retrieveVoucherSeriesNumberSequenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveVoucherSeriesNumberSequenceResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalHeaderSvc_retrieveVoucherSeriesNumberSequence_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSiteId">
+    <wsdl:part name="parameters" element="tns:retrieveSiteId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSiteId_Headers">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q22:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSiteIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveSiteIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveSiteIdResponse_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q23:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalHeaderSvc_retrieveSiteId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q24:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLocationId">
+    <wsdl:part name="parameters" element="tns:retrieveLocationId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLocationId_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLocationIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveLocationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveLocationIdResponse_Headers">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q26:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalHeaderSvc_retrieveLocationId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q27:Fault" />
+  </wsdl:message>
+  <wsdl:message name="postTransferJournal">
+    <wsdl:part name="parameters" element="tns:postTransferJournal" />
+  </wsdl:message>
+  <wsdl:message name="postTransferJournal_Headers">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q28:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="postTransferJournalResponse">
+    <wsdl:part name="parameters" element="tns:postTransferJournalResponse" />
+  </wsdl:message>
+  <wsdl:message name="postTransferJournalResponse_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q29:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalHeaderSvc_postTransferJournal_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q30:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="TransferJournalHeaderSvc">
+    <wsdl:operation name="retrieveAll">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveAll" name="retrieveAll" message="tns:retrieveAll" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveAllResponse" name="retrieveAllResponse" message="tns:retrieveAllResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalHeaderSvc_retrieveAll_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/create" name="create" message="tns:create" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/createResponse" name="createResponse" message="tns:createResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalHeaderSvc_create_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/delete" name="delete" message="tns:delete" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/deleteResponse" name="deleteResponse" message="tns:deleteResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalHeaderSvc_delete_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveJounralIdNumSeq">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveJounralIdNumSeq" name="retrieveJounralIdNumSeq" message="tns:retrieveJounralIdNumSeq" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveJounralIdNumSeqResponse" name="retrieveJounralIdNumSeqResponse" message="tns:retrieveJounralIdNumSeqResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalHeaderSvc_retrieveJounralIdNumSeq_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveJournalNameId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveJournalNameId" name="retrieveJournalNameId" message="tns:retrieveJournalNameId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveJournalNameIdResponse" name="retrieveJournalNameIdResponse" message="tns:retrieveJournalNameIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalHeaderSvc_retrieveJournalNameId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveJournalNameIdDetails">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveJournalNameIdDetails" name="retrieveJournalNameIdDetails" message="tns:retrieveJournalNameIdDetails" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveJournalNameIdDetailsResponse" name="retrieveJournalNameIdDetailsResponse" message="tns:retrieveJournalNameIdDetailsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalHeaderSvc_retrieveJournalNameIdDetails_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveVoucherSeriesNumberSequence">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveVoucherSeriesNumberSequence" name="retrieveVoucherSeriesNumberSequence" message="tns:retrieveVoucherSeriesNumberSequence" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveVoucherSeriesNumberSequenceResponse" name="retrieveVoucherSeriesNumberSequenceResponse" message="tns:retrieveVoucherSeriesNumberSequenceResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalHeaderSvc_retrieveVoucherSeriesNumberSequence_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveSiteId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveSiteId" name="retrieveSiteId" message="tns:retrieveSiteId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveSiteIdResponse" name="retrieveSiteIdResponse" message="tns:retrieveSiteIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalHeaderSvc_retrieveSiteId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveLocationId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveLocationId" name="retrieveLocationId" message="tns:retrieveLocationId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/retrieveLocationIdResponse" name="retrieveLocationIdResponse" message="tns:retrieveLocationIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalHeaderSvc_retrieveLocationId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="postTransferJournal">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/postTransferJournal" name="postTransferJournal" message="tns:postTransferJournal" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/postTransferJournalResponse" name="postTransferJournalResponse" message="tns:postTransferJournalResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalHeaderSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalHeaderSvc_postTransferJournal_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

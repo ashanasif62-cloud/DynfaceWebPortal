@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="ff26525b-3e45-4f6d-bbff-47359944fc9b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RetrieveReportsSvcGroup6.xsd" MetadataType="Schema" ID="dfa7947c-babc-47dc-968e-8f4a3da82979" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="RetrieveReportsSvcGroup2.wsdl" MetadataType="Wsdl" ID="834cad61-6849-4c1b-ac02-34bbe5b43c5b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?wsdl" />
+    <MetadataFile FileName="RetrieveReportsSvcGroup61.xsd" MetadataType="Schema" ID="4c520fb1-5697-43e0-be69-0d1e97b39692" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="RetrieveReportsSvcGroup62.xsd" MetadataType="Schema" ID="b30fc89c-01dc-46ad-9073-90913573c074" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="RetrieveReportsSvcGroup21.wsdl" MetadataType="Wsdl" ID="08c13f8c-9e08-4db5-9e64-e07d511231e5" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="RetrieveReportsSvcGroup63.xsd" MetadataType="Schema" ID="5a9dab28-9a9b-4e3e-8789-aea74f8220a8" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="RetrieveReportsSvcGroup64.xsd" MetadataType="Schema" ID="f023c420-7e7a-499f-b41e-75357ab6b2a9" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="RetrieveReportsSvcGroup65.xsd" MetadataType="Schema" ID="fddb2eae-34d0-4733-8361-3f9ee81d167a" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="RetrieveReportsSvcGroup2.disco" MetadataType="Disco" ID="b6801202-f331-4b76-9196-1702121353a6" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DropDownList_AllActiveFinancialDims.ascx" hash="ffffffefe3a9c958" filehash="ffffca7a749df208" flags="110000" assembly="MaisonPortal" type="ASP.dropdownlist_allactivefinancialdims_ascx">
+  <filedeps>
+    <filedep name="/DropDownList_AllActiveFinancialDims.ascx" />
+  </filedeps>
+</preserve>

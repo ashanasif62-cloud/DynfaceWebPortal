@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="http://tempuri.org" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ExpenseManagmentSvcGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_ExpenseReportsServiceSvc_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BasicHttpBinding_ExpenseLinesServiceSvc_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BasicHttpBinding_ExpenseReceiptSvc_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_ExpenseReportsServiceSvc" type="i0:ExpenseReportsServiceSvc">
+    <wsp:PolicyReference URI="#BasicHttpBinding_ExpenseReportsServiceSvc_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AttachExpensesToExpenseReports">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReportsServiceSvc/AttachExpensesToExpenseReports" style="document" />
+      <wsdl:input name="AttachExpensesToExpenseReports">
+        <soap:header message="i0:AttachExpensesToExpenseReports_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AttachExpensesToExpenseReportsResponse">
+        <soap:header message="i0:AttachExpensesToExpenseReportsResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitExpenseReportsToWorkflow">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReportsServiceSvc/SubmitExpenseReportsToWorkflow" style="document" />
+      <wsdl:input name="SubmitExpenseReportsToWorkflow">
+        <soap:header message="i0:SubmitExpenseReportsToWorkflow_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SubmitExpenseReportsToWorkflowResponse">
+        <soap:header message="i0:SubmitExpenseReportsToWorkflowResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RecallReport">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReportsServiceSvc/RecallReport" style="document" />
+      <wsdl:input name="RecallReport">
+        <soap:header message="i0:RecallReport_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="RecallReportResponse">
+        <soap:header message="i0:RecallReportResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllExpenseReports">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReportsServiceSvc/GetAllExpenseReports" style="document" />
+      <wsdl:input name="GetAllExpenseReports">
+        <soap:header message="i0:GetAllExpenseReports_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetAllExpenseReportsResponse">
+        <soap:header message="i0:GetAllExpenseReportsResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateExpenseReport">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReportsServiceSvc/CreateExpenseReport" style="document" />
+      <wsdl:input name="CreateExpenseReport">
+        <soap:header message="i0:CreateExpenseReport_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="CreateExpenseReportResponse">
+        <soap:header message="i0:CreateExpenseReportResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExpenseReport">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReportsServiceSvc/UpdateExpenseReport" style="document" />
+      <wsdl:input name="UpdateExpenseReport">
+        <soap:header message="i0:UpdateExpenseReport_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateExpenseReportResponse">
+        <soap:header message="i0:UpdateExpenseReportResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExpenseReports">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReportsServiceSvc/DeleteExpenseReports" style="document" />
+      <wsdl:input name="DeleteExpenseReports">
+        <soap:header message="i0:DeleteExpenseReports_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteExpenseReportsResponse">
+        <soap:header message="i0:DeleteExpenseReportsResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseReportByReportNumber">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReportsServiceSvc/GetExpenseReportByReportNumber" style="document" />
+      <wsdl:input name="GetExpenseReportByReportNumber">
+        <soap:header message="i0:GetExpenseReportByReportNumber_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetExpenseReportByReportNumberResponse">
+        <soap:header message="i0:GetExpenseReportByReportNumberResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseLinesForExpenseReport">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReportsServiceSvc/GetExpenseLinesForExpenseReport" style="document" />
+      <wsdl:input name="GetExpenseLinesForExpenseReport">
+        <soap:header message="i0:GetExpenseLinesForExpenseReport_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetExpenseLinesForExpenseReportResponse">
+        <soap:header message="i0:GetExpenseLinesForExpenseReportResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PurposeLookup">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReportsServiceSvc/PurposeLookup" style="document" />
+      <wsdl:input name="PurposeLookup">
+        <soap:header message="i0:PurposeLookup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PurposeLookupResponse">
+        <soap:header message="i0:PurposeLookupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="LocationLookup">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReportsServiceSvc/LocationLookup" style="document" />
+      <wsdl:input name="LocationLookup">
+        <soap:header message="i0:LocationLookup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="LocationLookupResponse">
+        <soap:header message="i0:LocationLookupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_ExpenseLinesServiceSvc" type="i0:ExpenseLinesServiceSvc">
+    <wsp:PolicyReference URI="#BasicHttpBinding_ExpenseLinesServiceSvc_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllExpenseLines">
+      <soap:operation soapAction="http://tempuri.org/ExpenseLinesServiceSvc/GetAllExpenseLines" style="document" />
+      <wsdl:input name="GetAllExpenseLines">
+        <soap:header message="i0:GetAllExpenseLines_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetAllExpenseLinesResponse">
+        <soap:header message="i0:GetAllExpenseLinesResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateExpenseLine">
+      <soap:operation soapAction="http://tempuri.org/ExpenseLinesServiceSvc/CreateExpenseLine" style="document" />
+      <wsdl:input name="CreateExpenseLine">
+        <soap:header message="i0:CreateExpenseLine_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="CreateExpenseLineResponse">
+        <soap:header message="i0:CreateExpenseLineResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseLineByTransactionNumber">
+      <soap:operation soapAction="http://tempuri.org/ExpenseLinesServiceSvc/GetExpenseLineByTransactionNumber" style="document" />
+      <wsdl:input name="GetExpenseLineByTransactionNumber">
+        <soap:header message="i0:GetExpenseLineByTransactionNumber_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetExpenseLineByTransactionNumberResponse">
+        <soap:header message="i0:GetExpenseLineByTransactionNumberResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExpenseLines">
+      <soap:operation soapAction="http://tempuri.org/ExpenseLinesServiceSvc/DeleteExpenseLines" style="document" />
+      <wsdl:input name="DeleteExpenseLines">
+        <soap:header message="i0:DeleteExpenseLines_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteExpenseLinesResponse">
+        <soap:header message="i0:DeleteExpenseLinesResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExpenseLine">
+      <soap:operation soapAction="http://tempuri.org/ExpenseLinesServiceSvc/UpdateExpenseLine" style="document" />
+      <wsdl:input name="UpdateExpenseLine">
+        <soap:header message="i0:UpdateExpenseLine_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateExpenseLineResponse">
+        <soap:header message="i0:UpdateExpenseLineResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ExpenseCategoryLookup">
+      <soap:operation soapAction="http://tempuri.org/ExpenseLinesServiceSvc/ExpenseCategoryLookup" style="document" />
+      <wsdl:input name="ExpenseCategoryLookup">
+        <soap:header message="i0:ExpenseCategoryLookup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ExpenseCategoryLookupResponse">
+        <soap:header message="i0:ExpenseCategoryLookupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="MerchantLookup">
+      <soap:operation soapAction="http://tempuri.org/ExpenseLinesServiceSvc/MerchantLookup" style="document" />
+      <wsdl:input name="MerchantLookup">
+        <soap:header message="i0:MerchantLookup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MerchantLookupResponse">
+        <soap:header message="i0:MerchantLookupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ProjectLookup">
+      <soap:operation soapAction="http://tempuri.org/ExpenseLinesServiceSvc/ProjectLookup" style="document" />
+      <wsdl:input name="ProjectLookup">
+        <soap:header message="i0:ProjectLookup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ProjectLookupResponse">
+        <soap:header message="i0:ProjectLookupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ProjectLinePropertyLookup">
+      <soap:operation soapAction="http://tempuri.org/ExpenseLinesServiceSvc/ProjectLinePropertyLookup" style="document" />
+      <wsdl:input name="ProjectLinePropertyLookup">
+        <soap:header message="i0:ProjectLinePropertyLookup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ProjectLinePropertyLookupResponse">
+        <soap:header message="i0:ProjectLinePropertyLookupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ProjectActivityLookup">
+      <soap:operation soapAction="http://tempuri.org/ExpenseLinesServiceSvc/ProjectActivityLookup" style="document" />
+      <wsdl:input name="ProjectActivityLookup">
+        <soap:header message="i0:ProjectActivityLookup_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ProjectActivityLookupResponse">
+        <soap:header message="i0:ProjectActivityLookupResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_ExpenseReceiptSvc" type="i0:ExpenseReceiptSvc">
+    <wsp:PolicyReference URI="#BasicHttpBinding_ExpenseReceiptSvc_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUnattachedReceipts">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReceiptSvc/GetUnattachedReceipts" style="document" />
+      <wsdl:input name="GetUnattachedReceipts">
+        <soap:header message="i0:GetUnattachedReceipts_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetUnattachedReceiptsResponse">
+        <soap:header message="i0:GetUnattachedReceiptsResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AttachReceiptToExpenseLine">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReceiptSvc/AttachReceiptToExpenseLine" style="document" />
+      <wsdl:input name="AttachReceiptToExpenseLine">
+        <soap:header message="i0:AttachReceiptToExpenseLine_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AttachReceiptToExpenseLineResponse">
+        <soap:header message="i0:AttachReceiptToExpenseLineResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReceipts">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReceiptSvc/DeleteReceipts" style="document" />
+      <wsdl:input name="DeleteReceipts">
+        <soap:header message="i0:DeleteReceipts_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteReceiptsResponse">
+        <soap:header message="i0:DeleteReceiptsResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PopulateReceiptFields">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReceiptSvc/PopulateReceiptFields" style="document" />
+      <wsdl:input name="PopulateReceiptFields">
+        <soap:header message="i0:PopulateReceiptFields_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PopulateReceiptFieldsResponse">
+        <soap:header message="i0:PopulateReceiptFieldsResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptContent">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReceiptSvc/GetReceiptContent" style="document" />
+      <wsdl:input name="GetReceiptContent">
+        <soap:header message="i0:GetReceiptContent_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetReceiptContentResponse">
+        <soap:header message="i0:GetReceiptContentResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UploadReceipt">
+      <soap:operation soapAction="http://tempuri.org/ExpenseReceiptSvc/UploadReceipt" style="document" />
+      <wsdl:input name="UploadReceipt">
+        <soap:header message="i0:UploadReceipt_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UploadReceiptResponse">
+        <soap:header message="i0:UploadReceiptResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ExpenseManagmentSvcGroup">
+    <wsdl:port name="BasicHttpBinding_ExpenseReportsServiceSvc" binding="tns:BasicHttpBinding_ExpenseReportsServiceSvc">
+      <soap:address location="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_ExpenseLinesServiceSvc" binding="tns:BasicHttpBinding_ExpenseLinesServiceSvc">
+      <soap:address location="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_ExpenseReceiptSvc" binding="tns:BasicHttpBinding_ExpenseReceiptSvc">
+      <soap:address location="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderJournalSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfTransferOrderJournalContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TransferOrderJournalContract" nillable="true" type="tns:TransferOrderJournalContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransferOrderJournalContract" nillable="true" type="tns:ArrayOfTransferOrderJournalContract" />
+  <xs:complexType name="TransferOrderJournalContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AmountValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="AutoReceiveQty" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="CanceledShipment" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="CanceledShipmentJournalRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="FreightSlipType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromAddressName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromPostalAddress" type="xs:long" />
+          <xs:element minOccurs="0" name="IntrastatDispatch" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventDimId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventLocationIdFrom" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventLocationIdTo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventLocationIdTransit" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventTransId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventTransIdTransit" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventTransferParmLine" type="xs:long" />
+          <xs:element minOccurs="0" name="ItemId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemUnit" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LineNum" type="xs:decimal" />
+          <xs:element minOccurs="0" name="OrigCountryRegionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrigCountyId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrigStateId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ParmId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PdsCWQtyReceived" type="xs:decimal" />
+          <xs:element minOccurs="0" name="PdsCWQtyScrapped" type="xs:decimal" />
+          <xs:element minOccurs="0" name="PdsCWQtyShipped" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Port" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="QtyReceived" type="xs:decimal" />
+          <xs:element minOccurs="0" name="QtyScrapped" type="xs:decimal" />
+          <xs:element minOccurs="0" name="QtyShipped" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="StatProcId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StatisticalValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ToAddressName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToContactPerson" type="xs:long" />
+          <xs:element minOccurs="0" name="ToPostalAddress" type="xs:long" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TransDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="TransactionCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TransferId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Transport" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UnitId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UnitPrice" type="xs:decimal" />
+          <xs:element minOccurs="0" name="UpdateType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UpdatedByWorker" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VoucherId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="itemName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TransferOrderJournalContract" nillable="true" type="tns:TransferOrderJournalContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+</xs:schema>

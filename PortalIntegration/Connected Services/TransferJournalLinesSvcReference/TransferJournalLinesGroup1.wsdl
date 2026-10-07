@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferJournalLinesGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferJournalLinesGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferJournalLinesGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferJournalLinesGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferJournalLinesGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferJournalLinesGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferJournalLinesGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="retrieveAll">
+    <wsdl:part name="parameters" element="tns:retrieveAll" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveAll_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="createLines">
+    <wsdl:part name="parameters" element="tns:createLines" />
+  </wsdl:message>
+  <wsdl:message name="createLines_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="createLinesResponse">
+    <wsdl:part name="parameters" element="tns:createLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="createLinesResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_createLines_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="delete">
+    <wsdl:part name="parameters" element="tns:delete" />
+  </wsdl:message>
+  <wsdl:message name="delete_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="deleteResponse">
+    <wsdl:part name="parameters" element="tns:deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_delete_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveItemId">
+    <wsdl:part name="parameters" element="tns:retrieveItemId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveItemId_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveItemIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveItemIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveItemIdResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveItemId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="OnItemSelection">
+    <wsdl:part name="parameters" element="tns:OnItemSelection" />
+  </wsdl:message>
+  <wsdl:message name="OnItemSelection_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="OnItemSelectionResponse">
+    <wsdl:part name="parameters" element="tns:OnItemSelectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="OnItemSelectionResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_OnItemSelection_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllSites">
+    <wsdl:part name="parameters" element="tns:retrieveAllSites" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllSites_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllSitesResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllSitesResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllSitesResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveAllSites_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllWarehouses">
+    <wsdl:part name="parameters" element="tns:retrieveAllWarehouses" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllWarehouses_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllWarehousesResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllWarehousesResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllWarehousesResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveAllWarehouses_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventStatus">
+    <wsdl:part name="parameters" element="tns:retrieveInventStatus" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventStatus_Headers">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q22:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventStatusResponse">
+    <wsdl:part name="parameters" element="tns:retrieveInventStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventStatusResponse_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q23:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveInventStatus_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q24:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveUnitofMeasure">
+    <wsdl:part name="parameters" element="tns:retrieveUnitofMeasure" />
+  </wsdl:message>
+  <wsdl:message name="retrieveUnitofMeasure_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveUnitofMeasureResponse">
+    <wsdl:part name="parameters" element="tns:retrieveUnitofMeasureResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveUnitofMeasureResponse_Headers">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q26:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveUnitofMeasure_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q27:Fault" />
+  </wsdl:message>
+  <wsdl:message name="filterFromWarehousebyFromSite">
+    <wsdl:part name="parameters" element="tns:filterFromWarehousebyFromSite" />
+  </wsdl:message>
+  <wsdl:message name="filterFromWarehousebyFromSite_Headers">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q28:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="filterFromWarehousebyFromSiteResponse">
+    <wsdl:part name="parameters" element="tns:filterFromWarehousebyFromSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="filterFromWarehousebyFromSiteResponse_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q29:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_filterFromWarehousebyFromSite_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q30:Fault" />
+  </wsdl:message>
+  <wsdl:message name="findFromSitebyFromWarehouse">
+    <wsdl:part name="parameters" element="tns:findFromSitebyFromWarehouse" />
+  </wsdl:message>
+  <wsdl:message name="findFromSitebyFromWarehouse_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="findFromSitebyFromWarehouseResponse">
+    <wsdl:part name="parameters" element="tns:findFromSitebyFromWarehouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="findFromSitebyFromWarehouseResponse_Headers">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q32:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_findFromSitebyFromWarehouse_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q33:Fault" />
+  </wsdl:message>
+  <wsdl:message name="filterToWarehousebyToSite">
+    <wsdl:part name="parameters" element="tns:filterToWarehousebyToSite" />
+  </wsdl:message>
+  <wsdl:message name="filterToWarehousebyToSite_Headers">
+    <wsdl:part xmlns:q34="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q34:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="filterToWarehousebyToSiteResponse">
+    <wsdl:part name="parameters" element="tns:filterToWarehousebyToSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="filterToWarehousebyToSiteResponse_Headers">
+    <wsdl:part xmlns:q35="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q35:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_filterToWarehousebyToSite_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q36:Fault" />
+  </wsdl:message>
+  <wsdl:message name="findToSitebyToWarehouse">
+    <wsdl:part name="parameters" element="tns:findToSitebyToWarehouse" />
+  </wsdl:message>
+  <wsdl:message name="findToSitebyToWarehouse_Headers">
+    <wsdl:part xmlns:q37="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q37:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="findToSitebyToWarehouseResponse">
+    <wsdl:part name="parameters" element="tns:findToSitebyToWarehouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="findToSitebyToWarehouseResponse_Headers">
+    <wsdl:part xmlns:q38="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q38:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_findToSitebyToWarehouse_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q39="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q39:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventDimId">
+    <wsdl:part name="parameters" element="tns:retrieveInventDimId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventDimId_Headers">
+    <wsdl:part xmlns:q40="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q40:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventDimIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveInventDimIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveInventDimIdResponse_Headers">
+    <wsdl:part xmlns:q41="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q41:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveInventDimId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q42:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventBatchId">
+    <wsdl:part name="parameters" element="tns:retrieveFromInventBatchId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventBatchId_Headers">
+    <wsdl:part xmlns:q43="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q43:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventBatchIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveFromInventBatchIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventBatchIdResponse_Headers">
+    <wsdl:part xmlns:q44="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q44:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveFromInventBatchId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q45="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q45:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventSerialId">
+    <wsdl:part name="parameters" element="tns:retrieveFromInventSerialId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventSerialId_Headers">
+    <wsdl:part xmlns:q46="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q46:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventSerialIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveFromInventSerialIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventSerialIdResponse_Headers">
+    <wsdl:part xmlns:q47="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q47:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveFromInventSerialId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q48="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q48:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromConfigId">
+    <wsdl:part name="parameters" element="tns:retrieveFromConfigId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromConfigId_Headers">
+    <wsdl:part xmlns:q49="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q49:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromConfigIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveFromConfigIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromConfigIdResponse_Headers">
+    <wsdl:part xmlns:q50="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q50:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveFromConfigId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q51="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q51:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventSizeId">
+    <wsdl:part name="parameters" element="tns:retrieveFromInventSizeId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventSizeId_Headers">
+    <wsdl:part xmlns:q52="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q52:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventSizeIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveFromInventSizeIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventSizeIdResponse_Headers">
+    <wsdl:part xmlns:q53="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q53:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveFromInventSizeId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q54="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q54:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventColorIds">
+    <wsdl:part name="parameters" element="tns:retrieveFromInventColorIds" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventColorIds_Headers">
+    <wsdl:part xmlns:q55="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q55:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventColorIdsResponse">
+    <wsdl:part name="parameters" element="tns:retrieveFromInventColorIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventColorIdsResponse_Headers">
+    <wsdl:part xmlns:q56="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q56:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveFromInventColorIds_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q57="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q57:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventStyleId">
+    <wsdl:part name="parameters" element="tns:retrieveFromInventStyleId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventStyleId_Headers">
+    <wsdl:part xmlns:q58="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q58:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventStyleIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveFromInventStyleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromInventStyleIdResponse_Headers">
+    <wsdl:part xmlns:q59="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q59:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveFromInventStyleId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q60="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q60:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromWMSLocationId">
+    <wsdl:part name="parameters" element="tns:retrieveFromWMSLocationId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromWMSLocationId_Headers">
+    <wsdl:part xmlns:q61="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q61:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromWMSLocationIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveFromWMSLocationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromWMSLocationIdResponse_Headers">
+    <wsdl:part xmlns:q62="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q62:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveFromWMSLocationId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q63="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q63:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromWMSPalletIds">
+    <wsdl:part name="parameters" element="tns:retrieveFromWMSPalletIds" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromWMSPalletIds_Headers">
+    <wsdl:part xmlns:q64="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q64:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromWMSPalletIdsResponse">
+    <wsdl:part name="parameters" element="tns:retrieveFromWMSPalletIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveFromWMSPalletIdsResponse_Headers">
+    <wsdl:part xmlns:q65="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q65:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveFromWMSPalletIds_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q66="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q66:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventBatchId">
+    <wsdl:part name="parameters" element="tns:retrieveToInventBatchId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventBatchId_Headers">
+    <wsdl:part xmlns:q67="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q67:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventBatchIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveToInventBatchIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventBatchIdResponse_Headers">
+    <wsdl:part xmlns:q68="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q68:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveToInventBatchId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q69="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q69:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventSerialId">
+    <wsdl:part name="parameters" element="tns:retrieveToInventSerialId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventSerialId_Headers">
+    <wsdl:part xmlns:q70="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q70:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventSerialIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveToInventSerialIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventSerialIdResponse_Headers">
+    <wsdl:part xmlns:q71="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q71:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveToInventSerialId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q72="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q72:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToConfigId">
+    <wsdl:part name="parameters" element="tns:retrieveToConfigId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToConfigId_Headers">
+    <wsdl:part xmlns:q73="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q73:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToConfigIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveToConfigIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToConfigIdResponse_Headers">
+    <wsdl:part xmlns:q74="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q74:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveToConfigId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q75="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q75:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventSizeId">
+    <wsdl:part name="parameters" element="tns:retrieveToInventSizeId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventSizeId_Headers">
+    <wsdl:part xmlns:q76="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q76:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventSizeIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveToInventSizeIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventSizeIdResponse_Headers">
+    <wsdl:part xmlns:q77="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q77:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveToInventSizeId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q78="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q78:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventColorIds">
+    <wsdl:part name="parameters" element="tns:retrieveToInventColorIds" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventColorIds_Headers">
+    <wsdl:part xmlns:q79="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q79:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventColorIdsResponse">
+    <wsdl:part name="parameters" element="tns:retrieveToInventColorIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventColorIdsResponse_Headers">
+    <wsdl:part xmlns:q80="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q80:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveToInventColorIds_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q81="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q81:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventStyleId">
+    <wsdl:part name="parameters" element="tns:retrieveToInventStyleId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventStyleId_Headers">
+    <wsdl:part xmlns:q82="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q82:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventStyleIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveToInventStyleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToInventStyleIdResponse_Headers">
+    <wsdl:part xmlns:q83="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q83:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveToInventStyleId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q84="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q84:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToWMSLocationId">
+    <wsdl:part name="parameters" element="tns:retrieveToWMSLocationId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToWMSLocationId_Headers">
+    <wsdl:part xmlns:q85="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q85:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToWMSLocationIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveToWMSLocationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToWMSLocationIdResponse_Headers">
+    <wsdl:part xmlns:q86="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q86:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveToWMSLocationId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q87="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q87:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToWMSPalletIds">
+    <wsdl:part name="parameters" element="tns:retrieveToWMSPalletIds" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToWMSPalletIds_Headers">
+    <wsdl:part xmlns:q88="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q88:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToWMSPalletIdsResponse">
+    <wsdl:part name="parameters" element="tns:retrieveToWMSPalletIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveToWMSPalletIdsResponse_Headers">
+    <wsdl:part xmlns:q89="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q89:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TransferJournalLinesSvc_retrieveToWMSPalletIds_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q90="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q90:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="TransferJournalLinesSvc">
+    <wsdl:operation name="retrieveAll">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveAll" name="retrieveAll" message="tns:retrieveAll" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveAllResponse" name="retrieveAllResponse" message="tns:retrieveAllResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveAll_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createLines">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/createLines" name="createLines" message="tns:createLines" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/createLinesResponse" name="createLinesResponse" message="tns:createLinesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_createLines_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/delete" name="delete" message="tns:delete" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/deleteResponse" name="deleteResponse" message="tns:deleteResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_delete_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveItemId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveItemId" name="retrieveItemId" message="tns:retrieveItemId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveItemIdResponse" name="retrieveItemIdResponse" message="tns:retrieveItemIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveItemId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnItemSelection">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/OnItemSelection" name="OnItemSelection" message="tns:OnItemSelection" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/OnItemSelectionResponse" name="OnItemSelectionResponse" message="tns:OnItemSelectionResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_OnItemSelection_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAllSites">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveAllSites" name="retrieveAllSites" message="tns:retrieveAllSites" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveAllSitesResponse" name="retrieveAllSitesResponse" message="tns:retrieveAllSitesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveAllSites_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAllWarehouses">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveAllWarehouses" name="retrieveAllWarehouses" message="tns:retrieveAllWarehouses" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveAllWarehousesResponse" name="retrieveAllWarehousesResponse" message="tns:retrieveAllWarehousesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveAllWarehouses_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveInventStatus">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveInventStatus" name="retrieveInventStatus" message="tns:retrieveInventStatus" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveInventStatusResponse" name="retrieveInventStatusResponse" message="tns:retrieveInventStatusResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveInventStatus_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveUnitofMeasure">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveUnitofMeasure" name="retrieveUnitofMeasure" message="tns:retrieveUnitofMeasure" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveUnitofMeasureResponse" name="retrieveUnitofMeasureResponse" message="tns:retrieveUnitofMeasureResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveUnitofMeasure_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="filterFromWarehousebyFromSite">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/filterFromWarehousebyFromSite" name="filterFromWarehousebyFromSite" message="tns:filterFromWarehousebyFromSite" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/filterFromWarehousebyFromSiteResponse" name="filterFromWarehousebyFromSiteResponse" message="tns:filterFromWarehousebyFromSiteResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_filterFromWarehousebyFromSite_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="findFromSitebyFromWarehouse">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/findFromSitebyFromWarehouse" name="findFromSitebyFromWarehouse" message="tns:findFromSitebyFromWarehouse" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/findFromSitebyFromWarehouseResponse" name="findFromSitebyFromWarehouseResponse" message="tns:findFromSitebyFromWarehouseResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_findFromSitebyFromWarehouse_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="filterToWarehousebyToSite">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/filterToWarehousebyToSite" name="filterToWarehousebyToSite" message="tns:filterToWarehousebyToSite" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/filterToWarehousebyToSiteResponse" name="filterToWarehousebyToSiteResponse" message="tns:filterToWarehousebyToSiteResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_filterToWarehousebyToSite_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="findToSitebyToWarehouse">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/findToSitebyToWarehouse" name="findToSitebyToWarehouse" message="tns:findToSitebyToWarehouse" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/findToSitebyToWarehouseResponse" name="findToSitebyToWarehouseResponse" message="tns:findToSitebyToWarehouseResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_findToSitebyToWarehouse_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveInventDimId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveInventDimId" name="retrieveInventDimId" message="tns:retrieveInventDimId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveInventDimIdResponse" name="retrieveInventDimIdResponse" message="tns:retrieveInventDimIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveInventDimId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromInventBatchId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromInventBatchId" name="retrieveFromInventBatchId" message="tns:retrieveFromInventBatchId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromInventBatchIdResponse" name="retrieveFromInventBatchIdResponse" message="tns:retrieveFromInventBatchIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveFromInventBatchId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromInventSerialId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromInventSerialId" name="retrieveFromInventSerialId" message="tns:retrieveFromInventSerialId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromInventSerialIdResponse" name="retrieveFromInventSerialIdResponse" message="tns:retrieveFromInventSerialIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveFromInventSerialId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromConfigId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromConfigId" name="retrieveFromConfigId" message="tns:retrieveFromConfigId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromConfigIdResponse" name="retrieveFromConfigIdResponse" message="tns:retrieveFromConfigIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveFromConfigId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromInventSizeId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromInventSizeId" name="retrieveFromInventSizeId" message="tns:retrieveFromInventSizeId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromInventSizeIdResponse" name="retrieveFromInventSizeIdResponse" message="tns:retrieveFromInventSizeIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveFromInventSizeId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromInventColorIds">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromInventColorIds" name="retrieveFromInventColorIds" message="tns:retrieveFromInventColorIds" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromInventColorIdsResponse" name="retrieveFromInventColorIdsResponse" message="tns:retrieveFromInventColorIdsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveFromInventColorIds_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromInventStyleId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromInventStyleId" name="retrieveFromInventStyleId" message="tns:retrieveFromInventStyleId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromInventStyleIdResponse" name="retrieveFromInventStyleIdResponse" message="tns:retrieveFromInventStyleIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveFromInventStyleId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromWMSLocationId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromWMSLocationId" name="retrieveFromWMSLocationId" message="tns:retrieveFromWMSLocationId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromWMSLocationIdResponse" name="retrieveFromWMSLocationIdResponse" message="tns:retrieveFromWMSLocationIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveFromWMSLocationId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromWMSPalletIds">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromWMSPalletIds" name="retrieveFromWMSPalletIds" message="tns:retrieveFromWMSPalletIds" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveFromWMSPalletIdsResponse" name="retrieveFromWMSPalletIdsResponse" message="tns:retrieveFromWMSPalletIdsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveFromWMSPalletIds_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveToInventBatchId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToInventBatchId" name="retrieveToInventBatchId" message="tns:retrieveToInventBatchId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToInventBatchIdResponse" name="retrieveToInventBatchIdResponse" message="tns:retrieveToInventBatchIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveToInventBatchId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveToInventSerialId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToInventSerialId" name="retrieveToInventSerialId" message="tns:retrieveToInventSerialId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToInventSerialIdResponse" name="retrieveToInventSerialIdResponse" message="tns:retrieveToInventSerialIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveToInventSerialId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveToConfigId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToConfigId" name="retrieveToConfigId" message="tns:retrieveToConfigId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToConfigIdResponse" name="retrieveToConfigIdResponse" message="tns:retrieveToConfigIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveToConfigId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveToInventSizeId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToInventSizeId" name="retrieveToInventSizeId" message="tns:retrieveToInventSizeId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToInventSizeIdResponse" name="retrieveToInventSizeIdResponse" message="tns:retrieveToInventSizeIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveToInventSizeId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveToInventColorIds">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToInventColorIds" name="retrieveToInventColorIds" message="tns:retrieveToInventColorIds" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToInventColorIdsResponse" name="retrieveToInventColorIdsResponse" message="tns:retrieveToInventColorIdsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveToInventColorIds_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveToInventStyleId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToInventStyleId" name="retrieveToInventStyleId" message="tns:retrieveToInventStyleId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToInventStyleIdResponse" name="retrieveToInventStyleIdResponse" message="tns:retrieveToInventStyleIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveToInventStyleId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveToWMSLocationId">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToWMSLocationId" name="retrieveToWMSLocationId" message="tns:retrieveToWMSLocationId" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToWMSLocationIdResponse" name="retrieveToWMSLocationIdResponse" message="tns:retrieveToWMSLocationIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveToWMSLocationId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveToWMSPalletIds">
+      <wsdl:input wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToWMSPalletIds" name="retrieveToWMSPalletIds" message="tns:retrieveToWMSPalletIds" />
+      <wsdl:output wsam:Action="http://tempuri.org/TransferJournalLinesSvc/retrieveToWMSPalletIdsResponse" name="retrieveToWMSPalletIdsResponse" message="tns:retrieveToWMSPalletIdsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TransferJournalLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TransferJournalLinesSvc_retrieveToWMSPalletIds_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

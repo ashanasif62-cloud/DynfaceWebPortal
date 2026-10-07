@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="992f0a9c-5e48-4dc5-807f-9887871ddb10" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup7.xsd" MetadataType="Schema" ID="5106cd45-7873-4dbf-ac65-8d1876f43ead" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup71.xsd" MetadataType="Schema" ID="c7fb08f7-ad20-4dad-8fa4-ec4174f251a9" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup72.xsd" MetadataType="Schema" ID="bdf966a3-aa7f-4742-9116-ad440e7ea737" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup21.wsdl" MetadataType="Wsdl" ID="22fb0458-a0d9-4334-b812-1300768891ac" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup1.disco" MetadataType="Disco" ID="ce5a8e74-ae97-455c-82a1-a008139a55f4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?disco" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup2.wsdl" MetadataType="Wsdl" ID="ac28f63b-abc8-4013-a355-b6df0bfd54c8" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?wsdl" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup75.xsd" MetadataType="Schema" ID="87ff3ae5-e239-46b5-bf23-b6e312912090" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup73.xsd" MetadataType="Schema" ID="cb394fb1-9faf-498a-b037-282004c8661a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup76.xsd" MetadataType="Schema" ID="07d9c99d-94f9-4b96-8f34-47e2cf64d474" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup74.xsd" MetadataType="Schema" ID="1f1507cf-314d-4250-b86f-60fb3d2cf720" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

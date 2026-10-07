@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c15f8ebe-9a44-46c1-9518-2a8b3c5e67b8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HcmPersonImageSvcGroup71.xsd" MetadataType="Schema" ID="fef81871-ec24-41c9-9f28-76c60e1d4b5f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup7.xsd" MetadataType="Schema" ID="61c88b1b-e8f8-48cc-a7d8-7a4d0ca79dec" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup21.wsdl" MetadataType="Wsdl" ID="cd7a782a-9537-451e-9cf6-9b3eb44fb414" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup74.xsd" MetadataType="Schema" ID="aa72bdea-8858-4b02-97f6-77bccc08800e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup76.xsd" MetadataType="Schema" ID="ad427407-c2f8-46b1-b00c-cce37b8b6646" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup75.xsd" MetadataType="Schema" ID="2f30233a-1ef8-4e62-9fa7-842a7fe4d15c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup1.disco" MetadataType="Disco" ID="ddd7a33f-3826-42af-8419-d6730af97e3d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?disco" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup73.xsd" MetadataType="Schema" ID="2ae6ccb8-a496-45da-8d25-c626b4b7cda5" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup2.wsdl" MetadataType="Wsdl" ID="9b4677a4-8615-48a9-9368-9439cd210ee0" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?wsdl" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup72.xsd" MetadataType="Schema" ID="a28d0e23-8a25-4a70-8db6-f14955a3ba79" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

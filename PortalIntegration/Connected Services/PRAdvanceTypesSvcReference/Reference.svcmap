@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="05943059-0801-45a1-aaaa-10639fadd7b2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PRAdvanceTypesSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup8.xsd" MetadataType="Schema" ID="d9e6bf93-5a52-43ff-b95e-4b6ca64fc737" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup9.xsd" MetadataType="Schema" ID="fe08d0eb-570f-4ae7-bf4f-4372530dccb4" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup3.wsdl" MetadataType="Wsdl" ID="30caa644-2a6b-4892-9e6a-13607e3ee5e9" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup10.xsd" MetadataType="Schema" ID="afec1bde-34a7-43fd-a297-29f335a20141" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup4.wsdl" MetadataType="Wsdl" ID="441b52de-8426-40aa-8c27-37a036492904" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?wsdl" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup11.xsd" MetadataType="Schema" ID="b3128c3b-aa88-4d31-9b9b-9c7472dd5f97" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup12.xsd" MetadataType="Schema" ID="c4164a14-f99e-4eec-9c2a-7049e76539e2" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup13.xsd" MetadataType="Schema" ID="0ce8fdd2-1c63-4893-bfe1-9ae71ad2fd2d" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup1.disco" MetadataType="Disco" ID="6fbb0c03-0e2c-4c7b-91d2-814344737b93" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?disco" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup14.xsd" MetadataType="Schema" ID="258a4cd4-0aff-42eb-9b54-524155026e61" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

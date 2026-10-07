@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="37da1548-c995-49fe-98cd-720dbeab9acd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup2.wsdl" MetadataType="Wsdl" ID="bbf47bb4-0564-4252-8e03-92bd931c8673" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?wsdl" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup1.disco" MetadataType="Disco" ID="d946d767-02f2-47ee-b4f5-f7789b54607b" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?disco" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup21.wsdl" MetadataType="Wsdl" ID="f616d1dd-8c8f-4b4e-b74c-c43c3422b970" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup7.xsd" MetadataType="Schema" ID="c191a3eb-102f-4f7f-8200-70f7da86d1fa" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup71.xsd" MetadataType="Schema" ID="1ea1dfa7-c7eb-415d-92f9-6027068c7df8" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup72.xsd" MetadataType="Schema" ID="e8d8564a-55e4-4c90-9ea4-3bbda19b835e" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup73.xsd" MetadataType="Schema" ID="c67340dd-95e1-4789-8538-6f6f962844cc" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup74.xsd" MetadataType="Schema" ID="920f2846-449d-417a-9d52-954772646b5d" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup75.xsd" MetadataType="Schema" ID="02126ac8-8b1e-4db3-81cd-e271ee388fed" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup76.xsd" MetadataType="Schema" ID="31c40d0d-5d88-49bf-a7e8-1c50abc32b13" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

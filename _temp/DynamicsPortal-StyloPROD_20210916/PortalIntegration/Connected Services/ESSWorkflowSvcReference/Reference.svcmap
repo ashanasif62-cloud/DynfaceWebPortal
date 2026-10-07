@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6eb0adec-ead6-4bac-8128-d47a7c4fff74" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/ESSWorkflowSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ESSWorkflowSvcGroup72.xsd" MetadataType="Schema" ID="4b0d59df-b91d-4b15-92b5-393e9d3a5817" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSWorkflowSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="ESSWorkflowSvcGroup75.xsd" MetadataType="Schema" ID="a8ad6310-2cc0-4883-ac34-21985210d89d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSWorkflowSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="ESSWorkflowSvcGroup73.xsd" MetadataType="Schema" ID="b9e1b0c7-6c9c-4666-b16b-dfe24afc1486" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSWorkflowSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="ESSWorkflowSvcGroup1.disco" MetadataType="Disco" ID="bc3f157a-ebc9-4d1d-a2af-41f636d9962e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSWorkflowSvcGroup?disco" />
+    <MetadataFile FileName="ESSWorkflowSvcGroup74.xsd" MetadataType="Schema" ID="46efbce0-0a4d-4c25-a2a4-c8a5c36cd1e8" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSWorkflowSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="ESSWorkflowSvcGroup21.wsdl" MetadataType="Wsdl" ID="c4b369ac-a53c-4ec6-b5f9-1276ab0a3dfa" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSWorkflowSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ESSWorkflowSvcGroup7.xsd" MetadataType="Schema" ID="f0d38f3d-3670-4963-bc77-7c10e6f5b215" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSWorkflowSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="ESSWorkflowSvcGroup2.wsdl" MetadataType="Wsdl" ID="11a9d4e5-7950-4e8c-8b9a-14ab845ba93d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSWorkflowSvcGroup?wsdl" />
+    <MetadataFile FileName="ESSWorkflowSvcGroup76.xsd" MetadataType="Schema" ID="ac0ebd3e-d8c9-4796-a754-b98db739d1ba" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSWorkflowSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="ESSWorkflowSvcGroup71.xsd" MetadataType="Schema" ID="ffea6256-a4a6-4198-a916-0ef5bf963edf" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSWorkflowSvcGroup?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

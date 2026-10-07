@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/ESSPersonalContactsSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfESSPersonalContactsContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ESSPersonalContactsContract" nillable="true" type="tns:ESSPersonalContactsContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfESSPersonalContactsContract" nillable="true" type="tns:ArrayOfESSPersonalContactsContract" />
+  <xs:complexType name="ESSPersonalContactsContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BenefecieryPercentage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BeneficiaryFromDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="BeneficiaryFromDatelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BeneficiaryToDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="BeneficiaryToDatelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DependentValidFrom" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DependentValidTo" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EmergencyContact" type="xs:boolean" />
+          <xs:element minOccurs="0" name="EmergencyContactlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsFullTimeStudent" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsPersonWithDisabilities" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastNamePrefix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Namelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RelationShipTypeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RelationShipTypeIdlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TableId" type="xs:int" />
+          <xs:element minOccurs="0" name="VerificationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="birthDatelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dependentValidFromlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="depndentValidTolbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="firstNamelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="genderlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="isBeneficiary" type="xs:boolean" />
+          <xs:element minOccurs="0" name="isBeneficiarylbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="isDependent" type="xs:boolean" />
+          <xs:element minOccurs="0" name="isDependentlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="isFullTimeStudentlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="isPersonWithDisabilitieslbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="lastNamelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="middleNamelbl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ESSPersonalContactsContract" nillable="true" type="tns:ESSPersonalContactsContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

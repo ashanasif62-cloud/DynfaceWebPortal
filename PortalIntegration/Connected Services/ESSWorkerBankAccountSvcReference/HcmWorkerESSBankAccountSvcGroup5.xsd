@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/HcmWorkerESSBankAccountSvcGroup?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp.AxShared" />
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/HcmWorkerESSBankAccountSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfHcmWorkerESSBankAccountSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HcmWorkerESSBankAccountSvcContract" nillable="true" type="tns:HcmWorkerESSBankAccountSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHcmWorkerESSBankAccountSvcContract" nillable="true" type="tns:ArrayOfHcmWorkerESSBankAccountSvcContract" />
+  <xs:complexType name="HcmWorkerESSBankAccountSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountHolder" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountHolderlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountIdlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountNumlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BankIBAN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BankIBANlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BranchName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BranchNamelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BranchNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BranchNumberlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Namelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WFOperation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WFOperationlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WFStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WFStatuslbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Worker" type="xs:long" />
+          <xs:element minOccurs="0" name="WorkerBankAccountRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="WorkerBankAccountRecIdlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Workerlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmAccountHolder" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmAccountHolderlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmAccountId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmAccountIdlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmAccountNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmAccountNumlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmBankIBAN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmBankIBANlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmBranchName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmBranchNamelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmBranchNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmBranchNumberlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmCreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmCreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="__k_parmEmployeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="__k_parmName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmNamelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmPartition" type="xs:long" />
+          <xs:element minOccurs="0" name="__k_parmRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="__k_parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="__k_parmWFOperation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmWFOperationlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmWFStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmWFStatuslbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmWorker" type="xs:long" />
+          <xs:element minOccurs="0" name="__k_parmWorkerBankAccountRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="__k_parmWorkerBankAccountRecIdlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmWorkerlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="createdBy" nillable="true" type="xs:string" />
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp.AxShared" minOccurs="0" name="createdDateTime" type="q2:utcdatetime" />
+          <xs:element minOccurs="0" name="modifiedBy" nillable="true" type="xs:string" />
+          <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp.AxShared" minOccurs="0" name="modifiedDateTime" type="q3:utcdatetime" />
+          <xs:element minOccurs="0" name="partition" type="xs:long" />
+          <xs:element minOccurs="0" name="recId" type="xs:long" />
+          <xs:element minOccurs="0" name="tableId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HcmWorkerESSBankAccountSvcContract" nillable="true" type="tns:HcmWorkerESSBankAccountSvcContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q4:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

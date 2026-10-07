@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="f5c79fbf-88b8-4ea6-95a1-5d532bab7d93" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/HRPoliciesSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HRPoliciesSvcGroup.xsd" MetadataType="Schema" ID="ce1ae635-1165-40d6-b508-437ede4d8f6b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HRPoliciesSvcGroup1.xsd" MetadataType="Schema" ID="fd4e5d7f-cda1-46e9-bc53-0c85e8f00111" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HRPoliciesSvcGroup2.xsd" MetadataType="Schema" ID="c036b0d9-eafd-499c-91ca-79d09a34ccf2" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HRPoliciesSvcGroup.wsdl" MetadataType="Wsdl" ID="e3c9825e-7064-485f-8e8c-1d31018b661a" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?wsdl" />
+    <MetadataFile FileName="HRPoliciesSvcGroup.disco" MetadataType="Disco" ID="bc26640b-d51c-4dda-b693-66f1f54d833b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?disco" />
+    <MetadataFile FileName="HRPoliciesSvcGroup3.xsd" MetadataType="Schema" ID="f59202c4-aade-4f98-b023-ac8f0152b2ce" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HRPoliciesSvcGroup4.xsd" MetadataType="Schema" ID="f38c4e13-6d94-46e3-a0a2-3321b4506906" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HRPoliciesSvcGroup5.xsd" MetadataType="Schema" ID="b71470bc-4bc2-4f0f-968f-e8d6c026b718" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HRPoliciesSvcGroup6.xsd" MetadataType="Schema" ID="4911cb64-ad8f-4d8c-86fe-c06d8e7213cc" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HRPoliciesSvcGroup1.wsdl" MetadataType="Wsdl" ID="39b1b2e9-da63-4fd4-819c-4d28740d55f2" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="0c21ceb1-05dd-4241-8898-2268c1e2b167" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PRLoanTypesSvcGroup7.xsd" MetadataType="Schema" ID="751c6fe9-ec50-45c3-8930-db6ac1023fa8" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup71.xsd" MetadataType="Schema" ID="e150cb2d-06cb-4db8-b54a-1b89ffa9b28a" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup2.wsdl" MetadataType="Wsdl" ID="3ec42d2a-8da8-4df5-915c-55cfa8203b7b" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?wsdl" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup72.xsd" MetadataType="Schema" ID="c58b8e44-10fe-4c2c-b569-27c64313840f" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup73.xsd" MetadataType="Schema" ID="910d1d43-87e3-4b49-ac0d-4e49190abdc2" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup74.xsd" MetadataType="Schema" ID="3ebae792-97d8-4fd7-946c-e8e1160c7d22" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup21.wsdl" MetadataType="Wsdl" ID="2df124f7-4e45-48ce-bcb9-1da9d9b39c05" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup75.xsd" MetadataType="Schema" ID="ab546906-a2aa-4d9c-81b0-7934876b4507" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup76.xsd" MetadataType="Schema" ID="507546bc-7d38-431b-8a90-d6e8d953fc4d" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

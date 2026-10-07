@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="HRMApplication" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="HRMApplication" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="HRMApplication/Imports">
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd2" namespace="HRMApplication" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd6" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="create">
+    <wsdl:part name="parameters" element="tns:create" />
+  </wsdl:message>
+  <wsdl:message name="create_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="createResponse">
+    <wsdl:part name="parameters" element="tns:createResponse" />
+  </wsdl:message>
+  <wsdl:message name="createResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HRMApplication_create_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="findbyApplicationId">
+    <wsdl:part name="parameters" element="tns:findbyApplicationId" />
+  </wsdl:message>
+  <wsdl:message name="findbyApplicationId_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="findbyApplicationIdResponse">
+    <wsdl:part name="parameters" element="tns:findbyApplicationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="findbyApplicationIdResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HRMApplication_findbyApplicationId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="updatebyapplicationId">
+    <wsdl:part name="parameters" element="tns:updatebyapplicationId" />
+  </wsdl:message>
+  <wsdl:message name="updatebyapplicationId_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="updatebyapplicationIdResponse">
+    <wsdl:part name="parameters" element="tns:updatebyapplicationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="updatebyapplicationIdResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HRMApplication_updatebyapplicationId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll">
+    <wsdl:part name="parameters" element="tns:retrieveAll" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HRMApplication_retrieveAll_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveApplicantId">
+    <wsdl:part name="parameters" element="tns:retrieveApplicantId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveApplicantId_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveApplicantIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveApplicantIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveApplicantIdResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HRMApplication_retrieveApplicantId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveApplicationId">
+    <wsdl:part name="parameters" element="tns:retrieveApplicationId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveApplicationId_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveApplicationIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveApplicationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveApplicationIdResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HRMApplication_retrieveApplicationId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveByRecruitment">
+    <wsdl:part name="parameters" element="tns:retrieveByRecruitment" />
+  </wsdl:message>
+  <wsdl:message name="retrieveByRecruitment_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveByRecruitmentResponse">
+    <wsdl:part name="parameters" element="tns:retrieveByRecruitmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveByRecruitmentResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HRMApplication_retrieveByRecruitment_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveRecruitmentProject">
+    <wsdl:part name="parameters" element="tns:retrieveRecruitmentProject" />
+  </wsdl:message>
+  <wsdl:message name="retrieveRecruitmentProject_Headers">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q22:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveRecruitmentProjectResponse">
+    <wsdl:part name="parameters" element="tns:retrieveRecruitmentProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveRecruitmentProjectResponse_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q23:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HRMApplication_retrieveRecruitmentProject_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q24:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDepartment">
+    <wsdl:part name="parameters" element="tns:retrieveDepartment" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDepartment_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDepartmentResponse">
+    <wsdl:part name="parameters" element="tns:retrieveDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDepartmentResponse_Headers">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q26:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HRMApplication_retrieveDepartment_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q27:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJob">
+    <wsdl:part name="parameters" element="tns:retrieveJob" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJob_Headers">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q28:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJobResponse">
+    <wsdl:part name="parameters" element="tns:retrieveJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveJobResponse_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q29:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HRMApplication_retrieveJob_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q30:Fault" />
+  </wsdl:message>
+  <wsdl:message name="getAttachment">
+    <wsdl:part name="parameters" element="tns:getAttachment" />
+  </wsdl:message>
+  <wsdl:message name="getAttachment_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getAttachmentResponse">
+    <wsdl:part name="parameters" element="tns:getAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAttachmentResponse_Headers">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q32:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HRMApplication_getAttachment_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q33:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="HRMApplication">
+    <wsdl:operation name="create">
+      <wsdl:input wsam:Action="HRMApplication/HRMApplication/create" name="create" message="tns:create" />
+      <wsdl:output wsam:Action="HRMApplication/HRMApplication/createResponse" name="createResponse" message="tns:createResponse" />
+      <wsdl:fault wsam:Action="HRMApplication/HRMApplication/Fault" name="SoapServiceFaultFault" message="tns:HRMApplication_create_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="findbyApplicationId">
+      <wsdl:input wsam:Action="HRMApplication/HRMApplication/findbyApplicationId" name="findbyApplicationId" message="tns:findbyApplicationId" />
+      <wsdl:output wsam:Action="HRMApplication/HRMApplication/findbyApplicationIdResponse" name="findbyApplicationIdResponse" message="tns:findbyApplicationIdResponse" />
+      <wsdl:fault wsam:Action="HRMApplication/HRMApplication/Fault" name="SoapServiceFaultFault" message="tns:HRMApplication_findbyApplicationId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatebyapplicationId">
+      <wsdl:input wsam:Action="HRMApplication/HRMApplication/updatebyapplicationId" name="updatebyapplicationId" message="tns:updatebyapplicationId" />
+      <wsdl:output wsam:Action="HRMApplication/HRMApplication/updatebyapplicationIdResponse" name="updatebyapplicationIdResponse" message="tns:updatebyapplicationIdResponse" />
+      <wsdl:fault wsam:Action="HRMApplication/HRMApplication/Fault" name="SoapServiceFaultFault" message="tns:HRMApplication_updatebyapplicationId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAll">
+      <wsdl:input wsam:Action="HRMApplication/HRMApplication/retrieveAll" name="retrieveAll" message="tns:retrieveAll" />
+      <wsdl:output wsam:Action="HRMApplication/HRMApplication/retrieveAllResponse" name="retrieveAllResponse" message="tns:retrieveAllResponse" />
+      <wsdl:fault wsam:Action="HRMApplication/HRMApplication/Fault" name="SoapServiceFaultFault" message="tns:HRMApplication_retrieveAll_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveApplicantId">
+      <wsdl:input wsam:Action="HRMApplication/HRMApplication/retrieveApplicantId" name="retrieveApplicantId" message="tns:retrieveApplicantId" />
+      <wsdl:output wsam:Action="HRMApplication/HRMApplication/retrieveApplicantIdResponse" name="retrieveApplicantIdResponse" message="tns:retrieveApplicantIdResponse" />
+      <wsdl:fault wsam:Action="HRMApplication/HRMApplication/Fault" name="SoapServiceFaultFault" message="tns:HRMApplication_retrieveApplicantId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveApplicationId">
+      <wsdl:input wsam:Action="HRMApplication/HRMApplication/retrieveApplicationId" name="retrieveApplicationId" message="tns:retrieveApplicationId" />
+      <wsdl:output wsam:Action="HRMApplication/HRMApplication/retrieveApplicationIdResponse" name="retrieveApplicationIdResponse" message="tns:retrieveApplicationIdResponse" />
+      <wsdl:fault wsam:Action="HRMApplication/HRMApplication/Fault" name="SoapServiceFaultFault" message="tns:HRMApplication_retrieveApplicationId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveByRecruitment">
+      <wsdl:input wsam:Action="HRMApplication/HRMApplication/retrieveByRecruitment" name="retrieveByRecruitment" message="tns:retrieveByRecruitment" />
+      <wsdl:output wsam:Action="HRMApplication/HRMApplication/retrieveByRecruitmentResponse" name="retrieveByRecruitmentResponse" message="tns:retrieveByRecruitmentResponse" />
+      <wsdl:fault wsam:Action="HRMApplication/HRMApplication/Fault" name="SoapServiceFaultFault" message="tns:HRMApplication_retrieveByRecruitment_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveRecruitmentProject">
+      <wsdl:input wsam:Action="HRMApplication/HRMApplication/retrieveRecruitmentProject" name="retrieveRecruitmentProject" message="tns:retrieveRecruitmentProject" />
+      <wsdl:output wsam:Action="HRMApplication/HRMApplication/retrieveRecruitmentProjectResponse" name="retrieveRecruitmentProjectResponse" message="tns:retrieveRecruitmentProjectResponse" />
+      <wsdl:fault wsam:Action="HRMApplication/HRMApplication/Fault" name="SoapServiceFaultFault" message="tns:HRMApplication_retrieveRecruitmentProject_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveDepartment">
+      <wsdl:input wsam:Action="HRMApplication/HRMApplication/retrieveDepartment" name="retrieveDepartment" message="tns:retrieveDepartment" />
+      <wsdl:output wsam:Action="HRMApplication/HRMApplication/retrieveDepartmentResponse" name="retrieveDepartmentResponse" message="tns:retrieveDepartmentResponse" />
+      <wsdl:fault wsam:Action="HRMApplication/HRMApplication/Fault" name="SoapServiceFaultFault" message="tns:HRMApplication_retrieveDepartment_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveJob">
+      <wsdl:input wsam:Action="HRMApplication/HRMApplication/retrieveJob" name="retrieveJob" message="tns:retrieveJob" />
+      <wsdl:output wsam:Action="HRMApplication/HRMApplication/retrieveJobResponse" name="retrieveJobResponse" message="tns:retrieveJobResponse" />
+      <wsdl:fault wsam:Action="HRMApplication/HRMApplication/Fault" name="SoapServiceFaultFault" message="tns:HRMApplication_retrieveJob_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAttachment">
+      <wsdl:input wsam:Action="HRMApplication/HRMApplication/getAttachment" name="getAttachment" message="tns:getAttachment" />
+      <wsdl:output wsam:Action="HRMApplication/HRMApplication/getAttachmentResponse" name="getAttachmentResponse" message="tns:getAttachmentResponse" />
+      <wsdl:fault wsam:Action="HRMApplication/HRMApplication/Fault" name="SoapServiceFaultFault" message="tns:HRMApplication_getAttachment_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

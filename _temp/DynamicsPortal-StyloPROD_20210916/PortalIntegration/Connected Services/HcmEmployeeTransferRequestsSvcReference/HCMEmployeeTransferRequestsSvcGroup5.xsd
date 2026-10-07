@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/HCMEmployeeTransferRequestsSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfHCMEmployeeTransferRequestsSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HCMEmployeeTransferRequestsSvcContract" nillable="true" type="tns:HCMEmployeeTransferRequestsSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHCMEmployeeTransferRequestsSvcContract" nillable="true" type="tns:ArrayOfHCMEmployeeTransferRequestsSvcContract" />
+  <xs:complexType name="HCMEmployeeTransferRequestsSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EffectiveDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Employee" type="xs:long" />
+          <xs:element minOccurs="0" name="EmployeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromDepartment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromDepartmentName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromDimension" type="xs:long" />
+          <xs:element minOccurs="0" name="FromJob" type="xs:long" />
+          <xs:element minOccurs="0" name="FromPosition" type="xs:long" />
+          <xs:element minOccurs="0" name="FromPositionDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="ReasonCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RequestedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RevisedSalary" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ToDepartment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToDepartmentName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToDimension" type="xs:long" />
+          <xs:element minOccurs="0" name="ToJob" type="xs:long" />
+          <xs:element minOccurs="0" name="ToPosition" type="xs:long" />
+          <xs:element minOccurs="0" name="ToPositionDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TransferDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="TransferStatus" type="tns:HcmTransferStatus" />
+          <xs:element minOccurs="0" name="TransferType" type="tns:HcmTransferType" />
+          <xs:element minOccurs="0" name="WFStatus" type="tns:HRWFStatus" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HCMEmployeeTransferRequestsSvcContract" nillable="true" type="tns:HCMEmployeeTransferRequestsSvcContract" />
+  <xs:simpleType name="HcmTransferStatus">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:element name="HcmTransferStatus" nillable="true" type="tns:HcmTransferStatus" />
+  <xs:simpleType name="HcmTransferType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Transfer" />
+      <xs:enumeration value="Promotion" />
+      <xs:enumeration value="ProbationExtension" />
+      <xs:enumeration value="Confirmation" />
+      <xs:enumeration value="Demotion" />
+      <xs:enumeration value="SalaryRevision" />
+      <xs:enumeration value="ChangeEmploymentType" />
+      <xs:enumeration value="ContractRenewal" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HcmTransferType" nillable="true" type="tns:HcmTransferType" />
+  <xs:simpleType name="HRWFStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSubmitted" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="Rejected" />
+      <xs:enumeration value="Submitted" />
+      <xs:enumeration value="ChangeRequest" />
+      <xs:enumeration value="PendingCancellation" />
+      <xs:enumeration value="Returned" />
+      <xs:enumeration value="PendingApproval" />
+      <xs:enumeration value="PendingComplete" />
+      <xs:enumeration value="WorkflowCompleted" />
+      <xs:enumeration value="Completed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HRWFStatus" nillable="true" type="tns:HRWFStatus" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+</xs:schema>

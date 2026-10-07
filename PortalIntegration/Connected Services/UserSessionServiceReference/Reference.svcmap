@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4e1dcee5-276e-42e7-a57f-4513fe8b03de" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maison-devdevaos.sandbox.ax.dynamics.com/services/UserSessionService?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UserSessionService.xsd" MetadataType="Schema" ID="2f6f7164-7793-40b3-9e5e-8b315cbf3c7c" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/services/UserSessionService?xsd=xsd6" />
+    <MetadataFile FileName="UserSessionService1.xsd" MetadataType="Schema" ID="308a4316-d93e-4d64-add7-9555094a9a23" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/services/UserSessionService?xsd=xsd4" />
+    <MetadataFile FileName="UserSessionService2.xsd" MetadataType="Schema" ID="bc0114d4-00b9-4ebf-bb17-7a98ceda2437" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/services/UserSessionService?xsd=xsd5" />
+    <MetadataFile FileName="UserSessionService.wsdl" MetadataType="Wsdl" ID="84493544-17b1-4eeb-bc7f-5f218dc7ccb6" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/services/UserSessionService?wsdl=wsdl0" />
+    <MetadataFile FileName="UserSessionService1.wsdl" MetadataType="Wsdl" ID="ad98ff5e-f36a-47f8-af53-d608d809e40f" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/services/UserSessionService?wsdl" />
+    <MetadataFile FileName="UserSessionService3.xsd" MetadataType="Schema" ID="aeaa19cf-4d94-4f13-9ad2-49c42ebaacc4" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/services/UserSessionService?xsd=xsd1" />
+    <MetadataFile FileName="UserSessionService4.xsd" MetadataType="Schema" ID="83a2ebea-72d4-4a28-964c-1a482b5efd66" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/services/UserSessionService?xsd=xsd0" />
+    <MetadataFile FileName="UserSessionService5.xsd" MetadataType="Schema" ID="7eabf3b0-2627-421c-b2da-659099a73021" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/services/UserSessionService?xsd=xsd3" />
+    <MetadataFile FileName="UserSessionService6.xsd" MetadataType="Schema" ID="28edafbc-74fa-4a6f-a645-b45d02dc56ef" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/services/UserSessionService?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

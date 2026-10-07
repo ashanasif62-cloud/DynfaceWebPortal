@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="41c552bc-2b0d-429f-acc4-b23338385a3e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileCalendarSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="JmgProfileCalendarSvcGroup3.xsd" MetadataType="Schema" ID="8a62290a-53a0-435c-9b95-bac681be6b4b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileCalendarSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="JmgProfileCalendarSvcGroup.wsdl" MetadataType="Wsdl" ID="27f9caef-a3eb-4851-b6db-d629bf1b8ed1" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileCalendarSvcGroup?wsdl" />
+    <MetadataFile FileName="JmgProfileCalendarSvcGroup.disco" MetadataType="Disco" ID="24d64142-c766-49cb-a31a-e38d48f47e83" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileCalendarSvcGroup?disco" />
+    <MetadataFile FileName="JmgProfileCalendarSvcGroup1.wsdl" MetadataType="Wsdl" ID="3a93b376-ac4e-4056-9da5-75765da0a200" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileCalendarSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="JmgProfileCalendarSvcGroup2.xsd" MetadataType="Schema" ID="79c689f6-b6b1-4baa-b5b7-43898e02da0a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileCalendarSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="JmgProfileCalendarSvcGroup6.xsd" MetadataType="Schema" ID="91bb8e5d-d39c-4dc8-87d7-0a804f510123" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileCalendarSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="JmgProfileCalendarSvcGroup.xsd" MetadataType="Schema" ID="c4d8e8a6-8070-470f-8fc1-e87c8f768950" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileCalendarSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="JmgProfileCalendarSvcGroup1.xsd" MetadataType="Schema" ID="1e28d3ba-0077-4c48-9830-1ae44c15d803" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileCalendarSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="JmgProfileCalendarSvcGroup4.xsd" MetadataType="Schema" ID="ee246f83-5eee-451e-9182-6f0ae411d608" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileCalendarSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="JmgProfileCalendarSvcGroup5.xsd" MetadataType="Schema" ID="f4953611-9bcf-4c2b-84cc-3c49e6d65706" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileCalendarSvcGroup?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

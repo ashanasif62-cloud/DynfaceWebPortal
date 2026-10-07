@@ -1,0 +1,934 @@
+﻿UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 3dc97847-c77c-44a6-b67b-1112ffee5f7f. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/22/2021 2:57:16 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/22/2021 2:57:16 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 02e86eda-fca2-46a8-a13b-663c67e80a2b. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/22/2021 3:05:02 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/22/2021 3:05:02 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 897e08d2-6059-4e78-9d45-4a31ac537be8. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/22/2021 3:06:17 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/22/2021 3:06:17 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 1409464f-3a21-4174-8fe8-8e8a2818e2cd. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/22/2021 3:09:17 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/22/2021 3:09:17 PM
+
+-----------------------------------------------------------------------------
+
+UserId: 
+Occurrence: DynamicsPortal.Site
+Message: Validation of token failed.
+InnerMessage: 
+Date: 5/22/2021 3:34:37 PM
+
+-----------------------------------------------------------------------------
+
+UserId: 
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 952f2fb4-0a59-4492-8830-d05550a4c954. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/22/2021 3:34:39 PM
+
+-----------------------------------------------------------------------------
+
+UserId: 
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/22/2021 3:34:39 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request a0a087ea-2b45-4808-8a12-8f89d54b09f5. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/22/2021 3:35:39 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/22/2021 3:35:39 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 43f36c21-96ed-4586-898b-9243988fdaf9. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/22/2021 3:37:58 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/22/2021 3:37:58 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request e1feaece-5223-4e43-9d50-ec8f27b0bed8. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/22/2021 4:50:25 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/22/2021 4:50:25 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 8991c7d3-17ec-447d-803b-2099fca2c6e6. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/22/2021 4:54:12 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/22/2021 4:54:12 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 6280a9ed-0936-4d1d-9604-5e1d75b01208. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/22/2021 5:09:07 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/22/2021 5:09:46 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request a0111878-0bc2-44a7-8f62-32261dc737b3. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/22/2021 5:12:54 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/22/2021 5:12:54 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request c5b16d87-70ca-49d4-8db1-c0728810a68f. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/22/2021 5:15:30 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/22/2021 5:15:30 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PRAdvanceTypes
+Message: One or more errors occurred.
+InnerMessage: The formatter threw an exception while trying to deserialize the message: There was an error while trying to deserialize parameter http://tempuri.org:_advanceType. The InnerException message was 'Invalid enum value 'Salary' cannot be deserialized into type 'Dynamics.AX.Application.PRAdvanceType'. Ensure that the necessary enum values are present and are marked with EnumMemberAttribute attribute if the type has DataContractAttribute attribute.'.  Please see InnerException for more details.
+Date: 5/23/2021 5:46:59 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PRAdvanceTypes
+Message: One or more errors occurred.
+InnerMessage: The formatter threw an exception while trying to deserialize the message: There was an error while trying to deserialize parameter http://tempuri.org:_advanceType. The InnerException message was 'Invalid enum value 'Salary' cannot be deserialized into type 'Dynamics.AX.Application.PRAdvanceType'. Ensure that the necessary enum values are present and are marked with EnumMemberAttribute attribute if the type has DataContractAttribute attribute.'.  Please see InnerException for more details.
+Date: 5/23/2021 5:47:02 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PRAdvanceTypes
+Message: One or more errors occurred.
+InnerMessage: The formatter threw an exception while trying to deserialize the message: There was an error while trying to deserialize parameter http://tempuri.org:_advanceType. The InnerException message was 'Invalid enum value 'Salary' cannot be deserialized into type 'Dynamics.AX.Application.PRAdvanceType'. Ensure that the necessary enum values are present and are marked with EnumMemberAttribute attribute if the type has DataContractAttribute attribute.'.  Please see InnerException for more details.
+Date: 5/23/2021 5:48:11 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PRAdvanceTypes
+Message: One or more errors occurred.
+InnerMessage: The formatter threw an exception while trying to deserialize the message: There was an error while trying to deserialize parameter http://tempuri.org:_advanceType. The InnerException message was 'Invalid enum value 'Loan' cannot be deserialized into type 'Dynamics.AX.Application.PRAdvanceType'. Ensure that the necessary enum values are present and are marked with EnumMemberAttribute attribute if the type has DataContractAttribute attribute.'.  Please see InnerException for more details.
+Date: 5/23/2021 5:48:19 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 64823c6f-e1cf-45ce-b741-a2c0264eb777. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 5/26/2021 5:21:50 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/26/2021 5:21:50 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request e299e360-1e61-4514-9fcb-880b5c6c55a8. Exception details:
+Type: OfficeOpenXml.Packaging.Ionic.Zlib.ZlibException
+Message: Bad state (invalid block type)
+Date: 5/26/2021 5:45:08 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/26/2021 5:46:19 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 5f5fe6a7-2a24-4116-adbd-100efe9ecd75. Exception details:
+Type: OfficeOpenXml.Packaging.Ionic.Zlib.ZlibException
+Message: Bad state (invalid block type)
+Date: 5/26/2021 5:53:41 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/26/2021 5:53:53 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 2447bb18-d237-4bb1-8422-4d3589c77198. Exception details:
+Type: OfficeOpenXml.Packaging.Ionic.Zlib.ZlibException
+Message: Bad state (invalid block type)
+Date: 5/26/2021 5:57:41 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 5/26/2021 5:57:48 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ControlsHelper
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 7/13/2021 12:04:48 AM
+
+-----------------------------------------------------------------------------
+
+UserId: 
+Occurrence: DynamicsPortal.Global
+Message: c:\.Net Payroll\DynamicsPortal\DynamicsPortal-Stylo\DynamicsPortal\ESS\TA\ESSJmgTimecardTable_ListPage.aspx(18): error CS1061: 'ASP.ess_ta_essjmgtimecardtable_listpage_aspx' does not contain a definition for 'Date_TextChanged' and no extension method 'Date_TextChanged' accepting a first argument of type 'ASP.ess_ta_essjmgtimecardtable_listpage_aspx' could be found (are you missing a using directive or an assembly reference?)
+InnerMessage: 
+Date: 7/27/2021 4:08:08 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: GeneralAuxiliary.StringToDateTime
+Message: String was not recognized as a valid DateTime.
+InnerMessage: 
+Date: 7/27/2021 4:18:39 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: GeneralAuxiliary.StringToDateTime
+Message: String was not recognized as a valid DateTime.
+InnerMessage: 
+Date: 7/27/2021 4:24:11 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: GeneralAuxiliary.StringToDateTime
+Message: String was not recognized as a valid DateTime.
+InnerMessage: 
+Date: 7/27/2021 4:24:32 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.HcmWorkerDetails
+Message: One or more errors occurred.
+InnerMessage: There was no endpoint listening at https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/HcmWorkerDetailsSvcGroup that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.
+Date: 7/28/2021 11:59:25 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.HcmWorkerDetails
+Message: One or more errors occurred.
+InnerMessage: There was no endpoint listening at https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/HcmWorkerDetailsSvcGroup that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.
+Date: 7/28/2021 12:01:18 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.HcmWorkerDetails
+Message: Failed to authenticate with AAD by the credential.
+InnerMessage: 
+Date: 7/28/2021 12:13:08 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.HcmPersonImage
+Message: Failed to authenticate with AAD by the credential.
+InnerMessage: 
+Date: 7/28/2021 12:18:11 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.HcmWorkerDetails
+Message: Failed to authenticate with AAD by the credential.
+InnerMessage: 
+Date: 7/28/2021 12:18:43 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.HcmWorkerDetails
+Message: Failed to authenticate with AAD by the credential.
+InnerMessage: 
+Date: 7/28/2021 12:22:40 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.HcmWorkerDetails
+Message: Failed to authenticate with AAD by the credential.
+InnerMessage: 
+Date: 7/28/2021 12:22:48 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.HcmWorkerDetails
+Message: Failed to authenticate with AAD by the credential.
+InnerMessage: 
+Date: 8/18/2021 10:21:20 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.HcmWorkerDetails
+Message: One or more errors occurred.
+InnerMessage: There was no endpoint listening at https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/HcmWorkerDetailsSvcGroup that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.
+Date: 8/20/2021 12:18:14 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.HcmWorkerDetails
+Message: One or more errors occurred.
+InnerMessage: There was no endpoint listening at https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/HcmWorkerDetailsSvcGroup that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.
+Date: 8/20/2021 12:25:10 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 12:48:12 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 12:49:32 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 12:50:36 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 12:50:41 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 12:50:41 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 12:50:41 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 12:50:41 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 12:50:42 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 12:50:42 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 12:50:42 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ImportUsers
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/20/2021 12:50:42 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ImportUsers
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/20/2021 12:54:53 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 12:58:42 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 1:00:03 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 1:00:12 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 1:00:15 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ImportUsers
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/20/2021 1:00:17 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 1:05:56 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 1:11:16 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DataAccess.getConnection_DAL
+Message: Violation of PRIMARY KEY constraint 'PK_UserRoles_1'. Cannot insert duplicate key in object 'dbo.SysUserRoles'. The duplicate key value is (ESS11, ESS, 1, SPL).
+The statement has been terminated.
+InnerMessage: 
+Date: 8/20/2021 1:11:17 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DataAccess.getConnection_DAL
+Message: Violation of PRIMARY KEY constraint 'PK_UserRoles_1'. Cannot insert duplicate key in object 'dbo.SysUserRoles'. The duplicate key value is (ESS12, ESS, 1, SPL).
+The statement has been terminated.
+InnerMessage: 
+Date: 8/20/2021 1:11:17 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 1:11:18 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DataAccess.getConnection_DAL
+Message: Violation of PRIMARY KEY constraint 'PK_UserRoles_1'. Cannot insert duplicate key in object 'dbo.SysUserRoles'. The duplicate key value is (ESS16, ESS, 1, SPL).
+The statement has been terminated.
+InnerMessage: 
+Date: 8/20/2021 1:11:18 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DataAccess.getConnection_DAL
+Message: Violation of PRIMARY KEY constraint 'PK_UserRoles_1'. Cannot insert duplicate key in object 'dbo.SysUserRoles'. The duplicate key value is (ESS17, ESS, 1, SPL).
+The statement has been terminated.
+InnerMessage: 
+Date: 8/20/2021 1:11:19 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DataAccess.getConnection_DAL
+Message: Violation of PRIMARY KEY constraint 'PK_UserRoles_1'. Cannot insert duplicate key in object 'dbo.SysUserRoles'. The duplicate key value is (ESS18, ESS, 1, SPL).
+The statement has been terminated.
+InnerMessage: 
+Date: 8/20/2021 1:11:19 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 1:11:19 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.PREmploymentInformation
+Message: Index was outside the bounds of the array.
+InnerMessage: 
+Date: 8/20/2021 1:11:20 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ImportUsers
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/20/2021 1:11:20 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.EssWorkerBankAccount_ListPage
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/20/2021 1:20:38 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.PREmployeePFWithDrawl_ListPage
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/20/2021 1:21:05 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.JmgCompensatoryLeave_ListPage
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/20/2021 1:21:23 AM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.RetrieveReports
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 870ed725-2622-4cbe-b1ef-3337a8289174. Exception details:
+Type: Microsoft.Dynamics.Ax.Xpp.ClrErrorException
+Message: InvalidCastException
+Date: 8/24/2021 7:55:28 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.RetrieveReports
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 2c0f3f29-514d-4b50-837d-a13e8cb4c39c. Exception details:
+Type: Microsoft.Dynamics.Ax.Xpp.ClrErrorException
+Message: InvalidCastException
+Date: 8/24/2021 7:55:49 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.RetrieveReports
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request c4d4a2ab-e311-4209-a52b-f307c6cb601f. Exception details:
+Type: Microsoft.Dynamics.Ax.Xpp.ClrErrorException
+Message: InvalidCastException
+Date: 8/24/2021 8:22:28 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.RetrieveReports
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 5a59d788-8d92-45fb-b54f-1bcbe107f925. Exception details:
+Type: Microsoft.Dynamics.Ax.Xpp.ErrorException
+Message: Fault was thrown by the service for request 67c6b778-b7be-4302-b7f9-c6c86f0125fa. Exception details:
+Type: System.NullReferenceException
+Message: Object reference not set to an instance of an object.
+Date: 8/26/2021 10:07:16 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 6c960002-9990-49eb-8100-e7fac49a7691. Exception details:
+Type: OfficeOpenXml.Packaging.Ionic.Zlib.ZlibException
+Message: Bad state (invalid block type)
+Date: 8/30/2021 12:32:44 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 8/30/2021 12:32:44 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request d9f3e622-41ef-4bbd-bb8f-8390c4dedfb6. Exception details:
+Type: System.ArgumentException
+Message: The stream passed to TextFieldParser cannot be read.
+Parameter name: stream
+Date: 8/30/2021 1:07:28 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 8/30/2021 1:07:28 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request d012ff40-e948-498c-90a3-ecbfdf39d122. Exception details:
+Type: System.ObjectDisposedException
+Message: Cannot access a closed Stream.
+Date: 8/30/2021 1:45:31 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 8/30/2021 1:45:31 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request b030e2ca-cbcc-485f-ad48-b78bb7849fdf. Exception details:
+Type: System.ObjectDisposedException
+Message: Cannot access a closed Stream.
+Date: 8/30/2021 3:22:05 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 8/30/2021 3:22:05 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 49e82ab9-acad-4d46-902f-351d357b5147. Exception details:
+Type: System.IO.InvalidDataException
+Message: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+Date: 8/30/2021 5:10:07 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 8/30/2021 5:10:07 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/30/2021 5:44:34 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request 63d644b2-3133-48da-9864-3074e005d0a4. Exception details:
+Type: System.InvalidProgramException
+Message: Common Language Runtime detected an invalid program.
+Date: 8/30/2021 7:55:48 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 8/30/2021 7:55:48 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: Fault was thrown by the service for request b87e9376-1df4-42ad-80ce-e615f88496ff. Exception details:
+Type: System.InvalidProgramException
+Message: Common Language Runtime detected an invalid program.
+Date: 8/30/2021 8:11:05 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 8/30/2021 8:11:05 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/31/2021 12:48:54 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/31/2021 1:05:32 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: PortalIntegration.JmgImport
+Message: One or more errors occurred.
+InnerMessage: An error occurred while receiving the HTTP response to https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/JmgImportSvcGroup. This could be due to the service endpoint binding not using the HTTP protocol. This could also be due to an HTTP request context being aborted by the server (possibly due to the service shutting down). See server logs for more details.
+Date: 8/31/2021 1:18:06 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Object reference not set to an instance of an object.
+InnerMessage: 
+Date: 8/31/2021 1:18:06 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/31/2021 1:31:51 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/31/2021 1:33:57 PM
+
+-----------------------------------------------------------------------------
+
+UserId: su.admin
+Occurrence: DynamicsPortal.ESSJmgProfileCalendar_ListPage
+Message: Thread was being aborted.
+InnerMessage: 
+Date: 8/31/2021 1:46:28 PM
+
+-----------------------------------------------------------------------------
+

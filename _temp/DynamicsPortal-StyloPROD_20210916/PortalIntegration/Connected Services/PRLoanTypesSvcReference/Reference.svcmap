@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0c21ceb1-05dd-4241-8898-2268c1e2b167" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PRLoanTypesSvcGroup2.wsdl" MetadataType="Wsdl" ID="b6c045be-c90a-4487-b484-475c3c9b5ade" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?wsdl" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup76.xsd" MetadataType="Schema" ID="dc235a8a-558e-4d7e-9d45-825fbf2f4361" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup73.xsd" MetadataType="Schema" ID="acaa56b1-f7ce-4b8b-8b7b-03471b0eb079" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup72.xsd" MetadataType="Schema" ID="b8519537-2e6b-41ab-b7c7-e13e8fe96223" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup7.xsd" MetadataType="Schema" ID="58c5e0e7-a874-43ea-9123-ffd5a788370e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup75.xsd" MetadataType="Schema" ID="a2ea04dc-3f95-47f0-9000-a2c75c4b6915" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup21.wsdl" MetadataType="Wsdl" ID="e0f05cf8-3485-4f5c-af4b-8e2edbbc39cd" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup71.xsd" MetadataType="Schema" ID="2513fe5a-fdd8-4a82-ba85-0e260f1ce85a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PRLoanTypesSvcGroup74.xsd" MetadataType="Schema" ID="5e867eb1-f6f8-46bf-b625-4803b595aa3b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRLoanTypesSvcGroup?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,686 @@
+/**
+ * listpage-modern.js
+ * Drop-in enhancement for DynamicsPortal list pages.
+ * Features: Status badges, Prev/Next pagination, Empty state,
+ *           Column widths, Row count, Per-column filter/sort dropdowns.
+ */
+
+(function () {
+    'use strict';
+
+    /* ═══════════════════════════════════════════════════════════════════
+       SECTION 1 — Status Badge Colouring
+    ═══════════════════════════════════════════════════════════════════ */
+    var STATUS_MAP = {
+        'not submitted': 'lp-badge-notsubmitted',
+        'Draft': 'lp-badge-notsubmitted',
+        'submitted': 'lp-badge-submitted',
+        'approved': 'lp-badge-approved',
+        'rejected': 'lp-badge-rejected',
+        'pending': 'lp-badge-pending',
+        'pending approval': 'lp-badge-pending',   // ← ADD THIS
+        'pending review': 'lp-badge-pending',   // ← optional extras
+        'cancelled': 'lp-badge-notsubmitted',
+        'closed': 'lp-badge-notsubmitted',
+        'open': 'lp-badge-approved',
+        'active': 'lp-badge-submitted',
+        'inactive': 'lp-badge-notsubmitted'
+    };
+
+    function applyStatusBadges() {
+        var cells = document.querySelectorAll('table[id*="gridView"] tbody td');
+        cells.forEach(function (td) {
+            if (td.querySelector('.lp-badge')) return;
+            if (td.querySelector('input, select, a, button')) return;
+            var raw = (td.textContent || td.innerText || '').trim();
+            var key = raw.toLowerCase();
+            if (STATUS_MAP[key]) {
+                td.innerHTML = '<span class="lp-badge ' + STATUS_MAP[key] + '">' +
+                    escapeHtml(raw) + '</span>';
+            }
+        });
+    }
+
+    function escapeHtml(s) {
+        return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    /* ═══════════════════════════════════════════════════════════════════
+       SECTION 2 — Prev / Next Pagination
+    ═══════════════════════════════════════════════════════════════════ */
+    function applyPrevNext() {
+        document.querySelectorAll('.pagination-Numbers').forEach(function (pn) {
+            if (pn.dataset.lpWrapped) return;
+            pn.dataset.lpWrapped = '1';
+
+            var prev = document.createElement('span');
+            prev.className = 'lp-page-prev';
+            prev.innerHTML = '<i class="mdi mdi-chevron-left"></i> Prev';
+            prev.addEventListener('click', function () {
+                if (prev.classList.contains('disabled')) return;
+                var active = pn.querySelector('.pageNumber.active, span.active');
+                if (active) {
+                    var p = active.previousElementSibling;
+                    while (p && !p.classList.contains('pageNumber')) p = p.previousElementSibling;
+                    if (p) p.click();
+                }
+            });
+
+            var next = document.createElement('span');
+            next.className = 'lp-page-next';
+            next.innerHTML = 'Next <i class="mdi mdi-chevron-right"></i>';
+            next.addEventListener('click', function () {
+                if (next.classList.contains('disabled')) return;
+                var active = pn.querySelector('.pageNumber.active, span.active');
+                if (active) {
+                    var n = active.nextElementSibling;
+                    while (n && !n.classList.contains('pageNumber')) n = n.nextElementSibling;
+                    if (n) n.click();
+                }
+            });
+
+            pn.parentNode.insertBefore(prev, pn);
+            pn.parentNode.insertBefore(next, pn.nextSibling);
+            syncPrevNext(pn, prev, next);
+            pn.addEventListener('click', function () {
+                setTimeout(function () { syncPrevNext(pn, prev, next); }, 80);
+            });
+        });
+    }
+
+    function syncPrevNext(pn, prev, next) {
+        var active = pn.querySelector('.pageNumber.active, span.active');
+        if (!active) return;
+        var hasPrev = false, hasNext = false;
+        var s = active.previousElementSibling;
+        while (s) { if (s.classList && s.classList.contains('pageNumber')) { hasPrev = true; break; } s = s.previousElementSibling; }
+        s = active.nextElementSibling;
+        while (s) { if (s.classList && s.classList.contains('pageNumber')) { hasNext = true; break; } s = s.nextElementSibling; }
+        prev.classList.toggle('disabled', !hasPrev);
+        next.classList.toggle('disabled', !hasNext);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════════
+       SECTION 3 — Empty State
+    ═══════════════════════════════════════════════════════════════════ */
+    function applyEmptyState() {
+        document.querySelectorAll('table[id*="gridView"]').forEach(function (tbl) {
+            var tbody = tbl.querySelector('tbody');
+            if (!tbody) return;
+            var visibleRows = Array.from(tbody.querySelectorAll('tr')).filter(function (r) {
+                return r.style.display !== 'none' && !r.querySelector('th') && r.querySelectorAll('td').length > 1;
+            });
+            var existing = tbl.parentNode.querySelector('.lp-empty-state');
+            if (visibleRows.length === 0) {
+                if (!existing) {
+                    var es = document.createElement('div');
+                    es.className = 'lp-empty-state';
+                    es.innerHTML = '<i class="mdi mdi-file-search-outline"></i><p>No records found</p>';
+                    tbl.parentNode.insertBefore(es, tbl.nextSibling);
+                }
+                tbl.style.display = 'none';
+            } else {
+                if (existing) existing.remove();
+                tbl.style.display = '';
+            }
+        });
+    }
+
+    /* ═══════════════════════════════════════════════════════════════════
+       SECTION 4 — Column Min-Width
+    ═══════════════════════════════════════════════════════════════════ */
+    function applyColumnWidths() {
+        document.querySelectorAll('table[id*="gridView"] th').forEach(function (th) {
+            if (th.dataset.lpSized) return;
+            th.dataset.lpSized = '1';
+            var text = (th.innerText || '').trim();
+            var len = text.length;
+            var minW;
+            if (text === 'Employee' || text === 'Employee Name') minW = 140;
+            else if (len === 0) minW = 40;
+            else if (len < 10) minW = len * 8 + 40;
+            else minW = len * 7 + 60;
+            th.style.minWidth = minW + 'px';
+        });
+    }
+
+    /* ═══════════════════════════════════════════════════════════════════
+       SECTION 5 — Row Count Label
+    ═══════════════════════════════════════════════════════════════════ */
+    function applyRowCount() {
+        document.querySelectorAll('table[id*="gridView"]').forEach(function (tbl) {
+            var tbody = tbl.querySelector('tbody');
+            if (!tbody) return;
+            var rows = Array.from(tbody.querySelectorAll('tr')).filter(function (r) {
+                return r.style.display !== 'none' && !r.querySelector('th') && r.querySelectorAll('td').length > 1;
+            });
+            var container = tbl.parentNode && tbl.parentNode.querySelector('.pagination-container');
+            if (!container) return;
+            var label = container.querySelector('.lp-row-count');
+            if (!label) {
+                label = document.createElement('span');
+                label.className = 'lp-row-count';
+                label.style.cssText = 'font-size:11px;color:var(--lp-text-secondary);font-family:var(--lp-font);margin-left:auto;padding-right:4px;';
+                container.appendChild(label);
+            }
+            label.textContent = rows.length + ' record' + (rows.length !== 1 ? 's' : '');
+        });
+    }
+
+    /* ═══════════════════════════════════════════════════════════════════
+       SECTION 6 — Per-Column Filter / Sort Dropdowns
+    ═══════════════════════════════════════════════════════════════════ */
+
+    /* Inject styles once */
+    var COL_FILTER_STYLES_INJECTED = true; // styles now live in style.listpage-modern.css
+
+    function injectColFilterStyles() {
+        /* no-op — all styles moved to style.listpage-modern.css */
+    }
+
+    function detectColumnType(values) {
+        var nonEmpty = values.filter(function (v) { return v.trim() !== ''; });
+        if (nonEmpty.length === 0) return 'text';
+
+        var dateCount = 0, numCount = 0;
+
+        // Strict date regex — must have two separators and look like a real date
+        var dateRx = /^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{2,4})$|^(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})$/;
+        // Number regex — pure numeric (with optional commas/decimals), NO letters allowed
+        var numRx = /^-?[\d,]+(\.\d+)?$/;
+
+        nonEmpty.forEach(function (v) {
+            var t = v.trim().split(/\s+/)[0];
+            // Must NOT contain any letters for date/number classification
+            if (/[a-zA-Z]/.test(t)) return;
+            if (dateRx.test(t)) dateCount++;
+            else if (numRx.test(t)) numCount++;
+        });
+
+        var ratio = nonEmpty.length;
+        if (dateCount / ratio > 0.6) return 'date';
+        if (numCount / ratio > 0.6) return 'number';
+        return 'text';
+    }
+
+    /* ── Parse a dd/MM/yyyy or MM/dd/yyyy string to Date ── */
+    function parseDate(str) {
+        if (!str) return null;
+        // Strip time portion (e.g. "29/04/2026 12:00:00 pm" → "29/04/2026")
+        var s = str.trim().split(/\s+/)[0];
+        var m;
+        m = s.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
+        if (m) return new Date(+m[3], +m[2] - 1, +m[1]);
+        m = s.match(/^(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})$/);
+        if (m) return new Date(+m[1], +m[2] - 1, +m[3]);
+        var d = new Date(str); // fallback with original (browser can parse full datetime)
+        return isNaN(d) ? null : d;
+    }
+
+    /* ── State per table ── */
+    var tableStates = {};
+
+    function getTableState(tblId) {
+        if (!tableStates[tblId]) tableStates[tblId] = { filters: {}, sorts: {} };
+        return tableStates[tblId];
+    }
+
+    /* ── Master apply: filter + sort all rows ── */
+    function applyFiltersAndSort(tbl) {
+        var tblId = tbl.id;
+        var state = getTableState(tblId);
+        var tbody = tbl.querySelector('tbody');
+        if (!tbody) return;
+
+        var allRows = Array.from(tbody.querySelectorAll('tr')).filter(function (r) {
+            return !r.querySelector('th') && r.querySelectorAll('td').length > 1;
+        });
+
+        /* 1. Determine sort column & direction */
+        var sortColIdx = -1, sortDir = 'asc', sortType = 'text';
+        Object.keys(state.sorts).forEach(function (k) {
+            if (state.sorts[k]) {
+                sortColIdx = parseInt(k, 10);
+                sortDir = state.sorts[k];
+            }
+        });
+
+        /* 2. Sort rows in-place */
+        if (sortColIdx >= 0) {
+            var ths = tbl.querySelectorAll('thead th');
+            sortType = detectColumnType(allRows.map(function (r) {
+                var td = r.querySelectorAll('td')[sortColIdx];
+                return td ? (td.textContent || '').trim() : '';
+            }));
+
+            allRows.sort(function (a, b) {
+                var tdA = a.querySelectorAll('td')[sortColIdx];
+                var tdB = b.querySelectorAll('td')[sortColIdx];
+                var va = tdA ? (tdA.textContent || '').trim() : '';
+                var vb = tdB ? (tdB.textContent || '').trim() : '';
+
+                var cmp = 0;
+                if (sortType === 'date') {
+                    var da = parseDate(va), db = parseDate(vb);
+                    cmp = (da && db) ? da - db : (da ? 1 : -1);
+                } else if (sortType === 'number') {
+                    cmp = (parseFloat(va.replace(/,/g, '')) || 0) - (parseFloat(vb.replace(/,/g, '')) || 0);
+                } else {
+                    cmp = va.localeCompare(vb, undefined, { sensitivity: 'base' });
+                }
+                return sortDir === 'asc' ? cmp : -cmp;
+            });
+
+            allRows.forEach(function (r) { tbody.appendChild(r); });
+        }
+
+        /* 3. Filter rows */
+        allRows.forEach(function (row) {
+            var visible = true;
+
+            Object.keys(state.filters).forEach(function (colIdxStr) {
+                if (!visible) return;
+                var colIdx = parseInt(colIdxStr, 10);
+                var f = state.filters[colIdxStr];
+                var td = row.querySelectorAll('td')[colIdx];
+                var cellVal = td ? (td.textContent || '').trim() : '';
+
+                if (f.type === 'text' && f.selected && f.selected.length > 0) {
+                    if (f.selected.indexOf(cellVal) === -1) visible = false;
+                } else if (f.type === 'date') {
+                    var cellDate = parseDate(cellVal);
+                    if (f.from) {
+                        var from = new Date(f.from);
+                        if (!cellDate || cellDate < from) visible = false;
+                    }
+                    if (f.to) {
+                        var to = new Date(f.to);
+                        to.setHours(23, 59, 59);
+                        if (!cellDate || cellDate > to) visible = false;
+                    }
+                } else if (f.type === 'number') {
+                    var num = parseFloat(cellVal.replace(/,/g, ''));
+                    if (f.from !== '' && !isNaN(f.from) && num < parseFloat(f.from)) visible = false;
+                    if (f.to !== '' && !isNaN(f.to) && num > parseFloat(f.to)) visible = false;
+                }
+            });
+
+            row.style.display = visible ? '' : 'none';
+        });
+
+        /* 4. Update row count */
+        applyRowCount();
+        applyEmptyState();
+    }
+
+    /* ── Close any open dropdown ── */
+    var activeDropdown = null;
+    function closeActiveDropdown() {
+        if (activeDropdown) {
+            activeDropdown.remove();
+            activeDropdown = null;
+        }
+        document.querySelectorAll('table[id*="gridView"] thead th.lp-col-active')
+            .forEach(function (th) { th.classList.remove('lp-col-active'); });
+    }
+
+    /* ── Position dropdown below th ── */
+    function positionDropdown(dropdown, th) {
+        var rect = th.getBoundingClientRect();
+        var dw = 260;
+        var left = rect.left;
+        if (left + dw > window.innerWidth - 8) left = window.innerWidth - dw - 8;
+        dropdown.style.top = (rect.bottom + 4) + 'px';
+        dropdown.style.left = left + 'px';
+    }
+
+    /* ── Build and show dropdown ── */
+    function showColumnDropdown(th, tbl, colIdx) {
+        closeActiveDropdown();
+
+        th.classList.add('lp-col-active');
+
+        var tblId = tbl.id;
+        var state = getTableState(tblId);
+        var colLabel = (th.innerText || '').trim().replace(/[\u2191\u2193\ue000-\uf8ff]/g, '').trim();
+
+        /* Collect all unique values in this column */
+        var allRows = Array.from(tbl.querySelectorAll('tbody tr')).filter(function (r) {
+            return !r.querySelector('th') && r.querySelectorAll('td').length > 1;
+        });
+        var allVals = allRows.map(function (r) {
+            var td = r.querySelectorAll('td')[colIdx];
+            return td ? (td.textContent || '').trim() : '';
+        });
+        var colType = detectColumnType(allVals);
+        var uniqueVals = Array.from(new Set(allVals)).filter(function (v) { return v !== ''; }).sort(function (a, b) {
+            if (colType === 'date') {
+                var da = parseDate(a), db = parseDate(b);
+                return (da && db) ? da - db : 0;
+            }
+            return a.localeCompare(b, undefined, { sensitivity: 'base' });
+        });
+
+        /* Current filter state */
+        var fKey = String(colIdx);
+        var curFilter = state.filters[fKey] || { type: colType, selected: [], from: '', to: '' };
+        var curSort = state.sorts[fKey] || '';
+
+        /* ── Build dropdown DOM ── */
+        var dd = document.createElement('div');
+        dd.className = 'lp-col-dropdown';
+        activeDropdown = dd;
+
+        /* Header */
+        dd.innerHTML = [
+            '<div class="lp-cd-header">',
+            '  <span class="lp-cd-title">' + escapeHtml(colLabel) + '</span>',
+            '  <button class="lp-cd-clear">Clear</button>',
+            '</div>',
+        ].join('');
+
+        /* Sort buttons */
+        var sortSection = document.createElement('div');
+        sortSection.className = 'lp-cd-sort';
+
+        var ascLabel, descLabel, ascIcon, descIcon;
+        if (colType === 'date') {
+            ascLabel = 'Oldest First'; descLabel = 'Newest First';
+            ascIcon = 'mdi-sort-calendar-ascending'; descIcon = 'mdi-sort-calendar-descending';
+        } else if (colType === 'number') {
+            ascLabel = 'Low → High'; descLabel = 'High → Low';
+            ascIcon = 'mdi-sort-numeric-ascending'; descIcon = 'mdi-sort-numeric-descending';
+        } else {
+            ascLabel = 'A → Z'; descLabel = 'Z → A';
+            ascIcon = 'mdi-sort-alphabetical-ascending'; descIcon = 'mdi-sort-alphabetical-descending';
+        }
+
+        var btnAsc = document.createElement('button');
+        btnAsc.className = 'lp-cd-sort-btn' + (curSort === 'asc' ? ' lp-sort-active' : '');
+        btnAsc.innerHTML = '<i class="mdi ' + ascIcon + '"></i>' + ascLabel;
+
+        var btnDesc = document.createElement('button');
+        btnDesc.className = 'lp-cd-sort-btn' + (curSort === 'desc' ? ' lp-sort-active' : '');
+        btnDesc.innerHTML = '<i class="mdi ' + descIcon + '"></i>' + descLabel;
+
+        btnAsc.addEventListener('click', function () {
+            state.sorts = {};
+            state.sorts[fKey] = (curSort === 'asc') ? '' : 'asc';
+            curSort = state.sorts[fKey];
+            btnAsc.classList.toggle('lp-sort-active', curSort === 'asc');
+            btnDesc.classList.remove('lp-sort-active');
+            applyFiltersAndSort(tbl);
+            updateThSortIcon(tbl);
+        });
+
+        btnDesc.addEventListener('click', function () {
+            state.sorts = {};
+            state.sorts[fKey] = (curSort === 'desc') ? '' : 'desc';
+            curSort = state.sorts[fKey];
+            btnDesc.classList.toggle('lp-sort-active', curSort === 'desc');
+            btnAsc.classList.remove('lp-sort-active');
+            applyFiltersAndSort(tbl);
+            updateThSortIcon(tbl);
+        });
+
+        sortSection.appendChild(btnAsc);
+        sortSection.appendChild(btnDesc);
+        dd.appendChild(sortSection);
+
+        /* Date range section */
+        if (colType === 'date') {
+            var dr = document.createElement('div');
+            dr.className = 'lp-cd-daterange';
+            dr.innerHTML = [
+                '<label>From</label>',
+                '<input type="date" class="lp-dr-from" value="' + (curFilter.from || '') + '">',
+                '<label>To</label>',
+                '<input type="date" class="lp-dr-to"   value="' + (curFilter.to || '') + '">',
+            ].join('');
+            dd.appendChild(dr);
+        }
+
+        /* Number range section */
+        if (colType === 'number') {
+            var nr = document.createElement('div');
+            nr.className = 'lp-cd-daterange'; /* reuse date range styles */
+            nr.innerHTML = [
+                '<label>Min Value</label>',
+                '<input type="number" class="lp-dr-from" placeholder="0" value="' + (curFilter.from || '') + '" style="width:100%;border:1px solid #edebe9;border-radius:5px;padding:5px 8px;font-size:12px;font-family:inherit;box-sizing:border-box;">',
+                '<label>Max Value</label>',
+                '<input type="number" class="lp-dr-to"   placeholder="∞" value="' + (curFilter.to || '') + '" style="width:100%;border:1px solid #edebe9;border-radius:5px;padding:5px 8px;font-size:12px;font-family:inherit;box-sizing:border-box;">',
+            ].join('');
+            dd.appendChild(nr);
+        }
+
+        /* Text search + checkbox list */
+        if (colType === 'text') {
+            /* Search box */
+            var sw = document.createElement('div');
+            sw.className = 'lp-cd-search-wrap';
+            sw.innerHTML = '<i class="mdi mdi-magnify lp-cd-search-icon"></i><input type="text" class="lp-cd-search" placeholder="Search values…">';
+            dd.appendChild(sw);
+
+            /* List */
+            var list = document.createElement('div');
+            list.className = 'lp-cd-list';
+
+            function buildList(filterText) {
+                list.innerHTML = '';
+                var filtered = uniqueVals.filter(function (v) {
+                    return v.toLowerCase().indexOf(filterText.toLowerCase()) !== -1;
+                });
+
+                if (filtered.length === 0) {
+                    list.innerHTML = '<div class="lp-cd-no-results">No matching values</div>';
+                    return;
+                }
+
+                filtered.forEach(function (val) {
+                    var item = document.createElement('div');
+                    item.className = 'lp-cd-item' + (curFilter.selected.indexOf(val) !== -1 ? ' lp-cd-item-checked' : '');
+
+                    var chk = document.createElement('input');
+                    chk.type = 'checkbox';
+                    chk.checked = curFilter.selected.indexOf(val) !== -1;
+
+                    var lbl = document.createElement('span');
+                    lbl.title = val;
+                    lbl.textContent = val;
+
+                    item.appendChild(chk);
+                    item.appendChild(lbl);
+
+                    item.addEventListener('click', function (e) {
+                        if (e.target !== chk) chk.checked = !chk.checked;
+                        var idx = curFilter.selected.indexOf(val);
+                        if (chk.checked && idx === -1) {
+                            curFilter.selected.push(val);
+                            item.classList.add('lp-cd-item-checked');
+                        } else if (!chk.checked && idx !== -1) {
+                            curFilter.selected.splice(idx, 1);
+                            item.classList.remove('lp-cd-item-checked');
+                        }
+                    });
+
+                    list.appendChild(item);
+                });
+            }
+
+            buildList('');
+            sw.querySelector('.lp-cd-search').addEventListener('input', function () {
+                buildList(this.value);
+            });
+            dd.appendChild(list);
+        }
+
+        /* Footer */
+        var footer = document.createElement('div');
+        footer.className = 'lp-cd-footer';
+        footer.innerHTML = '<button class="lp-cd-cancel">Cancel</button><button class="lp-cd-apply">Apply</button>';
+        dd.appendChild(footer);
+
+        /* ── Wire up footer buttons ── */
+        footer.querySelector('.lp-cd-cancel').addEventListener('click', function () {
+            closeActiveDropdown();
+        });
+
+        footer.querySelector('.lp-cd-apply').addEventListener('click', function () {
+            /* Persist filter state */
+            if (colType === 'date' || colType === 'number') {
+                var fromEl = dd.querySelector('.lp-dr-from');
+                var toEl = dd.querySelector('.lp-dr-to');
+                curFilter.from = fromEl ? fromEl.value : '';
+                curFilter.to = toEl ? toEl.value : '';
+            }
+            curFilter.type = colType;
+            state.filters[fKey] = curFilter;
+
+            applyFiltersAndSort(tbl);
+            updateThActiveIndicator(tbl, state);
+            closeActiveDropdown();
+        });
+
+        /* Clear button */
+        dd.querySelector('.lp-cd-clear').addEventListener('click', function () {
+            delete state.filters[fKey];
+            delete state.sorts[fKey];
+            applyFiltersAndSort(tbl);
+            updateThActiveIndicator(tbl, state);
+            updateThSortIcon(tbl);
+            closeActiveDropdown();
+        });
+
+        /* Stop clicks inside dropdown from bubbling to document */
+        dd.addEventListener('click', function (e) { e.stopPropagation(); });
+
+        document.body.appendChild(dd);
+        positionDropdown(dd, th);
+
+        /* Reposition on scroll/resize */
+        var reposition = function () { if (activeDropdown === dd) positionDropdown(dd, th); };
+        window.addEventListener('scroll', reposition, true);
+        window.addEventListener('resize', reposition);
+    }
+
+    /* ── Update th to show active filter indicator ── */
+    function updateThActiveIndicator(tbl, state) {
+        tbl.querySelectorAll('thead th.lp-col-th').forEach(function (th, i) {
+            var f = state.filters[String(i)];
+            var hasFilter = false;
+            if (f) {
+                if (f.type === 'text' && f.selected && f.selected.length > 0) hasFilter = true;
+                if ((f.type === 'date' || f.type === 'number') && (f.from || f.to)) hasFilter = true;
+            }
+            var dot = th.querySelector('.lp-col-dot');
+            if (hasFilter && !dot) {
+                var d = document.createElement('span');
+                d.className = 'lp-col-dot';
+                d.style.cssText = 'display:inline-block;width:6px;height:6px;border-radius:50%;background:#0078d4;margin-left:5px;vertical-align:middle;flex-shrink:0;';
+                th.querySelector('.lp-col-icon').insertAdjacentElement('beforebegin', d);
+            } else if (!hasFilter && dot) {
+                dot.remove();
+            }
+        });
+    }
+
+    /* ── Update th sort icon ── */
+    function updateThSortIcon(tbl) {
+        var state = getTableState(tbl.id);
+        tbl.querySelectorAll('thead th.lp-col-th').forEach(function (th, i) {
+            var icon = th.querySelector('.lp-col-icon');
+            if (!icon) return;
+            var s = state.sorts[String(i)];
+            if (s === 'asc') icon.textContent = '\uF4BC'; /* mdi-sort-ascending  */
+            else if (s === 'desc') icon.textContent = '\uF4BD'; /* mdi-sort-descending */
+            else icon.textContent = '\uF4BA'; /* mdi-swap-vertical   */
+        });
+    }
+
+    /* ── Attach click listeners to all th ── */
+    function applyColumnFilters() {
+        injectColFilterStyles();
+
+        document.querySelectorAll('table[id*="gridView"]').forEach(function (tbl) {
+            if (tbl.dataset.lpColFilters) return;
+            tbl.dataset.lpColFilters = '1';
+
+            /* ── Promote tbody header row to thead if UseAccessibleHeader was not set ── */
+            if (!tbl.querySelector('thead') || tbl.querySelector('thead').children.length === 0) {
+                var firstRow = tbl.querySelector('tbody tr:first-child');
+                if (firstRow && firstRow.querySelector('th')) {
+                    var thead = tbl.querySelector('thead') || document.createElement('thead');
+                    if (!tbl.querySelector('thead')) {
+                        tbl.insertBefore(thead, tbl.firstChild);
+                    }
+                    thead.appendChild(firstRow);
+                }
+            }
+
+            var ths = tbl.querySelectorAll('thead th');
+            ths.forEach(function (th, colIdx) {
+
+                var hasCheckbox = !!th.querySelector('input[type="checkbox"]');
+                var visibleText = (th.innerText || '').trim().replace(/[\uE000-\uF8FF\u2191-\u2193]/g, '').trim();
+                var hasOnlyButtons = !visibleText && th.querySelectorAll('a.grid-img-btn, button').length > 0;
+                var isNosort = th.classList.contains('sorttable_nosort');
+
+                if (hasCheckbox || hasOnlyButtons || (isNosort && !visibleText)) {
+                    th.classList.add('sorttable_nosort');
+                    return;
+                }
+
+                th.classList.add('lp-col-th');
+                th.classList.add('sorttable_nosort');
+
+                if (!th.querySelector('.lp-col-icon')) {
+                    var icon = document.createElement('span');
+                    icon.className = 'lp-col-icon mdi';
+                    icon.textContent = '\uF4BA';
+                    th.appendChild(icon);
+                }
+
+                th.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    if (activeDropdown && th.classList.contains('lp-col-active')) {
+                        closeActiveDropdown();
+                    } else {
+                        showColumnDropdown(th, tbl, colIdx);
+                    }
+                });
+            });
+        });
+    }
+
+    /* ── Close dropdown when clicking outside ── */
+    document.addEventListener('click', function (e) {
+        if (activeDropdown && !activeDropdown.contains(e.target)) {
+            closeActiveDropdown();
+        }
+    });
+
+    /* ═══════════════════════════════════════════════════════════════════
+       MAIN INIT
+    ═══════════════════════════════════════════════════════════════════ */
+    function init() {
+        applyStatusBadges();
+        applyPrevNext();
+        applyEmptyState();
+        applyColumnWidths();
+        applyRowCount();
+        applyColumnFilters();
+    }
+    $(document).ready(function () {
+        setTimeout(init, 50);  // slight delay ensures pagination has rendered first
+    });
+
+    /* Re-run after ASP.NET UpdatePanel postbacks */
+    if (typeof Sys !== 'undefined' && Sys.WebForms && Sys.WebForms.PageRequestManager) {
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function () {
+            /* Reset column filter state on postback so fresh data is used */
+            tableStates = {};
+            setTimeout(init, 300);
+        });
+    }
+
+})();

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="7d3b2de9-6afc-42fd-91dd-46f16269b2c9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeRecentActivitiesSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DFEmployeeRecentActivitiesSvcGroup.xsd" MetadataType="Schema" ID="25dc91ea-2512-4be8-8453-ba4e677edbe3" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeRecentActivitiesSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="DFEmployeeRecentActivitiesSvcGroup.wsdl" MetadataType="Wsdl" ID="35d0fb74-8dfa-4acf-ba47-438943b25f57" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeRecentActivitiesSvcGroup?wsdl" />
+    <MetadataFile FileName="DFEmployeeRecentActivitiesSvcGroup1.wsdl" MetadataType="Wsdl" ID="5327d4ce-b78d-4f4b-8f8b-0b53a5717133" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeRecentActivitiesSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="DFEmployeeRecentActivitiesSvcGroup1.xsd" MetadataType="Schema" ID="9176780a-f010-4a48-9b06-13ba77423a64" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeRecentActivitiesSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="DFEmployeeRecentActivitiesSvcGroup2.xsd" MetadataType="Schema" ID="b91e231d-a5b4-4b4b-aaff-361bf9cfb313" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeRecentActivitiesSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="DFEmployeeRecentActivitiesSvcGroup3.xsd" MetadataType="Schema" ID="3f8fe0d7-14f8-4d12-998d-5cde865452ad" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeRecentActivitiesSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="DFEmployeeRecentActivitiesSvcGroup4.xsd" MetadataType="Schema" ID="ea4e3663-b1af-423e-a530-b79cb04f1bea" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeRecentActivitiesSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="DFEmployeeRecentActivitiesSvcGroup5.xsd" MetadataType="Schema" ID="4671c21f-bd65-4a78-823d-105d386af773" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeRecentActivitiesSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="DFEmployeeRecentActivitiesSvcGroup.disco" MetadataType="Disco" ID="c4562d4a-45f4-4436-801d-7fbfa1cdcb4c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeRecentActivitiesSvcGroup?disco" />
+    <MetadataFile FileName="DFEmployeeRecentActivitiesSvcGroup6.xsd" MetadataType="Schema" ID="bf867867-9b0f-4639-86fd-a09ff7661642" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeRecentActivitiesSvcGroup?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

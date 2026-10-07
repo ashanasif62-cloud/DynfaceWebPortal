@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchPrePaymentServiceGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="PurchPrepaymentCreateContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="categoryName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="descriptioncategory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="itemTaxGroupId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="prepaymentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="purchId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="taxGroupId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PurchPrepaymentCreateContract" nillable="true" type="tns:PurchPrepaymentCreateContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfPurchPrepaymentCreateContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PurchPrepaymentCreateContract" nillable="true" type="tns:PurchPrepaymentCreateContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPurchPrepaymentCreateContract" nillable="true" type="tns:ArrayOfPurchPrepaymentCreateContract" />
+  <xs:complexType name="PurchPrepaymentRemoveContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q3:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="forceRemove" type="xs:boolean" />
+          <xs:element minOccurs="0" name="prepaymentRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="purchId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PurchPrepaymentRemoveContract" nillable="true" type="tns:PurchPrepaymentRemoveContract" />
+</xs:schema>

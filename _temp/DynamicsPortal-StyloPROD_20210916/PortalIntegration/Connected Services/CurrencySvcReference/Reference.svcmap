@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ba0ca01e-f364-46f0-8188-2307d2f373a2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/CurrencySvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CurrencySvcGroup23.xsd" MetadataType="Schema" ID="5bc3727e-84b0-4a43-83a7-0c6091ec4009" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/CurrencySvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="CurrencySvcGroup2.xsd" MetadataType="Schema" ID="4bd543e3-5d81-403b-ac00-9bdf47f2b10d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/CurrencySvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="CurrencySvcGroup1.disco" MetadataType="Disco" ID="8624d263-ea42-441d-a156-5d4804dc3e3f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/CurrencySvcGroup?disco" />
+    <MetadataFile FileName="CurrencySvcGroup26.xsd" MetadataType="Schema" ID="157eec13-b182-4cde-85bc-57874af58d0d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/CurrencySvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="CurrencySvcGroup21.xsd" MetadataType="Schema" ID="a1ae9703-3da2-4267-9b42-2d82fd5b2888" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/CurrencySvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="CurrencySvcGroup2.wsdl" MetadataType="Wsdl" ID="1bde11e6-a2cd-425d-952e-1c0a9fb5d716" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/CurrencySvcGroup?wsdl" />
+    <MetadataFile FileName="CurrencySvcGroup25.xsd" MetadataType="Schema" ID="aefa1fab-8bd7-4ef0-884c-af2efa3b676a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/CurrencySvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="CurrencySvcGroup24.xsd" MetadataType="Schema" ID="053660f3-8c8f-4da7-a61e-fa6e14d0a7d0" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/CurrencySvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="CurrencySvcGroup22.xsd" MetadataType="Schema" ID="5ba658fa-df0b-4875-8151-6c5add12ff9b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/CurrencySvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="CurrencySvcGroup21.wsdl" MetadataType="Wsdl" ID="5d9abaf7-17b7-418a-a018-7b0e1289a034" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/CurrencySvcGroup?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

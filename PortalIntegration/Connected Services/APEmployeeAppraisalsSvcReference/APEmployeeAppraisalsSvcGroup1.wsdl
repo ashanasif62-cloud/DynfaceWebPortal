@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="appraisalAssignedToMe">
+    <wsdl:part name="parameters" element="tns:appraisalAssignedToMe" />
+  </wsdl:message>
+  <wsdl:message name="appraisalAssignedToMe_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="appraisalAssignedToMeResponse">
+    <wsdl:part name="parameters" element="tns:appraisalAssignedToMeResponse" />
+  </wsdl:message>
+  <wsdl:message name="appraisalAssignedToMeResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="APEmployeeAppraisalsSvc_appraisalAssignedToMe_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="appraisalAssignedToMeByReviewType">
+    <wsdl:part name="parameters" element="tns:appraisalAssignedToMeByReviewType" />
+  </wsdl:message>
+  <wsdl:message name="appraisalAssignedToMeByReviewType_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="appraisalAssignedToMeByReviewTypeResponse">
+    <wsdl:part name="parameters" element="tns:appraisalAssignedToMeByReviewTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="appraisalAssignedToMeByReviewTypeResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="APEmployeeAppraisalsSvc_appraisalAssignedToMeByReviewType_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="APEmployeeAppraisalsSvc">
+    <wsdl:operation name="appraisalAssignedToMe">
+      <wsdl:input wsam:Action="http://tempuri.org/APEmployeeAppraisalsSvc/appraisalAssignedToMe" name="appraisalAssignedToMe" message="tns:appraisalAssignedToMe" />
+      <wsdl:output wsam:Action="http://tempuri.org/APEmployeeAppraisalsSvc/appraisalAssignedToMeResponse" name="appraisalAssignedToMeResponse" message="tns:appraisalAssignedToMeResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/APEmployeeAppraisalsSvc/Fault" name="SoapServiceFaultFault" message="tns:APEmployeeAppraisalsSvc_appraisalAssignedToMe_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="appraisalAssignedToMeByReviewType">
+      <wsdl:input wsam:Action="http://tempuri.org/APEmployeeAppraisalsSvc/appraisalAssignedToMeByReviewType" name="appraisalAssignedToMeByReviewType" message="tns:appraisalAssignedToMeByReviewType" />
+      <wsdl:output wsam:Action="http://tempuri.org/APEmployeeAppraisalsSvc/appraisalAssignedToMeByReviewTypeResponse" name="appraisalAssignedToMeByReviewTypeResponse" message="tns:appraisalAssignedToMeByReviewTypeResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/APEmployeeAppraisalsSvc/Fault" name="SoapServiceFaultFault" message="tns:APEmployeeAppraisalsSvc_appraisalAssignedToMeByReviewType_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

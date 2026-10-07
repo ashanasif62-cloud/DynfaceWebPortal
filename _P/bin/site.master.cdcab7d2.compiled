@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Site.Master" hash="ffffffefe3a9c958" filehash="ffffe7a2420f8183" flags="110000" assembly="MaisonPortal" type="ASP.site_master">
+  <filedeps>
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

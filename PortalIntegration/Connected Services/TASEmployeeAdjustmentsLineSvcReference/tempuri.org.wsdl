@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org" />
+      <xsd:import namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="retrieveAllAdjustmentlines">
+    <wsdl:part name="parameters" element="tns:retrieveAllAdjustmentlines" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllAdjustmentlines_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllAdjustmentlinesResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllAdjustmentlinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllAdjustmentlinesResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASEmployeeAdjustmentLinesSvc_retrieveAllAdjustmentlines_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="Create">
+    <wsdl:part name="parameters" element="tns:Create" />
+  </wsdl:message>
+  <wsdl:message name="Create_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="CreateResponse">
+    <wsdl:part name="parameters" element="tns:CreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASEmployeeAdjustmentLinesSvc_Create_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveEmployeeAdjustmentlines">
+    <wsdl:part name="parameters" element="tns:retrieveEmployeeAdjustmentlines" />
+  </wsdl:message>
+  <wsdl:message name="retrieveEmployeeAdjustmentlines_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveEmployeeAdjustmentlinesResponse">
+    <wsdl:part name="parameters" element="tns:retrieveEmployeeAdjustmentlinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveEmployeeAdjustmentlinesResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASEmployeeAdjustmentLinesSvc_retrieveEmployeeAdjustmentlines_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="CreateAdjustment">
+    <wsdl:part name="parameters" element="tns:CreateAdjustment" />
+  </wsdl:message>
+  <wsdl:message name="CreateAdjustment_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="CreateAdjustmentResponse">
+    <wsdl:part name="parameters" element="tns:CreateAdjustmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAdjustmentResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASEmployeeAdjustmentLinesSvc_CreateAdjustment_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeReportees">
+    <wsdl:part name="parameters" element="tns:retriveEmployeeReportees" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeReportees_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeReporteesResponse">
+    <wsdl:part name="parameters" element="tns:retriveEmployeeReporteesResponse" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeReporteesResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASEmployeeAdjustmentLinesSvc_retriveEmployeeReportees_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="lookupReasonCode">
+    <wsdl:part name="parameters" element="tns:lookupReasonCode" />
+  </wsdl:message>
+  <wsdl:message name="lookupReasonCode_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="lookupReasonCodeResponse">
+    <wsdl:part name="parameters" element="tns:lookupReasonCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="lookupReasonCodeResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASEmployeeAdjustmentLinesSvc_lookupReasonCode_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitEmployeeAdjustment">
+    <wsdl:part name="parameters" element="tns:submitEmployeeAdjustment" />
+  </wsdl:message>
+  <wsdl:message name="submitEmployeeAdjustment_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitEmployeeAdjustmentResponse">
+    <wsdl:part name="parameters" element="tns:submitEmployeeAdjustmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitEmployeeAdjustmentResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASEmployeeAdjustmentLinesSvc_submitEmployeeAdjustment_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="TASEmployeeAdjustmentLinesSvc">
+    <wsdl:operation name="retrieveAllAdjustmentlines">
+      <wsdl:input wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/retrieveAllAdjustmentlines" name="retrieveAllAdjustmentlines" message="tns:retrieveAllAdjustmentlines" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/retrieveAllAdjustmentlinesResponse" name="retrieveAllAdjustmentlinesResponse" message="tns:retrieveAllAdjustmentlinesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TASEmployeeAdjustmentLinesSvc_retrieveAllAdjustmentlines_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Create">
+      <wsdl:input wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/Create" name="Create" message="tns:Create" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/CreateResponse" name="CreateResponse" message="tns:CreateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TASEmployeeAdjustmentLinesSvc_Create_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveEmployeeAdjustmentlines">
+      <wsdl:input wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/retrieveEmployeeAdjustmentlines" name="retrieveEmployeeAdjustmentlines" message="tns:retrieveEmployeeAdjustmentlines" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/retrieveEmployeeAdjustmentlinesResponse" name="retrieveEmployeeAdjustmentlinesResponse" message="tns:retrieveEmployeeAdjustmentlinesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TASEmployeeAdjustmentLinesSvc_retrieveEmployeeAdjustmentlines_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdjustment">
+      <wsdl:input wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/CreateAdjustment" name="CreateAdjustment" message="tns:CreateAdjustment" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/CreateAdjustmentResponse" name="CreateAdjustmentResponse" message="tns:CreateAdjustmentResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TASEmployeeAdjustmentLinesSvc_CreateAdjustment_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retriveEmployeeReportees">
+      <wsdl:input wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/retriveEmployeeReportees" name="retriveEmployeeReportees" message="tns:retriveEmployeeReportees" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/retriveEmployeeReporteesResponse" name="retriveEmployeeReporteesResponse" message="tns:retriveEmployeeReporteesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TASEmployeeAdjustmentLinesSvc_retriveEmployeeReportees_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="lookupReasonCode">
+      <wsdl:input wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/lookupReasonCode" name="lookupReasonCode" message="tns:lookupReasonCode" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/lookupReasonCodeResponse" name="lookupReasonCodeResponse" message="tns:lookupReasonCodeResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TASEmployeeAdjustmentLinesSvc_lookupReasonCode_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitEmployeeAdjustment">
+      <wsdl:input wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/submitEmployeeAdjustment" name="submitEmployeeAdjustment" message="tns:submitEmployeeAdjustment" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/submitEmployeeAdjustmentResponse" name="submitEmployeeAdjustmentResponse" message="tns:submitEmployeeAdjustmentResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/Fault" name="SoapServiceFaultFault" message="tns:TASEmployeeAdjustmentLinesSvc_submitEmployeeAdjustment_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

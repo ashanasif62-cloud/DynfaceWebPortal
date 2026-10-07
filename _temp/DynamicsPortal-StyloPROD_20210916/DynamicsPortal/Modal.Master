@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Modal.master.cs" Inherits="DynamicsPortal.Modal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="/distribution/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css" />
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="/distribution/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="/distribution/css/fontastic.css">
+    <link rel="stylesheet" href="/distribution/icons-reference/MaterialDesign-Webfont-master/css/materialdesignicons.css" />
+    <!-- Google fonts - Roboto -->
+    <!--<link rel="stylesheet" href="https: //fonts.googleapis.com/css?family=Roboto:300,400,500,700">-->
+    <!-- jQuery Circle-->
+    <!--<link rel="stylesheet" href="distribution/css/grasp_mobile_progress_circle-1.0.0.min.css">-->
+    <!-- Custom Scrollbar-->
+    <link rel="stylesheet" href="/distribution/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="/distribution/css/style.default.css" id="themeStylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/distribution/css/style.blue.css" />
+    <!--style.pink  style.red     style.sea       style.violet         style.blue-->
+    <link rel="stylesheet" href="/distribution/css/custom.css">
+    <script>
+
+</script>
+    <style>
+        .page-title {
+            border-bottom: 1px solid #e8e8e8;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server">
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div>
+    <!-- Preloader End -->
+
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager2" runat="server">
+        </asp:ScriptManager>
+
+        <div style="height: 100vh; overflow: auto">
+            <!-- Title Panel-->
+            <div class="page-title" id="pageTitle" runat="server">Page</div>
+
+            <!-- Notification Panel-->
+            <div id="notificationPanel" style="display: none;" class="notification-panel">
+                <div class="notification-container float-left">
+                    <p></p>
+                </div>
+                <div class="float-right">
+                    <div class="action-items" data-toggle="tooltip" title="Close"><a onclick="$('#notificationPanel').hide();"><i class="mdi mdi-close"></i></a></div>
+                </div>
+            </div>
+
+            <!-- Page Panel-->
+            <div>
+                <asp:ContentPlaceHolder ID="PageContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <!-- JavaScript files-->
+        <script src="/distribution/js/jquery-3.3.1.min.js"></script>
+        <script src="/distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+        <script src="/distribution/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/distribution/vendor/jquery-validation/jquery.validate.min.js"></script>
+        <%--<script src="/distribution/vendor/popper.js/umd/popper.min.js"></script>
+        <script src="/distribution/js/grasp_mobile_progress_circle-1.0.0.min.js"></script>
+        <script src="/distribution/vendor/jquery.cookie/jquery.cookie.js"></script>--%>
+        <script src="/distribution/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script src="/distribution/js/custom.js"></script>
+
+
+        <script>
+            //$("select[id*='EmployeeId']").change(function (event) {
+            //    try {
+            //        var employeeId = $(this).val();
+            //        var $txtEmployeeName = $(this).closest("tbody").find("input[id*='EmployeeName']");
+            //        if ($txtEmployeeName.length > 0) {
+            //            $txtEmployeeName.val("Value");
+            //        }
+            //    }
+            //    catch (ex) {
+            //        alert(ex);
+            //    }
+            //});
+        </script>
+
+
+    </form>
+</body>
+</html>

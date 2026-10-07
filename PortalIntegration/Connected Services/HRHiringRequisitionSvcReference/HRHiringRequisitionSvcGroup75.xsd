@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfHRHiringRequisitionSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HRHiringRequisitionSvcContract" nillable="true" type="tns:HRHiringRequisitionSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHRHiringRequisitionSvcContract" nillable="true" type="tns:ArrayOfHRHiringRequisitionSvcContract" />
+  <xs:complexType name="HRHiringRequisitionSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BudgetYear" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartmentID" type="xs:long" />
+          <xs:element minOccurs="0" name="DepartmentName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Designation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Education" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EstimatedMonthlySalary" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Experience" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HRSerialNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HRWFStatus" type="tns:HRWFStatus" />
+          <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MonthsOfYear" type="tns:MonthsOfYear" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="Remarks" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RequestedBy" type="xs:long" />
+          <xs:element minOccurs="0" name="RequestedByName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestedByWF" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Vacancies" type="xs:int" />
+          <xs:element minOccurs="0" name="Year" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HRHiringRequisitionSvcContract" nillable="true" type="tns:HRHiringRequisitionSvcContract" />
+  <xs:simpleType name="HRWFStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSubmitted" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="Rejected" />
+      <xs:enumeration value="Submitted" />
+      <xs:enumeration value="ChangeRequest" />
+      <xs:enumeration value="PendingCancellation" />
+      <xs:enumeration value="Returned" />
+      <xs:enumeration value="PendingApproval" />
+      <xs:enumeration value="PendingComplete" />
+      <xs:enumeration value="WorkflowCompleted" />
+      <xs:enumeration value="Completed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HRWFStatus" nillable="true" type="tns:HRWFStatus" />
+  <xs:simpleType name="MonthsOfYear">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="January" />
+      <xs:enumeration value="February" />
+      <xs:enumeration value="March" />
+      <xs:enumeration value="April" />
+      <xs:enumeration value="May" />
+      <xs:enumeration value="June" />
+      <xs:enumeration value="July" />
+      <xs:enumeration value="August" />
+      <xs:enumeration value="September" />
+      <xs:enumeration value="October" />
+      <xs:enumeration value="November" />
+      <xs:enumeration value="December" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MonthsOfYear" nillable="true" type="tns:MonthsOfYear" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

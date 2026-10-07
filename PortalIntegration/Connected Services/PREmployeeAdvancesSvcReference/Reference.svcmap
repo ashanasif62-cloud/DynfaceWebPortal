@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="ba91ded6-5b20-4b7e-85cf-7321ca098f3d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PREmployeeAdvancesSvcGroup2.wsdl" MetadataType="Wsdl" ID="8087f6be-0875-4c70-8279-3a17344277dd" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PREmployeeAdvancesSvcGroup7.xsd" MetadataType="Schema" ID="d4bee7f8-c77d-4182-8108-477ec2eae564" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PREmployeeAdvancesSvcGroup71.xsd" MetadataType="Schema" ID="0f75f67c-ed29-41ae-9d84-55da757210d0" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PREmployeeAdvancesSvcGroup72.xsd" MetadataType="Schema" ID="677bae5b-4204-4b65-9bab-e4a58a0c2161" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PREmployeeAdvancesSvcGroup1.disco" MetadataType="Disco" ID="5a6f1e7d-b643-43c4-88d3-bcc154b084a4" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup?disco" />
+    <MetadataFile FileName="PREmployeeAdvancesSvcGroup73.xsd" MetadataType="Schema" ID="dfe5db55-53e4-4246-9482-0d0d13dae513" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PREmployeeAdvancesSvcGroup74.xsd" MetadataType="Schema" ID="29b04d9b-470a-4da7-bb60-755dd089c096" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PREmployeeAdvancesSvcGroup75.xsd" MetadataType="Schema" ID="fcf7afe8-deb1-40cb-92bf-46f142c141aa" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PREmployeeAdvancesSvcGroup76.xsd" MetadataType="Schema" ID="b79e3102-1f97-4f34-b95a-75d8e288a38b" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PREmployeeAdvancesSvcGroup21.wsdl" MetadataType="Wsdl" ID="a36f8986-75f6-4e28-9f6a-435db46f1570" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmployeeAdvancesSvcGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

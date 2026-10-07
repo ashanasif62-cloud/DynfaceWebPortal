@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6d001b7d-974d-4ad6-81d6-9b2b5e0f181e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/PRPayGroupPayPeriodSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PRPayGroupPayPeriodSvcGroup64.xsd" MetadataType="Schema" ID="265e8ff7-8718-4267-b1db-8758e7e3448c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPayGroupPayPeriodSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PRPayGroupPayPeriodSvcGroup65.xsd" MetadataType="Schema" ID="81ae0d54-7e35-4eb4-93d6-ba96cd407d35" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPayGroupPayPeriodSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PRPayGroupPayPeriodSvcGroup6.xsd" MetadataType="Schema" ID="9490e663-9104-45b4-85a0-e44bf459284f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPayGroupPayPeriodSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PRPayGroupPayPeriodSvcGroup62.xsd" MetadataType="Schema" ID="5ea1ee18-b930-429b-8d05-f5ce57abe590" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPayGroupPayPeriodSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PRPayGroupPayPeriodSvcGroup21.wsdl" MetadataType="Wsdl" ID="8460fa48-f123-4655-8a86-d73168ebaa10" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPayGroupPayPeriodSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PRPayGroupPayPeriodSvcGroup66.xsd" MetadataType="Schema" ID="bcb2fc93-e71c-4a08-b485-68ca35d4c979" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPayGroupPayPeriodSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PRPayGroupPayPeriodSvcGroup61.xsd" MetadataType="Schema" ID="5d753ee0-6cb1-4e8b-b9f1-5e44b8e73cdd" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPayGroupPayPeriodSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PRPayGroupPayPeriodSvcGroup63.xsd" MetadataType="Schema" ID="8fa310c8-fb3b-4451-bb7a-a2778db33457" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPayGroupPayPeriodSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PRPayGroupPayPeriodSvcGroup2.wsdl" MetadataType="Wsdl" ID="7479f025-360a-48d0-bde4-909a87b37e89" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPayGroupPayPeriodSvcGroup?wsdl" />
+    <MetadataFile FileName="PRPayGroupPayPeriodSvcGroup1.disco" MetadataType="Disco" ID="f3b484a7-20bc-47b6-bec7-84fca7838183" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRPayGroupPayPeriodSvcGroup?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

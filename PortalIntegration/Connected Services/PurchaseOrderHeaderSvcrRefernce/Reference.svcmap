@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="c780127b-ad9a-441e-ab31-05fcc25ae5d6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderHeaderGroup/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="tempuri.org1.wsdl" MetadataType="Wsdl" ID="91672875-3340-4bd8-9db7-fa877a434cea" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderHeaderGroup/mex" />
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="b370a19f-5448-440b-8011-03f5619d4abd" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderHeaderGroup/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="9772ca70-69cf-4376-a3d0-7564413174d4" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderHeaderGroup/mex" />
+    <MetadataFile FileName="Arrays1.xsd" MetadataType="Schema" ID="16a566f5-0e88-4156-8187-1ba1b36a166e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderHeaderGroup/mex" />
+    <MetadataFile FileName="tempuri.org1.xsd" MetadataType="Schema" ID="ab903003-632e-4961-8d00-929001fe9d1f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderHeaderGroup/mex" />
+    <MetadataFile FileName="datacontracts1.xsd" MetadataType="Schema" ID="2014f69b-f9e3-442e-a05b-3872f27797ee" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderHeaderGroup/mex" />
+    <MetadataFile FileName="Dynamics.AX.Application1.xsd" MetadataType="Schema" ID="47e774f5-6b00-4752-a7b6-56666ae8c1d9" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderHeaderGroup/mex" />
+    <MetadataFile FileName="Microsoft.Dynamics.Ax.Xpp1.xsd" MetadataType="Schema" ID="effcbb3d-4e78-4852-ae85-9fcc159cd2e5" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderHeaderGroup/mex" />
+    <MetadataFile FileName="Microsoft.Dynamics.AX.KernelInterop1.xsd" MetadataType="Schema" ID="8e0c633c-6b9f-43da-946c-508e6e653cbb" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderHeaderGroup/mex" />
+    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="f7269339-2e07-43e6-b19b-428f4815d435" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderHeaderGroup/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

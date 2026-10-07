@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/Dashboard.aspx" hash="ffffffefe3a9c958" filehash="a71f0110118fdb65" flags="110000" assembly="MaisonPortal" type="ASP.ess_dashboard_aspx">
+  <filedeps>
+    <filedep name="/ESS/Dashboard.aspx" />
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

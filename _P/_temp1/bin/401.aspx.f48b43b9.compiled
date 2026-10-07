@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ErrorPages/401.aspx" hash="ffffffefe3a9c958" filehash="ffffdfc03bf2a9fa" flags="110000" assembly="MaisonPortal" type="ASP.errorpages_401_aspx">
+  <filedeps>
+    <filedep name="/ErrorPages/401.aspx" />
+  </filedeps>
+</preserve>

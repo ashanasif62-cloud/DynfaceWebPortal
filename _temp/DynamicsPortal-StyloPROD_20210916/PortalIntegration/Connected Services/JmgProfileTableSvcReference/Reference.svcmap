@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="79e3f753-eab8-4e99-b39c-6ca44af4b75f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileTableSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="JmgProfileTableSvcGroup2.xsd" MetadataType="Schema" ID="3002ba4a-756a-4720-b65d-ab086b793bd4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileTableSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="JmgProfileTableSvcGroup4.xsd" MetadataType="Schema" ID="51629e18-c590-4e06-ad2d-05c034ce3fd0" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileTableSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="JmgProfileTableSvcGroup.wsdl" MetadataType="Wsdl" ID="601e5057-6a55-4702-bab3-6340231d6ee6" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileTableSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="JmgProfileTableSvcGroup5.xsd" MetadataType="Schema" ID="c6d84d19-8ec0-4f19-8cd0-b4cfd106fcb4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileTableSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="JmgProfileTableSvcGroup1.xsd" MetadataType="Schema" ID="e32d56c2-6d5b-4044-9fd8-b9215108c0f5" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileTableSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="JmgProfileTableSvcGroup6.xsd" MetadataType="Schema" ID="8a45858c-8b26-4a89-a152-a66482392e6e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileTableSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="JmgProfileTableSvcGroup.disco" MetadataType="Disco" ID="a45eeca0-c92b-4dda-b721-ddea7196d88f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileTableSvcGroup?disco" />
+    <MetadataFile FileName="JmgProfileTableSvcGroup1.wsdl" MetadataType="Wsdl" ID="1abe1238-4859-4ad7-b197-caafcd878b80" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileTableSvcGroup?wsdl" />
+    <MetadataFile FileName="JmgProfileTableSvcGroup3.xsd" MetadataType="Schema" ID="ccd7cb7d-7940-44cf-9c7f-5ba4735542ad" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileTableSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="JmgProfileTableSvcGroup.xsd" MetadataType="Schema" ID="13c2871b-a445-438b-befc-e3fbc0da9e20" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgProfileTableSvcGroup?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

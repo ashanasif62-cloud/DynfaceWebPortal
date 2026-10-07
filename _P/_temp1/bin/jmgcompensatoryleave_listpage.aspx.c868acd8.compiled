@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/TA/JmgCompensatoryLeave_ListPage.aspx" hash="ffffffefe3a9c958" filehash="49e6ef44c220ce38" flags="110000" assembly="MaisonPortal" type="ASP.ess_ta_jmgcompensatoryleave_listpage_aspx">
+  <filedeps>
+    <filedep name="/ESS/TA/JmgCompensatoryLeave_ListPage.aspx" />
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

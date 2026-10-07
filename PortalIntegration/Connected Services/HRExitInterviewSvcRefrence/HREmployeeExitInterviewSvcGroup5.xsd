@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+  <xs:element name="retrieveEmployeeQuestionsWithMCQs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_personnelNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_referenceId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveEmployeeQuestionsWithMCQsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q1:ArrayOfHRExitInterviewContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateAnswerByQuestion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_answer" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_empQuetionRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_mcqRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_questionRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateAnswerByQuestionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveEmployeeSurveyQuestionsWithMCQs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_recid" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="retrieveEmployeeSurveyQuestionsWithMCQsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q2:ArrayOfHRExitInterviewContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rertrieveAEmployeeSurveys">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_employeeId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rertrieveAEmployeeSurveysResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="result" nillable="true" type="q3:ArrayOfHREmployeeSurveysContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

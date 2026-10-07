@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASAttendanceRegisterSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASAttendanceRegisterSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfTASAttendanceRegisterSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TASAttendanceRegisterSvcContract" nillable="true" type="tns:TASAttendanceRegisterSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTASAttendanceRegisterSvcContract" nillable="true" type="tns:ArrayOfTASAttendanceRegisterSvcContract" />
+  <xs:complexType name="TASAttendanceRegisterSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Absent" type="tns:TASNoYes" />
+          <xs:element minOccurs="0" name="AbsentColor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AbsentCount" type="xs:int" />
+          <xs:element minOccurs="0" name="AbsentDays" type="xs:decimal" />
+          <xs:element minOccurs="0" name="AbsentHalf" type="tns:TASNoYes" />
+          <xs:element minOccurs="0" name="AbsentHalfDay" type="xs:decimal" />
+          <xs:element minOccurs="0" name="AttendanceDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="AttendanceDay" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AttendanceErrorTypes" type="tns:TASAttendanceErrorTypes" />
+          <xs:element minOccurs="0" name="ClockIn" type="xs:int" />
+          <xs:element minOccurs="0" name="ClockInDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ClockOut" type="xs:int" />
+          <xs:element minOccurs="0" name="ClockOutDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Color" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EMPLOYEEID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EarlyOut" type="tns:TASNoYes" />
+          <xs:element minOccurs="0" name="EarlyOutColor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EarlyOutCount" type="xs:int" />
+          <xs:element minOccurs="0" name="EarlyOutLeaveCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EarlyOutLeaveHours" type="xs:int" />
+          <xs:element minOccurs="0" name="EarlyOutLeaveStatus" type="tns:PRWFStatus" />
+          <xs:element minOccurs="0" name="EarlyOutTime" type="xs:int" />
+          <xs:element minOccurs="0" name="EarlyOutTimeDeduction" type="xs:int" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ErrorColor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ErrorCount" type="xs:int" />
+          <xs:element minOccurs="0" name="ExtraDay" type="xs:long" />
+          <xs:element minOccurs="0" name="ExtraWorkingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="FestivalHoliday" type="tns:TASNoYes" />
+          <xs:element minOccurs="0" name="GazettedDay" type="tns:TASNoYes" />
+          <xs:element minOccurs="0" name="GazettedDayColor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GazettedDayCount" type="xs:int" />
+          <xs:element minOccurs="0" name="GenerationType" type="tns:TASGenerationType" />
+          <xs:element minOccurs="0" name="HalfDay" type="tns:TASNoYes" />
+          <xs:element minOccurs="0" name="HalfDayLeaveCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HalfDayLeaveStatus" type="tns:PRWFStatus" />
+          <xs:element minOccurs="0" name="LateArrival" type="tns:TASNoYes" />
+          <xs:element minOccurs="0" name="LateArrivalColor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LateArrivalCount" type="xs:int" />
+          <xs:element minOccurs="0" name="LateArrivalHours" type="xs:int" />
+          <xs:element minOccurs="0" name="LateArrivalLeaveCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LateArrivalLeaveHours" type="xs:int" />
+          <xs:element minOccurs="0" name="LateArrivalLeaveStatus" type="tns:PRWFStatus" />
+          <xs:element minOccurs="0" name="LateArrivalTime" type="xs:int" />
+          <xs:element minOccurs="0" name="LateArrivalTimeDeduction" type="xs:int" />
+          <xs:element minOccurs="0" name="LeaveCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeaveColor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeaveCount" type="xs:int" />
+          <xs:element minOccurs="0" name="LeaveStatus" type="tns:PRWFStatus" />
+          <xs:element minOccurs="0" name="OffDay" type="tns:TASNoYes" />
+          <xs:element minOccurs="0" name="OffDayColor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OffDayCount" type="xs:int" />
+          <xs:element minOccurs="0" name="OnHalfDayLeave" type="tns:TASNoYes" />
+          <xs:element minOccurs="0" name="OnLeave" type="tns:TASNoYes" />
+          <xs:element minOccurs="0" name="OnLeave_EarlyOut" type="tns:TASNoYes" />
+          <xs:element minOccurs="0" name="OnLeave_LateArrival" type="tns:TASNoYes" />
+          <xs:element minOccurs="0" name="PresentColor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PresentCount" type="xs:int" />
+          <xs:element minOccurs="0" name="Remarks" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RosterRefRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="ShiftEndTime" type="xs:int" />
+          <xs:element minOccurs="0" name="ShiftFlexibleWorkingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="ShiftHours" type="xs:int" />
+          <xs:element minOccurs="0" name="ShiftId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShiftStartTime" type="xs:int" />
+          <xs:element minOccurs="0" name="ShiftWorkingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="ShortLeaveCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShortLeaveHours" type="xs:int" />
+          <xs:element minOccurs="0" name="Status" type="tns:TASAttendanceRegisterStatus" />
+          <xs:element minOccurs="0" name="TotalOvertime" type="xs:int" />
+          <xs:element minOccurs="0" name="TotalTimeDeduction" type="xs:int" />
+          <xs:element minOccurs="0" name="TotalWorkingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="Type" type="tns:TASProfileType" />
+          <xs:element minOccurs="0" name="WaveOff" type="tns:TASNoYes" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TASAttendanceRegisterSvcContract" nillable="true" type="tns:TASAttendanceRegisterSvcContract" />
+  <xs:simpleType name="TASNoYes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="No" />
+      <xs:enumeration value="Yes" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TASNoYes" nillable="true" type="tns:TASNoYes" />
+  <xs:simpleType name="TASAttendanceErrorTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="TimeInOutMissing" />
+      <xs:enumeration value="TimeInMissing" />
+      <xs:enumeration value="TimeOutMissing" />
+      <xs:enumeration value="TimeInOutAfterShift" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TASAttendanceErrorTypes" nillable="true" type="tns:TASAttendanceErrorTypes" />
+  <xs:simpleType name="PRWFStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSubmitted" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="Rejected" />
+      <xs:enumeration value="Submitted" />
+      <xs:enumeration value="ChangeRequest" />
+      <xs:enumeration value="PendingCancellation" />
+      <xs:enumeration value="Returned" />
+      <xs:enumeration value="PendingApproval" />
+      <xs:enumeration value="PendingComplete" />
+      <xs:enumeration value="WorkflowCompleted" />
+      <xs:enumeration value="Completed" />
+      <xs:enumeration value="Failed" />
+      <xs:enumeration value="Blank" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PRWFStatus" nillable="true" type="tns:PRWFStatus" />
+  <xs:simpleType name="TASGenerationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Manual" />
+      <xs:enumeration value="AttendanceMachine" />
+      <xs:enumeration value="EssPotral" />
+      <xs:enumeration value="Import" />
+      <xs:enumeration value="Request" />
+      <xs:enumeration value="ShiftChange" />
+      <xs:enumeration value="Dynaface" />
+      <xs:enumeration value="None" />
+      <xs:enumeration value="MobileApp" />
+      <xs:enumeration value="InOutTypeChange" />
+      <xs:enumeration value="FlexibleTimeChange" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TASGenerationType" nillable="true" type="tns:TASGenerationType" />
+  <xs:simpleType name="TASAttendanceRegisterStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Draft" />
+      <xs:enumeration value="Transfered" />
+      <xs:enumeration value="Calculated" />
+      <xs:enumeration value="Locked" />
+      <xs:enumeration value="Error" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TASAttendanceRegisterStatus" nillable="true" type="tns:TASAttendanceRegisterStatus" />
+  <xs:simpleType name="TASProfileType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="StandardTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HalfDay">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TASProfileType" nillable="true" type="tns:TASProfileType" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

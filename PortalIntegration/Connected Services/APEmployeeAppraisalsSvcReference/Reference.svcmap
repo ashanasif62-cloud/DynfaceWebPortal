@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="cdf9d16f-6483-4c5e-842a-7f64fff146f1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup.xsd" MetadataType="Schema" ID="384b441f-7e71-42c9-b316-b3d068d4be0a" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup1.xsd" MetadataType="Schema" ID="d8d64284-a552-4404-9b22-6d7f2f52a399" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup2.xsd" MetadataType="Schema" ID="8cffd42f-d844-447b-96f6-2b6f5596d857" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup.wsdl" MetadataType="Wsdl" ID="6f37ab99-51e1-4c87-ba63-9a84ca1ca9b9" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?wsdl" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup3.xsd" MetadataType="Schema" ID="1b74f9ee-b7bc-4858-be92-3c9132efa2dc" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup4.xsd" MetadataType="Schema" ID="50c3ac33-c04e-4724-b095-2e1f555a59b6" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup5.xsd" MetadataType="Schema" ID="ce1c2ae0-cbf9-4629-9e58-44de6da947be" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup.disco" MetadataType="Disco" ID="8e5bc964-8f61-4c22-a117-00569895621b" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?disco" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup1.wsdl" MetadataType="Wsdl" ID="71aa3bb2-e865-45a6-a528-d83368453d9c" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup6.xsd" MetadataType="Schema" ID="3285dedd-a647-4829-be37-c8ca5d41b286" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

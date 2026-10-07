@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="2c6c0ba6-5a79-4b55-a95c-41a02607a1e1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/HRSendEmailSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HRSendEmailSvcGroup.wsdl" MetadataType="Wsdl" ID="604fe25f-6e90-429d-bab2-3c3bbba8cf49" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?wsdl" />
+    <MetadataFile FileName="HRSendEmailSvcGroup.xsd" MetadataType="Schema" ID="823673c3-c44c-4305-9739-9d6828a72ce5" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HRSendEmailSvcGroup1.wsdl" MetadataType="Wsdl" ID="61ba76de-f34c-46d4-ba60-c8ddbdc1ff80" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HRSendEmailSvcGroup.disco" MetadataType="Disco" ID="5c320d85-714a-4072-a1bc-3e13eae2f865" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?disco" />
+    <MetadataFile FileName="HRSendEmailSvcGroup1.xsd" MetadataType="Schema" ID="9b601bfb-1b8c-4378-a807-443c84a15d6f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HRSendEmailSvcGroup2.xsd" MetadataType="Schema" ID="6ce5b69a-aa01-4c90-8135-bb7570ca9e26" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HRSendEmailSvcGroup3.xsd" MetadataType="Schema" ID="7317373b-cc82-4e7d-b75d-832e8b9b7057" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HRSendEmailSvcGroup4.xsd" MetadataType="Schema" ID="3ef75770-a27e-47e7-9ab4-c92f7645e43c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HRSendEmailSvcGroup5.xsd" MetadataType="Schema" ID="63c64d6f-13b9-4723-9418-12bbfb74cf37" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HRSendEmailSvcGroup6.xsd" MetadataType="Schema" ID="1b81ee89-2a52-4232-9ac4-38aa2dcc86f3" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRSendEmailSvcGroup?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

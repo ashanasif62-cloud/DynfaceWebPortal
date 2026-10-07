@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSPersonTaskServiceGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="retrieveAll">
+    <wsdl:part name="parameters" element="tns:retrieveAll" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSPersonTaskSvc_retrieveAll_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDetail">
+    <wsdl:part name="parameters" element="tns:retrieveDetail" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDetail_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDetailResponse">
+    <wsdl:part name="parameters" element="tns:retrieveDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveDetailResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSPersonTaskSvc_retrieveDetail_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="getEssPersontaskLabels">
+    <wsdl:part name="parameters" element="tns:getEssPersontaskLabels" />
+  </wsdl:message>
+  <wsdl:message name="getEssPersontaskLabels_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getEssPersontaskLabelsResponse">
+    <wsdl:part name="parameters" element="tns:getEssPersontaskLabelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getEssPersontaskLabelsResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSPersonTaskSvc_getEssPersontaskLabels_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="updateTask">
+    <wsdl:part name="parameters" element="tns:updateTask" />
+  </wsdl:message>
+  <wsdl:message name="updateTask_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="updateTaskResponse">
+    <wsdl:part name="parameters" element="tns:updateTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateTaskResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSPersonTaskSvc_updateTask_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="updateTaskDueDate">
+    <wsdl:part name="parameters" element="tns:updateTaskDueDate" />
+  </wsdl:message>
+  <wsdl:message name="updateTaskDueDate_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="updateTaskDueDateResponse">
+    <wsdl:part name="parameters" element="tns:updateTaskDueDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateTaskDueDateResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSPersonTaskSvc_updateTaskDueDate_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="ESSPersonTaskSvc">
+    <wsdl:operation name="retrieveAll">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSPersonTaskSvc/retrieveAll" name="retrieveAll" message="tns:retrieveAll" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSPersonTaskSvc/retrieveAllResponse" name="retrieveAllResponse" message="tns:retrieveAllResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSPersonTaskSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSPersonTaskSvc_retrieveAll_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveDetail">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSPersonTaskSvc/retrieveDetail" name="retrieveDetail" message="tns:retrieveDetail" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSPersonTaskSvc/retrieveDetailResponse" name="retrieveDetailResponse" message="tns:retrieveDetailResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSPersonTaskSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSPersonTaskSvc_retrieveDetail_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEssPersontaskLabels">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSPersonTaskSvc/getEssPersontaskLabels" name="getEssPersontaskLabels" message="tns:getEssPersontaskLabels" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSPersonTaskSvc/getEssPersontaskLabelsResponse" name="getEssPersontaskLabelsResponse" message="tns:getEssPersontaskLabelsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSPersonTaskSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSPersonTaskSvc_getEssPersontaskLabels_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTask">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSPersonTaskSvc/updateTask" name="updateTask" message="tns:updateTask" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSPersonTaskSvc/updateTaskResponse" name="updateTaskResponse" message="tns:updateTaskResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSPersonTaskSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSPersonTaskSvc_updateTask_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTaskDueDate">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSPersonTaskSvc/updateTaskDueDate" name="updateTaskDueDate" message="tns:updateTaskDueDate" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSPersonTaskSvc/updateTaskDueDateResponse" name="updateTaskDueDateResponse" message="tns:updateTaskDueDateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSPersonTaskSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSPersonTaskSvc_updateTaskDueDate_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

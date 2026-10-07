@@ -1,0 +1,1558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\localadmin\Documents\CBLDeployment</_PublishTargetUrl>
+    <History>True|2026-10-06T07:50:41.8284495Z||;True|2026-10-06T12:44:54.7677250+05:00||;True|2026-10-06T11:23:05.5666498+05:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Administration/User Management/SysRolesMenuItems_ListPage.aspx">
+      <publishTime>08/29/2026 17:48:46</publishTime>
+    </File>
+    <File Include="Administration/User Management/SysRoles_ListPage.aspx">
+      <publishTime>08/29/2026 17:48:46</publishTime>
+    </File>
+    <File Include="Administration/User Management/SysUserInfo_ChangePassword.aspx">
+      <publishTime>08/29/2026 17:48:46</publishTime>
+    </File>
+    <File Include="Administration/User Management/SysUserInfo_Create.aspx">
+      <publishTime>08/29/2026 17:48:46</publishTime>
+    </File>
+    <File Include="Administration/User Management/SysUserInfo_ListPage.aspx">
+      <publishTime>08/29/2026 17:48:46</publishTime>
+    </File>
+    <File Include="Administration/User Management/SysUserInfo_ResetPassword.aspx">
+      <publishTime>08/29/2026 17:48:46</publishTime>
+    </File>
+    <File Include="Administration/User Management/SysUserRoles_ListPage.aspx">
+      <publishTime>08/29/2026 17:48:46</publishTime>
+    </File>
+    <File Include="Administration/UserLogin.aspx">
+      <publishTime>08/29/2026 17:48:46</publishTime>
+    </File>
+    <File Include="Api/LookupHandler.ashx">
+      <publishTime>08/29/2026 17:48:46</publishTime>
+    </File>
+    <File Include="App_Data/ClientConfiguration.json">
+      <publishTime>09/01/2026 16:46:59</publishTime>
+    </File>
+    <File Include="AuthCallback.aspx">
+      <publishTime>08/29/2026 17:49:25</publishTime>
+    </File>
+    <File Include="bin/AuthenticationHelper.dll">
+      <publishTime>10/06/2026 12:50:32</publishTime>
+    </File>
+    <File Include="bin/AuthenticationHelper.pdb">
+      <publishTime>10/06/2026 12:50:32</publishTime>
+    </File>
+    <File Include="bin/BussinessLogic.dll">
+      <publishTime>10/06/2026 12:44:37</publishTime>
+    </File>
+    <File Include="bin/BussinessLogic.pdb">
+      <publishTime>10/06/2026 12:44:37</publishTime>
+    </File>
+    <File Include="bin/BussinessObject.dll">
+      <publishTime>09/18/2026 11:33:35</publishTime>
+    </File>
+    <File Include="bin/BussinessObject.pdb">
+      <publishTime>09/18/2026 11:33:35</publishTime>
+    </File>
+    <File Include="bin/DataAccess.dll">
+      <publishTime>10/06/2026 12:44:37</publishTime>
+    </File>
+    <File Include="bin/DataAccess.pdb">
+      <publishTime>10/06/2026 12:44:37</publishTime>
+    </File>
+    <File Include="bin/DynamicsPortal.dll">
+      <publishTime>10/06/2026 12:50:34</publishTime>
+    </File>
+    <File Include="bin/DynamicsPortal.pdb">
+      <publishTime>10/06/2026 12:50:34</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>08/29/2026 17:49:53</publishTime>
+    </File>
+    <File Include="bin/EPPlus.Interfaces.dll">
+      <publishTime>08/29/2026 17:49:53</publishTime>
+    </File>
+    <File Include="bin/GeneralAuxiliary.dll">
+      <publishTime>10/06/2026 12:44:36</publishTime>
+    </File>
+    <File Include="bin/GeneralAuxiliary.pdb">
+      <publishTime>10/06/2026 12:44:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IdentityModel.Clients.ActiveDirectory.dll">
+      <publishTime>08/29/2026 17:49:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IO.RecyclableMemoryStream.dll">
+      <publishTime>08/29/2026 17:49:53</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/29/2026 17:49:54</publishTime>
+    </File>
+    <File Include="bin/PortalIntegration.dll">
+      <publishTime>10/06/2026 12:50:31</publishTime>
+    </File>
+    <File Include="bin/PortalIntegration.dll.config">
+      <publishTime>09/22/2026 14:05:29</publishTime>
+    </File>
+    <File Include="bin/PortalIntegration.pdb">
+      <publishTime>10/06/2026 12:50:31</publishTime>
+    </File>
+    <File Include="bin/QRCoder.dll">
+      <publishTime>08/29/2026 17:49:54</publishTime>
+    </File>
+    <File Include="bin/System.Buffers.dll">
+      <publishTime>08/29/2026 17:49:54</publishTime>
+    </File>
+    <File Include="bin/System.ComponentModel.Annotations.dll">
+      <publishTime>08/29/2026 17:49:54</publishTime>
+    </File>
+    <File Include="bin/System.Memory.dll">
+      <publishTime>08/29/2026 17:49:55</publishTime>
+    </File>
+    <File Include="bin/System.Numerics.Vectors.dll">
+      <publishTime>08/29/2026 17:49:55</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>08/29/2026 17:49:56</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Xml.dll">
+      <publishTime>08/29/2026 17:49:57</publishTime>
+    </File>
+    <File Include="bin/System.ValueTuple.dll">
+      <publishTime>08/29/2026 17:49:57</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>09/10/2026 18:42:10</publishTime>
+    </File>
+    <File Include="distribution/css/animate.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/arrows.png">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/custom.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/fontastic.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/grasp_mobile_progress_circle-1.0.0.min.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/gv-date-inputs.js">
+      <publishTime>09/07/2026 19:52:10</publishTime>
+    </File>
+    <File Include="distribution/css/listpage-modern.js">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/login-page.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/modal-modern.js">
+      <publishTime>09/10/2026 18:31:17</publishTime>
+    </File>
+    <File Include="distribution/css/slimtable.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/sort-pagination-modern.js">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/spinners.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/style.blue.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/style.default.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/style.green.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/style.listpage-modern.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/style.modal-modern.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/style.pink.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/style.red.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/style.sea.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/style.violet.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/css/usermanagement.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/fonts/dashboard.eot">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/fonts/dashboard.svg">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/fonts/dashboard.ttf">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/fonts/dashboard.woff">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/fonts/dashboard.eot">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/fonts/dashboard.svg">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/fonts/dashboard.ttf">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/fonts/dashboard.woff">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/icons-reference.html">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/.github/ISSUE_TEMPLATE.md">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/bower.json">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/css/materialdesignicons.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/css/materialdesignicons.css.map">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/css/materialdesignicons.min.css.map">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/fonts/materialdesignicons-webfont.eot">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/fonts/materialdesignicons-webfont.svg">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/fonts/materialdesignicons-webfont.ttf">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/fonts/materialdesignicons-webfont.woff">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/fonts/materialdesignicons-webfont.woff2">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/license.md">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/package.json">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/preview.html">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/README.md">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/scss/materialdesignicons.scss">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/scss/_animated.scss">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/scss/_core.scss">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/scss/_extras.scss">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/scss/_functions.scss">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/scss/_icons.scss">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/scss/_path.scss">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/MaterialDesign-Webfont-master/scss/_variables.scss">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/icons-reference/styles.css">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/attachment_Icon.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/attendance.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/attendanceb.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/calculate 001.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/calculate 002.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/calculate 003.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/cancel.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Cancel02.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Cancel03.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/checkbox.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/checkbox2.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/delete.gif">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Delete.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/DeleteRed_small.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/details001.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/edit.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/edit002.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Edit02.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Edit03.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Edit04.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Edit05.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Edit06.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/eip_edit2.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/errorIcon.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/fav-add.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/fav-remove.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/favicon.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/favorite_add.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/favorite_delete.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/favouriteIcon.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/ic_search_black_24px.svg">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Ideas Logo.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/infoIcon.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/loader.gif">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/lock-shield-20.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/lock_safe.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Maison.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Maison1.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Maison2.jpg">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/MaisonNew.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/map-close.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/map-marker-blue.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/map-marker-default.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/map-marker-green.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/map-marker-pink.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/map-marker-red.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/map-marker.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/menu-down.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Missing1.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Missing2.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/more-details.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/New.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Portrait-Maison-Logo-small.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Portrait-Maison-Logo.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/safe_password.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Save.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Save1.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Save2.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/select001.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/ServisShoes.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/sort-down.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/sort-up.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Stylo Logo.jpg">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/submit-for-approval-20.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/submit-for-approval-24.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/successIcon.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Update.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Update02.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Update03.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/Update04.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/upload01.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/upload02.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/upload03.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/User-flat.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/user-icon.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/img/User.png">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/js/charts-custom.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/js/charts-home.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/js/custom.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/js/front.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/js/grasp_mobile_progress_circle-1.0.0.min.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/js/jquery-3.3.1.min.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/js/jquery-ui-timepicker-addon.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/js/jquery.blockUI.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/js/slimtable.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/js/sort-paginationTable.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/bootstrap/css/bootstrap-grid.css">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/bootstrap/css/bootstrap-grid.min.css">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/bootstrap/css/bootstrap-reboot.css">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/bootstrap/css/bootstrap-reboot.min.css">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/bootstrap/css/bootstrap.css">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/bootstrap/css/bootstrap.min.css">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/bootstrap/js/bootstrap.bundle.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/bootstrap/js/bootstrap.bundle.min.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/bootstrap/js/bootstrap.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/bootstrap/js/bootstrap.min.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/calendar-master/css/demo.css">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/calendar-master/css/theme1.css">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/calendar-master/css/theme2.css">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/calendar-master/css/theme3.css">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/calendar-master/demo.html">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/calendar-master/js/caleandar.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/calendar-master/js/caleandar.min.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/calendar-master/js/demo.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/calendar-master/LICENSE">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/calendar-master/README.md">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/chart.js/Chart.bundle.js">
+      <publishTime>08/29/2026 17:49:31</publishTime>
+    </File>
+    <File Include="distribution/vendor/chart.js/Chart.bundle.min.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/chart.js/Chart.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/chart.js/Chart.min.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/font-awesome/css/font-awesome.css">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/font-awesome/css/font-awesome.min.css">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/font-awesome/fonts/fontawesome-webfont.eot">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/font-awesome/fonts/fontawesome-webfont.svg">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/font-awesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/font-awesome/fonts/fontawesome-webfont.woff">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/font-awesome/fonts/fontawesome-webfont.woff2">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/font-awesome/fonts/FontAwesome.otf">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/font-awesome/HELP-US-OUT.txt">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/external/jquery/jquery.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/images/ui-icons_444444_256x240.png">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/images/ui-icons_555555_256x240.png">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/images/ui-icons_777620_256x240.png">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/images/ui-icons_777777_256x240.png">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/images/ui-icons_cc0000_256x240.png">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/images/ui-icons_ffffff_256x240.png">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/index.html">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.css">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.css">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/LICENSE.txt">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-ui-1.12.1.custom/package.json">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/additional-methods.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/jquery.validate.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/jquery.validate.min.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_ar.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_az.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_bg.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_bn_BD.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_ca.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_cs.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_da.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_de.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_el.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_es.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_es_AR.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_es_PE.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_et.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_eu.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_fa.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_fi.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_fr.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_ge.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_gl.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_he.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_hr.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_hu.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_hy_AM.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_id.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_is.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_it.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_ja.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_ka.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_kk.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_ko.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_lt.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_lv.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_mk.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_my.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_nl.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_no.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_pl.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_pt_BR.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_pt_PT.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_ro.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_ru.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_sd.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_si.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_sk.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_sl.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_sr.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_sr_lat.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_sv.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_th.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_tj.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_tr.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_uk.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_ur.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_vi.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_zh.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/messages_zh_TW.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/methods_de.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/methods_es_CL.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/methods_fi.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/methods_nl.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery-validation/localization/methods_pt.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery.cookie/component.json">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery.cookie/cookie.jquery.json">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery.cookie/jquery.cookie.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery.cookie/MIT-LICENSE.txt">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery/core.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery/jquery.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery/jquery.min.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery/jquery.slim.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/jquery/jquery.slim.min.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="distribution/vendor/malihu-custom-scrollbar-plugin/mCSB_buttons.png">
+      <publishTime>08/29/2026 17:49:32</publishTime>
+    </File>
+    <File Include="DownloadApk.aspx">
+      <publishTime>08/29/2026 17:49:25</publishTime>
+    </File>
+    <File Include="DropDownList_AllActiveFinancialDims.ascx">
+      <publishTime>08/29/2026 17:49:25</publishTime>
+    </File>
+    <File Include="DropDownList_AllEmployeeDetails.ascx">
+      <publishTime>08/29/2026 17:49:25</publishTime>
+    </File>
+    <File Include="DropDownList_Contact.ascx">
+      <publishTime>08/29/2026 17:49:25</publishTime>
+    </File>
+    <File Include="DropDownList_Currency.ascx">
+      <publishTime>08/29/2026 17:49:25</publishTime>
+    </File>
+    <File Include="DropDownList_EmployeeDetails.ascx">
+      <publishTime>09/06/2026 11:51:23</publishTime>
+    </File>
+    <File Include="DropDownList_PayGroupPayPeriods.ascx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="DropDownList_ProductCombination.ascx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="DropDownList_ProjectID.ascx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="DropDownList_SiteDetails.ascx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="DropDownList_VendorAccount.ascx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="DropDownList_Warehouse.ascx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="Dynaface_consumption_protocol.md">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="DYNAFACE_SITE_FORM_PROTOCOL_v12.8.md">
+      <publishTime>08/29/2026 17:49:25</publishTime>
+    </File>
+    <File Include="DynamicsPortal.pfx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="EditConfig.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ErrorLog.log">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ErrorPage.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ErrorPages/400.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ErrorPages/401.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ErrorPages/403.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ErrorPages/404.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ErrorPages/500.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ErrorPages/503.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ErrorPages/508.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ErrorPages/511.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ErrorPages/CustomErrorPage.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ErrorPages/WebForm1.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ESS/Dashboard.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/EM/EMExpenseLineCreate.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/EM/EMExpenseLines.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/EM/EMExpenseReportCreate.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/EM/EMExpenseReport_Listpage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/ESSDocumentAttachment.aspx">
+      <publishTime>09/10/2026 16:56:34</publishTime>
+    </File>
+    <File Include="ESS/ESSDocumentAttachmentForPersonalProfile.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSAPDailyGroomingAppraisalsAssignedToMe_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSAPEmployeeAppraisalsAssignedToMe_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSBusinessTrip_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSEmployeeAppraisalPlan_Create.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSEmployeeAppraisalPlan_List.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSEmployeeCourse_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSEmployeeSurvay_InterviewQuestion.aspx">
+      <publishTime>10/06/2026 12:40:05</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSEmployeeSurvay_ListPage.aspx">
+      <publishTime>10/02/2026 11:46:32</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHcmOpenCourse_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHcmPersonEducation.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHcmPersonIdentificationNumber.aspx">
+      <publishTime>09/11/2026 10:58:42</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHcmPersonImage.aspx">
+      <publishTime>09/09/2026 19:46:01</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRApplicants_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRApplicant_Create.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRApplicant_DetailForm.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRApplications_Create.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRApplications_Detail.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRApplications_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRBusinessTrip_Create.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRHelpDeskRequest_Create.aspx">
+      <publishTime>09/10/2026 17:02:53</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRHelpDeskRequest_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRHiringRequisition_Create.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRHiringRequisition_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRPersonalDetails.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRPolicies_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRProfessionChange_Create.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRProfessionChange_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRRecruitmentDetailForm.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRRecruitmentsProjects_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRRejoining_Create.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRRejoining_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRRequestForLetter_Create.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRRequestForLetter_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRSubDepartment.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSHRSubDepartment_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSLogisticsElectronicAddress.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSLogisticsLocation.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/ESSRequestForLetter_Edit.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/EssWorkerBankAccount_Create.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/EssWorkerBankAccount_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/HcmEmployeeTransferRequests_Create.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/HR/HcmESSWorkerBankAccountDashboard.aspx">
+      <publishTime>09/11/2026 11:02:47</publishTime>
+    </File>
+    <File Include="ESS/HR/HREmployeesReportToMe_ListPage.aspx">
+      <publishTime>09/11/2026 15:34:11</publishTime>
+    </File>
+    <File Include="ESS/HR/HRExitInterview_ListPage.aspx">
+      <publishTime>10/01/2026 18:27:58</publishTime>
+    </File>
+    <File Include="ESS/HR/HRPersonalContacts_Create.aspx">
+      <publishTime>09/10/2026 23:24:06</publishTime>
+    </File>
+    <File Include="ESS/HR/HRPersonalContacts_ListPage.aspx">
+      <publishTime>09/10/2026 23:28:57</publishTime>
+    </File>
+    <File Include="ESS/HR/HRPersonalContacts_Update.aspx">
+      <publishTime>09/10/2026 23:26:08</publishTime>
+    </File>
+    <File Include="ESS/LinkDevice.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/PR/AllPurchaseOrder_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/PR/AllTransferOrderListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/PR/DeliverRemainder.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/PR/EmploymentCertificate.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/EmploymentCertificate_Create.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSComplainAndSuggestion_Create.aspx">
+      <publishTime>10/01/2026 15:04:29</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSComplainAndSuggestion_ListPage.aspx">
+      <publishTime>10/02/2026 11:05:55</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPRAdvancesRequest_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREmployeeAdvance_Create.aspx">
+      <publishTime>09/11/2026 10:32:30</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREmployeeAdvance_Edit.aspx">
+      <publishTime>09/11/2026 10:33:11</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREmployeeAdvance_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREmployeeEOS_Create.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREmployeeEOS_ListPage.aspx">
+      <publishTime>09/02/2026 17:47:33</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREmployeeLeave_Create.aspx">
+      <publishTime>09/10/2026 21:10:13</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREmployeeLeave_Edit.aspx">
+      <publishTime>09/10/2026 21:34:17</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREmployeeLeave_ListPage.aspx">
+      <publishTime>09/03/2026 14:10:37</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREmployeeLoanReq_Create.aspx">
+      <publishTime>08/29/2026 17:49:26</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREmployeeLoanReq_Edit.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREmployeeLoan_Create.aspx">
+      <publishTime>09/09/2026 20:00:30</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREmployeeLoan_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPREntitlementBalance.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPROutstandingAdvances_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPRProvidentFund_MyInquiry.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/ESSPRProvidentFund_MyTeamInquiry.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/PendingInvoice.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/PO_OnHand.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/PREmployeeEOSClearanceItems_ListPage.aspx">
+      <publishTime>09/17/2026 16:08:29</publishTime>
+    </File>
+    <File Include="ESS/PR/PREmployeeLeaveEncashment_Create.aspx">
+      <publishTime>09/09/2026 23:23:00</publishTime>
+    </File>
+    <File Include="ESS/PR/PREmployeeLeaveEncashment_Listpage.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/PREmployeePFRequest_Create.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/PREmployeePFRequest_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/PREmployeePFWithDrawl_Create.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/PREmployeePFWithDrawl_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrderHeader_Create.aspx">
+      <publishTime>08/29/2026 17:49:27</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrderLines_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrderLines_MaintainCharges.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_AllocateCharges.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_CreateNote.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_DeliverRemainder.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_Invoices.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_Invoice_Journal.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_MultipleInvoice.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_Prepayment.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_ProductReceipt.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_ProductReceiptJournal.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_ReceiptListJournal.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_ReceiptLists.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_Total.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseOrder_Vouchers.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseRequestforQuotation.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseRequisitionHeader_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseRequisitionLineCreate.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseRequisitionLines.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseRequisitionTotal.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/PurchaseRequisition_Create.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/QualityOrder.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/QualityOrderCreate.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/RequestforQuotationAll_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/SalesOrder_Create.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/SalesOrder_Detail.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/SalesOrder_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/SalesTax.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferJournalLines_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferJournalReport.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferJournal_Create.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferJournal_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferOnHandItemsInventoryReport.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferOrderLines_Create.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferOrderLines_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferOrderOverViewReport.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferOrderReceiveReport.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferOrderShipmentReport.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferOrder_Create.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferOrder_History.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferOrder_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferOrder_OnHand.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferOrder_Recieve.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/PR/TransferOrder_Shipment.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/Reports/ESSJmgAttendanceRegister_TimeSheet.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/Reports/ESSJmgAttendanceRegister_TimeSheet_MyTeam.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/Reports/ESSJmgInOutSheet.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/Reports/ESSJmgInOutSheet_MyTeam.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/Reports/ESSPRSalarySlip.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/Reports/ESSPRTaxCertificate.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/Reports/TASAttendanceRegisterReport.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/Reports/TASEmployeeWiseAttendanceDetailReport.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/Reports/TASEmployeeWiseAttendanceSummary.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/TA/ESSEmployeeTimeLog_Listpage.aspx">
+      <publishTime>10/02/2026 15:31:17</publishTime>
+    </File>
+    <File Include="ESS/TA/ESSJmgProfileCalendar_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/TA/ESSJmgTimecardTable_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/TA/ESSJmgTimecardTable_ListPage_del.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/TA/ESSOvertimePlanner_Create.aspx">
+      <publishTime>09/04/2026 15:54:43</publishTime>
+    </File>
+    <File Include="ESS/TA/ESSOvertimePlanner_Edit.aspx">
+      <publishTime>09/04/2026 16:20:26</publishTime>
+    </File>
+    <File Include="ESS/TA/ESSOvertimePlanner_ListPage.aspx">
+      <publishTime>09/04/2026 16:02:37</publishTime>
+    </File>
+    <File Include="ESS/TA/JmgCompensatoryLeave_Create.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/TA/JmgCompensatoryLeave_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/TA/JmgOffDayAllowance_Create.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/TA/JmgOffDayAllowance_listPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/TA/RosterChangeRequest_Create.aspx">
+      <publishTime>09/11/2026 10:30:32</publishTime>
+    </File>
+    <File Include="ESS/TA/TASAttendanceRegisterTeam_ListPage.aspx">
+      <publishTime>09/16/2026 12:38:49</publishTime>
+    </File>
+    <File Include="ESS/TA/TASAttendanceRegister_EditRecord.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/TA/TASAttendanceRegister_ListPage.aspx">
+      <publishTime>09/09/2026 19:42:13</publishTime>
+    </File>
+    <File Include="ESS/TA/TASEmployeeAdjustmentLines_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/TA/TASEmployeeAdjustments_Create.aspx">
+      <publishTime>09/06/2026 12:18:17</publishTime>
+    </File>
+    <File Include="ESS/TA/TASEmployeeAdjustments_ListPage.aspx">
+      <publishTime>08/29/2026 17:49:28</publishTime>
+    </File>
+    <File Include="ESS/TA/TASEmployeeConsentRequest_ListPage.aspx">
+      <publishTime>09/22/2026 18:52:12</publishTime>
+    </File>
+    <File Include="ESS/TA/TASEmployeeRosterTeam_Listpage.aspx">
+      <publishTime>09/10/2026 16:22:05</publishTime>
+    </File>
+    <File Include="ESS/TA/TASEmployeeRoster_Create.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ESS/TA/TASEmployeeRoster_ListPage.aspx">
+      <publishTime>09/09/2026 16:49:05</publishTime>
+    </File>
+    <File Include="ESS/TA/TASMarkAttendance.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ESS/TA/TASRosterChangeRequest.aspx">
+      <publishTime>09/10/2026 13:13:34</publishTime>
+    </File>
+    <File Include="ESS/WebForm1.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="GoogleLoginCallback.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="LookupHandler.ashx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="MainForm.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="Modal.Master">
+      <publishTime>09/10/2026 18:34:34</publishTime>
+    </File>
+    <File Include="ModalForm.aspx">
+      <publishTime>08/29/2026 17:49:29</publishTime>
+    </File>
+    <File Include="ServisShoes.png">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="TestingForm.aspx">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="UploadApk.aspx">
+      <publishTime>08/29/2026 17:49:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/06/2026 12:50:37</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

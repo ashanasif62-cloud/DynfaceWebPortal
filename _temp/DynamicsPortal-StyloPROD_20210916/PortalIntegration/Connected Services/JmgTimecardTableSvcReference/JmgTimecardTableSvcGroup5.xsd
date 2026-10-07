@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTableSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfJmgTimecardTableSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="JmgTimecardTableSvcContract" nillable="true" type="tns:JmgTimecardTableSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJmgTimecardTableSvcContract" nillable="true" type="tns:ArrayOfJmgTimecardTableSvcContract" />
+  <xs:complexType name="JmgTimecardTableSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClockInActualDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ClockInDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ClockInGenerationType" type="tns:JmgGenerationType" />
+          <xs:element minOccurs="0" name="ClockInReasonCodeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClockInRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="ClockOutActualDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ClockOutDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ClockOutGenerationType" type="tns:JmgGenerationType" />
+          <xs:element minOccurs="0" name="ClockOutReasonCodeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClockOutRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="ProfileDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ProfileDetails" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProfileId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RegistrationsCalculated" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="RegistrationsLocked" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="RegistrationsTransferred" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="Remarks" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WFStatus" type="tns:JmgWFStatus" />
+          <xs:element minOccurs="0" name="Worker" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="JmgTimecardTableSvcContract" nillable="true" type="tns:JmgTimecardTableSvcContract" />
+  <xs:simpleType name="JmgGenerationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Manual" />
+      <xs:enumeration value="AttendanceMechine" />
+      <xs:enumeration value="ESSPortal" />
+      <xs:enumeration value="Import" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="JmgGenerationType" nillable="true" type="tns:JmgGenerationType" />
+  <xs:simpleType name="JmgWFStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSubmitted" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="Rejected" />
+      <xs:enumeration value="Submitted" />
+      <xs:enumeration value="ChangeRequest" />
+      <xs:enumeration value="PendingCancellation" />
+      <xs:enumeration value="Returned" />
+      <xs:enumeration value="PendingApproval" />
+      <xs:enumeration value="PendingComplete" />
+      <xs:enumeration value="WorkflowCompleted" />
+      <xs:enumeration value="Completed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="JmgWFStatus" nillable="true" type="tns:JmgWFStatus" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+</xs:schema>

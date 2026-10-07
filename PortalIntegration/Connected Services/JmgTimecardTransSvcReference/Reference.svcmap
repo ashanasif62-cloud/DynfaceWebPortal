@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2f69aea5-08bc-420e-96df-2bce2a3be675" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTransSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="JmgTimecardTransSvcGroup.disco" MetadataType="Disco" ID="f506e7df-0fb6-48c8-bda9-29b3efeadeb8" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTransSvcGroup?disco" />
+    <MetadataFile FileName="JmgTimecardTransSvcGroup1.wsdl" MetadataType="Wsdl" ID="102d12df-fc42-4950-a43e-05625e2e6054" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTransSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="JmgTimecardTransSvcGroup2.xsd" MetadataType="Schema" ID="2af92a97-dcd0-4b41-b66e-27e532747d5a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTransSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="JmgTimecardTransSvcGroup5.xsd" MetadataType="Schema" ID="7e70b661-05f4-4213-b3da-4903d554706d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTransSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="JmgTimecardTransSvcGroup4.xsd" MetadataType="Schema" ID="280fd391-9523-4911-a777-eebf16b4f0a4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTransSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="JmgTimecardTransSvcGroup.xsd" MetadataType="Schema" ID="e4b02e5c-7396-445d-be83-a5bcf90718fd" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTransSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="JmgTimecardTransSvcGroup6.xsd" MetadataType="Schema" ID="c3589dfa-98ba-49c2-b78e-426904be90f2" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTransSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="JmgTimecardTransSvcGroup3.xsd" MetadataType="Schema" ID="c24484c3-2a55-47a4-af25-4bf84ec220a9" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTransSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="JmgTimecardTransSvcGroup1.xsd" MetadataType="Schema" ID="34cb5875-54a9-4ac9-8b44-f1c9c18a34d1" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTransSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="JmgTimecardTransSvcGroup.wsdl" MetadataType="Wsdl" ID="ffccaaa9-b587-4a95-a89a-d8a8175717e1" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgTimecardTransSvcGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

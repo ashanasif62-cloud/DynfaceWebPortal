@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="d28b4507-8c6e-4706-aed8-2a20c5b1ae65" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSBusinessTripSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ESSBusinessTripSvcGroup7.xsd" MetadataType="Schema" ID="22502f9d-a6c8-435d-869f-dc49e6379b6b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSBusinessTripSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="ESSBusinessTripSvcGroup1.disco" MetadataType="Disco" ID="45e91afc-3551-40fb-8788-7513ad06f57a" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSBusinessTripSvcGroup?disco" />
+    <MetadataFile FileName="ESSBusinessTripSvcGroup2.wsdl" MetadataType="Wsdl" ID="a3401a60-550e-42bd-9ecc-72d36544132c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSBusinessTripSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ESSBusinessTripSvcGroup71.xsd" MetadataType="Schema" ID="b0ac6d9b-d098-44c9-a544-3f113f84c74a" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSBusinessTripSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="ESSBusinessTripSvcGroup72.xsd" MetadataType="Schema" ID="136064ec-3923-421e-941b-aaf23eef962a" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSBusinessTripSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="ESSBusinessTripSvcGroup73.xsd" MetadataType="Schema" ID="9c039dec-ef80-4187-b06f-c08d38e7119e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSBusinessTripSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="ESSBusinessTripSvcGroup21.wsdl" MetadataType="Wsdl" ID="3449107c-6497-4ec3-9ccc-eabf66dc1719" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSBusinessTripSvcGroup?wsdl" />
+    <MetadataFile FileName="ESSBusinessTripSvcGroup74.xsd" MetadataType="Schema" ID="3c68b205-3caa-4f29-b5da-8e44937598db" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSBusinessTripSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="ESSBusinessTripSvcGroup75.xsd" MetadataType="Schema" ID="aba0a6ab-152e-466a-b41e-493acc9e0275" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSBusinessTripSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="ESSBusinessTripSvcGroup76.xsd" MetadataType="Schema" ID="d9b90215-008f-43d8-bbd6-d4313c17da6e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSBusinessTripSvcGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

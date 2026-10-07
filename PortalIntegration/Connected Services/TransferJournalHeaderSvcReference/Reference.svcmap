@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="7e7cff95-6b19-4116-8740-ea1564d4c289" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TransferJournalHeaderGroup.xsd" MetadataType="Schema" ID="04aef178-eaad-4e84-8f28-e407ac5d0bfc" SourceId="1" SourceUrl="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd6" />
+    <MetadataFile FileName="TransferJournalHeaderGroup.wsdl" MetadataType="Wsdl" ID="f28115ca-80fe-4ec3-a81b-00e58adabf17" SourceId="1" SourceUrl="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?wsdl" />
+    <MetadataFile FileName="TransferJournalHeaderGroup1.xsd" MetadataType="Schema" ID="fb34df6e-7991-4b50-9b73-9a75680f7afb" SourceId="1" SourceUrl="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd4" />
+    <MetadataFile FileName="TransferJournalHeaderGroup2.xsd" MetadataType="Schema" ID="1e04ecbd-25e7-4c59-8cc2-093269ddb011" SourceId="1" SourceUrl="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd2" />
+    <MetadataFile FileName="TransferJournalHeaderGroup3.xsd" MetadataType="Schema" ID="817b56c0-5f3c-499e-8acd-1eafd5b8a605" SourceId="1" SourceUrl="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd3" />
+    <MetadataFile FileName="TransferJournalHeaderGroup4.xsd" MetadataType="Schema" ID="508dfbc2-6afe-49e4-a48d-0d38b01259f9" SourceId="1" SourceUrl="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd0" />
+    <MetadataFile FileName="TransferJournalHeaderGroup.disco" MetadataType="Disco" ID="818fad92-6e9a-488d-b2cc-02db129c2b39" SourceId="1" SourceUrl="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?disco" />
+    <MetadataFile FileName="TransferJournalHeaderGroup5.xsd" MetadataType="Schema" ID="1a784530-d616-429d-9c0e-3a0589847512" SourceId="1" SourceUrl="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd5" />
+    <MetadataFile FileName="TransferJournalHeaderGroup6.xsd" MetadataType="Schema" ID="e669685a-1bf3-4fd5-9da3-684215d6ef40" SourceId="1" SourceUrl="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd1" />
+    <MetadataFile FileName="TransferJournalHeaderGroup1.wsdl" MetadataType="Wsdl" ID="a83593a1-4553-4b6b-a853-6d83963829a9" SourceId="1" SourceUrl="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

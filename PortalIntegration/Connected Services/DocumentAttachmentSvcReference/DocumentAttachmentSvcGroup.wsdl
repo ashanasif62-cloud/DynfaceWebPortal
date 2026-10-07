@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/System.IO" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="AddAttachment">
+    <wsdl:part name="parameters" element="tns:AddAttachment" />
+  </wsdl:message>
+  <wsdl:message name="AddAttachment_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AddAttachmentResponse">
+    <wsdl:part name="parameters" element="tns:AddAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAttachmentResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="DocumentAttachmentSvc_AddAttachment_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="saveAttachment">
+    <wsdl:part name="parameters" element="tns:saveAttachment" />
+  </wsdl:message>
+  <wsdl:message name="saveAttachment_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="saveAttachmentResponse">
+    <wsdl:part name="parameters" element="tns:saveAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveAttachmentResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="DocumentAttachmentSvc_saveAttachment_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAttachment">
+    <wsdl:part name="parameters" element="tns:retrieveAttachment" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAttachment_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAttachmentResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAttachmentResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="DocumentAttachmentSvc_retrieveAttachment_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="getAttachmentURL">
+    <wsdl:part name="parameters" element="tns:getAttachmentURL" />
+  </wsdl:message>
+  <wsdl:message name="getAttachmentURL_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getAttachmentURLResponse">
+    <wsdl:part name="parameters" element="tns:getAttachmentURLResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAttachmentURLResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="DocumentAttachmentSvc_getAttachmentURL_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieve">
+    <wsdl:part name="parameters" element="tns:retrieve" />
+  </wsdl:message>
+  <wsdl:message name="retrieve_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveResponse">
+    <wsdl:part name="parameters" element="tns:retrieveResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="DocumentAttachmentSvc_retrieve_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="saveAttachmentByteArray">
+    <wsdl:part name="parameters" element="tns:saveAttachmentByteArray" />
+  </wsdl:message>
+  <wsdl:message name="saveAttachmentByteArray_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="saveAttachmentByteArrayResponse">
+    <wsdl:part name="parameters" element="tns:saveAttachmentByteArrayResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveAttachmentByteArrayResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="DocumentAttachmentSvc_saveAttachmentByteArray_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="deleteRecord">
+    <wsdl:part name="parameters" element="tns:deleteRecord" />
+  </wsdl:message>
+  <wsdl:message name="deleteRecord_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="deleteRecordResponse">
+    <wsdl:part name="parameters" element="tns:deleteRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteRecordResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="DocumentAttachmentSvc_deleteRecord_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAttachmentBase64">
+    <wsdl:part name="parameters" element="tns:retrieveAttachmentBase64" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAttachmentBase64_Headers">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q22:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAttachmentBase64Response">
+    <wsdl:part name="parameters" element="tns:retrieveAttachmentBase64Response" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAttachmentBase64Response_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q23:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="DocumentAttachmentSvc_retrieveAttachmentBase64_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q24:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="DocumentAttachmentSvc">
+    <wsdl:operation name="AddAttachment">
+      <wsdl:input wsam:Action="http://tempuri.org/DocumentAttachmentSvc/AddAttachment" name="AddAttachment" message="tns:AddAttachment" />
+      <wsdl:output wsam:Action="http://tempuri.org/DocumentAttachmentSvc/AddAttachmentResponse" name="AddAttachmentResponse" message="tns:AddAttachmentResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/DocumentAttachmentSvc/Fault" name="SoapServiceFaultFault" message="tns:DocumentAttachmentSvc_AddAttachment_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveAttachment">
+      <wsdl:input wsam:Action="http://tempuri.org/DocumentAttachmentSvc/saveAttachment" name="saveAttachment" message="tns:saveAttachment" />
+      <wsdl:output wsam:Action="http://tempuri.org/DocumentAttachmentSvc/saveAttachmentResponse" name="saveAttachmentResponse" message="tns:saveAttachmentResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/DocumentAttachmentSvc/Fault" name="SoapServiceFaultFault" message="tns:DocumentAttachmentSvc_saveAttachment_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAttachment">
+      <wsdl:input wsam:Action="http://tempuri.org/DocumentAttachmentSvc/retrieveAttachment" name="retrieveAttachment" message="tns:retrieveAttachment" />
+      <wsdl:output wsam:Action="http://tempuri.org/DocumentAttachmentSvc/retrieveAttachmentResponse" name="retrieveAttachmentResponse" message="tns:retrieveAttachmentResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/DocumentAttachmentSvc/Fault" name="SoapServiceFaultFault" message="tns:DocumentAttachmentSvc_retrieveAttachment_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAttachmentURL">
+      <wsdl:input wsam:Action="http://tempuri.org/DocumentAttachmentSvc/getAttachmentURL" name="getAttachmentURL" message="tns:getAttachmentURL" />
+      <wsdl:output wsam:Action="http://tempuri.org/DocumentAttachmentSvc/getAttachmentURLResponse" name="getAttachmentURLResponse" message="tns:getAttachmentURLResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/DocumentAttachmentSvc/Fault" name="SoapServiceFaultFault" message="tns:DocumentAttachmentSvc_getAttachmentURL_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieve">
+      <wsdl:input wsam:Action="http://tempuri.org/DocumentAttachmentSvc/retrieve" name="retrieve" message="tns:retrieve" />
+      <wsdl:output wsam:Action="http://tempuri.org/DocumentAttachmentSvc/retrieveResponse" name="retrieveResponse" message="tns:retrieveResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/DocumentAttachmentSvc/Fault" name="SoapServiceFaultFault" message="tns:DocumentAttachmentSvc_retrieve_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveAttachmentByteArray">
+      <wsdl:input wsam:Action="http://tempuri.org/DocumentAttachmentSvc/saveAttachmentByteArray" name="saveAttachmentByteArray" message="tns:saveAttachmentByteArray" />
+      <wsdl:output wsam:Action="http://tempuri.org/DocumentAttachmentSvc/saveAttachmentByteArrayResponse" name="saveAttachmentByteArrayResponse" message="tns:saveAttachmentByteArrayResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/DocumentAttachmentSvc/Fault" name="SoapServiceFaultFault" message="tns:DocumentAttachmentSvc_saveAttachmentByteArray_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteRecord">
+      <wsdl:input wsam:Action="http://tempuri.org/DocumentAttachmentSvc/deleteRecord" name="deleteRecord" message="tns:deleteRecord" />
+      <wsdl:output wsam:Action="http://tempuri.org/DocumentAttachmentSvc/deleteRecordResponse" name="deleteRecordResponse" message="tns:deleteRecordResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/DocumentAttachmentSvc/Fault" name="SoapServiceFaultFault" message="tns:DocumentAttachmentSvc_deleteRecord_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAttachmentBase64">
+      <wsdl:input wsam:Action="http://tempuri.org/DocumentAttachmentSvc/retrieveAttachmentBase64" name="retrieveAttachmentBase64" message="tns:retrieveAttachmentBase64" />
+      <wsdl:output wsam:Action="http://tempuri.org/DocumentAttachmentSvc/retrieveAttachmentBase64Response" name="retrieveAttachmentBase64Response" message="tns:retrieveAttachmentBase64Response" />
+      <wsdl:fault wsam:Action="http://tempuri.org/DocumentAttachmentSvc/Fault" name="SoapServiceFaultFault" message="tns:DocumentAttachmentSvc_retrieveAttachmentBase64_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

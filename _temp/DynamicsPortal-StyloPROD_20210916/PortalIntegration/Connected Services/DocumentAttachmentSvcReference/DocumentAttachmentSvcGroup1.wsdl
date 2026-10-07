@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:i0="http://tempuri.org" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DocumentAttachmentSvcGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_DocumentAttachmentSvc_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_DocumentAttachmentSvc" type="i0:DocumentAttachmentSvc">
+    <wsp:PolicyReference URI="#BasicHttpBinding_DocumentAttachmentSvc_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddAttachment">
+      <soap:operation soapAction="http://tempuri.org/DocumentAttachmentSvc/AddAttachment" style="document" />
+      <wsdl:input name="AddAttachment">
+        <soap:header message="i0:AddAttachment_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddAttachmentResponse">
+        <soap:header message="i0:AddAttachmentResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveAttachment">
+      <soap:operation soapAction="http://tempuri.org/DocumentAttachmentSvc/saveAttachment" style="document" />
+      <wsdl:input name="saveAttachment">
+        <soap:header message="i0:saveAttachment_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveAttachmentResponse">
+        <soap:header message="i0:saveAttachmentResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAttachment">
+      <soap:operation soapAction="http://tempuri.org/DocumentAttachmentSvc/retrieveAttachment" style="document" />
+      <wsdl:input name="retrieveAttachment">
+        <soap:header message="i0:retrieveAttachment_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveAttachmentResponse">
+        <soap:header message="i0:retrieveAttachmentResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAttachmentURL">
+      <soap:operation soapAction="http://tempuri.org/DocumentAttachmentSvc/getAttachmentURL" style="document" />
+      <wsdl:input name="getAttachmentURL">
+        <soap:header message="i0:getAttachmentURL_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getAttachmentURLResponse">
+        <soap:header message="i0:getAttachmentURLResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieve">
+      <soap:operation soapAction="http://tempuri.org/DocumentAttachmentSvc/retrieve" style="document" />
+      <wsdl:input name="retrieve">
+        <soap:header message="i0:retrieve_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveResponse">
+        <soap:header message="i0:retrieveResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveAttachmentByteArray">
+      <soap:operation soapAction="http://tempuri.org/DocumentAttachmentSvc/saveAttachmentByteArray" style="document" />
+      <wsdl:input name="saveAttachmentByteArray">
+        <soap:header message="i0:saveAttachmentByteArray_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveAttachmentByteArrayResponse">
+        <soap:header message="i0:saveAttachmentByteArrayResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteRecord">
+      <soap:operation soapAction="http://tempuri.org/DocumentAttachmentSvc/deleteRecord" style="document" />
+      <wsdl:input name="deleteRecord">
+        <soap:header message="i0:deleteRecord_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteRecordResponse">
+        <soap:header message="i0:deleteRecordResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DocumentAttachmentSvcGroup">
+    <wsdl:port name="BasicHttpBinding_DocumentAttachmentSvc" binding="tns:BasicHttpBinding_DocumentAttachmentSvc">
+      <soap:address location="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

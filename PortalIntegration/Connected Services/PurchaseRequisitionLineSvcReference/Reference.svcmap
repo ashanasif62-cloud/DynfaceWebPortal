@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="edb39f93-a5fd-42a7-b17f-8733de807868" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PurchaseRequisitonLineSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PurchaseRequisitonLineSvcGroup3.wsdl" MetadataType="Wsdl" ID="aae4a3cb-3a74-4027-968e-1bacb1328cb3" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseRequisitonLineSvcGroup?wsdl" />
+    <MetadataFile FileName="PurchaseRequisitonLineSvcGroup4.wsdl" MetadataType="Wsdl" ID="790e788e-1ed9-42f9-91e0-299a4f5e3f4e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseRequisitonLineSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PurchaseRequisitonLineSvcGroup8.xsd" MetadataType="Schema" ID="e9da0955-941f-474d-81cf-5e9b255f8fb3" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseRequisitonLineSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PurchaseRequisitonLineSvcGroup9.xsd" MetadataType="Schema" ID="8f898b59-981b-46f0-9fa0-c37a5a5eb906" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseRequisitonLineSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PurchaseRequisitonLineSvcGroup10.xsd" MetadataType="Schema" ID="d803ee81-b1ce-4b73-905d-f08f6137f23d" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseRequisitonLineSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PurchaseRequisitonLineSvcGroup2.disco" MetadataType="Disco" ID="181f4e4c-88dd-4e30-be3a-7f75ae59715f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseRequisitonLineSvcGroup?disco" />
+    <MetadataFile FileName="PurchaseRequisitonLineSvcGroup11.xsd" MetadataType="Schema" ID="89f02924-fbdd-44c6-b6d5-f59eff764d07" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseRequisitonLineSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PurchaseRequisitonLineSvcGroup12.xsd" MetadataType="Schema" ID="d1aae474-ef03-4447-a178-568f5c9dd480" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseRequisitonLineSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PurchaseRequisitonLineSvcGroup13.xsd" MetadataType="Schema" ID="aae75675-413e-417c-a496-3b06913d5feb" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseRequisitonLineSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PurchaseRequisitonLineSvcGroup14.xsd" MetadataType="Schema" ID="a7eb5973-8391-4da0-8b07-6e4b2eaee865" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseRequisitonLineSvcGroup?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

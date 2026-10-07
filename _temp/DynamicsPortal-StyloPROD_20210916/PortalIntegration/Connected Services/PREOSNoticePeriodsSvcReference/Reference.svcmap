@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="73cbcc2d-8ba0-4f5e-90ca-92858a8f99b5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/PREOSNoticePeriodsSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PREOSNoticePeriodsSvcGroup72.xsd" MetadataType="Schema" ID="bbdccd06-ec32-443d-b1d1-01aaf2693ebe" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREOSNoticePeriodsSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PREOSNoticePeriodsSvcGroup71.xsd" MetadataType="Schema" ID="cf33da1a-29bd-457d-9bae-5da82ab14390" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREOSNoticePeriodsSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PREOSNoticePeriodsSvcGroup1.disco" MetadataType="Disco" ID="4c27a0f8-8fd6-4f0f-ab38-4aaaceb11cdf" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREOSNoticePeriodsSvcGroup?disco" />
+    <MetadataFile FileName="PREOSNoticePeriodsSvcGroup76.xsd" MetadataType="Schema" ID="ca4e76c5-e483-4306-81d6-468a9d5b21a8" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREOSNoticePeriodsSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PREOSNoticePeriodsSvcGroup75.xsd" MetadataType="Schema" ID="36be4770-00a9-41fc-ab89-fda1665ba8ff" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREOSNoticePeriodsSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PREOSNoticePeriodsSvcGroup7.xsd" MetadataType="Schema" ID="8e1a7434-e6db-471f-962f-b1e0cb0b207b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREOSNoticePeriodsSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PREOSNoticePeriodsSvcGroup73.xsd" MetadataType="Schema" ID="d43ad032-d7a4-48e4-bb98-dc1893a7226a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREOSNoticePeriodsSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PREOSNoticePeriodsSvcGroup74.xsd" MetadataType="Schema" ID="a41557f0-46a8-44d8-8aa9-2bb899bf1995" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREOSNoticePeriodsSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PREOSNoticePeriodsSvcGroup21.wsdl" MetadataType="Wsdl" ID="7c354bde-dc35-4392-a5a7-8a6cf87b79bf" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREOSNoticePeriodsSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PREOSNoticePeriodsSvcGroup2.wsdl" MetadataType="Wsdl" ID="5d4dcba8-ffa6-4b89-9138-19717c085f98" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREOSNoticePeriodsSvcGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLines_MaintainChargesGroupSvc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfPurchaseOrderLines_MaintainChargesContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PurchaseOrderLines_MaintainChargesContract" nillable="true" type="tns:PurchaseOrderLines_MaintainChargesContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPurchaseOrderLines_MaintainChargesContract" nillable="true" type="tns:ArrayOfPurchaseOrderLines_MaintainChargesContract" />
+  <xs:complexType name="PurchaseOrderLines_MaintainChargesContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AllowEdit" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CalculatedAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsAdvancedLineProrated" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsOverridenLine" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MCRBrokerContractFee" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MarkupCategory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MarkupCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModuleCategory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchaseOrderID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="SpecificUnitSymbol" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TableId" type="xs:int" />
+          <xs:element minOccurs="0" name="TaxGroup" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaxItemGroup" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Txt" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" type="xs:decimal" />
+          <xs:element minOccurs="0" name="allowEditlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="calculatedAmountlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="currencyCodelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="employeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="markupCategorylbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="markupCodelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="mcrBrokerContractFeelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="specificUnitSymbollbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="taxGrouplbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="taxItemGrouplbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="txtlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="valuelbl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PurchaseOrderLines_MaintainChargesContract" nillable="true" type="tns:PurchaseOrderLines_MaintainChargesContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+</xs:schema>

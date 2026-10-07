@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="99dd2119-f016-493c-b441-4eb004b13a4b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeePFWithDrawlSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PREmployeePFWithDrawlSvcGroup.wsdl" MetadataType="Wsdl" ID="9e2c1741-dd67-43cd-83ab-36238b3ed33e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeePFWithDrawlSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PREmployeePFWithDrawlSvcGroup.disco" MetadataType="Disco" ID="63820e6f-702e-46bd-b3a9-ae1ae749919a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeePFWithDrawlSvcGroup?disco" />
+    <MetadataFile FileName="PREmployeePFWithDrawlSvcGroup.xsd" MetadataType="Schema" ID="62067283-70df-4422-a3f3-f7ff54a12168" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeePFWithDrawlSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PREmployeePFWithDrawlSvcGroup1.xsd" MetadataType="Schema" ID="0ac83385-72e6-4258-9323-2d29111a9cfd" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeePFWithDrawlSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PREmployeePFWithDrawlSvcGroup2.xsd" MetadataType="Schema" ID="755e7d8a-a8ff-45a1-a68f-d29ebccac8c7" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeePFWithDrawlSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PREmployeePFWithDrawlSvcGroup3.xsd" MetadataType="Schema" ID="67955503-f098-4cdd-bfc0-27300404558e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeePFWithDrawlSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PREmployeePFWithDrawlSvcGroup4.xsd" MetadataType="Schema" ID="1cd065b8-5203-4018-8ecc-5433062963d5" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeePFWithDrawlSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PREmployeePFWithDrawlSvcGroup5.xsd" MetadataType="Schema" ID="18ad8d59-e6fb-410e-b0f2-f268d5486026" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeePFWithDrawlSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PREmployeePFWithDrawlSvcGroup6.xsd" MetadataType="Schema" ID="880d52e7-e003-450d-9ac5-43fe6d24c91a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeePFWithDrawlSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PREmployeePFWithDrawlSvcGroup1.wsdl" MetadataType="Wsdl" ID="727bea07-68d6-4bb4-8738-4a1885aeacdc" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeePFWithDrawlSvcGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

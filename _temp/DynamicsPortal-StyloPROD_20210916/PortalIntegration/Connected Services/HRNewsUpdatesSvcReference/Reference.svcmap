@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1309fbf7-91c7-4e80-94ca-e1d5b11a289b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/HRNewsUpdatesSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HRNewsUpdatesSvcGroup1.wsdl" MetadataType="Wsdl" ID="c4cabdd3-c3a8-435d-985d-8a9e7f94d43c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRNewsUpdatesSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HRNewsUpdatesSvcGroup.wsdl" MetadataType="Wsdl" ID="626a6907-0537-4a84-a52e-d89e12cabeaa" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRNewsUpdatesSvcGroup?wsdl" />
+    <MetadataFile FileName="HRNewsUpdatesSvcGroup2.xsd" MetadataType="Schema" ID="3c055dcc-5d54-48d5-8852-7be7bfa5f67a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRNewsUpdatesSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HRNewsUpdatesSvcGroup6.xsd" MetadataType="Schema" ID="dca8388b-d8dd-4071-8a3d-45af20eec98d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRNewsUpdatesSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HRNewsUpdatesSvcGroup3.xsd" MetadataType="Schema" ID="c9ec4af5-b900-4010-8bf6-639935fc59e9" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRNewsUpdatesSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HRNewsUpdatesSvcGroup1.xsd" MetadataType="Schema" ID="6a432c20-ce06-4c90-aa1f-30ec2912759b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRNewsUpdatesSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HRNewsUpdatesSvcGroup5.xsd" MetadataType="Schema" ID="9c16791c-3511-4405-9b77-3dd95966afe0" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRNewsUpdatesSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HRNewsUpdatesSvcGroup.disco" MetadataType="Disco" ID="76e5e0ba-d8fc-4534-8ecd-c351e0c44230" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRNewsUpdatesSvcGroup?disco" />
+    <MetadataFile FileName="HRNewsUpdatesSvcGroup.xsd" MetadataType="Schema" ID="19c28916-f247-4fad-8356-7edd804a0543" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRNewsUpdatesSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HRNewsUpdatesSvcGroup4.xsd" MetadataType="Schema" ID="6fc08dbe-862f-4f0c-81cc-7b55eb87c13f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRNewsUpdatesSvcGroup?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="31d1cebe-52ea-4052-aca0-c9abcc42b1c7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/SERVICES/POAllocateChargesServiceGruop" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="POAllocateChargesServiceGruop7.xsd" MetadataType="Schema" ID="280eeb8a-0d2e-4c13-9002-6965c9e48f11" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/POAllocateChargesServiceGruop?xsd=xsd2" />
+    <MetadataFile FileName="POAllocateChargesServiceGruop1.disco" MetadataType="Disco" ID="3fd61fb8-1d53-46ba-a701-71628e4a880d" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/POAllocateChargesServiceGruop?disco" />
+    <MetadataFile FileName="POAllocateChargesServiceGruop2.wsdl" MetadataType="Wsdl" ID="5e00a940-0bed-4d99-a841-7a1df9d139ba" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/POAllocateChargesServiceGruop?wsdl" />
+    <MetadataFile FileName="POAllocateChargesServiceGruop71.xsd" MetadataType="Schema" ID="d3e57284-85c2-429d-9d3f-907ce3e3ca62" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/POAllocateChargesServiceGruop?xsd=xsd1" />
+    <MetadataFile FileName="POAllocateChargesServiceGruop72.xsd" MetadataType="Schema" ID="71c78228-f633-4246-babf-33133c68a225" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/POAllocateChargesServiceGruop?xsd=xsd3" />
+    <MetadataFile FileName="POAllocateChargesServiceGruop21.wsdl" MetadataType="Wsdl" ID="45f1c647-465d-4856-aab1-312ffda262e2" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/POAllocateChargesServiceGruop?wsdl=wsdl0" />
+    <MetadataFile FileName="POAllocateChargesServiceGruop73.xsd" MetadataType="Schema" ID="4f563956-32a0-41b2-ac8a-640ea6cd2f78" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/POAllocateChargesServiceGruop?xsd=xsd0" />
+    <MetadataFile FileName="POAllocateChargesServiceGruop74.xsd" MetadataType="Schema" ID="edafc015-bd3c-440a-9c76-ac05d9c80557" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/POAllocateChargesServiceGruop?xsd=xsd4" />
+    <MetadataFile FileName="POAllocateChargesServiceGruop75.xsd" MetadataType="Schema" ID="df072293-0598-4386-a8c6-9e48ecc60c60" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/POAllocateChargesServiceGruop?xsd=xsd6" />
+    <MetadataFile FileName="POAllocateChargesServiceGruop76.xsd" MetadataType="Schema" ID="ce855139-f5cf-4b56-8432-a6d5e9d14eb5" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/POAllocateChargesServiceGruop?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="9d4e4e33-9813-4498-aa9a-1c358d27fc4d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HRMApplicationGroup.wsdl" MetadataType="Wsdl" ID="a2b70311-ced7-43ea-af68-24fa06e3fe32" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HRMApplicationGroup.xsd" MetadataType="Schema" ID="ae2597a0-4110-4bf0-aca6-0f6d4c40c6d6" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd6" />
+    <MetadataFile FileName="HRMApplicationGroup1.xsd" MetadataType="Schema" ID="90777554-33fa-43cc-8557-06637a7e2881" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd3" />
+    <MetadataFile FileName="HRMApplicationGroup2.xsd" MetadataType="Schema" ID="d68e89dc-7f30-4593-a1da-38b7cb802e40" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd2" />
+    <MetadataFile FileName="HRMApplicationGroup3.xsd" MetadataType="Schema" ID="614cad07-c919-459b-842f-a2fa6379b789" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd5" />
+    <MetadataFile FileName="HRMApplicationGroup1.wsdl" MetadataType="Wsdl" ID="e190d454-887c-44c0-9c0e-f549761b258f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?wsdl" />
+    <MetadataFile FileName="HRMApplicationGroup4.xsd" MetadataType="Schema" ID="c2127773-91f6-48b8-a3f3-21d27f65d6f7" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd1" />
+    <MetadataFile FileName="HRMApplicationGroup.disco" MetadataType="Disco" ID="caf51d53-611d-4fb6-b147-b60e08711f0c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?disco" />
+    <MetadataFile FileName="HRMApplicationGroup5.xsd" MetadataType="Schema" ID="61a905ec-3dd4-4dfb-8968-de149b6aa3bf" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd0" />
+    <MetadataFile FileName="HRMApplicationGroup6.xsd" MetadataType="Schema" ID="984e0c6d-c858-409d-a362-43ec893fa787" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

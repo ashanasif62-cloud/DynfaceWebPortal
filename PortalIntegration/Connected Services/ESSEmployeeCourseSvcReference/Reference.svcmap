@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="566a0a6d-be7d-4089-ae4a-9212d9c30294" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSCourseSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ESSCourseSvcGroup.xsd" MetadataType="Schema" ID="3ed0ebf3-5f6d-457f-a323-7cf4f482bf1f" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSCourseSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="ESSCourseSvcGroup.wsdl" MetadataType="Wsdl" ID="1fbf9ab8-dbda-4341-b92d-99c81eb512fa" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSCourseSvcGroup?wsdl" />
+    <MetadataFile FileName="ESSCourseSvcGroup1.xsd" MetadataType="Schema" ID="58a64658-de32-4d08-a018-edba0979afca" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSCourseSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="ESSCourseSvcGroup2.xsd" MetadataType="Schema" ID="65159bdf-902f-429c-98fc-8d3b4b7af7bb" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSCourseSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="ESSCourseSvcGroup3.xsd" MetadataType="Schema" ID="30937602-08ea-47b6-bea5-b8bc9d4e63c5" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSCourseSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="ESSCourseSvcGroup1.wsdl" MetadataType="Wsdl" ID="a4edcacf-b432-4654-a455-afb424c937de" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSCourseSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ESSCourseSvcGroup4.xsd" MetadataType="Schema" ID="4348003b-9b40-47ae-a810-56494caf0963" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSCourseSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="ESSCourseSvcGroup5.xsd" MetadataType="Schema" ID="4be963bf-b355-4dfe-a641-f175b0ad5575" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSCourseSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="ESSCourseSvcGroup6.xsd" MetadataType="Schema" ID="29649f69-fe5d-411d-b01d-a2eb8de82f40" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSCourseSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="ESSCourseSvcGroup.disco" MetadataType="Disco" ID="7d90f1b7-b93a-4613-acc6-fba4197ba54a" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSCourseSvcGroup?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

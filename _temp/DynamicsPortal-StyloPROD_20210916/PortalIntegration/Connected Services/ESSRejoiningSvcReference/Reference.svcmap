@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="43969399-4c24-4c6d-90ab-291f0330c993" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/ESSRejoiningSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ESSRejoiningSvcGroup2.wsdl" MetadataType="Wsdl" ID="d1ede328-ae0b-4b2f-93ee-bf53f3685e46" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRejoiningSvcGroup?wsdl" />
+    <MetadataFile FileName="ESSRejoiningSvcGroup21.wsdl" MetadataType="Wsdl" ID="1631679d-ac5e-44b7-af95-71e576b372bc" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRejoiningSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ESSRejoiningSvcGroup72.xsd" MetadataType="Schema" ID="a56aa3b5-370f-4afb-8155-9c429f0c56ec" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRejoiningSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="ESSRejoiningSvcGroup73.xsd" MetadataType="Schema" ID="781e6e16-e899-4ac8-9e66-7946270a3659" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRejoiningSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="ESSRejoiningSvcGroup74.xsd" MetadataType="Schema" ID="950b7df9-1d00-4e5d-afe2-8122b2f8e9d9" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRejoiningSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="ESSRejoiningSvcGroup1.disco" MetadataType="Disco" ID="7d1b47c7-bdb6-4065-8ae5-8d0a23b80b5d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRejoiningSvcGroup?disco" />
+    <MetadataFile FileName="ESSRejoiningSvcGroup75.xsd" MetadataType="Schema" ID="36be8ba3-9c0d-462e-9b0f-9de2a6e60d2b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRejoiningSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="ESSRejoiningSvcGroup7.xsd" MetadataType="Schema" ID="ce5b85eb-8d7b-44cd-a22d-2be4bc10a509" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRejoiningSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="ESSRejoiningSvcGroup76.xsd" MetadataType="Schema" ID="f0b65f52-0316-428b-8f33-ef4118b2b339" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRejoiningSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="ESSRejoiningSvcGroup71.xsd" MetadataType="Schema" ID="2e35ba60-7237-43d7-9658-7f78608eace7" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRejoiningSvcGroup?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

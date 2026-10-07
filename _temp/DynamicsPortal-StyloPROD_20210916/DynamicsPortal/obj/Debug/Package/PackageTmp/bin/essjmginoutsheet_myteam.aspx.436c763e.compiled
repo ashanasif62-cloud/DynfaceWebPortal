@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/Reports/ESSJmgInOutSheet_MyTeam.aspx" hash="ffffffefe3a9c958" filehash="6dad023d93f0be6f" flags="110000" assembly="MaisonPortal" type="ASP.ess_reports_essjmginoutsheet_myteam_aspx">
+  <filedeps>
+    <filedep name="/ESS/Reports/ESSJmgInOutSheet_MyTeam.aspx" />
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

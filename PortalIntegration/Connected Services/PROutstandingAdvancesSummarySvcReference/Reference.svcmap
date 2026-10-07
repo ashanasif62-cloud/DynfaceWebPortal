@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="0abe74ef-f3c7-4b05-8c25-379133c3ed86" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROutstandingAdvancesSummaryGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PROutstandingAdvancesSummaryGroup.xsd" MetadataType="Schema" ID="143dd96d-a1a5-4685-bfed-0d58f199cfd6" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROutstandingAdvancesSummaryGroup?xsd=xsd5" />
+    <MetadataFile FileName="PROutstandingAdvancesSummaryGroup.wsdl" MetadataType="Wsdl" ID="fb5441cf-a37e-48f5-aecc-e93ccae4d0c3" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROutstandingAdvancesSummaryGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PROutstandingAdvancesSummaryGroup1.xsd" MetadataType="Schema" ID="201de8cd-9ff6-43ae-8f09-0b1349ec44af" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROutstandingAdvancesSummaryGroup?xsd=xsd6" />
+    <MetadataFile FileName="PROutstandingAdvancesSummaryGroup2.xsd" MetadataType="Schema" ID="8980f04e-e04d-494e-881d-98f662cb73ca" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROutstandingAdvancesSummaryGroup?xsd=xsd2" />
+    <MetadataFile FileName="PROutstandingAdvancesSummaryGroup3.xsd" MetadataType="Schema" ID="4af7e117-4054-4042-b3f1-f63f7b44f2de" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROutstandingAdvancesSummaryGroup?xsd=xsd3" />
+    <MetadataFile FileName="PROutstandingAdvancesSummaryGroup4.xsd" MetadataType="Schema" ID="1f7578a2-058e-4e98-9f6a-ffd784cf393d" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROutstandingAdvancesSummaryGroup?xsd=xsd0" />
+    <MetadataFile FileName="PROutstandingAdvancesSummaryGroup5.xsd" MetadataType="Schema" ID="abdca7c6-6b29-459e-b87f-c77676462db8" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROutstandingAdvancesSummaryGroup?xsd=xsd1" />
+    <MetadataFile FileName="PROutstandingAdvancesSummaryGroup1.wsdl" MetadataType="Wsdl" ID="6461865a-a360-423f-8a33-8a7ce291ed86" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROutstandingAdvancesSummaryGroup?wsdl" />
+    <MetadataFile FileName="PROutstandingAdvancesSummaryGroup6.xsd" MetadataType="Schema" ID="2513b9e9-932a-4be0-b6e3-83ca277fc8e2" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROutstandingAdvancesSummaryGroup?xsd=xsd4" />
+    <MetadataFile FileName="PROutstandingAdvancesSummaryGroup.disco" MetadataType="Disco" ID="a3433a81-f3cf-4815-86ea-cc11be0c27e7" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROutstandingAdvancesSummaryGroup?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

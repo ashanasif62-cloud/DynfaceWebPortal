@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/HR/ESSLogisticsElectronicAddress.aspx" hash="ffffffefe3a9c958" filehash="6199384d99df83e3" flags="110000" assembly="MaisonPortal" type="ASP.ess_hr_esslogisticselectronicaddress_aspx">
+  <filedeps>
+    <filedep name="/ESS/HR/ESSLogisticsElectronicAddress.aspx" />
+    <filedep name="/Modal.Master" />
+  </filedeps>
+</preserve>

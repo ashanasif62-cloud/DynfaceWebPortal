@@ -1,0 +1,78 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Modal.Master" AutoEventWireup="true" CodeBehind="TASAttendanceRegister_EditRecord.aspx.cs" Inherits="DynamicsPortal.TASAttendanceRegister_EditRecord" %>
+
+
+<asp:Content ID="headContent" ContentPlaceHolderID="HeadContent" runat="server">
+</asp:Content>
+
+<asp:Content ID="pageContent" ContentPlaceHolderID="PageContent" runat="server">
+    <table class="form-table">
+     <tr>
+         <td><span>Employee Id</span></td>
+         <td>
+             <asp:TextBox ID="txtEmployeeId" runat="server" ReadOnly="true" />
+         </td>
+     </tr>
+
+     <tr>
+         <td><span>Employee Name</span></td>
+         <td>
+             <asp:TextBox ID="txtEmployeeName" runat="server" ReadOnly="true" />
+         </td>
+     </tr>
+      <tr>
+         <td><span>Attendance Date</span></td>
+         <td>
+             <asp:TextBox ID="txtAttendanceDate" runat="server" Enabled ="false"  ReadOnly="true" />
+         </td>
+     </tr>
+
+     <tr>
+         <td><span>Clock In</span></td>
+         <td>
+             <asp:TextBox ID="txtClockIn" runat="server" TextMode="Time" />
+         </td>
+     </tr>
+
+     <tr>
+         <td><span>Clock Out</span></td>
+         <td>
+             <asp:TextBox ID="txtClockOut" runat="server" TextMode="Time" />
+         </td>
+     </tr>
+ <%--        <tr>
+    <td>
+        <span>Remarks</span>
+    </td>
+
+    <td>
+        <asp:TextBox ID="txtRemarks" runat="server" TextMode="MultiLine"></asp:TextBox>
+    </td>
+</tr>--%>
+        <tr>
+    <td>
+        <span>Remarks<span style="color:red">*</span></span>
+    </td>
+    <td>
+        <asp:TextBox ID="txtRemarks" runat="server" TextMode="MultiLine"></asp:TextBox>
+        <asp:RequiredFieldValidator 
+            ID="rfvRemarks" 
+            runat="server" 
+            ControlToValidate="txtRemarks" 
+            ErrorMessage="Remarks are required." 
+            ForeColor="Red" 
+            Display="Dynamic">
+        </asp:RequiredFieldValidator>
+    </td>
+</tr>
+
+ </table>
+
+    <div class="action-footer">
+      
+        <asp:LinkButton ID="btnUpdate_Submit" runat="server" OnClick="btnUpdate_SubmitClick">Update & Submit</asp:LinkButton>
+        <%--<asp:LinkButton ID="btnCancel" runat="server" OnClientClick="btnCancel_Click">Cancel</asp:LinkButton>--%>
+                <asp:LinkButton ID="btnCancel" runat="server" Text="Cancel" CausesValidation="False" OnClick="btnCancel_Click" />
+
+    </div>
+</asp:Content>
+      

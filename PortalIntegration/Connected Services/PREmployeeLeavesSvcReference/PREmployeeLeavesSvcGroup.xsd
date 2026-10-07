@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfPREmployeeLeavesSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PREmployeeLeavesSvcContract" nillable="true" type="tns:PREmployeeLeavesSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPREmployeeLeavesSvcContract" nillable="true" type="tns:ArrayOfPREmployeeLeavesSvcContract" />
+  <xs:complexType name="PREmployeeLeavesSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Balance" type="xs:decimal" />
+          <xs:element minOccurs="0" name="BalanceLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BenefitDeductionRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EarningRefRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="Eligibility" type="xs:decimal" />
+          <xs:element minOccurs="0" name="EligibilityLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeIdLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeNameLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EntitlementRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="LeaveCategory" type="tns:PRLeaveCategory" />
+          <xs:element minOccurs="0" name="LeaveCategoryLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeaveCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeaveCodeLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeaveDays" type="xs:decimal" />
+          <xs:element minOccurs="0" name="LeaveDaysLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeaveEndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LeaveEndDateLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeaveReqDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LeaveReqDateLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeaveReqId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeaveReqIdLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeaveRequestStatus" type="tns:PRLeaveRequestStatus" />
+          <xs:element minOccurs="0" name="LeaveRequestStatusLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeaveStartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LeaveStartDateLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="PersonnelNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Quota" type="xs:decimal" />
+          <xs:element minOccurs="0" name="QuotaLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReasonLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="ReplacementWorkerId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TableId" type="xs:int" />
+          <xs:element minOccurs="0" name="WFStatus" type="tns:PRWFStatus" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PREmployeeLeavesSvcContract" nillable="true" type="tns:PREmployeeLeavesSvcContract" />
+  <xs:simpleType name="PRLeaveCategory">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FullLeave" />
+      <xs:enumeration value="HalfLeave" />
+      <xs:enumeration value="ShortLeave" />
+      <xs:enumeration value="EarlyOut" />
+      <xs:enumeration value="LateArrival" />
+      <xs:enumeration value="Excuse" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PRLeaveCategory" nillable="true" type="tns:PRLeaveCategory" />
+  <xs:simpleType name="PRLeaveRequestStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Pending" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Canceled" />
+      <xs:enumeration value="Completed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PRLeaveRequestStatus" nillable="true" type="tns:PRLeaveRequestStatus" />
+  <xs:simpleType name="PRWFStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSubmitted" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="Rejected" />
+      <xs:enumeration value="Submitted" />
+      <xs:enumeration value="ChangeRequest" />
+      <xs:enumeration value="PendingCancellation" />
+      <xs:enumeration value="Returned" />
+      <xs:enumeration value="PendingApproval" />
+      <xs:enumeration value="PendingComplete" />
+      <xs:enumeration value="WorkflowCompleted" />
+      <xs:enumeration value="Completed" />
+      <xs:enumeration value="Failed" />
+      <xs:enumeration value="Blank" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PRWFStatus" nillable="true" type="tns:PRWFStatus" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="05943059-0801-45a1-aaaa-10639fadd7b2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/PRAdvanceTypesSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup6.xsd" MetadataType="Schema" ID="7b619f95-274e-43cf-9723-b4c2bfa47ed4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup.disco" MetadataType="Disco" ID="0686f7a5-9e7d-45aa-ba94-00d48bb416b4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?disco" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup4.xsd" MetadataType="Schema" ID="b56a8242-5523-4fff-ae06-380b9d676ab1" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup1.xsd" MetadataType="Schema" ID="f2fd3f2a-0e0c-46e2-881b-402d53d9dc06" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup5.xsd" MetadataType="Schema" ID="0cafa9c6-1e0c-4c19-aefc-bfbffe91159a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup3.xsd" MetadataType="Schema" ID="d691d8d6-5878-4e1e-8ea6-932901f2e7fa" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup.xsd" MetadataType="Schema" ID="8e47dac0-1e16-41bb-bf4b-0d1dbd8a72f1" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup1.wsdl" MetadataType="Wsdl" ID="3e1b89d2-d2a4-47ae-ac27-66bd26e6fc70" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup.wsdl" MetadataType="Wsdl" ID="6f759453-c60a-4273-ac4d-612a570aec52" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?wsdl" />
+    <MetadataFile FileName="PRAdvanceTypesSvcGroup2.xsd" MetadataType="Schema" ID="98036ba5-c2c8-476e-a624-c60474799df1" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PRAdvanceTypesSvcGroup?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

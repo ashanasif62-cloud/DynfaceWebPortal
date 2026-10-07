@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferJournalLinesGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfTransferJournalLinesContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TransferJournalLinesContract" nillable="true" type="tns:TransferJournalLinesContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransferJournalLinesContract" nillable="true" type="tns:ArrayOfTransferJournalLinesContract" />
+  <xs:complexType name="TransferJournalLinesContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AllInventStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AllLocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AllSiteId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BlockUserGroupId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CWQty" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CWUnit" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CostAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CostMarkup" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CostPrice" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DeletePostedLines" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DetailSummary" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventBatchId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventColorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventConfigId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventLicensePlateId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventLocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventOwnerId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventSerialId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventSiteId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventSizeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventStatusId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventStyleId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventVersionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromInventoryStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromSite" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromWMSLocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromWMSPalletId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromWarehouse" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InUse" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventDimId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventLocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventSiteId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventTransId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JournalIdOriginal" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JournalOriginType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JournalPostedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="JournalType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LineNum" type="xs:decimal" />
+          <xs:element minOccurs="0" name="NumOfLines" type="xs:int" />
+          <xs:element minOccurs="0" name="PdsCopyBatchAttrib" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Posted" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostedUserId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PriceUnit" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Qty" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RecIdHeader" type="xs:long" />
+          <xs:element minOccurs="0" name="Reservation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SystemBlocked" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventBatchId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventColorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventConfigId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventDimId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventLicensePlateId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventLocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventOwnerId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventSerialId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventSiteId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventSizeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventStatusId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventStyleId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventTransId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventVersionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToInventoryStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToSite" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToWMSLocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToWMSPalletId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToWarehouse" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TransDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UnitQty" type="xs:decimal" />
+          <xs:element minOccurs="0" name="UsedByUser" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Voucher" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VoucherChange" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VoucherDraw" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TransferJournalLinesContract" nillable="true" type="tns:TransferJournalLinesContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

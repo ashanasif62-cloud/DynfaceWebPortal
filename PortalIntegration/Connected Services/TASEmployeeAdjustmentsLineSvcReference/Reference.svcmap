@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="78322dcb-4c4f-4806-aebf-c95f1b3fdf81" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASEmployeeAdjustmentLinesGroup/mex/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="tempuri.org.wsdl" MetadataType="Wsdl" ID="c4c12bb1-e753-4681-bcab-50695c69c670" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASEmployeeAdjustmentLinesGroup/mex/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="a4b783ac-621e-484b-be21-27ff7939bda9" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASEmployeeAdjustmentLinesGroup/mex/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="1985fc9f-9109-4023-96c6-374ee5832b9c" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASEmployeeAdjustmentLinesGroup/mex/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="0035dbf1-dd29-4e73-9835-3d69537c77f2" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASEmployeeAdjustmentLinesGroup/mex/mex" />
+    <MetadataFile FileName="tempuri.org.xsd" MetadataType="Schema" ID="80e24773-f196-4600-91e9-87ec3204cb99" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASEmployeeAdjustmentLinesGroup/mex/mex" />
+    <MetadataFile FileName="datacontracts.xsd" MetadataType="Schema" ID="5e811105-38b7-42d4-8c41-03179ef14270" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASEmployeeAdjustmentLinesGroup/mex/mex" />
+    <MetadataFile FileName="Dynamics.AX.Application.xsd" MetadataType="Schema" ID="62a9ae35-2aac-4fc0-9099-e8345a8f3611" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASEmployeeAdjustmentLinesGroup/mex/mex" />
+    <MetadataFile FileName="Microsoft.Dynamics.Ax.Xpp.xsd" MetadataType="Schema" ID="a62e3d26-1ac7-43bf-a911-2577fa34327a" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASEmployeeAdjustmentLinesGroup/mex/mex" />
+    <MetadataFile FileName="Microsoft.Dynamics.AX.KernelInterop.xsd" MetadataType="Schema" ID="d51d0e1f-07df-45da-8330-16a5a7934cbc" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASEmployeeAdjustmentLinesGroup/mex/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

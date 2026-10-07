@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ca9fdd8b-cac1-4312-afd8-974c21ad6492" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup1.disco" MetadataType="Disco" ID="084c0c61-4839-42d2-9a3e-61eb415a4a9b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?disco" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup71.xsd" MetadataType="Schema" ID="c0327317-c350-445c-9ae1-e9bdef7cadcc" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup76.xsd" MetadataType="Schema" ID="1666c742-1565-4142-8e88-36fff1e252b8" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup2.wsdl" MetadataType="Wsdl" ID="8de8335b-8a77-44bc-ad77-e1dd0936927d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?wsdl" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup75.xsd" MetadataType="Schema" ID="69d085ba-1141-4be4-87cf-c197e005f0b8" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup7.xsd" MetadataType="Schema" ID="a0ee2848-d5cb-4569-bdca-27873ed85178" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup74.xsd" MetadataType="Schema" ID="18250819-cff8-4873-a3c1-a775b1ac4d35" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup72.xsd" MetadataType="Schema" ID="10d89d8f-e0fc-4194-ac98-96bcd2e67506" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup73.xsd" MetadataType="Schema" ID="3438a24c-7cd8-4be0-bfce-10ab4fcc9a1c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup21.wsdl" MetadataType="Wsdl" ID="96003cf8-21b7-4f18-958d-a1c514481f40" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

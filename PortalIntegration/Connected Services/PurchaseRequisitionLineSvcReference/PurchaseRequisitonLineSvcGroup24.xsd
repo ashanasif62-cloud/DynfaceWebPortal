@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/PurchaseRequisitonLineSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfPurchaseRequisitonLineSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PurchaseRequisitonLineSvcContract" nillable="true" type="tns:PurchaseRequisitonLineSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPurchaseRequisitonLineSvcContract" nillable="true" type="tns:ArrayOfPurchaseRequisitonLineSvcContract" />
+  <xs:complexType name="PurchaseRequisitonLineSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountingDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="AssetGroup" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BudgetReservationLine" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BuyingLegalEntity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CategoryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ChargesonDiscount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ConfigId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConsolidationOppurtunityId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConsolidationOppurtunityIdStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DefaultDimension" type="xs:long" />
+          <xs:element minOccurs="0" name="DeliveryAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeliveryAttention" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeliveryPostalAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartmentName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartmentRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="Discount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DiscountPercent" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ExternamItemID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InternetAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventBatchId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventColorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventLocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventSerialId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventSiteId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventSizeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventStatusId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventStyle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Invoice" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LicensePlateId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LineAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="LineType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OperatingUnitNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PrePaymentRequired" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreventPartialDeliveryFlag" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PriceUnit" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Price_x0026_DiscountTransfer" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProcurementCategory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProjSalesCurrencyId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProjSalesPrice" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ProjSalesUnit" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProjSalesUnitOfMeasure" type="xs:long" />
+          <xs:element minOccurs="0" name="ProjectItemTaxGroupId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProjectTaxGroupId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchPrice" type="xs:decimal" />
+          <xs:element minOccurs="0" name="PurchQty" type="xs:decimal" />
+          <xs:element minOccurs="0" name="PurchReqId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchUnitOfMeasure" type="xs:long" />
+          <xs:element minOccurs="0" name="PurchUnitofMeasureCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchaseAgreementId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchaseAgreementStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchaseOrder" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RFQRequirement" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="ReceivingOperatingUnit" type="xs:long" />
+          <xs:element minOccurs="0" name="RequestedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RequestforQuotationCase" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestforQuotationCaseStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequisitionStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Requisitioner" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SequenceNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="SupplierAuxId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Unitofmeasuresymbol" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendAccount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PurchaseRequisitonLineSvcContract" nillable="true" type="tns:PurchaseRequisitonLineSvcContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

@@ -1,0 +1,1149 @@
+    <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DynamicsPortal.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="/distribution/img/favicon.png">
+    <!-- Site Title -->
+    <title id="siteTitle" runat="server">Maison Consulting & Solutions</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="/distribution/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css" />
+    <!-- spinners-->
+    <link href="/distribution/css/spinners.css" rel="stylesheet" />
+    <%--<link href="/distribution/css/animate.css" rel="stylesheet" />--%>
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="/distribution/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="/distribution/css/fontastic.css">
+    <link rel="stylesheet" href="/distribution/icons-reference/MaterialDesign-Webfont-master/css/materialdesignicons.css" />
+
+    <link rel="stylesheet" href="/distribution/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+
+    <!-- clalnder theme stylesheet-->
+    <link href="/distribution/vendor/calendar-master/css/theme2.css" rel="stylesheet" />
+
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="/distribution/css/style.default.css" id="themeStylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/distribution/css/style.blue.css" />
+    <!--style.pink  style.red     style.sea       style.violet         style.blue-->
+    <link rel="stylesheet" href="/distribution/css/custom.css">
+
+    <!-- ✅ ADD THESE TWO LINES HERE -->
+    <link rel="stylesheet" href="/distribution/css/style.listpage-modern.css">
+
+        <style>
+/* Round checkbox styling */
+.round-checkbox input[type="checkbox"],
+input#chk_SelectAll {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #333;
+  border-radius: 50%; /* Creates round shape */
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  outline: none; /* Removes default focus outline */
+}
+
+/* Checked state with blue background */
+.round-checkbox input[type="checkbox"]:checked,
+input#chk_SelectAll:checked {
+  background-color: #007BFF; /* Blue background */
+  border-color: #007BFF;
+}
+
+/* Focus state for accessibility */
+.round-checkbox input[type="checkbox"]:focus,
+input#chk_SelectAll:focus {
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Blue focus ring */
+}
+/* ── Row selection highlight ── */
+table.table tbody tr.row-selected {
+    background-color: #E8F1FB !important;
+    outline: 1.5px solid #185FA5;
+    outline-offset: -1px;
+}
+
+table.table tbody tr.row-selected td {
+    color: #0d3f6e;
+}
+
+/* smooth transition */
+table.table tbody tr {
+    transition: background-color 0.15s ease;
+    cursor: pointer;
+}
+.page-title {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+</style>
+
+
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server" style="padding: 5px">
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div>
+    <!-- Preloader End -->
+
+    <form id="form1" runat="server">
+        <asp:HiddenField ID="hdnGridSortable" runat="server" />
+        <asp:HiddenField ID="hdnGridPaginationable" runat="server" />
+
+        <div id="modal_dialog" style="display: none;" runat="server">
+            <iframe style="margin: 0px; border: none; width: 100%; height: 100%;"></iframe>
+        </div>
+
+        <!-- Left Side Navbar Start-->
+        <nav id="nav_userMenuItems" runat="server" class="main-menu mCustomScrollbar" data-mcs-axis="y" data-mcs-theme="blue">
+            <ul>
+                <li>
+                    <a style ="width: 100%">
+                        <i class="mdi mdi-menu" style="float:left"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/Default.aspx"><i class="mdi mdi-home-outline"></i><span class="nav-text">Home</span></a></li>
+            </ul>
+            <ul id="userMenuItems_fav" runat="server">
+            </ul>
+            <ul id="userMenuItems_recent" runat="server">
+            </ul>
+        </nav>
+
+        <nav class="side-navbar shrink">
+            <div class="side-navbar-wrapper">
+                <!-- Sidebar Header    -->
+                <div class="sidenav-header d-flex align-items-center justify-content-center">
+                    <!-- User Info-->
+                    <div style="display: none;" class="sidenav-header-inner text-center">
+                    </div>
+                    <!-- Small Brand information, appears on minimized sidebar-->
+                    <div class="sidenav-header-logo">
+                        <a class="brand-small text-center" href="http://maisonconsulting.com/">
+                            <img id="companyLogo_img" runat="server" src="/distribution/img/favicon.png" />
+                        </a>
+                    </div>
+                </div>
+                <!-- Sidebar Navigation Menus-->
+            </div>
+        </nav>
+
+        <!-- Left Side Navbar End -->
+
+        <div class="page active">
+            <!--Top Navbar Start-->
+            <header class="header">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-holder d-flex align-items-center justify-content-between">
+                            <div class="navbar-header">
+                                <a id="toggle-btn" style="display: none;" href="#" class="menu-btn"><i class="icon-bars"></i></a>
+                                <a href="/Default.aspx" class="navbar-brand">
+                                    <div class="brand-text d-none d-md-inline-block">
+                                        <span id="companyLogo_title" runat="server">Finance and Operations</span>
+                                    </div>
+                                </a>
+<%--                                <div class="separator-vertical"></div>
+                                <a class="navbar-brand" href="/Default.aspx">
+                                    <div class="brand-text d-none d-md-inline-block">
+                                        <span>Employee Self Service</span>
+                                    </div>
+                                </a>--%>
+                                <div class="separator-vertical"></div>
+                                <div id="breadcrumbPanel" class="navbar-brand d-none d-md-inline-block">
+                                </div>
+                                <!-- Breadcrumb-->
+                            </div>
+
+                            <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                                <!-- Notifications dropdown-->
+                                <li class="nav-item dropdown">
+                                    <a id="companies" class="nav-link navbar-top" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span runat="server" id="currentCompanyId"></span>
+                                    </a>
+                                    <ul id="companyDetails" runat="server" aria-labelledby="companies" class="dropdown-menu">
+                                    </ul>
+                                </li>
+                                <!-- Log out-->
+                                <li class="nav-item">
+                                    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                                        <AnonymousTemplate>
+                                            <a class="nav-link logout navbar-top" href="/Administration/UserLogin.aspx" id="HeadLoginStatus" runat="server">
+                                                <span class="d-none d-sm-inline-block">Login</span><i class="mdi mdi-login"></i>
+                                            </a>
+                                        </AnonymousTemplate>
+                                        <LoggedInTemplate>
+                                            <a href="javascript:;" runat="server" class="nav-link logout navbar-top" data-toggle="dropdown" aria-expanded="false">
+                                                <img id="imgUser" runat="server" class="img-fluid rounded-circle mCS_img_loaded"
+                                                    style="width: 18px; height: 18px;"
+                                                    src="/distribution/img/User-flat.png" alt="" />
+
+                                                <asp:LoginName ID="HeadLoginName" runat="server" />
+                                                <span class=" fa fa-angle-down"></span>
+                                            </a>
+                                            <ul aria-labelledby="notifications" class="dropdown-menu">
+<%--                                                <li>
+                                                    <a href="javascript:;" class="dropdown-item user-login" onclick="javascript: return openPopupPanel('/Administration/User Management/SysUserInfo_ChangePassword.aspx');">
+                                                        <i class="mdi mdi-file-tree"></i>
+                                                        <span class="nav-text">Change Password</span></a>
+                                                </li>--%>
+                                                <li>
+                                                    <asp:LoginStatus ID="HeadLoginStatus" runat="server" class="dropdown-item user-login" Style="text-align: left;" LogoutAction="Redirect" LogoutText="Logout" LogoutPageUrl="/Administration/UserLogin.aspx" />
+                                                </li>
+                                            </ul>
+                                        </LoggedInTemplate>
+                                    </asp:LoginView>
+                                </li>
+                                <%-- <li class="nav-item"><a href="login.html" class="nav-link logout navbar-top"><span class="d-none d-sm-inline-block">Logout</span><i class="mdi mdi-power"></i></a></li>--%>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!--Top Navbar End-->
+
+            <!-- Contant Area Start-->
+            <div class="container-fluid">
+                <div class="page-area">
+
+                   <!-- Action Panel Start-->
+<div id="actionPanelContainer" runat="server" class="action-panel d-flex align-items-center pl-3">
+
+    <asp:ContentPlaceHolder ID="ActionPanel" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <div class="d-flex ml-auto">
+        <div class="action-items" data-toggle="tooltip" title="Refresh">
+            <a onclick="javascript:refreshPage();">
+                <i class="mdi mdi-refresh"></i>
+            </a>
+        </div>
+
+        <div class="action-items" data-toggle="tooltip" title="Fullscreen">
+            <a onclick="javascript:toggleFullscreen();">
+                <i class="mdi mdi-fullscreen"></i>
+            </a>
+        </div>
+    </div>
+
+</div>
+                    <!-- Action Panel End-->
+
+               <%--     <!-- Notification Panel Start-->
+                    <div id="notificationPanel" style="display: none;" class="notification-panel">
+                        <div class="notification-container float-left">
+                            <p></p>
+                        </div>
+                        <div class="float-right">
+                            <div class="action-items" data-toggle="tooltip" title="Close"><a onclick="$('#notificationPanel').hide();"><i class="mdi mdi-close"></i></a></div>
+                        </div>
+                    </div>--%>
+                    <!-- Notification Panel End-->
+
+                    <!-- Page Panel Start-->
+                    <div class="page-contents">
+                         <div class="card card-header">
+                            <div class="page-title" style="display: inline-block;" id="pageTitle" runat="server">Page</div>
+
+                            <div id="searchPanel" class="search-container" style="display: none; display: inline-block; position: absolute; right: 35px;">
+                                <input class="search-input" style="display: none;" type="text" data-table="searchable" placeholder="Search">
+                            </div>
+                            <asp:LinkButton ID="btnFavourite" Visible="true" runat="server" CssClass="btn-favourite" />
+                            <%-- Text="Add to favourite" data-toggle="tooltip" title="Add to favourite" --%>
+                        </div>
+                     <%--   <div class="page-placeholder mCustomScrollbar" data-mcs-axis="yx" data-mcs-theme="dark">--%>
+                        <div class="page-placeholder" style ="overflow: auto !important; padding: 0px 10px !important">
+                            <asp:ContentPlaceHolder ID="PageContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <!-- Page Panel End-->
+
+                </div>
+            </div>
+            <!-- Contant Area End-->
+            <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 9999; text-align: center;">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 18px;">
+                    <i class="fa fa-spinner fa-spin fa-2x"></i>
+                    <br />
+                    Processing, please wait...
+                </div>
+            </div>
+
+            <!-- Footer Section Start-->
+            <%-- <footer class="main-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>&copy; Maison Consulting & Solutions <%= DateTime.Now.Year %> | All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>--%>
+            <!-- Footer Section End-->
+
+        </div>
+              <div class="modal fade" id="globalDeleteModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 1px solid #e0e0e0; padding: 14px 16px;">
+                <h4 class="modal-title" style="font-size: 15px; font-weight: 600; color: #185FA5;">
+                    Confirm Delete
+                </h4>
+            </div>
+            <div class="modal-body" style="padding: 20px 16px;">
+                <p id="globalDeleteModalMessage" style="margin: 0; color: #444; font-size: 14px;">
+                    This action cannot be undone.
+                </p>
+            </div>
+            <div class="modal-footer" style="border-top: 1px solid #e0e0e0; padding: 12px 16px;">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="btnGlobalConfirmDelete"
+                    style="background:#185FA5; border-color:#185FA5;">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- JavaScript files-->
+        <script src="/distribution/js/jquery-3.3.1.min.js"></script>
+        <script src="/distribution/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="/distribution/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/distribution/vendor/jquery-validation/jquery.validate.min.js"></script>
+        <script src="/distribution/vendor/chart.js/Chart.min.js"></script>
+        <script src="/distribution/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <%--<script src="/distribution/js/sort-paginationTable.js"></script>--%>
+        <script src="/distribution/css/sort-pagination-modern.js"></script>
+        <script src="/distribution/js/custom.js"></script>
+        <script src="/distribution/js/jquery-ui-timepicker-addon.js"></script>
+        <script src="/distribution/vendor/calendar-master/js/caleandar.js"></script>
+
+        <script>
+            var GlobalDeleteConfirm = (function () {
+                var _callback = null;
+                document.getElementById('btnGlobalConfirmDelete').addEventListener('click', function () {
+                    $('#globalDeleteModal').modal('hide');
+                    if (typeof _callback === 'function') { _callback(); _callback = null; }
+                });
+                $('#globalDeleteModal').on('hidden.bs.modal', function () { _callback = null; });
+                return {
+                    show: function (options) {
+                        options = options || {};
+                        var msg = document.getElementById('globalDeleteModalMessage');
+                        if (msg) msg.textContent = options.message || 'This action cannot be undone.';
+                        _callback = options.onConfirm || null;
+                        $('#globalDeleteModal').modal('show');
+                    }
+                };
+            })();
+        </script>
+        <script type="text/javascript">
+            try {
+                Chart.plugins.register({
+                    afterDraw: function (chart) {
+                        var noData = false;
+                        //debugger;
+                        if (chart.data.datasets.length === 0)
+                            noData = true;
+                        if (chart.data.datasets.length > 0)
+                            if (chart.data.datasets[0].data.length === 0)
+                                noData = true;
+
+                        if (noData) {
+                            // No data is present
+                            var chartCTX = chart.chart.ctx;
+                            var width = chart.chart.width;
+                            var height = chart.chart.height;
+                            chart.clear();
+
+                            chartCTX.save();
+                            chartCTX.textAlign = 'center';
+                            chartCTX.textBaseline = 'middle';
+                            chartCTX.font = "12px 'Segoe UI'";//"Segoe UI", tahoma, 
+                            chartCTX.fillStyle = "black";
+                            chartCTX.fillText('No data to display', width / 2, height / 2);
+                            chartCTX.restore();
+                        }
+                    }
+                });
+            }
+            catch (ex) {
+                var errorMsg = ex;
+                //alert(errorMsg);
+            }
+
+            $(document).ready(function () {
+                try {
+                    $("table[id*='gridView'] th").each(function () {
+                        var $th = $(this);
+                        var $allThs = $th.closest('thead').find('th');
+                        var indexInRow = $allThs.index($th);
+                        var isFirst = (indexInRow === 0);
+                        var isLast = (indexInRow === $allThs.length - 1);
+
+                        // CSS already controls these — skip them entirely
+                        if (isFirst || isLast) return;
+
+                        // Strip trailing newlines/icons from innerText before measuring
+                        var rawText = (this.innerText || '').replace(/[\uE000-\uF8FF\n\r\t]/g, '').trim();
+
+                        var columnLength = rawText.length;
+
+                        if (rawText === 'Employee' || rawText === 'Employee Name') {
+                            columnLength = 130;
+                        }
+                        else if (columnLength === 0) {
+                            columnLength = 20;
+                        }
+                        else if (columnLength > 0 && columnLength < 13) {
+                            columnLength = (columnLength * 7) + 15;
+                        }
+                        else if (columnLength >= 13) {
+                            columnLength = (columnLength * 7) + 10;
+                        }
+
+                        var iconExtra = 40;
+                        columnLength += iconExtra;
+
+                        // Cap at 220px — prevents long headers from over-stretching
+                        if (columnLength > 220) columnLength = 220;
+
+                        $th.css({ "min-width": columnLength + "px" });
+                    });
+
+                } catch (ex) {
+                    console.error(ex);
+                }
+            });
+
+
+
+
+            $(document).ready(function () {
+                var $searchPanel = $("#searchPanel");
+                $searchPanel.show();
+
+                var actionPanelContainer = $("#actionPanelContainer");
+                if (actionPanelContainer.length > 0) {
+                    $(".page-contents").css({
+                        "height": "calc(100vh - 48px)",
+                        "overflow": "hidden",        // ← CHANGED: hidden, not scroll/visible
+                        "width": "100%",
+                        "max-width": "100%",
+                        "box-sizing": "border-box"
+                    });
+                    $(".page-placeholder").css({
+                        "height": "calc(100vh - 128px)",
+                        "overflow-x": "auto",        // ← use auto not scroll (avoids ghost scrollbar)
+                        "overflow-y": "auto",
+                        "width": "100%",
+                        "max-width": "100%",
+                        "box-sizing": "border-box"
+                    });
+                } else {
+                    $(".page-contents").css({
+                        "height": "calc(100vh - 48px)",
+                        "overflow": "hidden",        // ← CHANGED: was "visible", kills child scroll
+                        "width": "100%",
+                        "max-width": "100%",
+                        "box-sizing": "border-box"
+                    });
+                    $(".page-placeholder").css({
+                        "height": "calc(100vh - 48px)",
+                        "overflow-x": "auto",
+                        "overflow-y": "auto",
+                        "width": "100%",
+                        "max-width": "100%",
+                        "box-sizing": "border-box"
+                    });
+                }
+
+            });
+
+            $(function () {
+                $("#mydiv").draggable();
+            });
+        </script>
+                <script>
+                    function applyAutocomplete() {
+                        $('.filterable-dropdown').each(function () {
+                            console.log("The Function is Running");
+                            var $dropdown = $(this);
+
+                            // Avoid adding input twice
+                            if ($dropdown.next('.autocomplete-input').length === 0) {
+                                var options = [];
+
+                                $dropdown.find('option').each(function () {
+                                    if ($(this).val()) {
+                                        options.push({
+                                            label: $(this).text(),
+                                            value: $(this).val()
+                                        });
+                                    }
+                                });
+
+                                var placeholderText = '';
+                                var dropdownId = $dropdown.attr('id')?.toLowerCase();
+
+                                switch (dropdownId) {
+                                    case "ddluserid":
+                                        placeholderText = '-- Select User --';
+                                        break;
+                                    case "ddlroleid":
+                                        placeholderText = '-- Select Role --';
+                                        break;
+                                }
+
+                                var $input = $('<input type="text" class="autocomplete-input form-control" />')
+                                    .attr('placeholder', placeholderText)
+                                    .val($dropdown.val()) // show only ItemId
+                                    .insertAfter($dropdown)
+                                    .autocomplete({
+                                        source: options,
+                                        minLength: 0,
+                                        select: function (event, ui) {
+                                            $dropdown.val(ui.item.value);
+                                            $dropdown.trigger('change'); // ✅ ASP.NET postback trigger
+                                        }
+                                    })
+                                    .on("focus", function () {
+                                        $(this).autocomplete("search", ""); // Show all options on focus
+                                    });
+
+                                $dropdown.hide();
+                            }
+                        });
+                    }
+
+                    // Initialize on document ready and after UpdatePanel postbacks
+                    $(document).ready(function () {
+                        applyAutocomplete();
+
+                        if (Sys && Sys.WebForms && Sys.WebForms.PageRequestManager) {
+                            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(applyAutocomplete);
+                        }
+                    });
+                </script>
+
+<%--        <script>
+    $(document).ready(function () {
+
+        function loadEvents(year, month) {
+            var fromDate = new Date(year, month, 1);
+            var toDate = new Date(year, month + 1, 0);
+
+            $.ajax({
+                type: "POST",
+                url: "/default.aspx/GetRegisterDetails",
+                data: JSON.stringify({
+                    fromDate: fromDate.toISOString().split('T')[0],
+                    toDate: toDate.toISOString().split('T')[0]
+                }),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    var rawEvents = JSON.parse(response.d);
+
+                    var events = rawEvents.map(function (evt) {
+                        var d = new Date(evt.Date);
+                        return {
+                            Date: new Date(d.getFullYear(), d.getMonth(), d.getDate()),
+                            Title: evt.Title,
+                            Link: evt.Link || "#",
+                            BgColor: evt.BgColor || null,
+                            Color: evt.Color || null,
+                            CssClass: evt.CssClass || null
+                        };
+                    });
+
+                    var element = document.getElementById('caleandar');
+                    element.innerHTML = ""; // clear previous calendar
+
+                    var settings = {
+                        NavShow: true,
+                        DateTimeShow: true,
+                        onMonthChange: function (year, month) {
+                            loadEvents(year, month);
+                        }
+                    };
+
+                    caleandar(element, events, settings);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error loading calendar data:", error);
+                }
+            });
+        }
+
+        var today = new Date();
+        loadEvents(today.getFullYear(), today.getMonth());
+    });
+</script>--%>
+
+
+
+
+<%--        <script>
+
+            $(document).ready(function () {
+                //new Date(2019, 1, 27) new Date("2019-01-07")
+                var events = [
+                    { 'Date': new Date(2025, 8, 7), 'Title': 'ClockIn : Blank<br/>ClockOut:Blank<br/>Absent: Yes<br/>Leave: No', 'Link': '#', BgColor: "#FF2800", Color: "#000" },
+                    { 'Date': new Date(2025, 8, 15), 'Title': 'Absent', 'Link': '#', BgColor: "#44FF00", Color: "#000" },
+                    { 'Date': new Date(2025, 8, 25), 'Title': 'Absent', 'Link': '#', BgColor: "#44FF00", Color: "#000" }
+                ];
+                var settings = {
+                    NavShow: true,
+                    DateTimeShow: true
+                    //Color: '',
+                    //LinkColor: '',
+                    //NavShow: true,
+                    //NavVertical: false,
+                    //NavLocation: '',
+                    //DateTimeShow: true,
+                    //DateTimeFormat: 'mmm, yyyy',
+                    //DatetimeLocation: '',
+                    //EventClick: '',
+                    //EventTargetWholeDay: false,
+                    //DisabledDays: []
+                    //,ModelChange: model
+                };
+                var element = document.getElementById('caleandar');
+
+                if (element)
+                    caleandar(element, events, settings);
+            });
+        </script>--%>
+        <script>
+            let escBlocked = false;
+
+            function showOverlay() {
+                document.getElementById("overlay").style.display = "block";
+                escBlocked = true;
+                disablePage();
+            }
+
+            function hideOverlay() {
+                document.getElementById("overlay").style.display = "none";
+                escBlocked = false;
+                enablePage();
+            }
+
+            function disablePage() {
+                document.body.style.pointerEvents = 'none';
+                document.body.style.opacity = '0.6';
+            }
+
+            function enablePage() {
+                document.body.style.pointerEvents = '';
+                document.body.style.opacity = '';
+            }
+
+            // Block ESC key while processing
+            document.addEventListener("keydown", function (event) {
+                if (escBlocked && event.key === "Escape") {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+            }, true);
+        </script>
+           <script>
+               // Save selected page number before unload
+               document.addEventListener("click", function (e) {
+                   if (e.target.classList.contains("pageNumber")) {
+                       const page = e.target.textContent.trim();
+                       sessionStorage.setItem("pageNum", page);
+                   }
+               });
+
+               // Restore selected page after load
+               window.addEventListener("load", function () {
+                   const savedPage = sessionStorage.getItem("pageNum");
+                   if (!savedPage) return;
+
+                   // Retry logic to wait until pagination elements exist
+                   const tryRestore = () => {
+                       const pages = document.querySelectorAll(".pageNumber");
+                       if (pages.length > 0) {
+                           const targetPage = Array.from(pages).find(el => el.textContent.trim() === savedPage);
+                           if (targetPage && !targetPage.classList.contains("active")) {
+                               targetPage.click(); // simulate click on the saved page
+                           }
+                       } else {
+                           // Try again after 200ms
+                           setTimeout(tryRestore, 200);
+                       }
+                   };
+
+                   tryRestore(); // initial try
+               });
+</script>
+        <script>
+            function bindPageNumPersistence() {
+                // Save selected page number
+                document.querySelectorAll(".pageNumber").forEach(el => {
+                    el.addEventListener("click", function () {
+                        const page = this.textContent.trim();
+                        sessionStorage.setItem("pageNum", page);
+                    });
+                });
+
+                // Restore selected page number
+                const savedPage = sessionStorage.getItem("pageNum");
+                if (!savedPage) return;
+
+                const tryRestore = () => {
+                    const pages = document.querySelectorAll(".pageNumber");
+                    if (pages.length > 0) {
+                        const targetPage = Array.from(pages).find(el => el.textContent.trim() === savedPage);
+                        if (targetPage && !targetPage.classList.contains("active")) {
+                            targetPage.click();
+                        }
+                    } else {
+                        setTimeout(tryRestore, 200);
+                    }
+                };
+                tryRestore();
+            }
+
+            // Run on first page load
+            document.addEventListener("DOMContentLoaded", bindPageNumPersistence);
+
+            // Run after every UpdatePanel partial postback
+            if (typeof Sys !== "undefined" && Sys.WebForms && Sys.WebForms.PageRequestManager) {
+                Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function () {
+                    bindPageNumPersistence();
+                });
+            }
+        </script>
+
+
+    </form>
+    <script>
+        function showAJAXOverlay() {
+            if (window.suppressOverlay) return;
+            var overlay = document.getElementById("overlay");
+            if (overlay) {
+                overlay.style.display = "block";
+            }
+            escBlocked = true;
+        }
+
+        function hideAJAXOverlay() {
+            window.suppressOverlay = false;
+            var overlay = document.getElementById("overlay");
+            if (overlay) {
+                overlay.style.display = "none";
+            }
+            escBlocked = false;
+        }
+
+    </script>
+    <script type="text/javascript">
+        function applyUpButtonsStyle() {
+            var el = document.getElementById("ActionPanel_updButtons");
+            if (el) {
+                el.style.display = "contents";
+            }
+        }
+
+        // Run on page load
+        window.onload = function () {
+            applyUpButtonsStyle();
+        };
+
+        // Run after every partial postback
+        if (typeof (Sys) !== "undefined" && Sys.WebForms && Sys.WebForms.PageRequestManager) {
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function () {
+                applyUpButtonsStyle();
+            });
+        }
+    </script>
+    <script>
+        function showMenu(args) {
+            //debugger;
+            $(args).parent().parent().find(".dropdown-panel").toggleClass("show");
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menu = document.querySelector(".main-menu");
+            if (!menu) return;
+
+            const allUls = menu.querySelectorAll("ul");
+            const topUl = allUls[0]; // first UL (hamburger toggle)
+
+            // ── 1. RESTORE expanded state from sessionStorage ──────────────
+            if (sessionStorage.getItem("navMenuExpanded") === "true") {
+                menu.classList.add("expanded");
+            }
+
+            // ── 2. HAMBURGER always toggles expand/collapse ───────────────
+            topUl.addEventListener("click", function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                menu.classList.toggle("expanded");
+                sessionStorage.setItem("navMenuExpanded",
+                    menu.classList.contains("expanded") ? "true" : "false");
+            });
+
+            // ── 3. ANY click inside the nav while COLLAPSED → expand it ──
+            //      This covers module icons, Home, etc. that live outside topUl.
+            //      When already expanded, only the hamburger (above) collapses it.
+            menu.addEventListener("click", function (e) {
+                if (!menu.classList.contains("expanded")) {
+                    // Nav is collapsed — expand it on any click
+
+                    // If it's a link, prevent navigation and stop propagation
+                    var anchor = e.target.closest("a");
+                    if (anchor) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }
+
+                    menu.classList.add("expanded");
+                    sessionStorage.setItem("navMenuExpanded", "true");
+                    return; // Sidebar expanded, don't process further
+                }
+
+                // Nav is expanded — set state to closed for the next page load
+                var anchor = e.target.closest("a");
+                if (anchor) {
+                    var href = anchor.getAttribute("href") || "";
+                    // Real nav links = not "#", not collapse toggles (start with #), not JS
+                    var isRealNav = href.length > 0 && href !== "#" &&
+                                   !href.startsWith("#") &&
+                                   href.indexOf("javascript") === -1;
+                    if (isRealNav) {
+                        sessionStorage.setItem("navMenuExpanded", "false");
+                    }
+                }
+            }, true);
+
+            // ── 4. Collapse ONLY when clicking completely outside the menu ─
+            let mousedownInsideMenu = false;
+            document.addEventListener("mousedown", function (e) {
+                mousedownInsideMenu = menu.contains(e.target);
+            });
+            document.addEventListener("touchstart", function (e) {
+                mousedownInsideMenu = menu.contains(e.target);
+            }, { passive: true });
+
+            document.addEventListener("click", function (e) {
+                if (mousedownInsideMenu) {
+                    return; // Ignore clicks/drags that originated inside the menu
+                }
+                if (!menu.contains(e.target)) {
+                    menu.classList.remove("expanded");
+                    sessionStorage.setItem("navMenuExpanded", "false");
+                }
+            });
+
+            // ── 5. Highlight the ACTIVE menu item ─────────────────────────
+            var currentPath = window.location.pathname.toLowerCase();
+
+            // Helper: normalize a path for comparison
+            function normalizePath(p) {
+                try {
+                    // Handle absolute URLs (openPopupPanel links have full paths)
+                    if (p.indexOf("://") !== -1) {
+                        p = new URL(p).pathname;
+                    }
+                } catch (ex) { }
+                var normalized = p.toLowerCase().replace(/\\/g, "/").replace(/\/+$/, "");
+                if (normalized === "" || normalized === "/") {
+                    return "/default.aspx";
+                }
+                return normalized;
+            }
+
+            var normalizedCurrent = normalizePath(currentPath);
+
+            // Find all <a> tags inside the nav (skip the top hamburger)
+            var navLinks = menu.querySelectorAll("li a");
+            var bestMatch = null;
+            var bestScore = 0; // High scores indicate better match quality
+            var bestMatchLength = 0;
+
+            navLinks.forEach(function (a) {
+                var href = (a.getAttribute("href") || "").trim();
+                if (!href || href === "#" || href.indexOf("javascript") !== -1) return;
+
+                var normalizedHref = normalizePath(href);
+                if (!normalizedHref) return;
+
+                // Check if the link resides inside Recent or Favourites shortcuts
+                var isShortcut = a.closest("#userMenuItems_recent") || a.closest("#userMenuItems_fav");
+
+                var score = 0;
+                var isExact = (normalizedCurrent === normalizedHref);
+                var isPrefix = (!isExact && normalizedCurrent.indexOf(normalizedHref) === 0);
+
+                if (isExact) {
+                    score = 3; // Highest priority for exact matches
+                } else if (isPrefix) {
+                    score = 2; // Secondary priority for prefix matches
+                } else {
+                    return; // No match at all
+                }
+
+                // Apply a small penalty to shortcut links (Recent/Favourites) to prioritize main menu items
+                if (isShortcut) {
+                    score -= 0.5;
+                }
+
+                // Determine if this match is superior to the current best match
+                if (score > bestScore) {
+                    bestMatch = a;
+                    bestScore = score;
+                    bestMatchLength = normalizedHref.length;
+                } else if (score === bestScore) {
+                    // Tie-breaker for prefix matches: prefer the longer, more specific prefix
+                    if (isPrefix && normalizedHref.length > bestMatchLength) {
+                        bestMatch = a;
+                        bestMatchLength = normalizedHref.length;
+                    }
+                }
+            });
+
+            if (bestMatch) {
+                // Add .active to the immediate <li>
+                var li = bestMatch.closest("li");
+                if (li) li.classList.add("active");
+
+                // Also expand the parent collapse panel (for nested items)
+                var parentCollapse = bestMatch.closest("ul.collapse");
+                if (parentCollapse) {
+                    parentCollapse.classList.add("show");
+                    var parentToggle = menu.querySelector(
+                        "a[href='#" + parentCollapse.id + "']"
+                    );
+                    if (parentToggle) {
+                        parentToggle.setAttribute("aria-expanded", "true");
+                    }
+                }
+
+               
+            }
+        });
+    </script>
+    <script>
+        /* ── Global row highlight on checkbox select ── */
+        document.addEventListener('change', function (e) {
+            var t = e.target;
+
+            /* Single row checkbox */
+            if (t && t.id && t.id.indexOf('chk_SelectSingle') !== -1) {
+                var row = t.closest('tr');
+                if (row) {
+                    if (t.checked) {
+                        row.classList.add('row-selected');
+                    } else {
+                        row.classList.remove('row-selected');
+                    }
+                }
+            }
+
+            /* Select-All checkbox */
+            if (t && t.id === 'chk_SelectAll') {
+                var allowedStatuses = ['draft', 'not submitted'];  /* ← same list */
+                var boxes = document.querySelectorAll('input[id*="chk_SelectSingle"]');
+                for (var i = 0; i < boxes.length; i++) {
+                    var row = boxes[i].closest('tr');
+                    if (!row) continue;
+
+                    /* Check the row's status before selecting */
+                    var statusCell = row.querySelector('.lp-badge');
+                    var statusText = statusCell
+                        ? (statusCell.textContent || '').trim().toLowerCase()
+                        : '';
+
+                    var allowed = allowedStatuses.indexOf(statusText) !== -1;
+
+                    if (t.checked && allowed) {
+                        boxes[i].checked = true;
+                        row.classList.add('row-selected');
+                    } else {
+                        boxes[i].checked = false;
+                        row.classList.remove('row-selected');
+                    }
+                }
+            }
+        });
+
+        /* ── Also allow clicking anywhere on the row to toggle checkbox ── */
+        /* ── Also allow clicking anywhere on the row to toggle checkbox ── */
+        document.addEventListener('click', function (e) {
+            var row = e.target.closest('table.table tbody tr');
+            if (!row) return;
+
+            /* Ignore clicks directly on buttons, links, inputs */
+            var tag = e.target.tagName.toLowerCase();
+            if (tag === 'input' || tag === 'a' || tag === 'button' ||
+                tag === 'select' || tag === 'textarea' || tag === 'label') return;
+
+            var chk = row.querySelector('input[id*="chk_SelectSingle"]');
+            if (!chk) return;
+
+            /* Only allow selection if WorkflowStatus is Draft */
+            var allowedStatuses = ['draft', 'not submitted'];  /* ← add more values here if needed */
+            var statusCell = row.querySelector('.lp-badge');
+            var statusText = statusCell
+                ? (statusCell.textContent || '').trim().toLowerCase()
+                : '';
+
+            if (allowedStatuses.indexOf(statusText) === -1) return; /* Block selection */
+
+            chk.checked = !chk.checked;
+            chk.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+
+        /* ── Re-apply highlights after UpdatePanel postbacks ── */
+        if (typeof Sys !== 'undefined' && Sys.WebForms && Sys.WebForms.PageRequestManager) {
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function () {
+                /* Clear all highlights after grid rebind */
+                document.querySelectorAll('tr.row-selected').forEach(function (r) {
+                    r.classList.remove('row-selected');
+                });
+                /* Uncheck select-all */
+                var selectAll = document.getElementById('chk_SelectAll');
+                if (selectAll) selectAll.checked = false;
+            });
+        }
+    </script>
+     <%-- ── Global Popup Modal ── --%>
+<div class="modal fade" id="globalPopupModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document" style="width:860px; max-width:95vw;">
+        <div class="modal-content" style="border-radius:8px; overflow:hidden;">
+            <div class="modal-header" style="padding:10px 16px; border-bottom:1px solid #e0e0e0;">
+                <h4 class="modal-title" id="globalPopupModalTitle" 
+                    style="font-size:15px; font-weight:600; color:#185FA5; margin:0;">
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" 
+                    style="margin-top:-2px;">&times;</button>
+            </div>
+            <div class="modal-body" style="padding:0;">
+                <iframe id="globalPopupModalFrame" src="" 
+                    style="width:100%; height:70vh; border:none; display:block;"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var GlobalPopup = (function () {
+        var frame = document.getElementById('globalPopupModalFrame');
+        var title = document.getElementById('globalPopupModalTitle');
+
+        /* Reset iframe on close to stop any running scripts inside */
+        $('#globalPopupModal').on('hidden.bs.modal', function () {
+            if (frame) frame.src = '';
+        });
+
+        return {
+            show: function (options) {
+                options = options || {};
+                if (title) title.textContent = options.title || '';
+                if (frame) frame.src = options.url || '';
+                $('#globalPopupModal').modal('show');
+            },
+            hide: function () {
+                $('#globalPopupModal').modal('hide');
+            }
+        };
+    })();
+
+    function closeParentModal() {
+        // If using Bootstrap Modal from a parent page
+        if (window.parent && window.parent.$) {
+            window.parent.$('.modal').modal('hide');
+        }
+
+        // If using a custom framework or window.close for popups
+        if (window.parent && window.parent.closeModal) {
+            window.parent.closeModal();
+        }
+    }
+</script>
+     <!-- ✅ ADD THIS LINE HERE — last thing before </body> -->
+       <script src="/distribution/css/listpage-modern.js?v=1.2"></script>
+    <script>
+        // EARLIEST POSSIBLE EXECUTION - before DOM ready
+        console.log('=== BODY TAG REACHED ===');
+        console.log('Time:', Date.now());
+
+        window.onerror = function (msg, src, line) {
+            console.error('JS ERROR:', msg, '| file:', src, '| line:', line);
+        };
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            var menu = document.querySelector('.main-menu');
+            if (!menu) return;
+
+            menu.addEventListener('click', function (e) {
+
+                var anchor = e.target.closest('a');
+                if (!anchor) return;
+
+                var href = anchor.getAttribute('href') || '';
+
+                /* ── Skip non-navigation clicks ── */
+                var isCollapse = href.startsWith('#');           // expand/collapse toggle
+                var isJavascript = href.indexOf('javascript') !== -1;
+                var isPopup = (anchor.getAttribute('onclick') || '').indexOf('openPopupPanel') !== -1;
+                var isEmpty = !href || href === '#';
+
+                if (isCollapse || isJavascript || isPopup || isEmpty) return;
+
+                /* ── It's a real page navigation — show the overlay ── */
+                showAJAXOverlay();
+            });
+
+        });
+
+        (function () {
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+            prm.add_beginRequest(function () {
+                showAJAXOverlay();
+            });
+
+            prm.add_endRequest(function () {
+                hideAJAXOverlay();
+                // Reset pagination guard flags
+                $('table.sortable').each(function () {
+                    $(this).removeData('sortable-initialized');
+                });
+                initPaginationAndSorting();
+                applyUpButtonsStyle();
+                bindPageNumPersistence();
+            });
+        })();
+    </script>
+</body>
+</html>

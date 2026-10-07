@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/TA/ESSJmgProfileCalendar_ListPage.aspx" hash="ffffffefe3a9c958" filehash="ee6293be867e84e2" flags="110000" assembly="MaisonPortal" type="ASP.ess_ta_essjmgprofilecalendar_listpage_aspx">
+  <filedeps>
+    <filedep name="/ESS/TA/ESSJmgProfileCalendar_ListPage.aspx" />
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

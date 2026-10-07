@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="be86e2a0-5fe5-4e29-a7e8-71896a2113c1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PREmployeePFRequestSvcGroup?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PREmployeePFRequestSvcGroup.wsdl" MetadataType="Wsdl" ID="cee4d81a-3645-405f-ab79-245b4cf582c5" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PREmployeePFRequestSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PREmployeePFRequestSvcGroup.xsd" MetadataType="Schema" ID="6f6b2e24-88b3-42be-b5af-9d400f8e2c3d" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PREmployeePFRequestSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PREmployeePFRequestSvcGroup1.xsd" MetadataType="Schema" ID="375b24f3-f335-428f-9319-f4166ea6512e" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PREmployeePFRequestSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PREmployeePFRequestSvcGroup2.xsd" MetadataType="Schema" ID="ba099c1a-3cfa-450e-9ddd-8792bd670422" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PREmployeePFRequestSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PREmployeePFRequestSvcGroup1.wsdl" MetadataType="Wsdl" ID="cbfa931f-1afb-4f8a-996b-2e1ad836d5f9" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PREmployeePFRequestSvcGroup?wsdl" />
+    <MetadataFile FileName="PREmployeePFRequestSvcGroup3.xsd" MetadataType="Schema" ID="8d7343f4-f5ba-46e2-b2da-332bbb9ed79f" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PREmployeePFRequestSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PREmployeePFRequestSvcGroup4.xsd" MetadataType="Schema" ID="9618c83c-4a65-4fb5-a970-1142038ef373" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PREmployeePFRequestSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PREmployeePFRequestSvcGroup5.xsd" MetadataType="Schema" ID="75f5213f-4e40-419f-8e3b-34f845cddb3f" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PREmployeePFRequestSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PREmployeePFRequestSvcGroup6.xsd" MetadataType="Schema" ID="4055d9c0-ca9f-40ff-84ae-bb1e735dbfdd" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/PREmployeePFRequestSvcGroup?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

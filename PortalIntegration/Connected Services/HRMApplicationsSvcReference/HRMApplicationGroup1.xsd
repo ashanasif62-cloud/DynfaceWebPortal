@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HRMApplicationGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="HRMApplicationContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ApplicantId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ApplicationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CorrespondenceAction" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedSource" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DateOfReception" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartmentId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpireDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FileBase64String" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FileExt" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JobId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LodgingCost" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Media" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OtherCost" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Rating" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReasonCodeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RecruitmentProject" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SkipRecruitingStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StartDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TravelCost" type="xs:decimal" />
+          <xs:element minOccurs="0" name="applicantType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HRMApplicationContract" nillable="true" type="tns:HRMApplicationContract" />
+  <xs:complexType name="ArrayOfHRMApplicationContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HRMApplicationContract" nillable="true" type="tns:HRMApplicationContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHRMApplicationContract" nillable="true" type="tns:ArrayOfHRMApplicationContract" />
+</xs:schema>

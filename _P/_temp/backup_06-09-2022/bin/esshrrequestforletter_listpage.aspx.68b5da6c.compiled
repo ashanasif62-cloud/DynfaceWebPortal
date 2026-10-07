@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/HR/ESSHRRequestForLetter_ListPage.aspx" hash="ffffffefe3a9c958" filehash="3051fa5c84918711" flags="110000" assembly="MaisonPortal" type="ASP.ess_hr_esshrrequestforletter_listpage_aspx">
+  <filedeps>
+    <filedep name="/ESS/HR/ESSHRRequestForLetter_ListPage.aspx" />
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

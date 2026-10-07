@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/HR/ESSHRRejoining_Create.aspx" hash="ffffffefe3a9c958" filehash="cdfefdf0402d2a39" flags="110000" assembly="MaisonPortal" type="ASP.ess_hr_esshrrejoining_create_aspx">
+  <filedeps>
+    <filedep name="/DropDownList_EmployeeDetails.ascx" />
+    <filedep name="/ESS/HR/ESSHRRejoining_Create.aspx" />
+    <filedep name="/Modal.Master" />
+  </filedeps>
+</preserve>

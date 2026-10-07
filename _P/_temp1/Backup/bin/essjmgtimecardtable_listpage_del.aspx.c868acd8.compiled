@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/TA/ESSJmgTimecardTable_ListPage_del.aspx" hash="ffffffefe3a9c958" filehash="7fec370e72f64db8" flags="110000" assembly="MaisonPortal" type="ASP.ess_ta_essjmgtimecardtable_listpage_del_aspx">
+  <filedeps>
+    <filedep name="/ESS/TA/ESSJmgTimecardTable_ListPage_del.aspx" />
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

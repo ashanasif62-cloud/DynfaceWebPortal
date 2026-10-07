@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="992f0a9c-5e48-4dc5-807f-9887871ddb10" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup.xsd" MetadataType="Schema" ID="c4f29e28-e005-4da6-870d-9403c977d597" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup1.xsd" MetadataType="Schema" ID="6eea055e-2673-47fc-aae5-e91962c06e29" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup.wsdl" MetadataType="Wsdl" ID="2755af63-56de-4604-9609-b021d495c5ab" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup2.xsd" MetadataType="Schema" ID="4e4f100b-79b6-4428-870c-0aca53f816a4" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup1.wsdl" MetadataType="Wsdl" ID="958c6187-553d-4ff6-b4b4-656c3ea35ed3" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?wsdl" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup3.xsd" MetadataType="Schema" ID="ecaac05e-32c5-4f09-b3ea-ea3abfb955a4" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup4.xsd" MetadataType="Schema" ID="938d3ea1-15a8-4ece-af2b-7bafacdd469c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup.disco" MetadataType="Disco" ID="f9d69e84-c46c-486a-a367-51fbc983be81" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?disco" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup5.xsd" MetadataType="Schema" ID="70256ece-11cd-4a10-8a2b-b4a97d9ede47" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HcmPersonIdentificationNumberSvcGroup6.xsd" MetadataType="Schema" ID="29d4d9e2-a1b2-4a8a-94df-628af5a2be3a" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonIdentificationNumberSvcGroup?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

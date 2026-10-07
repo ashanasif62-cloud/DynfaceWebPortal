@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5df63f99-2812-4bcf-abb3-1ec6b4dbf29b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLoanRequestSvcGroup?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PREmployeeLoanRequestSvcGroup2.wsdl" MetadataType="Wsdl" ID="8265c6a6-2daf-45f8-bfda-b3bee0b24330" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLoanRequestSvcGroup?wsdl" />
+    <MetadataFile FileName="PREmployeeLoanRequestSvcGroup74.xsd" MetadataType="Schema" ID="011fb38d-b24b-4ce2-b6a7-f4346b1fa175" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLoanRequestSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PREmployeeLoanRequestSvcGroup72.xsd" MetadataType="Schema" ID="87faefb1-3eab-44d4-a268-64bc4bd538da" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLoanRequestSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PREmployeeLoanRequestSvcGroup75.xsd" MetadataType="Schema" ID="8cac736b-107c-4381-b490-58eea6274c07" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLoanRequestSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PREmployeeLoanRequestSvcGroup71.xsd" MetadataType="Schema" ID="2107e4d2-3d2e-4b6f-b253-394a57c39025" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLoanRequestSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PREmployeeLoanRequestSvcGroup7.xsd" MetadataType="Schema" ID="37745ff8-68d1-4963-9741-5cafa6506fa4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLoanRequestSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PREmployeeLoanRequestSvcGroup73.xsd" MetadataType="Schema" ID="8d30916e-03db-4712-bc60-43a24ba56d63" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLoanRequestSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PREmployeeLoanRequestSvcGroup76.xsd" MetadataType="Schema" ID="ee34a1cc-52ea-45d7-8864-f2507e87e939" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLoanRequestSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PREmployeeLoanRequestSvcGroup21.wsdl" MetadataType="Wsdl" ID="958fe8b3-78df-4f4c-bc09-85ee8fec845f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLoanRequestSvcGroup?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

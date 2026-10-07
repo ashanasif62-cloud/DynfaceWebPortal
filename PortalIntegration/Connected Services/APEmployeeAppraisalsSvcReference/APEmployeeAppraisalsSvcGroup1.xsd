@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:import schemaLocation="https://maison-uat.sandbox.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfAPEmployeeAppraisalsSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="APEmployeeAppraisalsSvcContract" nillable="true" type="tns:APEmployeeAppraisalsSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAPEmployeeAppraisalsSvcContract" nillable="true" type="tns:ArrayOfAPEmployeeAppraisalsSvcContract" />
+  <xs:complexType name="APEmployeeAppraisalsSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AppraisalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AppraisalStatus" type="tns:APAppraisalStatus" />
+          <xs:element minOccurs="0" name="Branch" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Employee" type="xs:long" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EndDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="GenerationType" type="tns:APGenerationType" />
+          <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MarkingFrequency" type="tns:APMarkingFrequency" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="PerformancePeriod" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Position" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="ReviewType" type="tns:APReviewType" />
+          <xs:element minOccurs="0" name="Score" type="xs:decimal" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StartDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="TotalScore" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Weightage" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="APEmployeeAppraisalsSvcContract" nillable="true" type="tns:APEmployeeAppraisalsSvcContract" />
+  <xs:simpleType name="APAppraisalStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Created" />
+      <xs:enumeration value="Assigned" />
+      <xs:enumeration value="PartiallyReviewed" />
+      <xs:enumeration value="Reviewed" />
+      <xs:enumeration value="Calculated" />
+      <xs:enumeration value="Cancelled" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="APAppraisalStatus" nillable="true" type="tns:APAppraisalStatus" />
+  <xs:simpleType name="APGenerationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Manual" />
+      <xs:enumeration value="Plan" />
+      <xs:enumeration value="Goal" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="APGenerationType" nillable="true" type="tns:APGenerationType" />
+  <xs:simpleType name="APMarkingFrequency">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Daily" />
+      <xs:enumeration value="Monthly" />
+      <xs:enumeration value="Quarterly" />
+      <xs:enumeration value="Yearly" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="APMarkingFrequency" nillable="true" type="tns:APMarkingFrequency" />
+  <xs:simpleType name="APReviewType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Annual" />
+      <xs:enumeration value="Probation" />
+      <xs:enumeration value="Contract" />
+      <xs:enumeration value="Degree" />
+      <xs:enumeration value="Survey" />
+      <xs:enumeration value="DailyGrooming">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="APReviewType" nillable="true" type="tns:APReviewType" />
+</xs:schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="5f309e5d-63cd-468d-9ee7-28c3517b9527" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeQuickLinksSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DFEmployeeQuickLinksSvcGroup.xsd" MetadataType="Schema" ID="c6f8b165-fe0a-4410-9415-aab1b67033f7" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeQuickLinksSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="DFEmployeeQuickLinksSvcGroup1.xsd" MetadataType="Schema" ID="5e4eb77c-024d-4592-92a2-486d6077d7b7" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeQuickLinksSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="DFEmployeeQuickLinksSvcGroup2.xsd" MetadataType="Schema" ID="a6653790-4b76-4915-8988-b52f82d32cfb" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeQuickLinksSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="DFEmployeeQuickLinksSvcGroup.wsdl" MetadataType="Wsdl" ID="67d1a78e-3249-4565-923c-0d83e1e6617c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeQuickLinksSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="DFEmployeeQuickLinksSvcGroup3.xsd" MetadataType="Schema" ID="c6b1f558-0fb2-44a6-9d69-06758e5bef30" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeQuickLinksSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="DFEmployeeQuickLinksSvcGroup1.wsdl" MetadataType="Wsdl" ID="740d68fb-7fa1-4b8c-8bc8-40b7a58c9ab0" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeQuickLinksSvcGroup?wsdl" />
+    <MetadataFile FileName="DFEmployeeQuickLinksSvcGroup4.xsd" MetadataType="Schema" ID="141ab80a-12a5-45fb-9472-03c85ac65e4f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeQuickLinksSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="DFEmployeeQuickLinksSvcGroup5.xsd" MetadataType="Schema" ID="66cec7cb-0dcb-47a1-bd90-725a084938d6" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeQuickLinksSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="DFEmployeeQuickLinksSvcGroup.disco" MetadataType="Disco" ID="1b2c61a6-9220-49db-88f2-9c381137dbb0" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeQuickLinksSvcGroup?disco" />
+    <MetadataFile FileName="DFEmployeeQuickLinksSvcGroup6.xsd" MetadataType="Schema" ID="f2db4da5-0ee4-41b9-885d-26986a19f496" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DFEmployeeQuickLinksSvcGroup?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/CurrencySvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfCurrencySvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CurrencySvcContract" nillable="true" type="tns:CurrencySvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCurrencySvcContract" nillable="true" type="tns:ArrayOfCurrencySvcContract" />
+  <xs:complexType name="CurrencySvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrencyCodeISO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsEuro" type="q1:NoYes" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RoundOffAssetDep_JP" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RoundOffPrice" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RoundOffPurch" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RoundOffSales" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RoundOffTypeAssetDep_JP" type="tns:RoundOffType" />
+          <xs:element minOccurs="0" name="RoundOffTypePrice" type="tns:RoundOffType" />
+          <xs:element minOccurs="0" name="RoundOffTypePurch" type="tns:RoundOffType" />
+          <xs:element minOccurs="0" name="RoundOffTypeSales" type="tns:RoundOffType" />
+          <xs:element minOccurs="0" name="RoundingPrecision" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Txt" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CurrencySvcContract" nillable="true" type="tns:CurrencySvcContract" />
+  <xs:simpleType name="RoundOffType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Ordinary" />
+      <xs:enumeration value="RoundDown" />
+      <xs:enumeration value="RoundUp" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RoundOffType" nillable="true" type="tns:RoundOffType" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+</xs:schema>

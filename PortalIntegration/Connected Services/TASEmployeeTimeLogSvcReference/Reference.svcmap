@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="17aabc88-f871-44bc-8022-8221da826b13" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/TASEmployeeTimeLogSVCGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TASEmployeeTimeLogSVCGroup2.wsdl" MetadataType="Wsdl" ID="b81c96d5-1c26-4a70-a763-88c88dab9ce0" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/TASEmployeeTimeLogSVCGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="TASEmployeeTimeLogSVCGroup7.xsd" MetadataType="Schema" ID="6556cdd8-5e30-4a2d-831a-251e8287fd86" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/TASEmployeeTimeLogSVCGroup?xsd=xsd4" />
+    <MetadataFile FileName="TASEmployeeTimeLogSVCGroup71.xsd" MetadataType="Schema" ID="a4adc2a7-2443-49ad-b66e-fcf7f77809b6" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/TASEmployeeTimeLogSVCGroup?xsd=xsd1" />
+    <MetadataFile FileName="TASEmployeeTimeLogSVCGroup72.xsd" MetadataType="Schema" ID="aef438b5-3729-47a1-b4b9-f141ea923b0a" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/TASEmployeeTimeLogSVCGroup?xsd=xsd3" />
+    <MetadataFile FileName="TASEmployeeTimeLogSVCGroup21.wsdl" MetadataType="Wsdl" ID="d1323de4-2a5e-47d8-9e82-4dfd15a19df0" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/TASEmployeeTimeLogSVCGroup?wsdl" />
+    <MetadataFile FileName="TASEmployeeTimeLogSVCGroup73.xsd" MetadataType="Schema" ID="2a9546a0-8b66-4edf-9fac-3fa547355de3" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/TASEmployeeTimeLogSVCGroup?xsd=xsd0" />
+    <MetadataFile FileName="TASEmployeeTimeLogSVCGroup1.disco" MetadataType="Disco" ID="da8360ac-a461-4502-9fb1-5f502449ccd5" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/TASEmployeeTimeLogSVCGroup?disco" />
+    <MetadataFile FileName="TASEmployeeTimeLogSVCGroup74.xsd" MetadataType="Schema" ID="fc3fb787-f6a6-4af3-85db-c14bd45a1091" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/TASEmployeeTimeLogSVCGroup?xsd=xsd2" />
+    <MetadataFile FileName="TASEmployeeTimeLogSVCGroup75.xsd" MetadataType="Schema" ID="0b6855da-e085-48a1-b2f3-46a4928c57b5" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/TASEmployeeTimeLogSVCGroup?xsd=xsd6" />
+    <MetadataFile FileName="TASEmployeeTimeLogSVCGroup76.xsd" MetadataType="Schema" ID="30c38c3c-677e-4773-8ae8-350b2c01a352" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/TASEmployeeTimeLogSVCGroup?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

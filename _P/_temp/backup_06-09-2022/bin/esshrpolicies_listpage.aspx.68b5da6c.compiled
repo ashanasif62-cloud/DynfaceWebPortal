@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/HR/ESSHRPolicies_ListPage.aspx" hash="ffffffefe3a9c958" filehash="2c3f58d3ceb45439" flags="110000" assembly="MaisonPortal" type="ASP.ess_hr_esshrpolicies_listpage_aspx">
+  <filedeps>
+    <filedep name="/ESS/HR/ESSHRPolicies_ListPage.aspx" />
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

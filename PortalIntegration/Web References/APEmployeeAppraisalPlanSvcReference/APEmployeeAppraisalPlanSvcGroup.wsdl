@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalPlanSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalPlanSvcGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalPlanSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalPlanSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalPlanSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalPlanSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalPlanSvcGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="find">
+    <wsdl:part name="parameters" element="tns:find" />
+  </wsdl:message>
+  <wsdl:message name="find_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="findResponse">
+    <wsdl:part name="parameters" element="tns:findResponse" />
+  </wsdl:message>
+  <wsdl:message name="findResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="APEmployeeAppraisalPlanSVC_find_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveByEmployee">
+    <wsdl:part name="parameters" element="tns:RetrieveByEmployee" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveByEmployee_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveByEmployeeResponse">
+    <wsdl:part name="parameters" element="tns:RetrieveByEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveByEmployeeResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="APEmployeeAppraisalPlanSVC_RetrieveByEmployee_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll">
+    <wsdl:part name="parameters" element="tns:retrieveAll" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="APEmployeeAppraisalPlanSVC_retrieveAll_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="update">
+    <wsdl:part name="parameters" element="tns:update" />
+  </wsdl:message>
+  <wsdl:message name="update_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="updateResponse">
+    <wsdl:part name="parameters" element="tns:updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="APEmployeeAppraisalPlanSVC_update_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="create">
+    <wsdl:part name="parameters" element="tns:create" />
+  </wsdl:message>
+  <wsdl:message name="create_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="createResponse">
+    <wsdl:part name="parameters" element="tns:createResponse" />
+  </wsdl:message>
+  <wsdl:message name="createResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="APEmployeeAppraisalPlanSVC_create_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="deletePlan">
+    <wsdl:part name="parameters" element="tns:deletePlan" />
+  </wsdl:message>
+  <wsdl:message name="deletePlan_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="deletePlanResponse">
+    <wsdl:part name="parameters" element="tns:deletePlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="deletePlanResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="APEmployeeAppraisalPlanSVC_deletePlan_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="deleteKPI">
+    <wsdl:part name="parameters" element="tns:deleteKPI" />
+  </wsdl:message>
+  <wsdl:message name="deleteKPI_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="deleteKPIResponse">
+    <wsdl:part name="parameters" element="tns:deleteKPIResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteKPIResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="APEmployeeAppraisalPlanSVC_deleteKPI_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="APEmployeeAppraisalPlanSVC">
+    <wsdl:operation name="find">
+      <wsdl:input wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/find" name="find" message="tns:find" />
+      <wsdl:output wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/findResponse" name="findResponse" message="tns:findResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/Fault" name="SoapServiceFaultFault" message="tns:APEmployeeAppraisalPlanSVC_find_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveByEmployee">
+      <wsdl:input wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/RetrieveByEmployee" name="RetrieveByEmployee" message="tns:RetrieveByEmployee" />
+      <wsdl:output wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/RetrieveByEmployeeResponse" name="RetrieveByEmployeeResponse" message="tns:RetrieveByEmployeeResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/Fault" name="SoapServiceFaultFault" message="tns:APEmployeeAppraisalPlanSVC_RetrieveByEmployee_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAll">
+      <wsdl:input wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/retrieveAll" name="retrieveAll" message="tns:retrieveAll" />
+      <wsdl:output wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/retrieveAllResponse" name="retrieveAllResponse" message="tns:retrieveAllResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/Fault" name="SoapServiceFaultFault" message="tns:APEmployeeAppraisalPlanSVC_retrieveAll_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/update" name="update" message="tns:update" />
+      <wsdl:output wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/updateResponse" name="updateResponse" message="tns:updateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/Fault" name="SoapServiceFaultFault" message="tns:APEmployeeAppraisalPlanSVC_update_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/create" name="create" message="tns:create" />
+      <wsdl:output wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/createResponse" name="createResponse" message="tns:createResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/Fault" name="SoapServiceFaultFault" message="tns:APEmployeeAppraisalPlanSVC_create_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deletePlan">
+      <wsdl:input wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/deletePlan" name="deletePlan" message="tns:deletePlan" />
+      <wsdl:output wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/deletePlanResponse" name="deletePlanResponse" message="tns:deletePlanResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/Fault" name="SoapServiceFaultFault" message="tns:APEmployeeAppraisalPlanSVC_deletePlan_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteKPI">
+      <wsdl:input wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/deleteKPI" name="deleteKPI" message="tns:deleteKPI" />
+      <wsdl:output wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/deleteKPIResponse" name="deleteKPIResponse" message="tns:deleteKPIResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/APEmployeeAppraisalPlanSVC/Fault" name="SoapServiceFaultFault" message="tns:APEmployeeAppraisalPlanSVC_deleteKPI_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

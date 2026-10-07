@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ExpenseReportOperationsContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmIsSuccessful" type="xs:boolean" />
+          <xs:element minOccurs="0" name="parmMessage" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExpenseReportOperationsContract" nillable="true" type="tns:ExpenseReportOperationsContract" />
+  <xs:complexType name="ArrayOfExpenseReportResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExpenseReportResponse" nillable="true" type="tns:ExpenseReportResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExpenseReportResponse" nillable="true" type="tns:ArrayOfExpenseReportResponse" />
+  <xs:complexType name="ExpenseReportResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q3:XppObjectBase">
+        <xs:sequence>
+          <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="fields" nillable="true" type="q4:ArrayOfKeyValueOfanyTypeanyType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExpenseReportResponse" nillable="true" type="tns:ExpenseReportResponse" />
+  <xs:complexType name="ArrayOfExpenseReportRequestSvc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExpenseReportRequestSvc" nillable="true" type="tns:ExpenseReportRequestSvc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExpenseReportRequestSvc" nillable="true" type="tns:ArrayOfExpenseReportRequestSvc" />
+  <xs:complexType name="ExpenseReportRequestSvc">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q5:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="__k_parmFieldName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmFieldType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmFieldValue" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExpenseReportRequestSvc" nillable="true" type="tns:ExpenseReportRequestSvc" />
+  <xs:complexType name="ArrayOfExpenseLineResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExpenseLineResponse" nillable="true" type="tns:ExpenseLineResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExpenseLineResponse" nillable="true" type="tns:ArrayOfExpenseLineResponse" />
+  <xs:complexType name="ExpenseLineResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q6:XppObjectBase">
+        <xs:sequence>
+          <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="fields" nillable="true" type="q7:ArrayOfKeyValueOfanyTypeanyType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExpenseLineResponse" nillable="true" type="tns:ExpenseLineResponse" />
+  <xs:complexType name="ArrayOfExpenseReportLookupSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExpenseReportLookupSvcContract" nillable="true" type="tns:ExpenseReportLookupSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExpenseReportLookupSvcContract" nillable="true" type="tns:ArrayOfExpenseReportLookupSvcContract" />
+  <xs:complexType name="ExpenseReportLookupSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q8:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="__k_parmLocation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmPurpose" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmlocationslbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmpurposelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="locations" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="locationslbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="purpose" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="purposelbl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExpenseReportLookupSvcContract" nillable="true" type="tns:ExpenseReportLookupSvcContract" />
+  <xs:complexType name="ArrayOfExpenseLineRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExpenseLineRequest" nillable="true" type="tns:ExpenseLineRequest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExpenseLineRequest" nillable="true" type="tns:ArrayOfExpenseLineRequest" />
+  <xs:complexType name="ExpenseLineRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q9:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="__k_parmFieldName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmFieldType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmFieldValue" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExpenseLineRequest" nillable="true" type="tns:ExpenseLineRequest" />
+  <xs:complexType name="ArrayOfExpenseLineLookupSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExpenseLineLookupSvcContract" nillable="true" type="tns:ExpenseLineLookupSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExpenseLineLookupSvcContract" nillable="true" type="tns:ArrayOfExpenseLineLookupSvcContract" />
+  <xs:complexType name="ExpenseLineLookupSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q10:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="__k_parmCategoryId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmCategoryName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmMerchantId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmprojActivityNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmprojId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="__k_parmprojLinePropertyId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="categoryId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="categoryName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="merchantId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="projActivityNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="projId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="projLinePropertyId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExpenseLineLookupSvcContract" nillable="true" type="tns:ExpenseLineLookupSvcContract" />
+  <xs:complexType name="ArrayOfExpenseReceiptContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExpenseReceiptContract" nillable="true" type="tns:ExpenseReceiptContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExpenseReceiptContract" nillable="true" type="tns:ArrayOfExpenseReceiptContract" />
+  <xs:complexType name="ExpenseReceiptContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q11:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docuRefRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="fileType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="note" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExpenseReceiptContract" nillable="true" type="tns:ExpenseReceiptContract" />
+  <xs:complexType name="ArrayOfTrvReceiptOcrContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrvReceiptOcrContract" nillable="true" type="tns:TrvReceiptOcrContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrvReceiptOcrContract" nillable="true" type="tns:ArrayOfTrvReceiptOcrContract" />
+  <xs:complexType name="TrvReceiptOcrContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q12:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="amountCurr" type="xs:decimal" />
+          <xs:element minOccurs="0" name="merchantId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="subTotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="transDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="transactionTime" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrvReceiptOcrContract" nillable="true" type="tns:TrvReceiptOcrContract" />
+</xs:schema>

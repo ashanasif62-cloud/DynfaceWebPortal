@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="be0dfda8-9fbd-47ff-8675-33275437ed20" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderJournalSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TransferOrderJournalSvcGroup.wsdl" MetadataType="Wsdl" ID="49efda73-c296-4be3-8d87-334f519efa31" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderJournalSvcGroup?wsdl" />
+    <MetadataFile FileName="TransferOrderJournalSvcGroup.xsd" MetadataType="Schema" ID="9deeff2f-22cf-49ed-8921-2d157b355e94" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderJournalSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="TransferOrderJournalSvcGroup1.wsdl" MetadataType="Wsdl" ID="a16c7ae0-6f1d-4a0a-bd2d-7389284baab9" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderJournalSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="TransferOrderJournalSvcGroup1.xsd" MetadataType="Schema" ID="52b8fdb7-6f2d-4f3f-a7ee-7e4a0766b76f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderJournalSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="TransferOrderJournalSvcGroup2.xsd" MetadataType="Schema" ID="7a62c0f2-4742-41d5-a15f-858405e76e8c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderJournalSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="TransferOrderJournalSvcGroup.disco" MetadataType="Disco" ID="97dc901e-498f-4572-b912-752cbeac8bec" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderJournalSvcGroup?disco" />
+    <MetadataFile FileName="TransferOrderJournalSvcGroup3.xsd" MetadataType="Schema" ID="3b9e0aaf-55a5-4ea5-99ff-8dbff690228d" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderJournalSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="TransferOrderJournalSvcGroup4.xsd" MetadataType="Schema" ID="3a8bce17-44f9-4452-88d9-97c837175409" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderJournalSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="TransferOrderJournalSvcGroup5.xsd" MetadataType="Schema" ID="609afe8a-16b4-4a7c-afe5-34fd8bc78770" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderJournalSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="TransferOrderJournalSvcGroup6.xsd" MetadataType="Schema" ID="3ec54e10-1c57-46db-b4e6-8d24735c43c9" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/TransferOrderJournalSvcGroup?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="2210312a-28d1-48b7-9aba-d691acb150db" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup2.wsdl" MetadataType="Wsdl" ID="65862bca-7294-43b4-8c9d-a8a45830b957" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?wsdl" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup7.xsd" MetadataType="Schema" ID="1b74f975-a9e1-4512-8968-aa30f01515e8" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup71.xsd" MetadataType="Schema" ID="405383ac-3e30-4c97-ab18-ce0be92751fb" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup72.xsd" MetadataType="Schema" ID="d84fe9d6-5283-4638-ae10-dea6202fcdfd" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup1.disco" MetadataType="Disco" ID="ae4514f9-ec74-4f41-b459-56e6c8a70c8a" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?disco" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup73.xsd" MetadataType="Schema" ID="ea79b5b4-3e58-4418-be98-558efdddd7db" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup74.xsd" MetadataType="Schema" ID="0755bfd1-83fb-45c1-bdee-0e8dd3dc66de" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup21.wsdl" MetadataType="Wsdl" ID="751b9e6b-2413-4029-a48e-210bfc1fee2b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup75.xsd" MetadataType="Schema" ID="b4f40f4c-86ce-4c04-97cc-74e3a5f53165" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="LogisticsElectronicAddressSvcGroup76.xsd" MetadataType="Schema" ID="ea8dc479-83cb-487c-9add-f5215c713318" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsElectronicAddressSvcGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

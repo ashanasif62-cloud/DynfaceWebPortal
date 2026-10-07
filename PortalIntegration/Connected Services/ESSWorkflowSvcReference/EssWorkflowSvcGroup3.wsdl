@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="submitLeaveRequest">
+    <wsdl:part name="parameters" element="tns:submitLeaveRequest" />
+  </wsdl:message>
+  <wsdl:message name="submitLeaveRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitLeaveRequestResponse">
+    <wsdl:part name="parameters" element="tns:submitLeaveRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitLeaveRequestResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitLeaveRequest_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitAdvanceRequest">
+    <wsdl:part name="parameters" element="tns:submitAdvanceRequest" />
+  </wsdl:message>
+  <wsdl:message name="submitAdvanceRequest_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitAdvanceRequestResponse">
+    <wsdl:part name="parameters" element="tns:submitAdvanceRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitAdvanceRequestResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitAdvanceRequest_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitESSPersonIdentificaitonNumber">
+    <wsdl:part name="parameters" element="tns:submitESSPersonIdentificaitonNumber" />
+  </wsdl:message>
+  <wsdl:message name="submitESSPersonIdentificaitonNumber_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitESSPersonIdentificaitonNumberResponse">
+    <wsdl:part name="parameters" element="tns:submitESSPersonIdentificaitonNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitESSPersonIdentificaitonNumberResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitESSPersonIdentificaitonNumber_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitESSPersonEducation">
+    <wsdl:part name="parameters" element="tns:submitESSPersonEducation" />
+  </wsdl:message>
+  <wsdl:message name="submitESSPersonEducation_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitESSPersonEducationResponse">
+    <wsdl:part name="parameters" element="tns:submitESSPersonEducationResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitESSPersonEducationResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitESSPersonEducation_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitEOSRequest">
+    <wsdl:part name="parameters" element="tns:submitEOSRequest" />
+  </wsdl:message>
+  <wsdl:message name="submitEOSRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitEOSRequestResponse">
+    <wsdl:part name="parameters" element="tns:submitEOSRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitEOSRequestResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitEOSRequest_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitLoanRequest">
+    <wsdl:part name="parameters" element="tns:submitLoanRequest" />
+  </wsdl:message>
+  <wsdl:message name="submitLoanRequest_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitLoanRequestResponse">
+    <wsdl:part name="parameters" element="tns:submitLoanRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitLoanRequestResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitLoanRequest_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitBusinessTripRequest">
+    <wsdl:part name="parameters" element="tns:submitBusinessTripRequest" />
+  </wsdl:message>
+  <wsdl:message name="submitBusinessTripRequest_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitBusinessTripRequestResponse">
+    <wsdl:part name="parameters" element="tns:submitBusinessTripRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitBusinessTripRequestResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitBusinessTripRequest_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitHiringRequisition">
+    <wsdl:part name="parameters" element="tns:submitHiringRequisition" />
+  </wsdl:message>
+  <wsdl:message name="submitHiringRequisition_Headers">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q22:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitHiringRequisitionResponse">
+    <wsdl:part name="parameters" element="tns:submitHiringRequisitionResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitHiringRequisitionResponse_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q23:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitHiringRequisition_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q24:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitEmploymentCertificateRequest">
+    <wsdl:part name="parameters" element="tns:submitEmploymentCertificateRequest" />
+  </wsdl:message>
+  <wsdl:message name="submitEmploymentCertificateRequest_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitEmploymentCertificateRequestResponse">
+    <wsdl:part name="parameters" element="tns:submitEmploymentCertificateRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitEmploymentCertificateRequestResponse_Headers">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q26:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitEmploymentCertificateRequest_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q27:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitHRHelpDeskRequest">
+    <wsdl:part name="parameters" element="tns:submitHRHelpDeskRequest" />
+  </wsdl:message>
+  <wsdl:message name="submitHRHelpDeskRequest_Headers">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q28:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitHRHelpDeskRequestResponse">
+    <wsdl:part name="parameters" element="tns:submitHRHelpDeskRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitHRHelpDeskRequestResponse_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q29:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitHRHelpDeskRequest_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q30:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitRejoiningRequest">
+    <wsdl:part name="parameters" element="tns:submitRejoiningRequest" />
+  </wsdl:message>
+  <wsdl:message name="submitRejoiningRequest_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitRejoiningRequestResponse">
+    <wsdl:part name="parameters" element="tns:submitRejoiningRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitRejoiningRequestResponse_Headers">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q32:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitRejoiningRequest_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q33:Fault" />
+  </wsdl:message>
+  <wsdl:message name="personIdentificationNumber_Submit">
+    <wsdl:part name="parameters" element="tns:personIdentificationNumber_Submit" />
+  </wsdl:message>
+  <wsdl:message name="personIdentificationNumber_Submit_Headers">
+    <wsdl:part xmlns:q34="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q34:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="personIdentificationNumber_SubmitResponse">
+    <wsdl:part name="parameters" element="tns:personIdentificationNumber_SubmitResponse" />
+  </wsdl:message>
+  <wsdl:message name="personIdentificationNumber_SubmitResponse_Headers">
+    <wsdl:part xmlns:q35="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q35:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_personIdentificationNumber_Submit_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q36:Fault" />
+  </wsdl:message>
+  <wsdl:message name="personEducation_Submit">
+    <wsdl:part name="parameters" element="tns:personEducation_Submit" />
+  </wsdl:message>
+  <wsdl:message name="personEducation_Submit_Headers">
+    <wsdl:part xmlns:q37="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q37:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="personEducation_SubmitResponse">
+    <wsdl:part name="parameters" element="tns:personEducation_SubmitResponse" />
+  </wsdl:message>
+  <wsdl:message name="personEducation_SubmitResponse_Headers">
+    <wsdl:part xmlns:q38="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q38:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_personEducation_Submit_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q39="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q39:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitLeaveRequestByRecId">
+    <wsdl:part name="parameters" element="tns:submitLeaveRequestByRecId" />
+  </wsdl:message>
+  <wsdl:message name="submitLeaveRequestByRecId_Headers">
+    <wsdl:part xmlns:q40="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q40:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitLeaveRequestByRecIdResponse">
+    <wsdl:part name="parameters" element="tns:submitLeaveRequestByRecIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitLeaveRequestByRecIdResponse_Headers">
+    <wsdl:part xmlns:q41="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q41:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitLeaveRequestByRecId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q42:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitAdvanceRequestByRecId">
+    <wsdl:part name="parameters" element="tns:submitAdvanceRequestByRecId" />
+  </wsdl:message>
+  <wsdl:message name="submitAdvanceRequestByRecId_Headers">
+    <wsdl:part xmlns:q43="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q43:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitAdvanceRequestByRecIdResponse">
+    <wsdl:part name="parameters" element="tns:submitAdvanceRequestByRecIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitAdvanceRequestByRecIdResponse_Headers">
+    <wsdl:part xmlns:q44="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q44:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitAdvanceRequestByRecId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q45="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q45:Fault" />
+  </wsdl:message>
+  <wsdl:message name="approveWFByCorrelationId">
+    <wsdl:part name="parameters" element="tns:approveWFByCorrelationId" />
+  </wsdl:message>
+  <wsdl:message name="approveWFByCorrelationId_Headers">
+    <wsdl:part xmlns:q46="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q46:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="approveWFByCorrelationIdResponse">
+    <wsdl:part name="parameters" element="tns:approveWFByCorrelationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="approveWFByCorrelationIdResponse_Headers">
+    <wsdl:part xmlns:q47="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q47:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_approveWFByCorrelationId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q48="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q48:Fault" />
+  </wsdl:message>
+  <wsdl:message name="rejectWFByCorrelationId">
+    <wsdl:part name="parameters" element="tns:rejectWFByCorrelationId" />
+  </wsdl:message>
+  <wsdl:message name="rejectWFByCorrelationId_Headers">
+    <wsdl:part xmlns:q49="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q49:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="rejectWFByCorrelationIdResponse">
+    <wsdl:part name="parameters" element="tns:rejectWFByCorrelationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="rejectWFByCorrelationIdResponse_Headers">
+    <wsdl:part xmlns:q50="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q50:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_rejectWFByCorrelationId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q51="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q51:Fault" />
+  </wsdl:message>
+  <wsdl:message name="workflowBulkActionProcess">
+    <wsdl:part name="parameters" element="tns:workflowBulkActionProcess" />
+  </wsdl:message>
+  <wsdl:message name="workflowBulkActionProcess_Headers">
+    <wsdl:part xmlns:q52="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q52:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="workflowBulkActionProcessResponse">
+    <wsdl:part name="parameters" element="tns:workflowBulkActionProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="workflowBulkActionProcessResponse_Headers">
+    <wsdl:part xmlns:q53="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q53:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_workflowBulkActionProcess_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q54="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q54:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitEOSRequestByRecId">
+    <wsdl:part name="parameters" element="tns:submitEOSRequestByRecId" />
+  </wsdl:message>
+  <wsdl:message name="submitEOSRequestByRecId_Headers">
+    <wsdl:part xmlns:q55="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q55:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitEOSRequestByRecIdResponse">
+    <wsdl:part name="parameters" element="tns:submitEOSRequestByRecIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitEOSRequestByRecIdResponse_Headers">
+    <wsdl:part xmlns:q56="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q56:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitEOSRequestByRecId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q57="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q57:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitLoanRequestByRecId">
+    <wsdl:part name="parameters" element="tns:submitLoanRequestByRecId" />
+  </wsdl:message>
+  <wsdl:message name="submitLoanRequestByRecId_Headers">
+    <wsdl:part xmlns:q58="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q58:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitLoanRequestByRecIdResponse">
+    <wsdl:part name="parameters" element="tns:submitLoanRequestByRecIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitLoanRequestByRecIdResponse_Headers">
+    <wsdl:part xmlns:q59="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q59:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitLoanRequestByRecId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q60="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q60:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitBusinessTripRequestByRecId">
+    <wsdl:part name="parameters" element="tns:submitBusinessTripRequestByRecId" />
+  </wsdl:message>
+  <wsdl:message name="submitBusinessTripRequestByRecId_Headers">
+    <wsdl:part xmlns:q61="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q61:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitBusinessTripRequestByRecIdResponse">
+    <wsdl:part name="parameters" element="tns:submitBusinessTripRequestByRecIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitBusinessTripRequestByRecIdResponse_Headers">
+    <wsdl:part xmlns:q62="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q62:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitBusinessTripRequestByRecId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q63="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q63:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitHiringRequisitionByRecId">
+    <wsdl:part name="parameters" element="tns:submitHiringRequisitionByRecId" />
+  </wsdl:message>
+  <wsdl:message name="submitHiringRequisitionByRecId_Headers">
+    <wsdl:part xmlns:q64="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q64:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitHiringRequisitionByRecIdResponse">
+    <wsdl:part name="parameters" element="tns:submitHiringRequisitionByRecIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitHiringRequisitionByRecIdResponse_Headers">
+    <wsdl:part xmlns:q65="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q65:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitHiringRequisitionByRecId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q66="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q66:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitEmploymentCertificateRequestByRecId">
+    <wsdl:part name="parameters" element="tns:submitEmploymentCertificateRequestByRecId" />
+  </wsdl:message>
+  <wsdl:message name="submitEmploymentCertificateRequestByRecId_Headers">
+    <wsdl:part xmlns:q67="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q67:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitEmploymentCertificateRequestByRecIdResponse">
+    <wsdl:part name="parameters" element="tns:submitEmploymentCertificateRequestByRecIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitEmploymentCertificateRequestByRecIdResponse_Headers">
+    <wsdl:part xmlns:q68="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q68:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitEmploymentCertificateRequestByRecId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q69="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q69:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitHRHelpDeskRequestByRecId">
+    <wsdl:part name="parameters" element="tns:submitHRHelpDeskRequestByRecId" />
+  </wsdl:message>
+  <wsdl:message name="submitHRHelpDeskRequestByRecId_Headers">
+    <wsdl:part xmlns:q70="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q70:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitHRHelpDeskRequestByRecIdResponse">
+    <wsdl:part name="parameters" element="tns:submitHRHelpDeskRequestByRecIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitHRHelpDeskRequestByRecIdResponse_Headers">
+    <wsdl:part xmlns:q71="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q71:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitHRHelpDeskRequestByRecId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q72="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q72:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitRejoiningRequestByRecId">
+    <wsdl:part name="parameters" element="tns:submitRejoiningRequestByRecId" />
+  </wsdl:message>
+  <wsdl:message name="submitRejoiningRequestByRecId_Headers">
+    <wsdl:part xmlns:q73="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q73:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitRejoiningRequestByRecIdResponse">
+    <wsdl:part name="parameters" element="tns:submitRejoiningRequestByRecIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitRejoiningRequestByRecIdResponse_Headers">
+    <wsdl:part xmlns:q74="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q74:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitRejoiningRequestByRecId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q75="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q75:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitBankAccountRequestByRecId">
+    <wsdl:part name="parameters" element="tns:submitBankAccountRequestByRecId" />
+  </wsdl:message>
+  <wsdl:message name="submitBankAccountRequestByRecId_Headers">
+    <wsdl:part xmlns:q76="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q76:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitBankAccountRequestByRecIdResponse">
+    <wsdl:part name="parameters" element="tns:submitBankAccountRequestByRecIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitBankAccountRequestByRecIdResponse_Headers">
+    <wsdl:part xmlns:q77="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q77:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitBankAccountRequestByRecId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q78="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q78:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitEmployeeLeaveEncashmentReqbyRecId">
+    <wsdl:part name="parameters" element="tns:submitEmployeeLeaveEncashmentReqbyRecId" />
+  </wsdl:message>
+  <wsdl:message name="submitEmployeeLeaveEncashmentReqbyRecId_Headers">
+    <wsdl:part xmlns:q79="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q79:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitEmployeeLeaveEncashmentReqbyRecIdResponse">
+    <wsdl:part name="parameters" element="tns:submitEmployeeLeaveEncashmentReqbyRecIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitEmployeeLeaveEncashmentReqbyRecIdResponse_Headers">
+    <wsdl:part xmlns:q80="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q80:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitEmployeeLeaveEncashmentReqbyRecId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q81="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q81:Fault" />
+  </wsdl:message>
+  <wsdl:message name="submitESSPersonImage">
+    <wsdl:part name="parameters" element="tns:submitESSPersonImage" />
+  </wsdl:message>
+  <wsdl:message name="submitESSPersonImage_Headers">
+    <wsdl:part xmlns:q82="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q82:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="submitESSPersonImageResponse">
+    <wsdl:part name="parameters" element="tns:submitESSPersonImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitESSPersonImageResponse_Headers">
+    <wsdl:part xmlns:q83="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q83:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ESSWorkflowSvc_submitESSPersonImage_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q84="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q84:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="ESSWorkflowSvc">
+    <wsdl:operation name="submitLeaveRequest">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitLeaveRequest" name="submitLeaveRequest" message="tns:submitLeaveRequest" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitLeaveRequestResponse" name="submitLeaveRequestResponse" message="tns:submitLeaveRequestResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitLeaveRequest_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitAdvanceRequest">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitAdvanceRequest" name="submitAdvanceRequest" message="tns:submitAdvanceRequest" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitAdvanceRequestResponse" name="submitAdvanceRequestResponse" message="tns:submitAdvanceRequestResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitAdvanceRequest_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitESSPersonIdentificaitonNumber">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitESSPersonIdentificaitonNumber" name="submitESSPersonIdentificaitonNumber" message="tns:submitESSPersonIdentificaitonNumber" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitESSPersonIdentificaitonNumberResponse" name="submitESSPersonIdentificaitonNumberResponse" message="tns:submitESSPersonIdentificaitonNumberResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitESSPersonIdentificaitonNumber_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitESSPersonEducation">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitESSPersonEducation" name="submitESSPersonEducation" message="tns:submitESSPersonEducation" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitESSPersonEducationResponse" name="submitESSPersonEducationResponse" message="tns:submitESSPersonEducationResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitESSPersonEducation_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitEOSRequest">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitEOSRequest" name="submitEOSRequest" message="tns:submitEOSRequest" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitEOSRequestResponse" name="submitEOSRequestResponse" message="tns:submitEOSRequestResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitEOSRequest_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitLoanRequest">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitLoanRequest" name="submitLoanRequest" message="tns:submitLoanRequest" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitLoanRequestResponse" name="submitLoanRequestResponse" message="tns:submitLoanRequestResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitLoanRequest_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitBusinessTripRequest">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitBusinessTripRequest" name="submitBusinessTripRequest" message="tns:submitBusinessTripRequest" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitBusinessTripRequestResponse" name="submitBusinessTripRequestResponse" message="tns:submitBusinessTripRequestResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitBusinessTripRequest_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitHiringRequisition">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitHiringRequisition" name="submitHiringRequisition" message="tns:submitHiringRequisition" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitHiringRequisitionResponse" name="submitHiringRequisitionResponse" message="tns:submitHiringRequisitionResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitHiringRequisition_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitEmploymentCertificateRequest">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitEmploymentCertificateRequest" name="submitEmploymentCertificateRequest" message="tns:submitEmploymentCertificateRequest" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitEmploymentCertificateRequestResponse" name="submitEmploymentCertificateRequestResponse" message="tns:submitEmploymentCertificateRequestResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitEmploymentCertificateRequest_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitHRHelpDeskRequest">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitHRHelpDeskRequest" name="submitHRHelpDeskRequest" message="tns:submitHRHelpDeskRequest" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitHRHelpDeskRequestResponse" name="submitHRHelpDeskRequestResponse" message="tns:submitHRHelpDeskRequestResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitHRHelpDeskRequest_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitRejoiningRequest">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitRejoiningRequest" name="submitRejoiningRequest" message="tns:submitRejoiningRequest" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitRejoiningRequestResponse" name="submitRejoiningRequestResponse" message="tns:submitRejoiningRequestResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitRejoiningRequest_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personIdentificationNumber_Submit">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/personIdentificationNumber_Submit" name="personIdentificationNumber_Submit" message="tns:personIdentificationNumber_Submit" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/personIdentificationNumber_SubmitResponse" name="personIdentificationNumber_SubmitResponse" message="tns:personIdentificationNumber_SubmitResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_personIdentificationNumber_Submit_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personEducation_Submit">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/personEducation_Submit" name="personEducation_Submit" message="tns:personEducation_Submit" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/personEducation_SubmitResponse" name="personEducation_SubmitResponse" message="tns:personEducation_SubmitResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_personEducation_Submit_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitLeaveRequestByRecId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitLeaveRequestByRecId" name="submitLeaveRequestByRecId" message="tns:submitLeaveRequestByRecId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitLeaveRequestByRecIdResponse" name="submitLeaveRequestByRecIdResponse" message="tns:submitLeaveRequestByRecIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitLeaveRequestByRecId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitAdvanceRequestByRecId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitAdvanceRequestByRecId" name="submitAdvanceRequestByRecId" message="tns:submitAdvanceRequestByRecId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitAdvanceRequestByRecIdResponse" name="submitAdvanceRequestByRecIdResponse" message="tns:submitAdvanceRequestByRecIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitAdvanceRequestByRecId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="approveWFByCorrelationId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/approveWFByCorrelationId" name="approveWFByCorrelationId" message="tns:approveWFByCorrelationId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/approveWFByCorrelationIdResponse" name="approveWFByCorrelationIdResponse" message="tns:approveWFByCorrelationIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_approveWFByCorrelationId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rejectWFByCorrelationId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/rejectWFByCorrelationId" name="rejectWFByCorrelationId" message="tns:rejectWFByCorrelationId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/rejectWFByCorrelationIdResponse" name="rejectWFByCorrelationIdResponse" message="tns:rejectWFByCorrelationIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_rejectWFByCorrelationId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="workflowBulkActionProcess">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/workflowBulkActionProcess" name="workflowBulkActionProcess" message="tns:workflowBulkActionProcess" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/workflowBulkActionProcessResponse" name="workflowBulkActionProcessResponse" message="tns:workflowBulkActionProcessResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_workflowBulkActionProcess_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitEOSRequestByRecId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitEOSRequestByRecId" name="submitEOSRequestByRecId" message="tns:submitEOSRequestByRecId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitEOSRequestByRecIdResponse" name="submitEOSRequestByRecIdResponse" message="tns:submitEOSRequestByRecIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitEOSRequestByRecId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitLoanRequestByRecId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitLoanRequestByRecId" name="submitLoanRequestByRecId" message="tns:submitLoanRequestByRecId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitLoanRequestByRecIdResponse" name="submitLoanRequestByRecIdResponse" message="tns:submitLoanRequestByRecIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitLoanRequestByRecId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitBusinessTripRequestByRecId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitBusinessTripRequestByRecId" name="submitBusinessTripRequestByRecId" message="tns:submitBusinessTripRequestByRecId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitBusinessTripRequestByRecIdResponse" name="submitBusinessTripRequestByRecIdResponse" message="tns:submitBusinessTripRequestByRecIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitBusinessTripRequestByRecId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitHiringRequisitionByRecId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitHiringRequisitionByRecId" name="submitHiringRequisitionByRecId" message="tns:submitHiringRequisitionByRecId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitHiringRequisitionByRecIdResponse" name="submitHiringRequisitionByRecIdResponse" message="tns:submitHiringRequisitionByRecIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitHiringRequisitionByRecId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitEmploymentCertificateRequestByRecId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitEmploymentCertificateRequestByRecId" name="submitEmploymentCertificateRequestByRecId" message="tns:submitEmploymentCertificateRequestByRecId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitEmploymentCertificateRequestByRecIdResponse" name="submitEmploymentCertificateRequestByRecIdResponse" message="tns:submitEmploymentCertificateRequestByRecIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitEmploymentCertificateRequestByRecId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitHRHelpDeskRequestByRecId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitHRHelpDeskRequestByRecId" name="submitHRHelpDeskRequestByRecId" message="tns:submitHRHelpDeskRequestByRecId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitHRHelpDeskRequestByRecIdResponse" name="submitHRHelpDeskRequestByRecIdResponse" message="tns:submitHRHelpDeskRequestByRecIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitHRHelpDeskRequestByRecId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitRejoiningRequestByRecId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitRejoiningRequestByRecId" name="submitRejoiningRequestByRecId" message="tns:submitRejoiningRequestByRecId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitRejoiningRequestByRecIdResponse" name="submitRejoiningRequestByRecIdResponse" message="tns:submitRejoiningRequestByRecIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitRejoiningRequestByRecId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitBankAccountRequestByRecId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitBankAccountRequestByRecId" name="submitBankAccountRequestByRecId" message="tns:submitBankAccountRequestByRecId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitBankAccountRequestByRecIdResponse" name="submitBankAccountRequestByRecIdResponse" message="tns:submitBankAccountRequestByRecIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitBankAccountRequestByRecId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitEmployeeLeaveEncashmentReqbyRecId">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitEmployeeLeaveEncashmentReqbyRecId" name="submitEmployeeLeaveEncashmentReqbyRecId" message="tns:submitEmployeeLeaveEncashmentReqbyRecId" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitEmployeeLeaveEncashmentReqbyRecIdResponse" name="submitEmployeeLeaveEncashmentReqbyRecIdResponse" message="tns:submitEmployeeLeaveEncashmentReqbyRecIdResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitEmployeeLeaveEncashmentReqbyRecId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitESSPersonImage">
+      <wsdl:input wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitESSPersonImage" name="submitESSPersonImage" message="tns:submitESSPersonImage" />
+      <wsdl:output wsam:Action="http://tempuri.org/ESSWorkflowSvc/submitESSPersonImageResponse" name="submitESSPersonImageResponse" message="tns:submitESSPersonImageResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ESSWorkflowSvc/Fault" name="SoapServiceFaultFault" message="tns:ESSWorkflowSvc_submitESSPersonImage_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

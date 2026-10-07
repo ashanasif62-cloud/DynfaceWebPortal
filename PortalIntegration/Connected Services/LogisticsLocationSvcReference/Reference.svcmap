@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="afebd720-9c88-4395-a6da-94a6d62e8c60" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LogisticsLocationSvcGroup.xsd" MetadataType="Schema" ID="27b9ec3d-5bbd-4be8-9e4a-760d48e6ea59" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup.disco" MetadataType="Disco" ID="8a587e45-e08b-47c6-9e5f-70891466b140" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?disco" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup1.xsd" MetadataType="Schema" ID="32c95c6b-1e51-4d07-81d5-a0bd7de46bbe" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup2.xsd" MetadataType="Schema" ID="d54c3811-8a14-42ac-8a81-b0ae18eedc4b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup3.xsd" MetadataType="Schema" ID="af8d1214-ec12-4624-9848-da2790a2b210" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup4.xsd" MetadataType="Schema" ID="900d488a-ef22-4ba9-ba74-fec2c9299829" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup5.xsd" MetadataType="Schema" ID="66611dc1-5e0c-4ea7-8e8e-f40f871fa209" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup.wsdl" MetadataType="Wsdl" ID="ba08cfc4-75d9-44b3-bb25-649c3fb99b09" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?wsdl" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup6.xsd" MetadataType="Schema" ID="a420b0f3-b33a-4be5-8e14-f5f2e09d258a" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="LogisticsLocationSvcGroup1.wsdl" MetadataType="Wsdl" ID="704e4dfd-848b-4b65-a4f9-8d80778569c8" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/LogisticsLocationSvcGroup?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Find">
+    <wsdl:part name="parameters" element="tns:Find" />
+  </wsdl:message>
+  <wsdl:message name="Find_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="FindResponse">
+    <wsdl:part name="parameters" element="tns:FindResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_Find_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="Update">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="Update_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="UpdateResponse">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_Update_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveAll">
+    <wsdl:part name="parameters" element="tns:RetrieveAll" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveAll_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveAllResponse">
+    <wsdl:part name="parameters" element="tns:RetrieveAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveAllResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_RetrieveAll_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="Delete">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="Delete_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="DeleteResponse">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_Delete_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="create">
+    <wsdl:part name="parameters" element="tns:create" />
+  </wsdl:message>
+  <wsdl:message name="create_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="createResponse">
+    <wsdl:part name="parameters" element="tns:createResponse" />
+  </wsdl:message>
+  <wsdl:message name="createResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_create_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeRequestioner">
+    <wsdl:part name="parameters" element="tns:retriveEmployeeRequestioner" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeRequestioner_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeRequestionerResponse">
+    <wsdl:part name="parameters" element="tns:retriveEmployeeRequestionerResponse" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeRequestionerResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_retriveEmployeeRequestioner_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="findByEmployee">
+    <wsdl:part name="parameters" element="tns:findByEmployee" />
+  </wsdl:message>
+  <wsdl:message name="findByEmployee_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="findByEmployeeResponse">
+    <wsdl:part name="parameters" element="tns:findByEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="findByEmployeeResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_findByEmployee_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:message name="getBalance">
+    <wsdl:part name="parameters" element="tns:getBalance" />
+  </wsdl:message>
+  <wsdl:message name="getBalance_Headers">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q22:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getBalanceResponse">
+    <wsdl:part name="parameters" element="tns:getBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBalanceResponse_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q23:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_getBalance_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q24:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeReportees">
+    <wsdl:part name="parameters" element="tns:retriveEmployeeReportees" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeReportees_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeReporteesResponse">
+    <wsdl:part name="parameters" element="tns:retriveEmployeeReporteesResponse" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeReporteesResponse_Headers">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q26:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_retriveEmployeeReportees_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q27:Fault" />
+  </wsdl:message>
+  <wsdl:message name="getLeaveLabels">
+    <wsdl:part name="parameters" element="tns:getLeaveLabels" />
+  </wsdl:message>
+  <wsdl:message name="getLeaveLabels_Headers">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q28:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getLeaveLabelsResponse">
+    <wsdl:part name="parameters" element="tns:getLeaveLabelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLeaveLabelsResponse_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q29:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_getLeaveLabels_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q30:Fault" />
+  </wsdl:message>
+  <wsdl:message name="isWorkflowConfigured">
+    <wsdl:part name="parameters" element="tns:isWorkflowConfigured" />
+  </wsdl:message>
+  <wsdl:message name="isWorkflowConfigured_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="isWorkflowConfiguredResponse">
+    <wsdl:part name="parameters" element="tns:isWorkflowConfiguredResponse" />
+  </wsdl:message>
+  <wsdl:message name="isWorkflowConfiguredResponse_Headers">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q32:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_isWorkflowConfigured_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q33:Fault" />
+  </wsdl:message>
+  <wsdl:message name="getEmployeeQuota">
+    <wsdl:part name="parameters" element="tns:getEmployeeQuota" />
+  </wsdl:message>
+  <wsdl:message name="getEmployeeQuota_Headers">
+    <wsdl:part xmlns:q34="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q34:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getEmployeeQuotaResponse">
+    <wsdl:part name="parameters" element="tns:getEmployeeQuotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getEmployeeQuotaResponse_Headers">
+    <wsdl:part xmlns:q35="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q35:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_getEmployeeQuota_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q36:Fault" />
+  </wsdl:message>
+  <wsdl:message name="getLeaveDays">
+    <wsdl:part name="parameters" element="tns:getLeaveDays" />
+  </wsdl:message>
+  <wsdl:message name="getLeaveDays_Headers">
+    <wsdl:part xmlns:q37="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q37:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getLeaveDaysResponse">
+    <wsdl:part name="parameters" element="tns:getLeaveDaysResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLeaveDaysResponse_Headers">
+    <wsdl:part xmlns:q38="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q38:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_getLeaveDays_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q39="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q39:Fault" />
+  </wsdl:message>
+  <wsdl:message name="getLeaveBalance">
+    <wsdl:part name="parameters" element="tns:getLeaveBalance" />
+  </wsdl:message>
+  <wsdl:message name="getLeaveBalance_Headers">
+    <wsdl:part xmlns:q40="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q40:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getLeaveBalanceResponse">
+    <wsdl:part name="parameters" element="tns:getLeaveBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLeaveBalanceResponse_Headers">
+    <wsdl:part xmlns:q41="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q41:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="PREmployeeLeavesSvc_getLeaveBalance_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q42:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="PREmployeeLeavesSvc">
+    <wsdl:operation name="Find">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Find" name="Find" message="tns:Find" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/FindResponse" name="FindResponse" message="tns:FindResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_Find_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Update" name="Update" message="tns:Update" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/UpdateResponse" name="UpdateResponse" message="tns:UpdateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_Update_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveAll">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/RetrieveAll" name="RetrieveAll" message="tns:RetrieveAll" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/RetrieveAllResponse" name="RetrieveAllResponse" message="tns:RetrieveAllResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_RetrieveAll_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Delete" name="Delete" message="tns:Delete" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/DeleteResponse" name="DeleteResponse" message="tns:DeleteResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_Delete_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/create" name="create" message="tns:create" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/createResponse" name="createResponse" message="tns:createResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_create_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retriveEmployeeRequestioner">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/retriveEmployeeRequestioner" name="retriveEmployeeRequestioner" message="tns:retriveEmployeeRequestioner" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/retriveEmployeeRequestionerResponse" name="retriveEmployeeRequestionerResponse" message="tns:retriveEmployeeRequestionerResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_retriveEmployeeRequestioner_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="findByEmployee">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/findByEmployee" name="findByEmployee" message="tns:findByEmployee" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/findByEmployeeResponse" name="findByEmployeeResponse" message="tns:findByEmployeeResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_findByEmployee_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getBalance">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/getBalance" name="getBalance" message="tns:getBalance" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/getBalanceResponse" name="getBalanceResponse" message="tns:getBalanceResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_getBalance_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retriveEmployeeReportees">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/retriveEmployeeReportees" name="retriveEmployeeReportees" message="tns:retriveEmployeeReportees" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/retriveEmployeeReporteesResponse" name="retriveEmployeeReporteesResponse" message="tns:retriveEmployeeReporteesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_retriveEmployeeReportees_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLeaveLabels">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/getLeaveLabels" name="getLeaveLabels" message="tns:getLeaveLabels" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/getLeaveLabelsResponse" name="getLeaveLabelsResponse" message="tns:getLeaveLabelsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_getLeaveLabels_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isWorkflowConfigured">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/isWorkflowConfigured" name="isWorkflowConfigured" message="tns:isWorkflowConfigured" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/isWorkflowConfiguredResponse" name="isWorkflowConfiguredResponse" message="tns:isWorkflowConfiguredResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_isWorkflowConfigured_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmployeeQuota">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/getEmployeeQuota" name="getEmployeeQuota" message="tns:getEmployeeQuota" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/getEmployeeQuotaResponse" name="getEmployeeQuotaResponse" message="tns:getEmployeeQuotaResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_getEmployeeQuota_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLeaveDays">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/getLeaveDays" name="getLeaveDays" message="tns:getLeaveDays" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/getLeaveDaysResponse" name="getLeaveDaysResponse" message="tns:getLeaveDaysResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_getLeaveDays_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLeaveBalance">
+      <wsdl:input wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/getLeaveBalance" name="getLeaveBalance" message="tns:getLeaveBalance" />
+      <wsdl:output wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/getLeaveBalanceResponse" name="getLeaveBalanceResponse" message="tns:getLeaveBalanceResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/PREmployeeLeavesSvc/Fault" name="SoapServiceFaultFault" message="tns:PREmployeeLeavesSvc_getLeaveBalance_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

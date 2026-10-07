@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="96a50918-c330-4638-b39b-f2ed5959a1aa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLeavesSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup72.xsd" MetadataType="Schema" ID="6abb9b58-08be-4645-acd6-793684d53caa" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup76.xsd" MetadataType="Schema" ID="53f7588b-9329-4068-a840-548c1e725326" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup73.xsd" MetadataType="Schema" ID="3f27c15e-49c0-4b0a-8483-72f4ed28dafc" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup71.xsd" MetadataType="Schema" ID="a3e04484-1ffd-4b02-be75-38c094ff30e5" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup1.disco" MetadataType="Disco" ID="eff71ced-8e85-4c27-b513-a96c1888089c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?disco" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup2.wsdl" MetadataType="Wsdl" ID="257ad952-bd70-4b67-807d-a20e2577100d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup75.xsd" MetadataType="Schema" ID="e2ab6d64-f25f-4c20-860b-253dfb14a20d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup7.xsd" MetadataType="Schema" ID="e73859d5-079f-448a-a46f-64b4053a49af" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup21.wsdl" MetadataType="Wsdl" ID="5c9b09a6-9a5f-47a2-b142-3e7ea9954342" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?wsdl" />
+    <MetadataFile FileName="PREmployeeLeavesSvcGroup74.xsd" MetadataType="Schema" ID="0475af98-541f-4368-b6d6-a2ad3795f10b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeLeavesSvcGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

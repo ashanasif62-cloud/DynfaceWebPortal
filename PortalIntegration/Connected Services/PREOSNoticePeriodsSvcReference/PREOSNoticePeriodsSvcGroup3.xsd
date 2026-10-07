@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/PREOSNoticePeriodsSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfPREOSNoticePeriodsSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PREOSNoticePeriodsSvcContract" nillable="true" type="tns:PREOSNoticePeriodsSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPREOSNoticePeriodsSvcContract" nillable="true" type="tns:ArrayOfPREOSNoticePeriodsSvcContract" />
+  <xs:complexType name="PREOSNoticePeriodsSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CalculationCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EOSType" type="tns:PREOSType" />
+          <xs:element minOccurs="0" name="EarningCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmploymentType" type="tns:PREmploymentType" />
+          <xs:element minOccurs="0" name="IntervalType" type="tns:PREOSIntervalType" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="NoticePeriodCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="Period" type="xs:int" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PREOSNoticePeriodsSvcContract" nillable="true" type="tns:PREOSNoticePeriodsSvcContract" />
+  <xs:simpleType name="PREOSType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Resignation" />
+      <xs:enumeration value="Termination" />
+      <xs:enumeration value="Retirement" />
+      <xs:enumeration value="Death" />
+      <xs:enumeration value="Redundant" />
+      <xs:enumeration value="Dismissal" />
+      <xs:enumeration value="ContractExpire" />
+      <xs:enumeration value="StatusChange" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PREOSType" nillable="true" type="tns:PREOSType" />
+  <xs:simpleType name="PREmploymentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Permanent" />
+      <xs:enumeration value="Contract" />
+      <xs:enumeration value="Probation" />
+      <xs:enumeration value="DailyWages" />
+      <xs:enumeration value="Trainee" />
+      <xs:enumeration value="Apprentices" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PREmploymentType" nillable="true" type="tns:PREmploymentType" />
+  <xs:simpleType name="PREOSIntervalType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Month" />
+      <xs:enumeration value="Days" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PREOSIntervalType" nillable="true" type="tns:PREOSIntervalType" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+</xs:schema>

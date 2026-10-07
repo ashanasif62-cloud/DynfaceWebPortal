@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="6eb0adec-ead6-4bac-8128-d47a7c4fff74" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EssWorkflowSvcGroup8.xsd" MetadataType="Schema" ID="495887a7-491f-45c4-900c-2b03809d9e40" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="EssWorkflowSvcGroup1.disco" MetadataType="Disco" ID="a2c7cc80-d0ef-4f48-abc4-033fa6350456" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?disco" />
+    <MetadataFile FileName="EssWorkflowSvcGroup3.wsdl" MetadataType="Wsdl" ID="0582ee41-d715-4457-90e7-938f97842927" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="EssWorkflowSvcGroup9.xsd" MetadataType="Schema" ID="ebe617d4-d2e6-4be0-a386-c298b63c15b7" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="EssWorkflowSvcGroup10.xsd" MetadataType="Schema" ID="460fa4be-160d-413b-acd5-430237182bab" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="EssWorkflowSvcGroup11.xsd" MetadataType="Schema" ID="5266bcc6-be4c-4ca9-a2ad-7146952bc3ee" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="EssWorkflowSvcGroup12.xsd" MetadataType="Schema" ID="f55f9517-abec-4671-bb3c-99e8f26d0668" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="EssWorkflowSvcGroup4.wsdl" MetadataType="Wsdl" ID="1b0b01c9-a711-4606-8285-9a1d27baf60c" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?wsdl" />
+    <MetadataFile FileName="EssWorkflowSvcGroup13.xsd" MetadataType="Schema" ID="a381e5a8-10f6-49bc-85a8-cc4d455e45a1" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="EssWorkflowSvcGroup14.xsd" MetadataType="Schema" ID="d3771434-59ae-4bcc-ac31-28647decb5b7" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

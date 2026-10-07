@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9305239a-3b96-48e2-9cdc-4312e48058bd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DocumentAttachmentSvcGroup1.wsdl" MetadataType="Wsdl" ID="da658bfb-708d-4431-aaa8-7d2160b59661" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?wsdl" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup6.xsd" MetadataType="Schema" ID="9458f864-80d3-42bb-8c6f-3abf525c80c1" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd7" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup1.xsd" MetadataType="Schema" ID="207f4c40-13b8-40c0-88db-533b5615a5e8" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup.xsd" MetadataType="Schema" ID="dd3d3639-aaa4-4450-bf19-b0d66ce01561" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup4.xsd" MetadataType="Schema" ID="1b01048e-255b-4647-a70d-2f859602de29" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup3.xsd" MetadataType="Schema" ID="ade74c1b-1f4e-4303-82b7-38027af4e9fd" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup5.xsd" MetadataType="Schema" ID="6536bd4e-0f1b-4569-8864-fdb009a91b37" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup2.xsd" MetadataType="Schema" ID="c978d5ea-8eac-4ea1-b650-0ee05ae2cf7a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup.disco" MetadataType="Disco" ID="c5fc782f-11cb-4a4f-a311-da004ab7df13" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?disco" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup7.xsd" MetadataType="Schema" ID="1cfe8ae1-5c3c-4144-a623-70eabafe7a26" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup.wsdl" MetadataType="Wsdl" ID="7f3df9cc-60a1-4ad0-937e-4086d2847586" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup8.xsd" MetadataType="Schema" ID="f169e4d1-f389-464d-a7f4-118b2e07ea46" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd8" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

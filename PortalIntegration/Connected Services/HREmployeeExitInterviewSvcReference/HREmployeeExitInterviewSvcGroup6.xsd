@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfHRExitInterviewContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HRExitInterviewContract" nillable="true" type="tns:HRExitInterviewContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHRExitInterviewContract" nillable="true" type="tns:ArrayOfHRExitInterviewContract" />
+  <xs:complexType name="HRExitInterviewContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Mark" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MarkandDescribe" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="McqsType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="McqsTypelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="QuestionType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="QuestionTypelbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Statuslbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="answer" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="answerlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="employee" type="xs:long" />
+          <xs:element minOccurs="0" name="employeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="mcqDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="mcqDescriptionlbl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="question" type="xs:long" />
+          <xs:element minOccurs="0" name="questionDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="questionDescriptionlbl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HRExitInterviewContract" nillable="true" type="tns:HRExitInterviewContract" />
+</xs:schema>

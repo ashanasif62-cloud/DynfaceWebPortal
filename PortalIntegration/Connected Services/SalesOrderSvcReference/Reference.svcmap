@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="c5068678-32bd-4527-a9d2-53accd11703b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SalesOrderSvcGroup2.wsdl" MetadataType="Wsdl" ID="d02c66c6-d261-41ce-b955-6bd8e74835d8" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?wsdl" />
+    <MetadataFile FileName="SalesOrderSvcGroup1.disco" MetadataType="Disco" ID="72055858-21aa-4be1-b9cb-8d4cbf4c315b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?disco" />
+    <MetadataFile FileName="SalesOrderSvcGroup21.wsdl" MetadataType="Wsdl" ID="53800965-2063-4651-8d33-c73b48b8c903" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="SalesOrderSvcGroup7.xsd" MetadataType="Schema" ID="02040398-ad2b-4f89-b5fd-a0eb71f95774" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="SalesOrderSvcGroup71.xsd" MetadataType="Schema" ID="7df0c3e3-64a0-4a83-92ba-0f713aeef2a9" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="SalesOrderSvcGroup72.xsd" MetadataType="Schema" ID="29ae0632-44ea-4881-9f84-66778fc69dda" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="SalesOrderSvcGroup73.xsd" MetadataType="Schema" ID="4d0e7a5d-27df-4a1b-b2b4-0d0e94d4c65e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="SalesOrderSvcGroup74.xsd" MetadataType="Schema" ID="e1b71dab-d6e0-44ed-8bcf-a58e438187ac" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="SalesOrderSvcGroup75.xsd" MetadataType="Schema" ID="68b8d7ad-6171-4dae-b49e-92c8595ae1a6" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="SalesOrderSvcGroup76.xsd" MetadataType="Schema" ID="48042e52-b8f6-4fb5-ad12-5209bc4dc0d6" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/SalesOrderSvcGroup?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,36 @@
+D:\ESS .Net Portal-DynaFace\GeneralAuxiliary\bin\Debug\GeneralAuxiliary.dll
+D:\ESS .Net Portal-DynaFace\GeneralAuxiliary\bin\Debug\GeneralAuxiliary.pdb
+D:\ESS .Net Portal-DynaFace\GeneralAuxiliary\bin\Debug\BussinessObject.dll
+D:\ESS .Net Portal-DynaFace\GeneralAuxiliary\bin\Debug\BussinessObject.pdb
+D:\ESS .Net Portal-DynaFace\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.csproj.AssemblyReference.cache
+D:\ESS .Net Portal-DynaFace\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.csproj.CoreCompileInputs.cache
+D:\ESS .Net Portal-DynaFace\GeneralAuxiliary\obj\Debug\GeneralA.8EE12BFE.Up2Date
+D:\ESS .Net Portal-DynaFace\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.dll
+D:\ESS .Net Portal-DynaFace\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.pdb
+D:\DynaFace-Latest\GeneralAuxiliary\bin\Debug\GeneralAuxiliary.dll
+D:\DynaFace-Latest\GeneralAuxiliary\bin\Debug\GeneralAuxiliary.pdb
+D:\DynaFace-Latest\GeneralAuxiliary\bin\Debug\BussinessObject.dll
+D:\DynaFace-Latest\GeneralAuxiliary\bin\Debug\BussinessObject.pdb
+D:\DynaFace-Latest\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.csproj.AssemblyReference.cache
+D:\DynaFace-Latest\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.csproj.CoreCompileInputs.cache
+D:\DynaFace-Latest\GeneralAuxiliary\obj\Debug\GeneralA.8EE12BFE.Up2Date
+D:\DynaFace-Latest\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.dll
+D:\DynaFace-Latest\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.pdb
+C:\WorkingESSPortalFromAzure\GeneralAuxiliary\bin\Debug\GeneralAuxiliary.dll
+C:\WorkingESSPortalFromAzure\GeneralAuxiliary\bin\Debug\GeneralAuxiliary.pdb
+C:\WorkingESSPortalFromAzure\GeneralAuxiliary\bin\Debug\BussinessObject.dll
+C:\WorkingESSPortalFromAzure\GeneralAuxiliary\bin\Debug\BussinessObject.pdb
+C:\WorkingESSPortalFromAzure\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.csproj.AssemblyReference.cache
+C:\WorkingESSPortalFromAzure\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.csproj.CoreCompileInputs.cache
+C:\WorkingESSPortalFromAzure\GeneralAuxiliary\obj\Debug\GeneralA.8EE12BFE.Up2Date
+C:\WorkingESSPortalFromAzure\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.dll
+C:\WorkingESSPortalFromAzure\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.pdb
+C:\DynafacePortal\GeneralAuxiliary\bin\Debug\GeneralAuxiliary.dll
+C:\DynafacePortal\GeneralAuxiliary\bin\Debug\GeneralAuxiliary.pdb
+C:\DynafacePortal\GeneralAuxiliary\bin\Debug\BussinessObject.dll
+C:\DynafacePortal\GeneralAuxiliary\bin\Debug\BussinessObject.pdb
+C:\DynafacePortal\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.csproj.AssemblyReference.cache
+C:\DynafacePortal\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.csproj.CoreCompileInputs.cache
+C:\DynafacePortal\GeneralAuxiliary\obj\Debug\GeneralA.8EE12BFE.Up2Date
+C:\DynafacePortal\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.dll
+C:\DynafacePortal\GeneralAuxiliary\obj\Debug\GeneralAuxiliary.pdb

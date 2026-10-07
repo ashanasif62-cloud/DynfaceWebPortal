@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/HR/ESSHcmPersonEducation.aspx" hash="ffffffefe3a9c958" filehash="2d04fa7a404e5284" flags="110000" assembly="MaisonPortal" type="ASP.ess_hr_esshcmpersoneducation_aspx">
+  <filedeps>
+    <filedep name="/ESS/HR/ESSHcmPersonEducation.aspx" />
+    <filedep name="/Modal.Master" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a3d6c2c9-97ee-43ab-a99b-9e7ec39e592b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maison-devdevaos.sandbox.ax.dynamics.com/soap/services/ExecuteQuerySvcGroup?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ExecuteQuerySvcGroup.wsdl" MetadataType="Wsdl" ID="828c6f13-8e1c-4053-9c93-2383cf890fa6" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/soap/services/ExecuteQuerySvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ExecuteQuerySvcGroup.xsd" MetadataType="Schema" ID="7941a4a2-8e90-4fa6-ae01-787ad2b9a150" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/soap/services/ExecuteQuerySvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="ExecuteQuerySvcGroup4.xsd" MetadataType="Schema" ID="3464b50b-7971-425e-8c17-46cbf468ab4e" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/soap/services/ExecuteQuerySvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="ExecuteQuerySvcGroup5.xsd" MetadataType="Schema" ID="ce5f6344-0635-4eff-b6ec-027afc97efd3" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/soap/services/ExecuteQuerySvcGroup?xsd=xsd7" />
+    <MetadataFile FileName="ExecuteQuerySvcGroup41.xsd" MetadataType="Schema" ID="79a7dbf6-3b08-4dbf-9ef4-69ecea7349ab" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/soap/services/ExecuteQuerySvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="ExecuteQuerySvcGroup2.xsd" MetadataType="Schema" ID="ab33592c-3f65-4bff-9212-2be9b77f94ba" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/soap/services/ExecuteQuerySvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="ExecuteQuerySvcGroup1.wsdl" MetadataType="Wsdl" ID="b7888562-8273-4081-a2ae-3ca55d21606d" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/soap/services/ExecuteQuerySvcGroup?wsdl" />
+    <MetadataFile FileName="ExecuteQuerySvcGroup3.xsd" MetadataType="Schema" ID="3475c8ed-9ecf-4587-95f8-d534c138dab4" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/soap/services/ExecuteQuerySvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="ExecuteQuerySvcGroup1.xsd" MetadataType="Schema" ID="c920be4e-c869-4259-9696-a4a98413b159" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/soap/services/ExecuteQuerySvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="ExecuteQuerySvcGroup42.xsd" MetadataType="Schema" ID="da22d8cb-1863-44a2-99d8-3e9ef053b2ca" SourceId="1" SourceUrl="https://maison-devdevaos.sandbox.ax.dynamics.com/soap/services/ExecuteQuerySvcGroup?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

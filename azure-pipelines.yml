@@ -1,0 +1,85 @@
+trigger:
+  branches:
+    include:
+      - Working
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildConfiguration: 'Release'
+  solution: '**/*.sln'
+
+stages:
+
+# ─── Stage 1: Build & Package ───────────────────────────────────────────────
+- stage: Build
+  displayName: 'Build & Package'
+  jobs:
+  - job: BuildJob
+    displayName: 'NuGet Restore → MSBuild → Package'
+    steps:
+
+    - task: NuGetToolInstaller@1
+      displayName: 'Install NuGet'
+
+    - task: NuGetCommand@2
+      displayName: 'Restore NuGet packages'
+      inputs:
+        restoreSolution: '$(solution)'
+
+    - task: VSBuild@1
+      displayName: 'Build & create Web Deploy package'
+      inputs:
+        solution: '$(solution)'
+        msbuildArgs: '/p:Configuration=Release /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(Build.ArtifactStagingDirectory)\\"'
+        platform: 'Any CPU'
+        configuration: '$(buildConfiguration)'
+
+    # ── Verify the zip exists before trying to publish it ───────────────
+    - task: PowerShell@2
+      displayName: 'Verify zip exists'
+      inputs:
+        targetType: 'inline'
+        script: |
+          $zip = "$(Build.ArtifactStagingDirectory)\DynamicsPortal.zip"
+          if (Test-Path $zip) {
+            Write-Host "✅ Found: $zip"
+          } else {
+            Write-Host "❌ Not found. Listing staging dir:"
+            Get-ChildItem -Path "$(Build.ArtifactStagingDirectory)" -Recurse | Select-Object FullName
+            exit 1
+          }
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'Upload artifact'
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
+
+# ─── Stage 2: Deploy to Azure App Service ───────────────────────────────────
+- stage: Deploy
+  displayName: 'Deploy to App Service'
+  dependsOn: Build
+  condition: succeeded()
+  jobs:
+  - deployment: DeployJob
+    displayName: 'Deploy to Azure App Service'
+    environment: 'production'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+
+          - download: current
+            artifact: drop
+            displayName: 'Download build artifact'
+
+          - task: AzureWebApp@1
+            displayName: 'Deploy to App Service'
+            inputs:
+              azureSubscription: 'Dynaface-Publish'
+              appType: 'webApp'
+              appName: 'dynaface'
+              package: '$(Pipeline.Workspace)/drop/DynamicsPortal.zip'

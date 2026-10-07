@@ -1,0 +1,177 @@
+.cld-main {
+    width: auto;
+    background-color: #fff;
+    font-size: 12px !important;
+}
+
+    .cld-main a {
+        color: #0080FF;
+    }
+
+    .cld-main svg {
+        fill: #0080FF;
+    }
+
+.cld-datetime {
+    position: relative;
+    width: 66%;
+    min-width: 100px;
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 6%;
+    padding-top: 6%;
+}
+
+    .cld-datetime .today {
+        position: relative;
+        float: left;
+        width: calc(100% - 40px);
+        margin: auto;
+        text-align: center;
+    }
+
+.cld-nav {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+    .cld-nav:hover {
+        cursor: pointer;
+    }
+
+        .cld-nav:hover svg {
+            fill: #005EFF;
+        }
+
+.cld-rwd {
+    float: left;
+}
+
+.cld-fwd {
+    float: right;
+}
+
+.cld-nav svg:hover {
+}
+
+.cld-labels, .cld-days {
+    padding-left: 0;
+    row-gap: 2px;
+    column-gap: 3px;
+}
+
+.cld-label, .cld-day {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 14.28%;
+    text-align: center;
+    margin: 2px 0px 2px 0px;
+}
+
+.cld-day {
+    border: 1px solid #eee;
+    border-radius: 70px;
+}
+
+    .cld-day.today .cld-number {
+        background: #0080FF;
+        color: #fff;
+        border-radius: 70px;
+    }
+
+    .cld-day.disableDay {
+        opacity: 0.5;
+    }
+
+    .cld-day.nextMonth, .cld-day.prevMonth {
+        opacity: 0.33;
+    }
+
+.cld-number {
+    position: relative;
+    margin: 0;
+    padding: 5px;
+}
+
+.cld-title {
+    position: absolute;
+    z-index: 10;
+    display: none;
+    top: 28px;
+    right: 0;
+    padding: 10px 12px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 10px;
+    background-color: #F4F7FA;
+    white-space: normal;
+    overflow-wrap: break-word;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+
+.cld-number:hover .cld-title {
+    display: block;
+    opacity: 1;
+}
+
+.cld-title::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.cld-title .punch-table-container {
+    max-height: 160px; /* ~6 visible rows */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+    .cld-title .punch-table-container::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .cld-title .punch-table-container::-webkit-scrollbar-thumb {
+        background-color: #bbb;
+        border-radius: 4px;
+    }
+
+.cld-number.eventday {
+    font-weight: bold;
+    color: #0080FF;
+}
+
+    .cld-number.eventday:hover {
+        cursor: pointer;
+        background: #eee;
+        border-radius: 70px;
+    }
+
+.today .cld-number.eventday:hover {
+    background: #005EFF;
+}
+
+.cld-event-panel {
+    position: absolute;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    font-size: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    white-space: nowrap;
+    z-index: 999;
+    transform: translateY(-110%); /* show above the date */
+}

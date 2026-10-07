@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="ca9fdd8b-cac1-4312-afd8-974c21ad6492" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup7.xsd" MetadataType="Schema" ID="247d84f3-e9e6-48a3-9d2f-0552a1a335ce" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup71.xsd" MetadataType="Schema" ID="54e024b2-c67e-4bb1-b0aa-857f1d355774" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup2.wsdl" MetadataType="Wsdl" ID="61744712-a22b-4264-b50e-e82debda8fc7" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup72.xsd" MetadataType="Schema" ID="e6a3bbf0-78c9-4a21-a373-449a64c04d0e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup73.xsd" MetadataType="Schema" ID="c86f85bd-89a8-4ee6-97f7-9018bd27aa82" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup21.wsdl" MetadataType="Wsdl" ID="7b4ecb85-5429-4749-aa56-39b76e205a32" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?wsdl" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup74.xsd" MetadataType="Schema" ID="0b68a849-37ac-42a0-b62c-be07a1496a20" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup1.disco" MetadataType="Disco" ID="da198762-48af-4b3e-8d7d-fb6b7ce6f140" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?disco" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup75.xsd" MetadataType="Schema" ID="8d1f6642-d7bf-44fa-bc00-c0e20485647f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="ESSRetrieveDimLocationSvcGroup76.xsd" MetadataType="Schema" ID="b69eca51-6695-4c7e-9aab-b0cf318b7ec2" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSRetrieveDimLocationSvcGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

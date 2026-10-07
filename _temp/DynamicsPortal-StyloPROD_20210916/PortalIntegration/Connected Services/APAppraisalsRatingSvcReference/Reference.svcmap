@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="37da1548-c995-49fe-98cd-720dbeab9acd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup.xsd" MetadataType="Schema" ID="55431256-14a3-4f1a-850e-bf54d006732f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup4.xsd" MetadataType="Schema" ID="75d9f423-3457-4a2c-b3f7-578eaf0307ff" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup6.xsd" MetadataType="Schema" ID="5b652efe-7e8f-4127-98d3-141bec5702b1" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup.wsdl" MetadataType="Wsdl" ID="9ea49243-5bd7-4d4f-8297-ed6827600113" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?wsdl" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup1.wsdl" MetadataType="Wsdl" ID="1c1e9846-982b-451c-b007-fe366771f32b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup2.xsd" MetadataType="Schema" ID="4af621bb-5797-4c23-be19-5a08a5652c3c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup.disco" MetadataType="Disco" ID="4a287db0-0778-45d9-a91f-53b6c95844c4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?disco" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup3.xsd" MetadataType="Schema" ID="bb52a748-4689-4f41-96a0-bcfe8eb67498" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup1.xsd" MetadataType="Schema" ID="2dcf89fb-70cd-48c6-8135-c45f1d56bc10" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="APAppraisalsRatingSvcGroup5.xsd" MetadataType="Schema" ID="c50b145b-3ffa-40e2-a8f4-2cb8d0701a81" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APAppraisalsRatingSvcGroup?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

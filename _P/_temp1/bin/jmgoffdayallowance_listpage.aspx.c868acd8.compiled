@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/TA/JmgOffDayAllowance_listPage.aspx" hash="ffffffefe3a9c958" filehash="4025b7038bfeb583" flags="110000" assembly="MaisonPortal" type="ASP.ess_ta_jmgoffdayallowance_listpage_aspx">
+  <filedeps>
+    <filedep name="/ESS/TA/JmgOffDayAllowance_listPage.aspx" />
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

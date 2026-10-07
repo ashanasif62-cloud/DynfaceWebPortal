@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="c15f8ebe-9a44-46c1-9518-2a8b3c5e67b8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HcmPersonImageSvcGroup2.wsdl" MetadataType="Wsdl" ID="319debf7-08ee-4af0-8991-30672baf082b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?wsdl" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup7.xsd" MetadataType="Schema" ID="8c2ed045-b18d-4afb-a5ab-1e4ca57522a9" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup71.xsd" MetadataType="Schema" ID="b5926ff7-7376-4b7a-8ce7-7b13b8df02d4" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup72.xsd" MetadataType="Schema" ID="60661181-4cd5-4015-9585-75da0078261c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup73.xsd" MetadataType="Schema" ID="40cb79d6-0065-4efe-bb8d-c87b2c87b98d" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup74.xsd" MetadataType="Schema" ID="789585cb-a5d5-4f7b-8d3d-033a00222140" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup21.wsdl" MetadataType="Wsdl" ID="ac436655-35aa-4906-a166-7cf8ff6a7860" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup75.xsd" MetadataType="Schema" ID="f605d7dd-fd26-414c-9a70-f9af12b1b960" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup1.disco" MetadataType="Disco" ID="c322b335-f540-4667-8282-dbfb075ade5d" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?disco" />
+    <MetadataFile FileName="HcmPersonImageSvcGroup76.xsd" MetadataType="Schema" ID="d4b4c954-9cce-4472-9e27-335e7431a16f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmPersonImageSvcGroup?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

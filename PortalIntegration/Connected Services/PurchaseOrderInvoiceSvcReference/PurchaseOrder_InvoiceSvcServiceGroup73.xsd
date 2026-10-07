@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrder_InvoiceSvcServiceGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfPurchaseOrder_InvoiceSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PurchaseOrder_InvoiceSvcContract" nillable="true" type="tns:PurchaseOrder_InvoiceSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPurchaseOrder_InvoiceSvcContract" nillable="true" type="tns:ArrayOfPurchaseOrder_InvoiceSvcContract" />
+  <xs:complexType name="PurchaseOrder_InvoiceSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" type="xs:long" />
+          <xs:element minOccurs="0" name="AddressHeader" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Approved" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Approver" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BudgetCheckResult" type="tns:BudgetCheckResult" />
+          <xs:element minOccurs="0" name="CashDisc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CashDiscPercent" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DeliveryName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DocumentDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FixedDueDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Hold" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InclTax" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventLocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventSiteId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceAccount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LineAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="LineNumber" type="xs:long" />
+          <xs:element minOccurs="0" name="Num" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrigPurchId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PackingSlipId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostingProfile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProcurementCategory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchPrice" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ReceiveNow" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ReceivedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RemittanceAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SettleVoucher" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaxGroup" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaxItemGroup" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TransDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="checkIfQuantity" type="tns:LastMatchVarianceOptions" />
+          <xs:element minOccurs="0" name="deliveryDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="editName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="location" type="xs:long" />
+          <xs:element minOccurs="0" name="logisticsDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="priceVarianceStatus" type="tns:LastMatchVarianceOptions" />
+          <xs:element minOccurs="0" name="purchUnit" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PurchaseOrder_InvoiceSvcContract" nillable="true" type="tns:PurchaseOrder_InvoiceSvcContract" />
+  <xs:simpleType name="BudgetCheckResult">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NoCheck">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Passed">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PassedWithWarnings">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Failed">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BudgetCheckResult" nillable="true" type="tns:BudgetCheckResult" />
+  <xs:simpleType name="LastMatchVarianceOptions">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Warning" />
+      <xs:enumeration value="OK" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LastMatchVarianceOptions" nillable="true" type="tns:LastMatchVarianceOptions" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+</xs:schema>

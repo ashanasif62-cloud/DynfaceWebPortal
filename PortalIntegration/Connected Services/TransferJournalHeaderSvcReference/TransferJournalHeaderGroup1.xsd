@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://fawad-dev-0136f6b0c5cde38b77devaos.axcloud.dynamics.com/soap/services/TransferJournalHeaderGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfTransferJournalHeaderContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TransferJournalHeaderContract" nillable="true" type="tns:TransferJournalHeaderContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransferJournalHeaderContract" nillable="true" type="tns:ArrayOfTransferJournalHeaderContract" />
+  <xs:complexType name="TransferJournalHeaderContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BlockUserGroupId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeletePostedLines" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DetailSummary" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InUse" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventLocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventSiteId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JournalId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JournalIdOriginal" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JournalName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JournalOriginType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JournalPostedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="JournalType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NumOfLines" type="xs:int" />
+          <xs:element minOccurs="0" name="NumberSequence" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Posted" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostedUserId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="Reservation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SystemBlocked" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsedByUser" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VoucherChange" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VoucherDraw" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WorkflowStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TransferJournalHeaderContract" nillable="true" type="tns:TransferJournalHeaderContract" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

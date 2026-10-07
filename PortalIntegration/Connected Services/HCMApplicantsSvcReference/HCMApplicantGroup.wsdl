@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="Applicant" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="Applicant" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="Applicant/Imports">
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd2" namespace="Applicant" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd6" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMApplicantGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="create">
+    <wsdl:part name="parameters" element="tns:create" />
+  </wsdl:message>
+  <wsdl:message name="create_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="createResponse">
+    <wsdl:part name="parameters" element="tns:createResponse" />
+  </wsdl:message>
+  <wsdl:message name="createResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HCMApplicant_create_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="findbyApplicantId">
+    <wsdl:part name="parameters" element="tns:findbyApplicantId" />
+  </wsdl:message>
+  <wsdl:message name="findbyApplicantId_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="findbyApplicantIdResponse">
+    <wsdl:part name="parameters" element="tns:findbyApplicantIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="findbyApplicantIdResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HCMApplicant_findbyApplicantId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll">
+    <wsdl:part name="parameters" element="tns:retrieveAll" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HCMApplicant_retrieveAll_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="updatebyapplicantid">
+    <wsdl:part name="parameters" element="tns:updatebyapplicantid" />
+  </wsdl:message>
+  <wsdl:message name="updatebyapplicantid_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="updatebyapplicantidResponse">
+    <wsdl:part name="parameters" element="tns:updatebyapplicantidResponse" />
+  </wsdl:message>
+  <wsdl:message name="updatebyapplicantidResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HCMApplicant_updatebyapplicantid_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveApplicantId">
+    <wsdl:part name="parameters" element="tns:retrieveApplicantId" />
+  </wsdl:message>
+  <wsdl:message name="retrieveApplicantId_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveApplicantIdResponse">
+    <wsdl:part name="parameters" element="tns:retrieveApplicantIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveApplicantIdResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="HCMApplicant_retrieveApplicantId_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="HCMApplicant">
+    <wsdl:operation name="create">
+      <wsdl:input wsam:Action="Applicant/HCMApplicant/create" name="create" message="tns:create" />
+      <wsdl:output wsam:Action="Applicant/HCMApplicant/createResponse" name="createResponse" message="tns:createResponse" />
+      <wsdl:fault wsam:Action="Applicant/HCMApplicant/Fault" name="SoapServiceFaultFault" message="tns:HCMApplicant_create_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="findbyApplicantId">
+      <wsdl:input wsam:Action="Applicant/HCMApplicant/findbyApplicantId" name="findbyApplicantId" message="tns:findbyApplicantId" />
+      <wsdl:output wsam:Action="Applicant/HCMApplicant/findbyApplicantIdResponse" name="findbyApplicantIdResponse" message="tns:findbyApplicantIdResponse" />
+      <wsdl:fault wsam:Action="Applicant/HCMApplicant/Fault" name="SoapServiceFaultFault" message="tns:HCMApplicant_findbyApplicantId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAll">
+      <wsdl:input wsam:Action="Applicant/HCMApplicant/retrieveAll" name="retrieveAll" message="tns:retrieveAll" />
+      <wsdl:output wsam:Action="Applicant/HCMApplicant/retrieveAllResponse" name="retrieveAllResponse" message="tns:retrieveAllResponse" />
+      <wsdl:fault wsam:Action="Applicant/HCMApplicant/Fault" name="SoapServiceFaultFault" message="tns:HCMApplicant_retrieveAll_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatebyapplicantid">
+      <wsdl:input wsam:Action="Applicant/HCMApplicant/updatebyapplicantid" name="updatebyapplicantid" message="tns:updatebyapplicantid" />
+      <wsdl:output wsam:Action="Applicant/HCMApplicant/updatebyapplicantidResponse" name="updatebyapplicantidResponse" message="tns:updatebyapplicantidResponse" />
+      <wsdl:fault wsam:Action="Applicant/HCMApplicant/Fault" name="SoapServiceFaultFault" message="tns:HCMApplicant_updatebyapplicantid_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveApplicantId">
+      <wsdl:input wsam:Action="Applicant/HCMApplicant/retrieveApplicantId" name="retrieveApplicantId" message="tns:retrieveApplicantId" />
+      <wsdl:output wsam:Action="Applicant/HCMApplicant/retrieveApplicantIdResponse" name="retrieveApplicantIdResponse" message="tns:retrieveApplicantIdResponse" />
+      <wsdl:fault wsam:Action="Applicant/HCMApplicant/Fault" name="SoapServiceFaultFault" message="tns:HCMApplicant_retrieveApplicantId_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

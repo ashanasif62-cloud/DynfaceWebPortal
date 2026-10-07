@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.IO" />
+      <xsd:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="RetrieveSalarySlipReport">
+    <wsdl:part name="parameters" element="tns:RetrieveSalarySlipReport" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveSalarySlipReport_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveSalarySlipReportResponse">
+    <wsdl:part name="parameters" element="tns:RetrieveSalarySlipReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveSalarySlipReportResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveReportSvc_RetrieveSalarySlipReport_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveTaxCertificateReport">
+    <wsdl:part name="parameters" element="tns:RetrieveTaxCertificateReport" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveTaxCertificateReport_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveTaxCertificateReportResponse">
+    <wsdl:part name="parameters" element="tns:RetrieveTaxCertificateReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveTaxCertificateReportResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveReportSvc_RetrieveTaxCertificateReport_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="viewAttendanceInOutSheet">
+    <wsdl:part name="parameters" element="tns:viewAttendanceInOutSheet" />
+  </wsdl:message>
+  <wsdl:message name="viewAttendanceInOutSheet_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="viewAttendanceInOutSheetResponse">
+    <wsdl:part name="parameters" element="tns:viewAttendanceInOutSheetResponse" />
+  </wsdl:message>
+  <wsdl:message name="viewAttendanceInOutSheetResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveReportSvc_viewAttendanceInOutSheet_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="viewTimeSheet">
+    <wsdl:part name="parameters" element="tns:viewTimeSheet" />
+  </wsdl:message>
+  <wsdl:message name="viewTimeSheet_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="viewTimeSheetResponse">
+    <wsdl:part name="parameters" element="tns:viewTimeSheetResponse" />
+  </wsdl:message>
+  <wsdl:message name="viewTimeSheetResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveReportSvc_viewTimeSheet_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="viewPreTimeSheet">
+    <wsdl:part name="parameters" element="tns:viewPreTimeSheet" />
+  </wsdl:message>
+  <wsdl:message name="viewPreTimeSheet_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="viewPreTimeSheetResponse">
+    <wsdl:part name="parameters" element="tns:viewPreTimeSheetResponse" />
+  </wsdl:message>
+  <wsdl:message name="viewPreTimeSheetResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveReportSvc_viewPreTimeSheet_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveSalarySlipNewReport">
+    <wsdl:part name="parameters" element="tns:RetrieveSalarySlipNewReport" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveSalarySlipNewReport_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveSalarySlipNewReportResponse">
+    <wsdl:part name="parameters" element="tns:RetrieveSalarySlipNewReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveSalarySlipNewReportResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveReportSvc_RetrieveSalarySlipNewReport_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="RetrieveReportSvc">
+    <wsdl:operation name="RetrieveSalarySlipReport">
+      <wsdl:input wsam:Action="http://tempuri.org/RetrieveReportSvc/RetrieveSalarySlipReport" name="RetrieveSalarySlipReport" message="tns:RetrieveSalarySlipReport" />
+      <wsdl:output wsam:Action="http://tempuri.org/RetrieveReportSvc/RetrieveSalarySlipReportResponse" name="RetrieveSalarySlipReportResponse" message="tns:RetrieveSalarySlipReportResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/RetrieveReportSvc/Fault" name="SoapServiceFaultFault" message="tns:RetrieveReportSvc_RetrieveSalarySlipReport_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveTaxCertificateReport">
+      <wsdl:input wsam:Action="http://tempuri.org/RetrieveReportSvc/RetrieveTaxCertificateReport" name="RetrieveTaxCertificateReport" message="tns:RetrieveTaxCertificateReport" />
+      <wsdl:output wsam:Action="http://tempuri.org/RetrieveReportSvc/RetrieveTaxCertificateReportResponse" name="RetrieveTaxCertificateReportResponse" message="tns:RetrieveTaxCertificateReportResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/RetrieveReportSvc/Fault" name="SoapServiceFaultFault" message="tns:RetrieveReportSvc_RetrieveTaxCertificateReport_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewAttendanceInOutSheet">
+      <wsdl:input wsam:Action="http://tempuri.org/RetrieveReportSvc/viewAttendanceInOutSheet" name="viewAttendanceInOutSheet" message="tns:viewAttendanceInOutSheet" />
+      <wsdl:output wsam:Action="http://tempuri.org/RetrieveReportSvc/viewAttendanceInOutSheetResponse" name="viewAttendanceInOutSheetResponse" message="tns:viewAttendanceInOutSheetResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/RetrieveReportSvc/Fault" name="SoapServiceFaultFault" message="tns:RetrieveReportSvc_viewAttendanceInOutSheet_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewTimeSheet">
+      <wsdl:input wsam:Action="http://tempuri.org/RetrieveReportSvc/viewTimeSheet" name="viewTimeSheet" message="tns:viewTimeSheet" />
+      <wsdl:output wsam:Action="http://tempuri.org/RetrieveReportSvc/viewTimeSheetResponse" name="viewTimeSheetResponse" message="tns:viewTimeSheetResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/RetrieveReportSvc/Fault" name="SoapServiceFaultFault" message="tns:RetrieveReportSvc_viewTimeSheet_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewPreTimeSheet">
+      <wsdl:input wsam:Action="http://tempuri.org/RetrieveReportSvc/viewPreTimeSheet" name="viewPreTimeSheet" message="tns:viewPreTimeSheet" />
+      <wsdl:output wsam:Action="http://tempuri.org/RetrieveReportSvc/viewPreTimeSheetResponse" name="viewPreTimeSheetResponse" message="tns:viewPreTimeSheetResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/RetrieveReportSvc/Fault" name="SoapServiceFaultFault" message="tns:RetrieveReportSvc_viewPreTimeSheet_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveSalarySlipNewReport">
+      <wsdl:input wsam:Action="http://tempuri.org/RetrieveReportSvc/RetrieveSalarySlipNewReport" name="RetrieveSalarySlipNewReport" message="tns:RetrieveSalarySlipNewReport" />
+      <wsdl:output wsam:Action="http://tempuri.org/RetrieveReportSvc/RetrieveSalarySlipNewReportResponse" name="RetrieveSalarySlipNewReportResponse" message="tns:RetrieveSalarySlipNewReportResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/RetrieveReportSvc/Fault" name="SoapServiceFaultFault" message="tns:RetrieveReportSvc_RetrieveSalarySlipNewReport_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

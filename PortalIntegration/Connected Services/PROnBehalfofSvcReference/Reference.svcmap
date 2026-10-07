@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="d939aa2b-575d-4163-a807-3724ef2c6d2a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROnBehalfofSvcGroup?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PROnBehalfofSvcGroup.wsdl" MetadataType="Wsdl" ID="aee5d288-f5c7-4fc6-bbd2-3d6fdd626965" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROnBehalfofSvcGroup?wsdl" />
+    <MetadataFile FileName="PROnBehalfofSvcGroup1.wsdl" MetadataType="Wsdl" ID="86f2b399-80d8-4f58-b883-2fb6e28db570" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROnBehalfofSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PROnBehalfofSvcGroup.xsd" MetadataType="Schema" ID="bc25050c-0d08-419c-bd4a-81d90681e269" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROnBehalfofSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PROnBehalfofSvcGroup1.xsd" MetadataType="Schema" ID="d5870f6c-729e-4ec4-8596-394a2a75d74f" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROnBehalfofSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="PROnBehalfofSvcGroup2.xsd" MetadataType="Schema" ID="f466eac7-943c-4105-8263-b5eb449e30cc" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROnBehalfofSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PROnBehalfofSvcGroup3.xsd" MetadataType="Schema" ID="15b782c8-7fd1-4fc8-9e6e-4b49ae243414" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROnBehalfofSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PROnBehalfofSvcGroup4.xsd" MetadataType="Schema" ID="e1833acc-9695-43a5-8c10-a9b4ba03baab" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROnBehalfofSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PROnBehalfofSvcGroup5.xsd" MetadataType="Schema" ID="9a51ccc8-0d7a-48d3-9834-33d09d018030" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROnBehalfofSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PROnBehalfofSvcGroup6.xsd" MetadataType="Schema" ID="63ff1174-5193-41cb-ab7c-3afba1646452" SourceId="1" SourceUrl="https://maison-uat.sandbox.operations.dynamics.com/soap/services/PROnBehalfofSvcGroup?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

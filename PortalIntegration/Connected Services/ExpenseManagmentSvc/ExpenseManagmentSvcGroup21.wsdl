@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://maisondyn365ude.operations.dynamics.com/soap/services/ExpenseManagmentSvcGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="AttachExpensesToExpenseReports">
+    <wsdl:part name="parameters" element="tns:AttachExpensesToExpenseReports" />
+  </wsdl:message>
+  <wsdl:message name="AttachExpensesToExpenseReports_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AttachExpensesToExpenseReportsResponse">
+    <wsdl:part name="parameters" element="tns:AttachExpensesToExpenseReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AttachExpensesToExpenseReportsResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReportsServiceSvc_AttachExpensesToExpenseReports_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="SubmitExpenseReportsToWorkflow">
+    <wsdl:part name="parameters" element="tns:SubmitExpenseReportsToWorkflow" />
+  </wsdl:message>
+  <wsdl:message name="SubmitExpenseReportsToWorkflow_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="SubmitExpenseReportsToWorkflowResponse">
+    <wsdl:part name="parameters" element="tns:SubmitExpenseReportsToWorkflowResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubmitExpenseReportsToWorkflowResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReportsServiceSvc_SubmitExpenseReportsToWorkflow_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="RecallReport">
+    <wsdl:part name="parameters" element="tns:RecallReport" />
+  </wsdl:message>
+  <wsdl:message name="RecallReport_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="RecallReportResponse">
+    <wsdl:part name="parameters" element="tns:RecallReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecallReportResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReportsServiceSvc_RecallReport_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExpenseReports">
+    <wsdl:part name="parameters" element="tns:GetAllExpenseReports" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExpenseReports_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExpenseReportsResponse">
+    <wsdl:part name="parameters" element="tns:GetAllExpenseReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExpenseReportsResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReportsServiceSvc_GetAllExpenseReports_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="CreateExpenseReport">
+    <wsdl:part name="parameters" element="tns:CreateExpenseReport" />
+  </wsdl:message>
+  <wsdl:message name="CreateExpenseReport_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="CreateExpenseReportResponse">
+    <wsdl:part name="parameters" element="tns:CreateExpenseReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateExpenseReportResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReportsServiceSvc_CreateExpenseReport_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExpenseReport">
+    <wsdl:part name="parameters" element="tns:UpdateExpenseReport" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExpenseReport_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExpenseReportResponse">
+    <wsdl:part name="parameters" element="tns:UpdateExpenseReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExpenseReportResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReportsServiceSvc_UpdateExpenseReport_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExpenseReports">
+    <wsdl:part name="parameters" element="tns:DeleteExpenseReports" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExpenseReports_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExpenseReportsResponse">
+    <wsdl:part name="parameters" element="tns:DeleteExpenseReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExpenseReportsResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReportsServiceSvc_DeleteExpenseReports_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseReportByReportNumber">
+    <wsdl:part name="parameters" element="tns:GetExpenseReportByReportNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseReportByReportNumber_Headers">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q22:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseReportByReportNumberResponse">
+    <wsdl:part name="parameters" element="tns:GetExpenseReportByReportNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseReportByReportNumberResponse_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q23:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReportsServiceSvc_GetExpenseReportByReportNumber_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q24:Fault" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseLinesForExpenseReport">
+    <wsdl:part name="parameters" element="tns:GetExpenseLinesForExpenseReport" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseLinesForExpenseReport_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseLinesForExpenseReportResponse">
+    <wsdl:part name="parameters" element="tns:GetExpenseLinesForExpenseReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseLinesForExpenseReportResponse_Headers">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q26:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReportsServiceSvc_GetExpenseLinesForExpenseReport_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q27:Fault" />
+  </wsdl:message>
+  <wsdl:message name="PurposeLookup">
+    <wsdl:part name="parameters" element="tns:PurposeLookup" />
+  </wsdl:message>
+  <wsdl:message name="PurposeLookup_Headers">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q28:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="PurposeLookupResponse">
+    <wsdl:part name="parameters" element="tns:PurposeLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="PurposeLookupResponse_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q29:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReportsServiceSvc_PurposeLookup_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q30:Fault" />
+  </wsdl:message>
+  <wsdl:message name="LocationLookup">
+    <wsdl:part name="parameters" element="tns:LocationLookup" />
+  </wsdl:message>
+  <wsdl:message name="LocationLookup_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="LocationLookupResponse">
+    <wsdl:part name="parameters" element="tns:LocationLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="LocationLookupResponse_Headers">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q32:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReportsServiceSvc_LocationLookup_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q33:Fault" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExpenseLines">
+    <wsdl:part name="parameters" element="tns:GetAllExpenseLines" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExpenseLines_Headers">
+    <wsdl:part xmlns:q34="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q34:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExpenseLinesResponse">
+    <wsdl:part name="parameters" element="tns:GetAllExpenseLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExpenseLinesResponse_Headers">
+    <wsdl:part xmlns:q35="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q35:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseLinesServiceSvc_GetAllExpenseLines_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q36:Fault" />
+  </wsdl:message>
+  <wsdl:message name="CreateExpenseLine">
+    <wsdl:part name="parameters" element="tns:CreateExpenseLine" />
+  </wsdl:message>
+  <wsdl:message name="CreateExpenseLine_Headers">
+    <wsdl:part xmlns:q37="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q37:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="CreateExpenseLineResponse">
+    <wsdl:part name="parameters" element="tns:CreateExpenseLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateExpenseLineResponse_Headers">
+    <wsdl:part xmlns:q38="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q38:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseLinesServiceSvc_CreateExpenseLine_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q39="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q39:Fault" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseLineByTransactionNumber">
+    <wsdl:part name="parameters" element="tns:GetExpenseLineByTransactionNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseLineByTransactionNumber_Headers">
+    <wsdl:part xmlns:q40="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q40:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseLineByTransactionNumberResponse">
+    <wsdl:part name="parameters" element="tns:GetExpenseLineByTransactionNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseLineByTransactionNumberResponse_Headers">
+    <wsdl:part xmlns:q41="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q41:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseLinesServiceSvc_GetExpenseLineByTransactionNumber_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q42:Fault" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExpenseLines">
+    <wsdl:part name="parameters" element="tns:DeleteExpenseLines" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExpenseLines_Headers">
+    <wsdl:part xmlns:q43="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q43:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExpenseLinesResponse">
+    <wsdl:part name="parameters" element="tns:DeleteExpenseLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteExpenseLinesResponse_Headers">
+    <wsdl:part xmlns:q44="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q44:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseLinesServiceSvc_DeleteExpenseLines_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q45="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q45:Fault" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExpenseLine">
+    <wsdl:part name="parameters" element="tns:UpdateExpenseLine" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExpenseLine_Headers">
+    <wsdl:part xmlns:q46="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q46:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExpenseLineResponse">
+    <wsdl:part name="parameters" element="tns:UpdateExpenseLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateExpenseLineResponse_Headers">
+    <wsdl:part xmlns:q47="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q47:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseLinesServiceSvc_UpdateExpenseLine_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q48="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q48:Fault" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseCategoryLookup">
+    <wsdl:part name="parameters" element="tns:ExpenseCategoryLookup" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseCategoryLookup_Headers">
+    <wsdl:part xmlns:q49="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q49:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseCategoryLookupResponse">
+    <wsdl:part name="parameters" element="tns:ExpenseCategoryLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseCategoryLookupResponse_Headers">
+    <wsdl:part xmlns:q50="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q50:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseLinesServiceSvc_ExpenseCategoryLookup_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q51="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q51:Fault" />
+  </wsdl:message>
+  <wsdl:message name="MerchantLookup">
+    <wsdl:part name="parameters" element="tns:MerchantLookup" />
+  </wsdl:message>
+  <wsdl:message name="MerchantLookup_Headers">
+    <wsdl:part xmlns:q52="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q52:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MerchantLookupResponse">
+    <wsdl:part name="parameters" element="tns:MerchantLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="MerchantLookupResponse_Headers">
+    <wsdl:part xmlns:q53="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q53:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseLinesServiceSvc_MerchantLookup_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q54="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q54:Fault" />
+  </wsdl:message>
+  <wsdl:message name="ProjectLookup">
+    <wsdl:part name="parameters" element="tns:ProjectLookup" />
+  </wsdl:message>
+  <wsdl:message name="ProjectLookup_Headers">
+    <wsdl:part xmlns:q55="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q55:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ProjectLookupResponse">
+    <wsdl:part name="parameters" element="tns:ProjectLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProjectLookupResponse_Headers">
+    <wsdl:part xmlns:q56="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q56:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseLinesServiceSvc_ProjectLookup_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q57="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q57:Fault" />
+  </wsdl:message>
+  <wsdl:message name="ProjectLinePropertyLookup">
+    <wsdl:part name="parameters" element="tns:ProjectLinePropertyLookup" />
+  </wsdl:message>
+  <wsdl:message name="ProjectLinePropertyLookup_Headers">
+    <wsdl:part xmlns:q58="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q58:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ProjectLinePropertyLookupResponse">
+    <wsdl:part name="parameters" element="tns:ProjectLinePropertyLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProjectLinePropertyLookupResponse_Headers">
+    <wsdl:part xmlns:q59="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q59:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseLinesServiceSvc_ProjectLinePropertyLookup_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q60="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q60:Fault" />
+  </wsdl:message>
+  <wsdl:message name="ProjectActivityLookup">
+    <wsdl:part name="parameters" element="tns:ProjectActivityLookup" />
+  </wsdl:message>
+  <wsdl:message name="ProjectActivityLookup_Headers">
+    <wsdl:part xmlns:q61="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q61:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ProjectActivityLookupResponse">
+    <wsdl:part name="parameters" element="tns:ProjectActivityLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProjectActivityLookupResponse_Headers">
+    <wsdl:part xmlns:q62="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q62:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseLinesServiceSvc_ProjectActivityLookup_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q63="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q63:Fault" />
+  </wsdl:message>
+  <wsdl:message name="GetUnattachedReceipts">
+    <wsdl:part name="parameters" element="tns:GetUnattachedReceipts" />
+  </wsdl:message>
+  <wsdl:message name="GetUnattachedReceipts_Headers">
+    <wsdl:part xmlns:q64="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q64:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="GetUnattachedReceiptsResponse">
+    <wsdl:part name="parameters" element="tns:GetUnattachedReceiptsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUnattachedReceiptsResponse_Headers">
+    <wsdl:part xmlns:q65="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q65:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReceiptSvc_GetUnattachedReceipts_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q66="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q66:Fault" />
+  </wsdl:message>
+  <wsdl:message name="AttachReceiptToExpenseLine">
+    <wsdl:part name="parameters" element="tns:AttachReceiptToExpenseLine" />
+  </wsdl:message>
+  <wsdl:message name="AttachReceiptToExpenseLine_Headers">
+    <wsdl:part xmlns:q67="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q67:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AttachReceiptToExpenseLineResponse">
+    <wsdl:part name="parameters" element="tns:AttachReceiptToExpenseLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="AttachReceiptToExpenseLineResponse_Headers">
+    <wsdl:part xmlns:q68="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q68:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReceiptSvc_AttachReceiptToExpenseLine_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q69="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q69:Fault" />
+  </wsdl:message>
+  <wsdl:message name="DeleteReceipts">
+    <wsdl:part name="parameters" element="tns:DeleteReceipts" />
+  </wsdl:message>
+  <wsdl:message name="DeleteReceipts_Headers">
+    <wsdl:part xmlns:q70="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q70:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="DeleteReceiptsResponse">
+    <wsdl:part name="parameters" element="tns:DeleteReceiptsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteReceiptsResponse_Headers">
+    <wsdl:part xmlns:q71="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q71:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReceiptSvc_DeleteReceipts_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q72="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q72:Fault" />
+  </wsdl:message>
+  <wsdl:message name="PopulateReceiptFields">
+    <wsdl:part name="parameters" element="tns:PopulateReceiptFields" />
+  </wsdl:message>
+  <wsdl:message name="PopulateReceiptFields_Headers">
+    <wsdl:part xmlns:q73="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q73:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="PopulateReceiptFieldsResponse">
+    <wsdl:part name="parameters" element="tns:PopulateReceiptFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="PopulateReceiptFieldsResponse_Headers">
+    <wsdl:part xmlns:q74="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q74:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReceiptSvc_PopulateReceiptFields_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q75="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q75:Fault" />
+  </wsdl:message>
+  <wsdl:message name="GetReceiptContent">
+    <wsdl:part name="parameters" element="tns:GetReceiptContent" />
+  </wsdl:message>
+  <wsdl:message name="GetReceiptContent_Headers">
+    <wsdl:part xmlns:q76="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q76:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="GetReceiptContentResponse">
+    <wsdl:part name="parameters" element="tns:GetReceiptContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReceiptContentResponse_Headers">
+    <wsdl:part xmlns:q77="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q77:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReceiptSvc_GetReceiptContent_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q78="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q78:Fault" />
+  </wsdl:message>
+  <wsdl:message name="UploadReceipt">
+    <wsdl:part name="parameters" element="tns:UploadReceipt" />
+  </wsdl:message>
+  <wsdl:message name="UploadReceipt_Headers">
+    <wsdl:part xmlns:q79="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q79:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="UploadReceiptResponse">
+    <wsdl:part name="parameters" element="tns:UploadReceiptResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadReceiptResponse_Headers">
+    <wsdl:part xmlns:q80="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q80:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ExpenseReceiptSvc_UploadReceipt_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q81="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q81:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="ExpenseReportsServiceSvc">
+    <wsdl:operation name="AttachExpensesToExpenseReports">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/AttachExpensesToExpenseReports" name="AttachExpensesToExpenseReports" message="tns:AttachExpensesToExpenseReports" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/AttachExpensesToExpenseReportsResponse" name="AttachExpensesToExpenseReportsResponse" message="tns:AttachExpensesToExpenseReportsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReportsServiceSvc_AttachExpensesToExpenseReports_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitExpenseReportsToWorkflow">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/SubmitExpenseReportsToWorkflow" name="SubmitExpenseReportsToWorkflow" message="tns:SubmitExpenseReportsToWorkflow" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/SubmitExpenseReportsToWorkflowResponse" name="SubmitExpenseReportsToWorkflowResponse" message="tns:SubmitExpenseReportsToWorkflowResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReportsServiceSvc_SubmitExpenseReportsToWorkflow_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecallReport">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/RecallReport" name="RecallReport" message="tns:RecallReport" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/RecallReportResponse" name="RecallReportResponse" message="tns:RecallReportResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReportsServiceSvc_RecallReport_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllExpenseReports">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/GetAllExpenseReports" name="GetAllExpenseReports" message="tns:GetAllExpenseReports" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/GetAllExpenseReportsResponse" name="GetAllExpenseReportsResponse" message="tns:GetAllExpenseReportsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReportsServiceSvc_GetAllExpenseReports_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateExpenseReport">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/CreateExpenseReport" name="CreateExpenseReport" message="tns:CreateExpenseReport" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/CreateExpenseReportResponse" name="CreateExpenseReportResponse" message="tns:CreateExpenseReportResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReportsServiceSvc_CreateExpenseReport_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExpenseReport">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/UpdateExpenseReport" name="UpdateExpenseReport" message="tns:UpdateExpenseReport" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/UpdateExpenseReportResponse" name="UpdateExpenseReportResponse" message="tns:UpdateExpenseReportResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReportsServiceSvc_UpdateExpenseReport_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExpenseReports">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/DeleteExpenseReports" name="DeleteExpenseReports" message="tns:DeleteExpenseReports" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/DeleteExpenseReportsResponse" name="DeleteExpenseReportsResponse" message="tns:DeleteExpenseReportsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReportsServiceSvc_DeleteExpenseReports_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseReportByReportNumber">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/GetExpenseReportByReportNumber" name="GetExpenseReportByReportNumber" message="tns:GetExpenseReportByReportNumber" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/GetExpenseReportByReportNumberResponse" name="GetExpenseReportByReportNumberResponse" message="tns:GetExpenseReportByReportNumberResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReportsServiceSvc_GetExpenseReportByReportNumber_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseLinesForExpenseReport">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/GetExpenseLinesForExpenseReport" name="GetExpenseLinesForExpenseReport" message="tns:GetExpenseLinesForExpenseReport" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/GetExpenseLinesForExpenseReportResponse" name="GetExpenseLinesForExpenseReportResponse" message="tns:GetExpenseLinesForExpenseReportResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReportsServiceSvc_GetExpenseLinesForExpenseReport_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PurposeLookup">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/PurposeLookup" name="PurposeLookup" message="tns:PurposeLookup" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/PurposeLookupResponse" name="PurposeLookupResponse" message="tns:PurposeLookupResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReportsServiceSvc_PurposeLookup_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LocationLookup">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/LocationLookup" name="LocationLookup" message="tns:LocationLookup" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/LocationLookupResponse" name="LocationLookupResponse" message="tns:LocationLookupResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReportsServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReportsServiceSvc_LocationLookup_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ExpenseLinesServiceSvc">
+    <wsdl:operation name="GetAllExpenseLines">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/GetAllExpenseLines" name="GetAllExpenseLines" message="tns:GetAllExpenseLines" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/GetAllExpenseLinesResponse" name="GetAllExpenseLinesResponse" message="tns:GetAllExpenseLinesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseLinesServiceSvc_GetAllExpenseLines_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateExpenseLine">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/CreateExpenseLine" name="CreateExpenseLine" message="tns:CreateExpenseLine" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/CreateExpenseLineResponse" name="CreateExpenseLineResponse" message="tns:CreateExpenseLineResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseLinesServiceSvc_CreateExpenseLine_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseLineByTransactionNumber">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/GetExpenseLineByTransactionNumber" name="GetExpenseLineByTransactionNumber" message="tns:GetExpenseLineByTransactionNumber" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/GetExpenseLineByTransactionNumberResponse" name="GetExpenseLineByTransactionNumberResponse" message="tns:GetExpenseLineByTransactionNumberResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseLinesServiceSvc_GetExpenseLineByTransactionNumber_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExpenseLines">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/DeleteExpenseLines" name="DeleteExpenseLines" message="tns:DeleteExpenseLines" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/DeleteExpenseLinesResponse" name="DeleteExpenseLinesResponse" message="tns:DeleteExpenseLinesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseLinesServiceSvc_DeleteExpenseLines_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExpenseLine">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/UpdateExpenseLine" name="UpdateExpenseLine" message="tns:UpdateExpenseLine" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/UpdateExpenseLineResponse" name="UpdateExpenseLineResponse" message="tns:UpdateExpenseLineResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseLinesServiceSvc_UpdateExpenseLine_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExpenseCategoryLookup">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/ExpenseCategoryLookup" name="ExpenseCategoryLookup" message="tns:ExpenseCategoryLookup" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/ExpenseCategoryLookupResponse" name="ExpenseCategoryLookupResponse" message="tns:ExpenseCategoryLookupResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseLinesServiceSvc_ExpenseCategoryLookup_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MerchantLookup">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/MerchantLookup" name="MerchantLookup" message="tns:MerchantLookup" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/MerchantLookupResponse" name="MerchantLookupResponse" message="tns:MerchantLookupResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseLinesServiceSvc_MerchantLookup_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProjectLookup">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/ProjectLookup" name="ProjectLookup" message="tns:ProjectLookup" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/ProjectLookupResponse" name="ProjectLookupResponse" message="tns:ProjectLookupResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseLinesServiceSvc_ProjectLookup_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProjectLinePropertyLookup">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/ProjectLinePropertyLookup" name="ProjectLinePropertyLookup" message="tns:ProjectLinePropertyLookup" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/ProjectLinePropertyLookupResponse" name="ProjectLinePropertyLookupResponse" message="tns:ProjectLinePropertyLookupResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseLinesServiceSvc_ProjectLinePropertyLookup_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProjectActivityLookup">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/ProjectActivityLookup" name="ProjectActivityLookup" message="tns:ProjectActivityLookup" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/ProjectActivityLookupResponse" name="ProjectActivityLookupResponse" message="tns:ProjectActivityLookupResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseLinesServiceSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseLinesServiceSvc_ProjectActivityLookup_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ExpenseReceiptSvc">
+    <wsdl:operation name="GetUnattachedReceipts">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReceiptSvc/GetUnattachedReceipts" name="GetUnattachedReceipts" message="tns:GetUnattachedReceipts" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReceiptSvc/GetUnattachedReceiptsResponse" name="GetUnattachedReceiptsResponse" message="tns:GetUnattachedReceiptsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReceiptSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReceiptSvc_GetUnattachedReceipts_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AttachReceiptToExpenseLine">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReceiptSvc/AttachReceiptToExpenseLine" name="AttachReceiptToExpenseLine" message="tns:AttachReceiptToExpenseLine" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReceiptSvc/AttachReceiptToExpenseLineResponse" name="AttachReceiptToExpenseLineResponse" message="tns:AttachReceiptToExpenseLineResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReceiptSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReceiptSvc_AttachReceiptToExpenseLine_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReceipts">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReceiptSvc/DeleteReceipts" name="DeleteReceipts" message="tns:DeleteReceipts" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReceiptSvc/DeleteReceiptsResponse" name="DeleteReceiptsResponse" message="tns:DeleteReceiptsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReceiptSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReceiptSvc_DeleteReceipts_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PopulateReceiptFields">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReceiptSvc/PopulateReceiptFields" name="PopulateReceiptFields" message="tns:PopulateReceiptFields" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReceiptSvc/PopulateReceiptFieldsResponse" name="PopulateReceiptFieldsResponse" message="tns:PopulateReceiptFieldsResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReceiptSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReceiptSvc_PopulateReceiptFields_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceiptContent">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReceiptSvc/GetReceiptContent" name="GetReceiptContent" message="tns:GetReceiptContent" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReceiptSvc/GetReceiptContentResponse" name="GetReceiptContentResponse" message="tns:GetReceiptContentResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReceiptSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReceiptSvc_GetReceiptContent_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadReceipt">
+      <wsdl:input wsam:Action="http://tempuri.org/ExpenseReceiptSvc/UploadReceipt" name="UploadReceipt" message="tns:UploadReceipt" />
+      <wsdl:output wsam:Action="http://tempuri.org/ExpenseReceiptSvc/UploadReceiptResponse" name="UploadReceiptResponse" message="tns:UploadReceiptResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/ExpenseReceiptSvc/Fault" name="SoapServiceFaultFault" message="tns:ExpenseReceiptSvc_UploadReceipt_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

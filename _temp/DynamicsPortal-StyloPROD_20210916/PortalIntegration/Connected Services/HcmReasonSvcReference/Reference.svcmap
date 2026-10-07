@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6bc9f1b5-77b4-4728-93c2-46c69669e189" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HcmReasonCodeSvcGroup75.xsd" MetadataType="Schema" ID="b926c3cd-9072-4925-86a2-8af27ce4d648" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup72.xsd" MetadataType="Schema" ID="c99e9d1f-6d6f-405f-be24-5b07422772e6" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup74.xsd" MetadataType="Schema" ID="5abcedfd-2d71-4cfb-a466-836a99f1cf1c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup71.xsd" MetadataType="Schema" ID="240b566c-874f-4698-addf-26995b3aaa9d" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup7.xsd" MetadataType="Schema" ID="677e95ca-71d4-4e14-b3c1-c2ad8266ff7c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup73.xsd" MetadataType="Schema" ID="5953c01c-f745-45b2-a831-4bd3feb7e4ca" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup76.xsd" MetadataType="Schema" ID="35e74863-0372-4903-8677-22f2bf920e03" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup21.wsdl" MetadataType="Wsdl" ID="6f39e764-09dc-4333-ad2a-25449c963b00" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup2.wsdl" MetadataType="Wsdl" ID="ec5e781a-d502-4820-bf1b-d8474dd0851c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

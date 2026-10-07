@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4004e7e3-e446-4560-9f04-615d07a505b9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/ESSEmploymentCertificateSvcGroup?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ESSEmploymentCertificateSvcGroup7.xsd" MetadataType="Schema" ID="53915ef2-149b-4d73-9b7f-07c963b3f045" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSEmploymentCertificateSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="ESSEmploymentCertificateSvcGroup73.xsd" MetadataType="Schema" ID="21802d79-b349-4d96-a0e0-9b585efe332b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSEmploymentCertificateSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="ESSEmploymentCertificateSvcGroup75.xsd" MetadataType="Schema" ID="1cf380b3-5e79-450b-85ab-edb71020e589" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSEmploymentCertificateSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="ESSEmploymentCertificateSvcGroup71.xsd" MetadataType="Schema" ID="5ef7128a-ea0d-4522-8aeb-989c8b6d5103" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSEmploymentCertificateSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="ESSEmploymentCertificateSvcGroup2.wsdl" MetadataType="Wsdl" ID="3821b79f-8a95-4ff8-a07a-990b90fded63" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSEmploymentCertificateSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ESSEmploymentCertificateSvcGroup21.wsdl" MetadataType="Wsdl" ID="32c2b043-aca9-460b-b2ff-a0b353d556c3" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSEmploymentCertificateSvcGroup?wsdl" />
+    <MetadataFile FileName="ESSEmploymentCertificateSvcGroup72.xsd" MetadataType="Schema" ID="723651bb-884c-431b-84f5-10fb9ef71229" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSEmploymentCertificateSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="ESSEmploymentCertificateSvcGroup74.xsd" MetadataType="Schema" ID="cfd8fc14-0c8b-4a6b-ae79-ced76c9a05bf" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSEmploymentCertificateSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="ESSEmploymentCertificateSvcGroup76.xsd" MetadataType="Schema" ID="1f417dd9-7f1f-4144-9adc-972463499710" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/ESSEmploymentCertificateSvcGroup?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

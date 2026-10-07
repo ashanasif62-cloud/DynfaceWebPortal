@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="9305239a-3b96-48e2-9cdc-4312e48058bd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DocumentAttachmentSvcGroup.xsd" MetadataType="Schema" ID="de61fe6d-c0e1-40eb-a523-14a745002974" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup1.xsd" MetadataType="Schema" ID="814caf47-ddbe-4815-b149-cc58174ed23c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup.disco" MetadataType="Disco" ID="e03bdbdb-6fc0-47af-9781-703a7a172d5e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?disco" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup.wsdl" MetadataType="Wsdl" ID="396f7e7d-ea32-4df2-b0e7-c7cced72954c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup2.xsd" MetadataType="Schema" ID="2e0b1fff-ce51-4f95-ba8c-932eb5e1a4f6" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd7" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup3.xsd" MetadataType="Schema" ID="0136bcd5-21c7-4542-a757-0c5965e3fae9" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup4.xsd" MetadataType="Schema" ID="785d8d1a-47e7-4720-8e09-1b5da6a65314" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup5.xsd" MetadataType="Schema" ID="95af291e-1392-46a0-b099-907ecae74b8c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd8" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup6.xsd" MetadataType="Schema" ID="8d4885a0-69ee-4387-9dd2-cc34ad7dc027" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup7.xsd" MetadataType="Schema" ID="e063765b-cef0-45d2-98bd-ff6c315a2c10" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup8.xsd" MetadataType="Schema" ID="80832706-6557-4d7b-b2a4-fb08cfdc130f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="DocumentAttachmentSvcGroup1.wsdl" MetadataType="Wsdl" ID="d0ee8aaf-d23a-4caf-85cf-7c7df78f8233" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/DocumentAttachmentSvcGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

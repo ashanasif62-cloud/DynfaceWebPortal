@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="01b3b272-8f2b-42cb-b2f5-b2ed2e30dc2a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSFinancialDimensionsSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ESSFinancialDimensionsSvcGroup.xsd" MetadataType="Schema" ID="0de77aee-af32-4f48-9465-033551d52d09" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSFinancialDimensionsSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="ESSFinancialDimensionsSvcGroup1.xsd" MetadataType="Schema" ID="4c60cf40-3e7d-4375-bb68-3998755e4d97" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSFinancialDimensionsSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="ESSFinancialDimensionsSvcGroup2.xsd" MetadataType="Schema" ID="5b0c24e0-c030-4155-9798-67d9d3479299" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSFinancialDimensionsSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="ESSFinancialDimensionsSvcGroup.wsdl" MetadataType="Wsdl" ID="1fcfd649-8a4e-4011-b818-8b083a87daaf" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSFinancialDimensionsSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ESSFinancialDimensionsSvcGroup.disco" MetadataType="Disco" ID="909e078d-3b56-4577-98ba-a778f7d25a2d" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSFinancialDimensionsSvcGroup?disco" />
+    <MetadataFile FileName="ESSFinancialDimensionsSvcGroup3.xsd" MetadataType="Schema" ID="19f12d1e-dee2-40c9-961c-ecfb39ca0bd7" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSFinancialDimensionsSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="ESSFinancialDimensionsSvcGroup4.xsd" MetadataType="Schema" ID="fa29c1d0-4b33-4c1e-bd93-b986cd90aa28" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSFinancialDimensionsSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="ESSFinancialDimensionsSvcGroup5.xsd" MetadataType="Schema" ID="05377f7b-561d-46e9-a418-1a265db02b77" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSFinancialDimensionsSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="ESSFinancialDimensionsSvcGroup1.wsdl" MetadataType="Wsdl" ID="1b5d6d4f-abab-45be-ab3a-d0ddb0670439" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSFinancialDimensionsSvcGroup?wsdl" />
+    <MetadataFile FileName="ESSFinancialDimensionsSvcGroup6.xsd" MetadataType="Schema" ID="b7504055-ed76-4a6e-ac57-44367828750d" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/ESSFinancialDimensionsSvcGroup?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

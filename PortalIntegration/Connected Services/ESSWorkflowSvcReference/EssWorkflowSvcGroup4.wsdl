@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="http://tempuri.org" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="EssWorkflowSvcGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_ESSWorkflowSvc_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_ESSWorkflowSvc" type="i0:ESSWorkflowSvc">
+    <wsp:PolicyReference URI="#BasicHttpBinding_ESSWorkflowSvc_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="submitLeaveRequest">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitLeaveRequest" style="document" />
+      <wsdl:input name="submitLeaveRequest">
+        <soap:header message="i0:submitLeaveRequest_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitLeaveRequestResponse">
+        <soap:header message="i0:submitLeaveRequestResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitAdvanceRequest">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitAdvanceRequest" style="document" />
+      <wsdl:input name="submitAdvanceRequest">
+        <soap:header message="i0:submitAdvanceRequest_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitAdvanceRequestResponse">
+        <soap:header message="i0:submitAdvanceRequestResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitESSPersonIdentificaitonNumber">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitESSPersonIdentificaitonNumber" style="document" />
+      <wsdl:input name="submitESSPersonIdentificaitonNumber">
+        <soap:header message="i0:submitESSPersonIdentificaitonNumber_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitESSPersonIdentificaitonNumberResponse">
+        <soap:header message="i0:submitESSPersonIdentificaitonNumberResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitESSPersonEducation">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitESSPersonEducation" style="document" />
+      <wsdl:input name="submitESSPersonEducation">
+        <soap:header message="i0:submitESSPersonEducation_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitESSPersonEducationResponse">
+        <soap:header message="i0:submitESSPersonEducationResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitEOSRequest">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitEOSRequest" style="document" />
+      <wsdl:input name="submitEOSRequest">
+        <soap:header message="i0:submitEOSRequest_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitEOSRequestResponse">
+        <soap:header message="i0:submitEOSRequestResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitLoanRequest">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitLoanRequest" style="document" />
+      <wsdl:input name="submitLoanRequest">
+        <soap:header message="i0:submitLoanRequest_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitLoanRequestResponse">
+        <soap:header message="i0:submitLoanRequestResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitBusinessTripRequest">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitBusinessTripRequest" style="document" />
+      <wsdl:input name="submitBusinessTripRequest">
+        <soap:header message="i0:submitBusinessTripRequest_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitBusinessTripRequestResponse">
+        <soap:header message="i0:submitBusinessTripRequestResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitHiringRequisition">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitHiringRequisition" style="document" />
+      <wsdl:input name="submitHiringRequisition">
+        <soap:header message="i0:submitHiringRequisition_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitHiringRequisitionResponse">
+        <soap:header message="i0:submitHiringRequisitionResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitEmploymentCertificateRequest">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitEmploymentCertificateRequest" style="document" />
+      <wsdl:input name="submitEmploymentCertificateRequest">
+        <soap:header message="i0:submitEmploymentCertificateRequest_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitEmploymentCertificateRequestResponse">
+        <soap:header message="i0:submitEmploymentCertificateRequestResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitHRHelpDeskRequest">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitHRHelpDeskRequest" style="document" />
+      <wsdl:input name="submitHRHelpDeskRequest">
+        <soap:header message="i0:submitHRHelpDeskRequest_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitHRHelpDeskRequestResponse">
+        <soap:header message="i0:submitHRHelpDeskRequestResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitRejoiningRequest">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitRejoiningRequest" style="document" />
+      <wsdl:input name="submitRejoiningRequest">
+        <soap:header message="i0:submitRejoiningRequest_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitRejoiningRequestResponse">
+        <soap:header message="i0:submitRejoiningRequestResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="personIdentificationNumber_Submit">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/personIdentificationNumber_Submit" style="document" />
+      <wsdl:input name="personIdentificationNumber_Submit">
+        <soap:header message="i0:personIdentificationNumber_Submit_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="personIdentificationNumber_SubmitResponse">
+        <soap:header message="i0:personIdentificationNumber_SubmitResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="personEducation_Submit">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/personEducation_Submit" style="document" />
+      <wsdl:input name="personEducation_Submit">
+        <soap:header message="i0:personEducation_Submit_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="personEducation_SubmitResponse">
+        <soap:header message="i0:personEducation_SubmitResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitLeaveRequestByRecId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitLeaveRequestByRecId" style="document" />
+      <wsdl:input name="submitLeaveRequestByRecId">
+        <soap:header message="i0:submitLeaveRequestByRecId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitLeaveRequestByRecIdResponse">
+        <soap:header message="i0:submitLeaveRequestByRecIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitAdvanceRequestByRecId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitAdvanceRequestByRecId" style="document" />
+      <wsdl:input name="submitAdvanceRequestByRecId">
+        <soap:header message="i0:submitAdvanceRequestByRecId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitAdvanceRequestByRecIdResponse">
+        <soap:header message="i0:submitAdvanceRequestByRecIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="approveWFByCorrelationId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/approveWFByCorrelationId" style="document" />
+      <wsdl:input name="approveWFByCorrelationId">
+        <soap:header message="i0:approveWFByCorrelationId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="approveWFByCorrelationIdResponse">
+        <soap:header message="i0:approveWFByCorrelationIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="rejectWFByCorrelationId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/rejectWFByCorrelationId" style="document" />
+      <wsdl:input name="rejectWFByCorrelationId">
+        <soap:header message="i0:rejectWFByCorrelationId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="rejectWFByCorrelationIdResponse">
+        <soap:header message="i0:rejectWFByCorrelationIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="workflowBulkActionProcess">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/workflowBulkActionProcess" style="document" />
+      <wsdl:input name="workflowBulkActionProcess">
+        <soap:header message="i0:workflowBulkActionProcess_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="workflowBulkActionProcessResponse">
+        <soap:header message="i0:workflowBulkActionProcessResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitEOSRequestByRecId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitEOSRequestByRecId" style="document" />
+      <wsdl:input name="submitEOSRequestByRecId">
+        <soap:header message="i0:submitEOSRequestByRecId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitEOSRequestByRecIdResponse">
+        <soap:header message="i0:submitEOSRequestByRecIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitLoanRequestByRecId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitLoanRequestByRecId" style="document" />
+      <wsdl:input name="submitLoanRequestByRecId">
+        <soap:header message="i0:submitLoanRequestByRecId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitLoanRequestByRecIdResponse">
+        <soap:header message="i0:submitLoanRequestByRecIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitBusinessTripRequestByRecId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitBusinessTripRequestByRecId" style="document" />
+      <wsdl:input name="submitBusinessTripRequestByRecId">
+        <soap:header message="i0:submitBusinessTripRequestByRecId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitBusinessTripRequestByRecIdResponse">
+        <soap:header message="i0:submitBusinessTripRequestByRecIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitHiringRequisitionByRecId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitHiringRequisitionByRecId" style="document" />
+      <wsdl:input name="submitHiringRequisitionByRecId">
+        <soap:header message="i0:submitHiringRequisitionByRecId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitHiringRequisitionByRecIdResponse">
+        <soap:header message="i0:submitHiringRequisitionByRecIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitEmploymentCertificateRequestByRecId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitEmploymentCertificateRequestByRecId" style="document" />
+      <wsdl:input name="submitEmploymentCertificateRequestByRecId">
+        <soap:header message="i0:submitEmploymentCertificateRequestByRecId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitEmploymentCertificateRequestByRecIdResponse">
+        <soap:header message="i0:submitEmploymentCertificateRequestByRecIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitHRHelpDeskRequestByRecId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitHRHelpDeskRequestByRecId" style="document" />
+      <wsdl:input name="submitHRHelpDeskRequestByRecId">
+        <soap:header message="i0:submitHRHelpDeskRequestByRecId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitHRHelpDeskRequestByRecIdResponse">
+        <soap:header message="i0:submitHRHelpDeskRequestByRecIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitRejoiningRequestByRecId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitRejoiningRequestByRecId" style="document" />
+      <wsdl:input name="submitRejoiningRequestByRecId">
+        <soap:header message="i0:submitRejoiningRequestByRecId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitRejoiningRequestByRecIdResponse">
+        <soap:header message="i0:submitRejoiningRequestByRecIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitBankAccountRequestByRecId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitBankAccountRequestByRecId" style="document" />
+      <wsdl:input name="submitBankAccountRequestByRecId">
+        <soap:header message="i0:submitBankAccountRequestByRecId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitBankAccountRequestByRecIdResponse">
+        <soap:header message="i0:submitBankAccountRequestByRecIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitEmployeeLeaveEncashmentReqbyRecId">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitEmployeeLeaveEncashmentReqbyRecId" style="document" />
+      <wsdl:input name="submitEmployeeLeaveEncashmentReqbyRecId">
+        <soap:header message="i0:submitEmployeeLeaveEncashmentReqbyRecId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitEmployeeLeaveEncashmentReqbyRecIdResponse">
+        <soap:header message="i0:submitEmployeeLeaveEncashmentReqbyRecIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitESSPersonImage">
+      <soap:operation soapAction="http://tempuri.org/ESSWorkflowSvc/submitESSPersonImage" style="document" />
+      <wsdl:input name="submitESSPersonImage">
+        <soap:header message="i0:submitESSPersonImage_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitESSPersonImageResponse">
+        <soap:header message="i0:submitESSPersonImageResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EssWorkflowSvcGroup">
+    <wsdl:port name="BasicHttpBinding_ESSWorkflowSvc" binding="tns:BasicHttpBinding_ESSWorkflowSvc">
+      <soap:address location="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/EssWorkflowSvcGroup" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

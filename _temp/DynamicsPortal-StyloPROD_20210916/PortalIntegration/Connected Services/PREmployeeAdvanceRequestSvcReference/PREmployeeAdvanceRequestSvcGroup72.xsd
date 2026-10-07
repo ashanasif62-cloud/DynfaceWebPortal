@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/PREmployeeAdvanceRequestSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfPREmployeeAdvanceRequestSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PREmployeeAdvanceRequestSvcContract" nillable="true" type="tns:PREmployeeAdvanceRequestSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPREmployeeAdvanceRequestSvcContract" nillable="true" type="tns:ArrayOfPREmployeeAdvanceRequestSvcContract" />
+  <xs:complexType name="PREmployeeAdvanceRequestSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdvanceAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="AdvanceDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AdvanceId" type="xs:int" />
+          <xs:element minOccurs="0" name="AdvanceRequestId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AdvanceRequestStatus" type="tns:PRAdvanceStatus" />
+          <xs:element minOccurs="0" name="AdvanceTypeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeId" type="xs:long" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Guarantor1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Guarantor2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="PayPeriodCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PayPeriodYear" type="xs:int" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RecoveryStartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RequestDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RequestedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestedInstallmentAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RequestedInstallments" type="xs:int" />
+          <xs:element minOccurs="0" name="RequestedPaymentDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="WFStatus" type="tns:PRWFStatus" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PREmployeeAdvanceRequestSvcContract" nillable="true" type="tns:PREmployeeAdvanceRequestSvcContract" />
+  <xs:simpleType name="PRAdvanceStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Blank" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Paid" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="Posted" />
+      <xs:enumeration value="Recovered" />
+      <xs:enumeration value="All" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PRAdvanceStatus" nillable="true" type="tns:PRAdvanceStatus" />
+  <xs:simpleType name="PRWFStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSubmitted" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="Rejected" />
+      <xs:enumeration value="Submitted" />
+      <xs:enumeration value="ChangeRequest" />
+      <xs:enumeration value="PendingCancellation" />
+      <xs:enumeration value="Returned" />
+      <xs:enumeration value="PendingApproval" />
+      <xs:enumeration value="PendingComplete" />
+      <xs:enumeration value="WorkflowCompleted" />
+      <xs:enumeration value="Completed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PRWFStatus" nillable="true" type="tns:PRWFStatus" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

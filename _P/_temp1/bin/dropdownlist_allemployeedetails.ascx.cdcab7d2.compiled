@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DropDownList_AllEmployeeDetails.ascx" hash="ffffffefe3a9c958" filehash="ffffd143fdf2f45c" flags="110000" assembly="MaisonPortal" type="ASP.dropdownlist_allemployeedetails_ascx">
+  <filedeps>
+    <filedep name="/DropDownList_AllEmployeeDetails.ascx" />
+  </filedeps>
+</preserve>

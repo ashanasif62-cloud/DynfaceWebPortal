@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASAttendanceRegisterSvcGroup?xsd=xsd2" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASAttendanceRegisterSvcGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASAttendanceRegisterSvcGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASAttendanceRegisterSvcGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASAttendanceRegisterSvcGroup?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASAttendanceRegisterSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASAttendanceRegisterSvcGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="retrieveAll">
+    <wsdl:part name="parameters" element="tns:retrieveAll" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAll_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASAttendanceRegisterSvc_retrieveAll_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="markAttendance">
+    <wsdl:part name="parameters" element="tns:markAttendance" />
+  </wsdl:message>
+  <wsdl:message name="markAttendance_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="markAttendanceResponse">
+    <wsdl:part name="parameters" element="tns:markAttendanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="markAttendanceResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASAttendanceRegisterSvc_markAttendance_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:message name="update">
+    <wsdl:part name="parameters" element="tns:update" />
+  </wsdl:message>
+  <wsdl:message name="update_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="updateResponse">
+    <wsdl:part name="parameters" element="tns:updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateResponse_Headers">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q8:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASAttendanceRegisterSvc_update_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q9:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllwithFilters">
+    <wsdl:part name="parameters" element="tns:retrieveAllwithFilters" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllwithFilters_Headers">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q10:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllwithFiltersResponse">
+    <wsdl:part name="parameters" element="tns:retrieveAllwithFiltersResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveAllwithFiltersResponse_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q11:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASAttendanceRegisterSvc_retrieveAllwithFilters_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q12:Fault" />
+  </wsdl:message>
+  <wsdl:message name="EditAttendance">
+    <wsdl:part name="parameters" element="tns:EditAttendance" />
+  </wsdl:message>
+  <wsdl:message name="EditAttendance_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="EditAttendanceResponse">
+    <wsdl:part name="parameters" element="tns:EditAttendanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditAttendanceResponse_Headers">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q14:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASAttendanceRegisterSvc_EditAttendance_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q15:Fault" />
+  </wsdl:message>
+  <wsdl:message name="delete">
+    <wsdl:part name="parameters" element="tns:delete" />
+  </wsdl:message>
+  <wsdl:message name="delete_Headers">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q16:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="deleteResponse">
+    <wsdl:part name="parameters" element="tns:deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteResponse_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q17:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASAttendanceRegisterSvc_delete_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q18:Fault" />
+  </wsdl:message>
+  <wsdl:message name="getRegisterSummaryByDate">
+    <wsdl:part name="parameters" element="tns:getRegisterSummaryByDate" />
+  </wsdl:message>
+  <wsdl:message name="getRegisterSummaryByDate_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getRegisterSummaryByDateResponse">
+    <wsdl:part name="parameters" element="tns:getRegisterSummaryByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="getRegisterSummaryByDateResponse_Headers">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q20:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASAttendanceRegisterSvc_getRegisterSummaryByDate_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q21:Fault" />
+  </wsdl:message>
+  <wsdl:message name="getAttendanceRegister">
+    <wsdl:part name="parameters" element="tns:getAttendanceRegister" />
+  </wsdl:message>
+  <wsdl:message name="getAttendanceRegister_Headers">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q22:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getAttendanceRegisterResponse">
+    <wsdl:part name="parameters" element="tns:getAttendanceRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAttendanceRegisterResponse_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q23:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASAttendanceRegisterSvc_getAttendanceRegister_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q24:Fault" />
+  </wsdl:message>
+  <wsdl:message name="getRegisterDetailsByDate">
+    <wsdl:part name="parameters" element="tns:getRegisterDetailsByDate" />
+  </wsdl:message>
+  <wsdl:message name="getRegisterDetailsByDate_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getRegisterDetailsByDateResponse">
+    <wsdl:part name="parameters" element="tns:getRegisterDetailsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="getRegisterDetailsByDateResponse_Headers">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q26:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASAttendanceRegisterSvc_getRegisterDetailsByDate_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q27:Fault" />
+  </wsdl:message>
+  <wsdl:message name="getRegisterSummaryColorByDate">
+    <wsdl:part name="parameters" element="tns:getRegisterSummaryColorByDate" />
+  </wsdl:message>
+  <wsdl:message name="getRegisterSummaryColorByDate_Headers">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q28:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getRegisterSummaryColorByDateResponse">
+    <wsdl:part name="parameters" element="tns:getRegisterSummaryColorByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="getRegisterSummaryColorByDateResponse_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q29:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASAttendanceRegisterSvc_getRegisterSummaryColorByDate_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q30:Fault" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeReportees">
+    <wsdl:part name="parameters" element="tns:retriveEmployeeReportees" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeReportees_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeReporteesResponse">
+    <wsdl:part name="parameters" element="tns:retriveEmployeeReporteesResponse" />
+  </wsdl:message>
+  <wsdl:message name="retriveEmployeeReporteesResponse_Headers">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q32:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="TASAttendanceRegisterSvc_retriveEmployeeReportees_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q33:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="TASAttendanceRegisterSvc">
+    <wsdl:operation name="retrieveAll">
+      <wsdl:input wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/retrieveAll" name="retrieveAll" message="tns:retrieveAll" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/retrieveAllResponse" name="retrieveAllResponse" message="tns:retrieveAllResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/Fault" name="SoapServiceFaultFault" message="tns:TASAttendanceRegisterSvc_retrieveAll_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="markAttendance">
+      <wsdl:input wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/markAttendance" name="markAttendance" message="tns:markAttendance" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/markAttendanceResponse" name="markAttendanceResponse" message="tns:markAttendanceResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/Fault" name="SoapServiceFaultFault" message="tns:TASAttendanceRegisterSvc_markAttendance_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/update" name="update" message="tns:update" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/updateResponse" name="updateResponse" message="tns:updateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/Fault" name="SoapServiceFaultFault" message="tns:TASAttendanceRegisterSvc_update_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveAllwithFilters">
+      <wsdl:input wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/retrieveAllwithFilters" name="retrieveAllwithFilters" message="tns:retrieveAllwithFilters" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/retrieveAllwithFiltersResponse" name="retrieveAllwithFiltersResponse" message="tns:retrieveAllwithFiltersResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/Fault" name="SoapServiceFaultFault" message="tns:TASAttendanceRegisterSvc_retrieveAllwithFilters_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditAttendance">
+      <wsdl:input wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/EditAttendance" name="EditAttendance" message="tns:EditAttendance" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/EditAttendanceResponse" name="EditAttendanceResponse" message="tns:EditAttendanceResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/Fault" name="SoapServiceFaultFault" message="tns:TASAttendanceRegisterSvc_EditAttendance_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/delete" name="delete" message="tns:delete" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/deleteResponse" name="deleteResponse" message="tns:deleteResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/Fault" name="SoapServiceFaultFault" message="tns:TASAttendanceRegisterSvc_delete_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRegisterSummaryByDate">
+      <wsdl:input wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/getRegisterSummaryByDate" name="getRegisterSummaryByDate" message="tns:getRegisterSummaryByDate" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/getRegisterSummaryByDateResponse" name="getRegisterSummaryByDateResponse" message="tns:getRegisterSummaryByDateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/Fault" name="SoapServiceFaultFault" message="tns:TASAttendanceRegisterSvc_getRegisterSummaryByDate_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAttendanceRegister">
+      <wsdl:input wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/getAttendanceRegister" name="getAttendanceRegister" message="tns:getAttendanceRegister" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/getAttendanceRegisterResponse" name="getAttendanceRegisterResponse" message="tns:getAttendanceRegisterResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/Fault" name="SoapServiceFaultFault" message="tns:TASAttendanceRegisterSvc_getAttendanceRegister_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRegisterDetailsByDate">
+      <wsdl:input wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/getRegisterDetailsByDate" name="getRegisterDetailsByDate" message="tns:getRegisterDetailsByDate" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/getRegisterDetailsByDateResponse" name="getRegisterDetailsByDateResponse" message="tns:getRegisterDetailsByDateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/Fault" name="SoapServiceFaultFault" message="tns:TASAttendanceRegisterSvc_getRegisterDetailsByDate_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRegisterSummaryColorByDate">
+      <wsdl:input wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/getRegisterSummaryColorByDate" name="getRegisterSummaryColorByDate" message="tns:getRegisterSummaryColorByDate" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/getRegisterSummaryColorByDateResponse" name="getRegisterSummaryColorByDateResponse" message="tns:getRegisterSummaryColorByDateResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/Fault" name="SoapServiceFaultFault" message="tns:TASAttendanceRegisterSvc_getRegisterSummaryColorByDate_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retriveEmployeeReportees">
+      <wsdl:input wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/retriveEmployeeReportees" name="retriveEmployeeReportees" message="tns:retriveEmployeeReportees" />
+      <wsdl:output wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/retriveEmployeeReporteesResponse" name="retriveEmployeeReporteesResponse" message="tns:retriveEmployeeReporteesResponse" />
+      <wsdl:fault wsam:Action="http://tempuri.org/TASAttendanceRegisterSvc/Fault" name="SoapServiceFaultFault" message="tns:TASAttendanceRegisterSvc_retriveEmployeeReportees_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

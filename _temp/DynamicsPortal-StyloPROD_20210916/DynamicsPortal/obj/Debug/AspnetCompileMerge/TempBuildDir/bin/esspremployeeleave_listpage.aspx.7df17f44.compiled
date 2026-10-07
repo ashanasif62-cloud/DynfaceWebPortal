@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/PR/ESSPREmployeeLeave_ListPage.aspx" hash="ffffffefe3a9c958" filehash="2050eba36d5b8f8d" flags="110000" assembly="MaisonPortal" type="ASP.ess_pr_esspremployeeleave_listpage_aspx">
+  <filedeps>
+    <filedep name="/ESS/PR/ESSPREmployeeLeave_ListPage.aspx" />
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

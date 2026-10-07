@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0ba5abab-1237-4207-92bb-88d3b83af050" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup2.xsd" MetadataType="Schema" ID="f60004c4-ebc5-4a3f-8e6d-b90809f7a278" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup4.xsd" MetadataType="Schema" ID="e8884d60-a11c-47a0-9c44-8c03941a29a4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup1.xsd" MetadataType="Schema" ID="efb693c0-7f63-4088-906f-604cd717fe7b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup.xsd" MetadataType="Schema" ID="c20ebb9d-b64b-4f4c-acf6-74fae69c512e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup1.wsdl" MetadataType="Wsdl" ID="20f6ac20-fefe-4418-853f-b28f65fbcb1b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?wsdl" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup6.xsd" MetadataType="Schema" ID="73d60f50-a36c-455f-9fb5-cee897d577c6" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup3.xsd" MetadataType="Schema" ID="12fed5ff-8e8e-4e82-9f78-ca32b114b210" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup.wsdl" MetadataType="Wsdl" ID="f33df811-84fe-485a-bcf7-b2143554f518" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup5.xsd" MetadataType="Schema" ID="208eb156-debb-48f1-ae23-bbc7f3f4ea98" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HcmPersonLaborUnionSvcGroup.disco" MetadataType="Disco" ID="c680516b-01b8-46e2-9488-d4575dbc94cb" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmPersonLaborUnionSvcGroup?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

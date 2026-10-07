@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="135f4071-2028-43a4-9132-d96f375721fc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HcmOpenCourseSvcGroup2.wsdl" MetadataType="Wsdl" ID="9a9307f5-8833-4a42-bc44-e86074637e7c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?wsdl" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup1.disco" MetadataType="Disco" ID="60a3ea52-6aad-4e52-866e-4bd2d5c38a19" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?disco" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup72.xsd" MetadataType="Schema" ID="d53427d0-4549-4261-beb1-134761eb3f43" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup73.xsd" MetadataType="Schema" ID="57fc2af0-3040-4068-b012-c7af749f532f" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup7.xsd" MetadataType="Schema" ID="5ca86595-8c5d-4a7a-91e1-1ebbede9a9ae" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup74.xsd" MetadataType="Schema" ID="7d5f7892-c9d2-43cc-a21e-287234b7f28c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup76.xsd" MetadataType="Schema" ID="e7de3725-84d7-4aa6-b9ab-06c5178d6c20" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup71.xsd" MetadataType="Schema" ID="ce901393-eb46-4c24-98c0-95a6ae48f399" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup75.xsd" MetadataType="Schema" ID="3794fcc2-fb95-45bc-94d2-b7297608c0b0" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup21.wsdl" MetadataType="Wsdl" ID="15266ca0-1504-4244-b53d-8e75c665c4b1" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

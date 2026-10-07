@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="917e27c4-2036-4035-b16c-acf1e06342f8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PREmploymentInformationSvcGroup7.xsd" MetadataType="Schema" ID="0e5e2cc8-c8bc-4d3a-9af9-780466e16576" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup2.wsdl" MetadataType="Wsdl" ID="00f150d4-731c-4644-bff5-9b7a35b006d3" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup8.xsd" MetadataType="Schema" ID="2aea5879-8756-46c6-a17d-4dc58e32629c" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup9.xsd" MetadataType="Schema" ID="30132e09-3d92-4d5c-810c-fa53eb94a6ff" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup10.xsd" MetadataType="Schema" ID="72088fba-159b-4e1e-ba18-00fe7ccbd35a" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup11.xsd" MetadataType="Schema" ID="87c54e67-220c-4e6c-8ea3-9c9fe9da79f2" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup3.wsdl" MetadataType="Wsdl" ID="d81932a2-d736-452d-a2d1-f52715f40e6d" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?wsdl" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup1.disco" MetadataType="Disco" ID="41a8478d-826c-45fe-bbbc-d51e19e56b4a" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?disco" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup12.xsd" MetadataType="Schema" ID="2f634be6-7c21-4127-b021-7fb03632cd04" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="PREmploymentInformationSvcGroup13.xsd" MetadataType="Schema" ID="0769df67-d80b-490d-9541-3eeea52262a1" SourceId="1" SourceUrl="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREmploymentInformationSvcGroup?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

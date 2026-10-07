@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="149c26a3-8f53-49f9-aad5-70935a96989f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RequestforQuotationAllSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RequestforQuotationAllSvcGroup1.disco" MetadataType="Disco" ID="0c9c94c4-558d-4e8d-86af-001bfb3d8b1e" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RequestforQuotationAllSvcGroup?disco" />
+    <MetadataFile FileName="RequestforQuotationAllSvcGroup7.xsd" MetadataType="Schema" ID="5ea4f724-9003-4956-b4f5-f35341067a87" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RequestforQuotationAllSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="RequestforQuotationAllSvcGroup71.xsd" MetadataType="Schema" ID="8b6cb6af-10ee-4190-9d6e-27415d8804e7" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RequestforQuotationAllSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="RequestforQuotationAllSvcGroup72.xsd" MetadataType="Schema" ID="0f49adab-4e5d-4a04-baaa-5a129c41d173" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RequestforQuotationAllSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="RequestforQuotationAllSvcGroup73.xsd" MetadataType="Schema" ID="42a1580d-5222-4b61-94ab-e7790248acf6" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RequestforQuotationAllSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="RequestforQuotationAllSvcGroup2.wsdl" MetadataType="Wsdl" ID="d5966c1b-c983-4853-a0ae-01505f75f443" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RequestforQuotationAllSvcGroup?wsdl" />
+    <MetadataFile FileName="RequestforQuotationAllSvcGroup74.xsd" MetadataType="Schema" ID="f1f2a16d-6151-4646-94eb-bbbd35875d98" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RequestforQuotationAllSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="RequestforQuotationAllSvcGroup21.wsdl" MetadataType="Wsdl" ID="6e8778d2-983b-433a-bca6-771c8049c6b6" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RequestforQuotationAllSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="RequestforQuotationAllSvcGroup75.xsd" MetadataType="Schema" ID="0ea2aff9-32b7-422c-8678-da8af37115a2" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RequestforQuotationAllSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="RequestforQuotationAllSvcGroup76.xsd" MetadataType="Schema" ID="d82807e8-1352-40d6-bab4-c4bba12db295" SourceId="1" SourceUrl="https://dyna-dev-015fac65fe278ee437devaos.axcloud.dynamics.com/soap/services/RequestforQuotationAllSvcGroup?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

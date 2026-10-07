@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://leatherware-uat.sandbox.operations.dynamics.com/soap/services/PREntitlementBalanceSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfPREntitlementBalanceSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PREntitlementBalanceSvcContract" nillable="true" type="tns:PREntitlementBalanceSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPREntitlementBalanceSvcContract" nillable="true" type="tns:ArrayOfPREntitlementBalanceSvcContract" />
+  <xs:complexType name="PREntitlementBalanceSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Accrued" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Balance" type="xs:decimal" />
+          <xs:element minOccurs="0" name="EmployeeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EntitlementCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EntitlementUnit" type="tns:PREntitlementUnit" />
+          <xs:element minOccurs="0" name="PayGroupCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Taken" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PREntitlementBalanceSvcContract" nillable="true" type="tns:PREntitlementBalanceSvcContract" />
+  <xs:simpleType name="PREntitlementUnit">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Hours" />
+      <xs:enumeration value="Days" />
+      <xs:enumeration value="Amount" />
+      <xs:enumeration value="Units" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PREntitlementUnit" nillable="true" type="tns:PREntitlementUnit" />
+</xs:schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="7562b378-9b43-45f5-9b6c-1683bbf947d3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLines_MaintainChargesGroupSvc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PurchaseOrderLines_MaintainChargesGroupSvc2.wsdl" MetadataType="Wsdl" ID="2a1448a8-edde-441c-b841-07bbc8b585b4" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLines_MaintainChargesGroupSvc?wsdl" />
+    <MetadataFile FileName="PurchaseOrderLines_MaintainChargesGroupSvc7.xsd" MetadataType="Schema" ID="3e68539a-b5f2-4dd6-bc28-d4d2a9f72026" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLines_MaintainChargesGroupSvc?xsd=xsd5" />
+    <MetadataFile FileName="PurchaseOrderLines_MaintainChargesGroupSvc71.xsd" MetadataType="Schema" ID="28a111d9-9c84-40f2-9082-8976732d2bef" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLines_MaintainChargesGroupSvc?xsd=xsd4" />
+    <MetadataFile FileName="PurchaseOrderLines_MaintainChargesGroupSvc72.xsd" MetadataType="Schema" ID="e72c50e6-b8bf-4220-8126-6bb1529d2005" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLines_MaintainChargesGroupSvc?xsd=xsd3" />
+    <MetadataFile FileName="PurchaseOrderLines_MaintainChargesGroupSvc73.xsd" MetadataType="Schema" ID="bc872750-39f8-457b-aa44-c13b236f713e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLines_MaintainChargesGroupSvc?xsd=xsd6" />
+    <MetadataFile FileName="PurchaseOrderLines_MaintainChargesGroupSvc74.xsd" MetadataType="Schema" ID="ddec6ec1-32cd-4f7e-9dbc-82c05d4fb1ab" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLines_MaintainChargesGroupSvc?xsd=xsd1" />
+    <MetadataFile FileName="PurchaseOrderLines_MaintainChargesGroupSvc75.xsd" MetadataType="Schema" ID="372f9079-a972-4265-8e62-e94e4ca245b1" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLines_MaintainChargesGroupSvc?xsd=xsd0" />
+    <MetadataFile FileName="PurchaseOrderLines_MaintainChargesGroupSvc21.wsdl" MetadataType="Wsdl" ID="abcab811-74e1-412a-90dd-e74945eaaa93" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLines_MaintainChargesGroupSvc?wsdl=wsdl0" />
+    <MetadataFile FileName="PurchaseOrderLines_MaintainChargesGroupSvc76.xsd" MetadataType="Schema" ID="5d8abaae-af5d-469d-b392-d602a7869a3b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLines_MaintainChargesGroupSvc?xsd=xsd2" />
+    <MetadataFile FileName="PurchaseOrderLines_MaintainChargesGroupSvc1.disco" MetadataType="Disco" ID="e773d2ef-ac95-4763-99fa-45ab87355a45" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/PurchaseOrderLines_MaintainChargesGroupSvc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

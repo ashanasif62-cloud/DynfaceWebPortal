@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="571c7b67-e2d0-413c-8b6e-50f5cf193d29" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HREmployeeExitInterviewSvcGroup.disco" MetadataType="Disco" ID="9f61fdb6-1a59-4b05-9a7b-b6b80756f884" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup?disco" />
+    <MetadataFile FileName="HREmployeeExitInterviewSvcGroup.xsd" MetadataType="Schema" ID="8dc2854a-d6e7-4d69-a9fc-4ee1f5b296bf" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HREmployeeExitInterviewSvcGroup1.xsd" MetadataType="Schema" ID="ef539fec-57d6-4345-b4da-0194f8f915bd" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HREmployeeExitInterviewSvcGroup.wsdl" MetadataType="Wsdl" ID="ea8e4c70-ec8f-43a5-90d0-154bb039a226" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup?wsdl" />
+    <MetadataFile FileName="HREmployeeExitInterviewSvcGroup2.xsd" MetadataType="Schema" ID="e5120c64-f005-4e50-af6e-eb1c6dc9c667" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HREmployeeExitInterviewSvcGroup3.xsd" MetadataType="Schema" ID="d8e6ac9b-b765-4122-ac52-0a3e3ba9505f" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HREmployeeExitInterviewSvcGroup4.xsd" MetadataType="Schema" ID="095f137c-492c-4f94-a0bb-173446505a9e" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HREmployeeExitInterviewSvcGroup5.xsd" MetadataType="Schema" ID="91e7827b-1a05-4537-afce-b1a26fb448f7" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HREmployeeExitInterviewSvcGroup6.xsd" MetadataType="Schema" ID="95179d4b-7dd8-4681-9fec-1134050684d9" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HREmployeeExitInterviewSvcGroup1.wsdl" MetadataType="Wsdl" ID="0e0c2d17-2d29-4a1a-9a05-3876e7afb12b" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/HREmployeeExitInterviewSvcGroup?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="7293a8ef-ff0f-417b-bf18-d6b7e2b733ec" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup7.xsd" MetadataType="Schema" ID="f4b9cefe-2dee-4904-99cf-13807aa562de" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup2.wsdl" MetadataType="Wsdl" ID="fd07a556-0f0f-48a7-bc4a-181f83f243ab" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?wsdl" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup71.xsd" MetadataType="Schema" ID="a429214a-d1d6-42e5-8945-36e52c5c47ae" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup72.xsd" MetadataType="Schema" ID="c41c8d59-5e89-43a7-b8d0-3853881059db" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup73.xsd" MetadataType="Schema" ID="c9322a91-4055-46fb-864b-5101445fc6d9" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup74.xsd" MetadataType="Schema" ID="5f1a1f62-6ddb-4004-ac53-e3087f8c4bd3" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup21.wsdl" MetadataType="Wsdl" ID="28b75f5a-a961-4d45-a9ff-5451d0e33fb2" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup75.xsd" MetadataType="Schema" ID="f41eb5a0-5249-47f6-9c83-502be5800ab5" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup76.xsd" MetadataType="Schema" ID="a7fd9810-60da-42e2-b446-af9095c7e798" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup1.disco" MetadataType="Disco" ID="0a8e3d40-653e-498d-8a86-4e73dbe3e7e3" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="0fcf1553-c77a-4b74-afaf-f2fdee58473b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/TASEmployeeAdjustmentsGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TASEmployeeAdjustmentsGroup.disco" MetadataType="Disco" ID="b09ba919-fcad-442e-a8f5-0471ffb33582" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/TASEmployeeAdjustmentsGroup?disco" />
+    <MetadataFile FileName="TASEmployeeAdjustmentsGroup.xsd" MetadataType="Schema" ID="648b6c8c-c35d-4c54-93df-9fd4bac56e89" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/TASEmployeeAdjustmentsGroup?xsd=xsd4" />
+    <MetadataFile FileName="TASEmployeeAdjustmentsGroup1.xsd" MetadataType="Schema" ID="4ca303a2-7ee2-4682-8d3c-f69632ed375c" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/TASEmployeeAdjustmentsGroup?xsd=xsd5" />
+    <MetadataFile FileName="TASEmployeeAdjustmentsGroup2.xsd" MetadataType="Schema" ID="95bfe452-406a-49e7-9b30-c9d3c7ba7f59" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/TASEmployeeAdjustmentsGroup?xsd=xsd6" />
+    <MetadataFile FileName="TASEmployeeAdjustmentsGroup.wsdl" MetadataType="Wsdl" ID="a3239ded-5d46-4ee8-a4e6-ac4587c1c347" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/TASEmployeeAdjustmentsGroup?wsdl" />
+    <MetadataFile FileName="TASEmployeeAdjustmentsGroup1.wsdl" MetadataType="Wsdl" ID="03eebde6-15b1-4aa6-9bd3-e60ba980bd81" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/TASEmployeeAdjustmentsGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="TASEmployeeAdjustmentsGroup3.xsd" MetadataType="Schema" ID="07e2239c-5208-4665-8430-5e5f1d0b7433" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/TASEmployeeAdjustmentsGroup?xsd=xsd2" />
+    <MetadataFile FileName="TASEmployeeAdjustmentsGroup4.xsd" MetadataType="Schema" ID="fe3fc95b-b8c8-4345-a9fa-2dd75af56896" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/TASEmployeeAdjustmentsGroup?xsd=xsd3" />
+    <MetadataFile FileName="TASEmployeeAdjustmentsGroup5.xsd" MetadataType="Schema" ID="91eb991f-0a5b-4124-b6f4-5a5f7706e420" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/TASEmployeeAdjustmentsGroup?xsd=xsd0" />
+    <MetadataFile FileName="TASEmployeeAdjustmentsGroup6.xsd" MetadataType="Schema" ID="488aba7c-fdc4-4d7e-a3d8-2c492b0eb2c1" SourceId="1" SourceUrl="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/TASEmployeeAdjustmentsGroup?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

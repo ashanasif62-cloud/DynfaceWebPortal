@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://mcs-payrollf535b0099ffa43fcdevaos.axcloud.dynamics.com/soap/services/ESSCourseSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfESSCourseContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ESSCourseContract" nillable="true" type="tns:ESSCourseContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfESSCourseContract" nillable="true" type="tns:ArrayOfESSCourseContract" />
+  <xs:complexType name="ESSCourseContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="courseName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="descriptionCompleted" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dueDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="hrmCourseId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="startDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ESSCourseContract" nillable="true" type="tns:ESSCourseContract" />
+</xs:schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f5c79fbf-88b8-4ea6-95a1-5d532bab7d93" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/HRPoliciesSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HRPoliciesSvcGroup4.xsd" MetadataType="Schema" ID="2b5d8b47-78a1-4dc8-87c0-c11f4ace65dd" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HRPoliciesSvcGroup6.xsd" MetadataType="Schema" ID="6120c8fc-227b-4660-81ec-56c00b405897" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HRPoliciesSvcGroup.disco" MetadataType="Disco" ID="af8dc91e-92b5-472d-a156-c37770b4be97" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?disco" />
+    <MetadataFile FileName="HRPoliciesSvcGroup2.xsd" MetadataType="Schema" ID="88c239c0-620a-46e4-bbf7-1441e848fd31" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HRPoliciesSvcGroup3.xsd" MetadataType="Schema" ID="f0fe76dc-1f68-4854-bef5-19e763996731" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HRPoliciesSvcGroup1.wsdl" MetadataType="Wsdl" ID="7d2edaec-0474-470c-834f-951b877cea14" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HRPoliciesSvcGroup.wsdl" MetadataType="Wsdl" ID="29e72193-495e-474d-95f7-02d1e59aefa2" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?wsdl" />
+    <MetadataFile FileName="HRPoliciesSvcGroup5.xsd" MetadataType="Schema" ID="809fe40f-8cc0-45ad-9bb1-87020608bfba" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HRPoliciesSvcGroup.xsd" MetadataType="Schema" ID="cd049258-6353-4505-9153-bbaed4b0d2e7" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HRPoliciesSvcGroup1.xsd" MetadataType="Schema" ID="2045f081-a947-43e7-a435-b2dd804c43ae" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRPoliciesSvcGroup?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

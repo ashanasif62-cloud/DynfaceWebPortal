@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="0dc86265-c7df-443d-8624-62cba637248f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HcmReasonCodeSvcGroup7.xsd" MetadataType="Schema" ID="dbdf9ea0-f836-4ed3-a829-01a843a84662" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup8.xsd" MetadataType="Schema" ID="67fa9043-c5ed-45d1-be25-9cc839ed05ff" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup9.xsd" MetadataType="Schema" ID="cbfff978-eaca-41c7-bbf4-66e81d6fd035" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup2.wsdl" MetadataType="Wsdl" ID="c2ec07b1-f892-466f-bfd0-66e7e3f92e5f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?wsdl" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup10.xsd" MetadataType="Schema" ID="160ab5b2-b08a-406d-a255-4683d398cbe0" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup11.xsd" MetadataType="Schema" ID="b1efa442-2272-46ce-8bab-2f3c0b287b6f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup3.wsdl" MetadataType="Wsdl" ID="edc0fad2-60c9-4754-bebb-fcd079d7283f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup12.xsd" MetadataType="Schema" ID="9b41db5e-40ca-4cad-8356-6e2071dce071" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HcmReasonCodeSvcGroup13.xsd" MetadataType="Schema" ID="07d0e133-cef4-422b-8183-188d2248635b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmReasonCodeSvcGroup?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

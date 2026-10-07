@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cdf9d16f-6483-4c5e-842a-7f64fff146f1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup73.xsd" MetadataType="Schema" ID="3842ba45-e2c0-49e9-a0ed-b958d633860a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup2.wsdl" MetadataType="Wsdl" ID="396e4a33-a081-4ce6-888c-a712df170993" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup75.xsd" MetadataType="Schema" ID="272d0b6f-e287-4071-b032-64a0d101a464" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup76.xsd" MetadataType="Schema" ID="033c86d9-4c8a-4d98-a806-2ab1c576404b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup71.xsd" MetadataType="Schema" ID="bfa4e7e4-4fdd-4035-9066-ab565567e52e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup21.wsdl" MetadataType="Wsdl" ID="f54474c7-6bd6-4425-ade7-bcd427babc0b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?wsdl" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup1.disco" MetadataType="Disco" ID="74aece0f-53b9-4d1d-9093-4e3cf64d7ec3" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?disco" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup74.xsd" MetadataType="Schema" ID="b0d3a8e5-0313-4e78-8270-62972a13af52" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup7.xsd" MetadataType="Schema" ID="80219557-c4a6-4693-8952-745ff1db1894" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="APEmployeeAppraisalsSvcGroup72.xsd" MetadataType="Schema" ID="97322b33-c2a5-409e-96f6-574c8de33d35" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/APEmployeeAppraisalsSvcGroup?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

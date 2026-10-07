@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/PR/ESSPRProvidentFund_MyInquiry.aspx" hash="ffffffefe3a9c958" filehash="ceed7bbe8d318b19" flags="110000" assembly="MaisonPortal" type="ASP.ess_pr_essprprovidentfund_myinquiry_aspx">
+  <filedeps>
+    <filedep name="/ESS/PR/ESSPRProvidentFund_MyInquiry.aspx" />
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

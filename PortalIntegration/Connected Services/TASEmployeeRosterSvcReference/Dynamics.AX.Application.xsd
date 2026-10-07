@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="TASEmployeeRosterSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EMPLOYEEID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FlexClockInEndTime" type="xs:int" />
+          <xs:element minOccurs="0" name="FlexClockInStartTime" type="xs:int" />
+          <xs:element minOccurs="0" name="FlexClockOutEndTime" type="xs:int" />
+          <xs:element minOccurs="0" name="FlexClockOutStartTime" type="xs:int" />
+          <xs:element minOccurs="0" name="GazettedDay" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GenerationType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MinimumWorkingHour" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OffDay" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RequiredWorkingHours" type="xs:int" />
+          <xs:element minOccurs="0" name="ShiftBreakTime" type="xs:int" />
+          <xs:element minOccurs="0" name="ShiftCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShiftDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ShiftDay" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShiftEndTime" type="xs:int" />
+          <xs:element minOccurs="0" name="ShiftGraceTime" type="xs:int" />
+          <xs:element minOccurs="0" name="ShiftHours" type="xs:int" />
+          <xs:element minOccurs="0" name="ShiftStartTime" type="xs:int" />
+          <xs:element minOccurs="0" name="Type" type="tns:TASProfileType" />
+          <xs:element minOccurs="0" name="Worker" type="xs:long" />
+          <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="shiftId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="toDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TASEmployeeRosterSvcContract" nillable="true" type="tns:TASEmployeeRosterSvcContract" />
+  <xs:simpleType name="TASProfileType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Blank" />
+      <xs:enumeration value="SignIn" />
+      <xs:enumeration value="SignOut" />
+      <xs:enumeration value="StandardTime" />
+      <xs:enumeration value="OverTime" />
+      <xs:enumeration value="Break" />
+      <xs:enumeration value="WorkTime" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TASProfileType" nillable="true" type="tns:TASProfileType" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfTASAttendanceItemsContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TASAttendanceItemsContract" nillable="true" type="tns:TASAttendanceItemsContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTASAttendanceItemsContract" nillable="true" type="tns:ArrayOfTASAttendanceItemsContract" />
+  <xs:complexType name="TASAttendanceItemsContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q3:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AttendanceDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ClockInDateTimes" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ClockOutDateTimes" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EMPLOYEEID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShiftId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TASAttendanceItemsContract" nillable="true" type="tns:TASAttendanceItemsContract" />
+  <xs:complexType name="ArrayOfTASEmployeeRosterSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TASEmployeeRosterSvcContract" nillable="true" type="tns:TASEmployeeRosterSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTASEmployeeRosterSvcContract" nillable="true" type="tns:ArrayOfTASEmployeeRosterSvcContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

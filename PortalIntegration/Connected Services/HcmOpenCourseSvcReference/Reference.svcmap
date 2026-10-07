@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="135f4071-2028-43a4-9132-d96f375721fc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HcmOpenCourseSvcGroup7.xsd" MetadataType="Schema" ID="d5d96632-bd26-43f7-a883-c81556507cfb" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup71.xsd" MetadataType="Schema" ID="ce12a227-d4c7-473b-a7d6-25a73e525cf6" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup72.xsd" MetadataType="Schema" ID="c00eac6f-663d-4b3b-87c7-44eda632034e" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup73.xsd" MetadataType="Schema" ID="7278c1c8-1fc6-4098-98ee-1f0a8a9d1913" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup74.xsd" MetadataType="Schema" ID="c1a43c24-8153-4fa3-a1fd-6c271bcfdd2d" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup75.xsd" MetadataType="Schema" ID="6c2edb95-c23d-4c8d-87ab-31ef722ef9c0" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup76.xsd" MetadataType="Schema" ID="e4bb73e9-aee4-416a-a0cb-6fab41f61151" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup1.disco" MetadataType="Disco" ID="708168d7-4aec-4027-92cb-27b647e8274f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?disco" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup2.wsdl" MetadataType="Wsdl" ID="feea1712-35e1-4d9c-9699-d1e7bbf9746f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HcmOpenCourseSvcGroup21.wsdl" MetadataType="Wsdl" ID="768d95cf-ea76-49a2-aaef-c08d720a0003" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HcmOpenCourseSvcGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

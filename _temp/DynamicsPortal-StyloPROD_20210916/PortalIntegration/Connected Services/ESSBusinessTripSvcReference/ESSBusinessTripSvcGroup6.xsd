@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://ssaxprod.operations.dynamics.com/soap/services/ESSBusinessTripSvcGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:complexType name="ArrayOfESSBusinessTripSvcContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ESSBusinessTripSvcContract" nillable="true" type="tns:ESSBusinessTripSvcContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfESSBusinessTripSvcContract" nillable="true" type="tns:ArrayOfESSBusinessTripSvcContract" />
+  <xs:complexType name="ESSBusinessTripSvcContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BusinesClass" type="tns:ESSBusinesClass" />
+          <xs:element minOccurs="0" name="BusinessTripId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BusinessTripType" type="tns:ESSBusinessTripType" />
+          <xs:element minOccurs="0" name="CarRentalBooking" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataAreaId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Destination" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DestinationCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DestinationCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmpId" type="xs:long" />
+          <xs:element minOccurs="0" name="EmployeeID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EstimatedDistance" type="xs:decimal" />
+          <xs:element minOccurs="0" name="EventPeriod" type="xs:int" />
+          <xs:element minOccurs="0" name="ExitReentryRequired" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="FlightBookingRequired" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="FuelAndToll" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HRGetVisa" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="HRIssueBooking" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="HRIssueExiteReentry" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="HotelBookingRequired" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="HotelName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LineManager" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Meal" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="NightStay" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="Partition" type="xs:long" />
+          <xs:element minOccurs="0" name="PersonalCar" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="Position" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+          <xs:element minOccurs="0" name="RequestedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RequiredVisa" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="ReturnDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="TicketRouting" type="tns:ESSNoYes" />
+          <xs:element minOccurs="0" name="TravelDays" type="xs:int" />
+          <xs:element minOccurs="0" name="VisaRequired" type="tns:ESSVisaRequired" />
+          <xs:element minOccurs="0" name="WorkFlowState" type="tns:ESSWorkFlowStatus" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ESSBusinessTripSvcContract" nillable="true" type="tns:ESSBusinessTripSvcContract" />
+  <xs:simpleType name="ESSBusinesClass">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FirstClass" />
+      <xs:enumeration value="BusinessClass" />
+      <xs:enumeration value="PremiumEconomy" />
+      <xs:enumeration value="EconomyClass" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ESSBusinesClass" nillable="true" type="tns:ESSBusinesClass" />
+  <xs:simpleType name="ESSBusinessTripType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Domestic" />
+      <xs:enumeration value="International" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ESSBusinessTripType" nillable="true" type="tns:ESSBusinessTripType" />
+  <xs:simpleType name="ESSNoYes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="No" />
+      <xs:enumeration value="Yes" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ESSNoYes" nillable="true" type="tns:ESSNoYes" />
+  <xs:simpleType name="ESSVisaRequired">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotRequired" />
+      <xs:enumeration value="ExitReentryRequired" />
+      <xs:enumeration value="VisaRequired" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ESSVisaRequired" nillable="true" type="tns:ESSVisaRequired" />
+  <xs:simpleType name="ESSWorkFlowStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSubmitted" />
+      <xs:enumeration value="Submitted" />
+      <xs:enumeration value="PendingApproval" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Returned" />
+      <xs:enumeration value="ChangeRequest" />
+      <xs:enumeration value="Completed" />
+      <xs:enumeration value="PendingCancellation" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="Rejected" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ESSWorkFlowStatus" nillable="true" type="tns:ESSWorkFlowStatus" />
+  <xs:complexType name="GeneralContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+  <xs:complexType name="ArrayOfGeneralContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeneralContract" nillable="true" type="tns:GeneralContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeneralContract" nillable="true" type="tns:ArrayOfGeneralContract" />
+</xs:schema>

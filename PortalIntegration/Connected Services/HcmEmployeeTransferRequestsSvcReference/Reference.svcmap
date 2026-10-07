@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="7964a03f-857b-4d25-88b6-6905058c6a60" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMEmployeeTransferRequestsSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HCMEmployeeTransferRequestsSvcGroup.disco" MetadataType="Disco" ID="c30b1e91-3e50-4521-bb73-b4130e01dd38" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMEmployeeTransferRequestsSvcGroup?disco" />
+    <MetadataFile FileName="HCMEmployeeTransferRequestsSvcGroup.xsd" MetadataType="Schema" ID="53164961-7282-4bbc-b85c-add5912ea1a4" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMEmployeeTransferRequestsSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HCMEmployeeTransferRequestsSvcGroup1.xsd" MetadataType="Schema" ID="1a404206-490e-4654-87df-a70acf5d51ed" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMEmployeeTransferRequestsSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HCMEmployeeTransferRequestsSvcGroup.wsdl" MetadataType="Wsdl" ID="f37a558a-e580-4538-a7af-306f427fe43f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMEmployeeTransferRequestsSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HCMEmployeeTransferRequestsSvcGroup2.xsd" MetadataType="Schema" ID="2aeedc6b-25ac-42a7-b9bb-00cfc15d582c" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMEmployeeTransferRequestsSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HCMEmployeeTransferRequestsSvcGroup3.xsd" MetadataType="Schema" ID="c7fc8d9e-86e2-4bcf-9d74-b2a3aa47e75f" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMEmployeeTransferRequestsSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HCMEmployeeTransferRequestsSvcGroup4.xsd" MetadataType="Schema" ID="fa677b21-00ff-40e5-a60c-d280c9e84402" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMEmployeeTransferRequestsSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="HCMEmployeeTransferRequestsSvcGroup5.xsd" MetadataType="Schema" ID="2921c37a-180f-46e7-9d31-e3b3b1facc99" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMEmployeeTransferRequestsSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HCMEmployeeTransferRequestsSvcGroup6.xsd" MetadataType="Schema" ID="6dcd8a4f-0fdb-4a9b-afa9-a692d81678c1" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMEmployeeTransferRequestsSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HCMEmployeeTransferRequestsSvcGroup1.wsdl" MetadataType="Wsdl" ID="f99e5b04-1571-4ab5-80b6-d3f970ace49b" SourceId="1" SourceUrl="https://maisondyn365ude.operations.dynamics.com/soap/services/HCMEmployeeTransferRequestsSvcGroup?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

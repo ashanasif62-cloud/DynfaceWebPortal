@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ESS/HR/ESSHRProfessionChange_ListPage.aspx" hash="ffffffefe3a9c958" filehash="c1c664157d83f9dc" flags="110000" assembly="MaisonPortal" type="ASP.ess_hr_esshrprofessionchange_listpage_aspx">
+  <filedeps>
+    <filedep name="/ESS/HR/ESSHRProfessionChange_ListPage.aspx" />
+    <filedep name="/Site.Master" />
+  </filedeps>
+</preserve>

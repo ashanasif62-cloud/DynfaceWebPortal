@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="http://tempuri.org" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="RetrieveReportsSvcGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_RetrieveReportSvc_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_RetrieveReportSvc" type="i0:RetrieveReportSvc">
+    <wsp:PolicyReference URI="#BasicHttpBinding_RetrieveReportSvc_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RetrieveSalarySlipReport">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/RetrieveSalarySlipReport" style="document" />
+      <wsdl:input name="RetrieveSalarySlipReport">
+        <soap:header message="i0:RetrieveSalarySlipReport_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="RetrieveSalarySlipReportResponse">
+        <soap:header message="i0:RetrieveSalarySlipReportResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveTaxCertificateReport">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/RetrieveTaxCertificateReport" style="document" />
+      <wsdl:input name="RetrieveTaxCertificateReport">
+        <soap:header message="i0:RetrieveTaxCertificateReport_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="RetrieveTaxCertificateReportResponse">
+        <soap:header message="i0:RetrieveTaxCertificateReportResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="viewSalarySlipReportString">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/viewSalarySlipReportString" style="document" />
+      <wsdl:input name="viewSalarySlipReportString">
+        <soap:header message="i0:viewSalarySlipReportString_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="viewSalarySlipReportStringResponse">
+        <soap:header message="i0:viewSalarySlipReportStringResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="sendSalarySlipEmail">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/sendSalarySlipEmail" style="document" />
+      <wsdl:input name="sendSalarySlipEmail">
+        <soap:header message="i0:sendSalarySlipEmail_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="sendSalarySlipEmailResponse">
+        <soap:header message="i0:sendSalarySlipEmailResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="sendTaxCertificateEmail">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/sendTaxCertificateEmail" style="document" />
+      <wsdl:input name="sendTaxCertificateEmail">
+        <soap:header message="i0:sendTaxCertificateEmail_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="sendTaxCertificateEmailResponse">
+        <soap:header message="i0:sendTaxCertificateEmailResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="viewTransferOrderOverViewReport">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/viewTransferOrderOverViewReport" style="document" />
+      <wsdl:input name="viewTransferOrderOverViewReport">
+        <soap:header message="i0:viewTransferOrderOverViewReport_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="viewTransferOrderOverViewReportResponse">
+        <soap:header message="i0:viewTransferOrderOverViewReportResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="viewOnHandInventory">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/viewOnHandInventory" style="document" />
+      <wsdl:input name="viewOnHandInventory">
+        <soap:header message="i0:viewOnHandInventory_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="viewOnHandInventoryResponse">
+        <soap:header message="i0:viewOnHandInventoryResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="viewAttendanceRegister">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/viewAttendanceRegister" style="document" />
+      <wsdl:input name="viewAttendanceRegister">
+        <soap:header message="i0:viewAttendanceRegister_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="viewAttendanceRegisterResponse">
+        <soap:header message="i0:viewAttendanceRegisterResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="sendTASAttendanceRegister">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/sendTASAttendanceRegister" style="document" />
+      <wsdl:input name="sendTASAttendanceRegister">
+        <soap:header message="i0:sendTASAttendanceRegister_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="sendTASAttendanceRegisterResponse">
+        <soap:header message="i0:sendTASAttendanceRegisterResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="viewTASEmployeeWiseDetail">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/viewTASEmployeeWiseDetail" style="document" />
+      <wsdl:input name="viewTASEmployeeWiseDetail">
+        <soap:header message="i0:viewTASEmployeeWiseDetail_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="viewTASEmployeeWiseDetailResponse">
+        <soap:header message="i0:viewTASEmployeeWiseDetailResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="sendTASEmployeeWiseAttendanceDetailReport">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/sendTASEmployeeWiseAttendanceDetailReport" style="document" />
+      <wsdl:input name="sendTASEmployeeWiseAttendanceDetailReport">
+        <soap:header message="i0:sendTASEmployeeWiseAttendanceDetailReport_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="sendTASEmployeeWiseAttendanceDetailReportResponse">
+        <soap:header message="i0:sendTASEmployeeWiseAttendanceDetailReportResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="viewTASEmployeeAttendanceSummary">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/viewTASEmployeeAttendanceSummary" style="document" />
+      <wsdl:input name="viewTASEmployeeAttendanceSummary">
+        <soap:header message="i0:viewTASEmployeeAttendanceSummary_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="viewTASEmployeeAttendanceSummaryResponse">
+        <soap:header message="i0:viewTASEmployeeAttendanceSummaryResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="sendTASEmployeeWiseAttendanceSummaryReport">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/sendTASEmployeeWiseAttendanceSummaryReport" style="document" />
+      <wsdl:input name="sendTASEmployeeWiseAttendanceSummaryReport">
+        <soap:header message="i0:sendTASEmployeeWiseAttendanceSummaryReport_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="sendTASEmployeeWiseAttendanceSummaryReportResponse">
+        <soap:header message="i0:sendTASEmployeeWiseAttendanceSummaryReportResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="viewInventTransferJournalReport">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/viewInventTransferJournalReport" style="document" />
+      <wsdl:input name="viewInventTransferJournalReport">
+        <soap:header message="i0:viewInventTransferJournalReport_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="viewInventTransferJournalReportResponse">
+        <soap:header message="i0:viewInventTransferJournalReportResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="viewTransferJournalShipment">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/viewTransferJournalShipment" style="document" />
+      <wsdl:input name="viewTransferJournalShipment">
+        <soap:header message="i0:viewTransferJournalShipment_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="viewTransferJournalShipmentResponse">
+        <soap:header message="i0:viewTransferJournalShipmentResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="viewTransferJournalReceive">
+      <soap:operation soapAction="http://tempuri.org/RetrieveReportSvc/viewTransferJournalReceive" style="document" />
+      <wsdl:input name="viewTransferJournalReceive">
+        <soap:header message="i0:viewTransferJournalReceive_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="viewTransferJournalReceiveResponse">
+        <soap:header message="i0:viewTransferJournalReceiveResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RetrieveReportsSvcGroup">
+    <wsdl:port name="BasicHttpBinding_RetrieveReportSvc" binding="tns:BasicHttpBinding_RetrieveReportSvc">
+      <soap:address location="https://maisondyn365ude.operations.dynamics.com/soap/services/RetrieveReportsSvcGroup" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

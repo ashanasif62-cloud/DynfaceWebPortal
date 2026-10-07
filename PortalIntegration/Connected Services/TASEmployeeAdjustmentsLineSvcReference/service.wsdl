@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="http://tempuri.org" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="TASEmployeeAdjustmentLinesGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_TASEmployeeAdjustmentLinesSvc_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_TASEmployeeAdjustmentLinesSvc" type="i0:TASEmployeeAdjustmentLinesSvc">
+    <wsp:PolicyReference URI="#BasicHttpBinding_TASEmployeeAdjustmentLinesSvc_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="retrieveAllAdjustmentlines">
+      <soap:operation soapAction="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/retrieveAllAdjustmentlines" style="document" />
+      <wsdl:input name="retrieveAllAdjustmentlines">
+        <soap:header message="i0:retrieveAllAdjustmentlines_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveAllAdjustmentlinesResponse">
+        <soap:header message="i0:retrieveAllAdjustmentlinesResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Create">
+      <soap:operation soapAction="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/Create" style="document" />
+      <wsdl:input name="Create">
+        <soap:header message="i0:Create_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="CreateResponse">
+        <soap:header message="i0:CreateResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveEmployeeAdjustmentlines">
+      <soap:operation soapAction="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/retrieveEmployeeAdjustmentlines" style="document" />
+      <wsdl:input name="retrieveEmployeeAdjustmentlines">
+        <soap:header message="i0:retrieveEmployeeAdjustmentlines_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveEmployeeAdjustmentlinesResponse">
+        <soap:header message="i0:retrieveEmployeeAdjustmentlinesResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAdjustment">
+      <soap:operation soapAction="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/CreateAdjustment" style="document" />
+      <wsdl:input name="CreateAdjustment">
+        <soap:header message="i0:CreateAdjustment_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="CreateAdjustmentResponse">
+        <soap:header message="i0:CreateAdjustmentResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retriveEmployeeReportees">
+      <soap:operation soapAction="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/retriveEmployeeReportees" style="document" />
+      <wsdl:input name="retriveEmployeeReportees">
+        <soap:header message="i0:retriveEmployeeReportees_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retriveEmployeeReporteesResponse">
+        <soap:header message="i0:retriveEmployeeReporteesResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="lookupReasonCode">
+      <soap:operation soapAction="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/lookupReasonCode" style="document" />
+      <wsdl:input name="lookupReasonCode">
+        <soap:header message="i0:lookupReasonCode_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="lookupReasonCodeResponse">
+        <soap:header message="i0:lookupReasonCodeResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitEmployeeAdjustment">
+      <soap:operation soapAction="http://tempuri.org/TASEmployeeAdjustmentLinesSvc/submitEmployeeAdjustment" style="document" />
+      <wsdl:input name="submitEmployeeAdjustment">
+        <soap:header message="i0:submitEmployeeAdjustment_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitEmployeeAdjustmentResponse">
+        <soap:header message="i0:submitEmployeeAdjustmentResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TASEmployeeAdjustmentLinesGroup">
+    <wsdl:port name="BasicHttpBinding_TASEmployeeAdjustmentLinesSvc" binding="tns:BasicHttpBinding_TASEmployeeAdjustmentLinesSvc">
+      <soap:address location="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASEmployeeAdjustmentLinesGroup" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

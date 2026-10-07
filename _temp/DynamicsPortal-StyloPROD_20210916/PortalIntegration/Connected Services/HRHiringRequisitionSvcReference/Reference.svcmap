@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7293a8ef-ff0f-417b-bf18-d6b7e2b733ec" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup75.xsd" MetadataType="Schema" ID="4c6b8247-7d1f-40c3-8b25-3d0b78be0cce" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup1.disco" MetadataType="Disco" ID="563419d8-1582-4cc7-b046-3b54297547a4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?disco" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup76.xsd" MetadataType="Schema" ID="62e53c62-d999-46d7-93c5-853510bc7ce0" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup73.xsd" MetadataType="Schema" ID="b97c85d8-44ad-4971-a6a3-8d5cc303f033" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd6" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup71.xsd" MetadataType="Schema" ID="d0fcc407-1f0c-474a-8977-fed0bc944726" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup7.xsd" MetadataType="Schema" ID="db4d073e-ff82-4b74-aae9-ccd3a5c9f59b" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup2.wsdl" MetadataType="Wsdl" ID="9f8008fb-46ca-4dac-aea9-67beb1f98987" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup21.wsdl" MetadataType="Wsdl" ID="ef8def37-5933-46bc-8c7e-b0a4753ae4b5" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?wsdl" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup74.xsd" MetadataType="Schema" ID="bd6124d8-8e07-4302-9e24-efa0db1c89d0" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="HRHiringRequisitionSvcGroup72.xsd" MetadataType="Schema" ID="38a46697-1a42-4964-8c12-a3aa81302533" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/HRHiringRequisitionSvcGroup?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

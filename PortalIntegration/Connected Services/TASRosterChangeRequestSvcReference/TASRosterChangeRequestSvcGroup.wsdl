@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="http://tempuri.org" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="TASRosterChangeRequestSvcGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_TASRosterChangeRequestSvc_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASRosterChangeRequestSvcGroup?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_TASRosterChangeRequestSvc" type="i0:TASRosterChangeRequestSvc">
+    <wsp:PolicyReference URI="#BasicHttpBinding_TASRosterChangeRequestSvc_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="changeRoster">
+      <soap:operation soapAction="http://tempuri.org/TASRosterChangeRequestSvc/changeRoster" style="document" />
+      <wsdl:input name="changeRoster">
+        <soap:header message="i0:changeRoster_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="changeRosterResponse">
+        <soap:header message="i0:changeRosterResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveByEmployeeId">
+      <soap:operation soapAction="http://tempuri.org/TASRosterChangeRequestSvc/retrieveByEmployeeId" style="document" />
+      <wsdl:input name="retrieveByEmployeeId">
+        <soap:header message="i0:retrieveByEmployeeId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveByEmployeeIdResponse">
+        <soap:header message="i0:retrieveByEmployeeIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveRosternumsequence">
+      <soap:operation soapAction="http://tempuri.org/TASRosterChangeRequestSvc/retrieveRosternumsequence" style="document" />
+      <wsdl:input name="retrieveRosternumsequence">
+        <soap:header message="i0:retrieveRosternumsequence_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveRosternumsequenceResponse">
+        <soap:header message="i0:retrieveRosternumsequenceResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveLines">
+      <soap:operation soapAction="http://tempuri.org/TASRosterChangeRequestSvc/retrieveLines" style="document" />
+      <wsdl:input name="retrieveLines">
+        <soap:header message="i0:retrieveLines_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveLinesResponse">
+        <soap:header message="i0:retrieveLinesResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveShiftId">
+      <soap:operation soapAction="http://tempuri.org/TASRosterChangeRequestSvc/retrieveShiftId" style="document" />
+      <wsdl:input name="retrieveShiftId">
+        <soap:header message="i0:retrieveShiftId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveShiftIdResponse">
+        <soap:header message="i0:retrieveShiftIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveByDateRange">
+      <soap:operation soapAction="http://tempuri.org/TASRosterChangeRequestSvc/retrieveByDateRange" style="document" />
+      <wsdl:input name="retrieveByDateRange">
+        <soap:header message="i0:retrieveByDateRange_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retrieveByDateRangeResponse">
+        <soap:header message="i0:retrieveByDateRangeResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="lookupEmployeeId">
+      <soap:operation soapAction="http://tempuri.org/TASRosterChangeRequestSvc/lookupEmployeeId" style="document" />
+      <wsdl:input name="lookupEmployeeId">
+        <soap:header message="i0:lookupEmployeeId_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="lookupEmployeeIdResponse">
+        <soap:header message="i0:lookupEmployeeIdResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="http://tempuri.org/TASRosterChangeRequestSvc/delete" style="document" />
+      <wsdl:input name="delete">
+        <soap:header message="i0:delete_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteResponse">
+        <soap:header message="i0:deleteResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteline">
+      <soap:operation soapAction="http://tempuri.org/TASRosterChangeRequestSvc/deleteline" style="document" />
+      <wsdl:input name="deleteline">
+        <soap:header message="i0:deleteline_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deletelineResponse">
+        <soap:header message="i0:deletelineResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitRosterChangeRequest">
+      <soap:operation soapAction="http://tempuri.org/TASRosterChangeRequestSvc/submitRosterChangeRequest" style="document" />
+      <wsdl:input name="submitRosterChangeRequest">
+        <soap:header message="i0:submitRosterChangeRequest_Headers" part="callContext" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitRosterChangeRequestResponse">
+        <soap:header message="i0:submitRosterChangeRequestResponse_Headers" part="infolog" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SoapServiceFaultFault">
+        <soap:fault use="literal" name="SoapServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TASRosterChangeRequestSvcGroup">
+    <wsdl:port name="BasicHttpBinding_TASRosterChangeRequestSvc" binding="tns:BasicHttpBinding_TASRosterChangeRequestSvc">
+      <soap:address location="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/TASRosterChangeRequestSvcGroup" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

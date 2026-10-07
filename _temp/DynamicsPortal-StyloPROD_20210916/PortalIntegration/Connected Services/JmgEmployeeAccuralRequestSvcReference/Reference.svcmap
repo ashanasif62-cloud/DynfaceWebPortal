@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="943376b6-ecbf-4bdc-b0d6-989303c5f256" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ssaxprod.operations.dynamics.com/soap/services/JmgEmployeeAccuralRequestSvcGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="JmgEmployeeAccuralRequestSvcGroup.disco" MetadataType="Disco" ID="03391472-5004-455a-ab38-ec51ffece41a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgEmployeeAccuralRequestSvcGroup?disco" />
+    <MetadataFile FileName="JmgEmployeeAccuralRequestSvcGroup.wsdl" MetadataType="Wsdl" ID="7723a412-4c9a-4557-9bba-c32657cf69f4" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgEmployeeAccuralRequestSvcGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="JmgEmployeeAccuralRequestSvcGroup.xsd" MetadataType="Schema" ID="871bd827-1f1e-4c66-be38-dfc8c13d8113" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgEmployeeAccuralRequestSvcGroup?xsd=xsd1" />
+    <MetadataFile FileName="JmgEmployeeAccuralRequestSvcGroup1.xsd" MetadataType="Schema" ID="91680685-ea01-4413-8d60-5bd0b560aa1c" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgEmployeeAccuralRequestSvcGroup?xsd=xsd0" />
+    <MetadataFile FileName="JmgEmployeeAccuralRequestSvcGroup2.xsd" MetadataType="Schema" ID="26fc850b-db19-4099-83d1-831af286a75a" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgEmployeeAccuralRequestSvcGroup?xsd=xsd3" />
+    <MetadataFile FileName="JmgEmployeeAccuralRequestSvcGroup3.xsd" MetadataType="Schema" ID="4ee837b5-5d33-4834-8d79-9881a475b822" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgEmployeeAccuralRequestSvcGroup?xsd=xsd2" />
+    <MetadataFile FileName="JmgEmployeeAccuralRequestSvcGroup4.xsd" MetadataType="Schema" ID="7ae24d9a-02df-4fec-bee4-8bf67fb37565" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgEmployeeAccuralRequestSvcGroup?xsd=xsd5" />
+    <MetadataFile FileName="JmgEmployeeAccuralRequestSvcGroup5.xsd" MetadataType="Schema" ID="6ebf5c69-541d-47a5-9b2b-32d8285110b0" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgEmployeeAccuralRequestSvcGroup?xsd=xsd4" />
+    <MetadataFile FileName="JmgEmployeeAccuralRequestSvcGroup1.wsdl" MetadataType="Wsdl" ID="5b6310b2-396c-440e-b5dd-797f47731473" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgEmployeeAccuralRequestSvcGroup?wsdl" />
+    <MetadataFile FileName="JmgEmployeeAccuralRequestSvcGroup6.xsd" MetadataType="Schema" ID="06fa4b9a-52bf-43a4-be07-4f3a47fe6a7e" SourceId="1" SourceUrl="https://ssaxprod.operations.dynamics.com/soap/services/JmgEmployeeAccuralRequestSvcGroup?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

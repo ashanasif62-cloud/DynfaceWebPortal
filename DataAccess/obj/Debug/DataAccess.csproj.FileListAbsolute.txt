@@ -1,0 +1,44 @@
+D:\ESS .Net Portal-DynaFace\DataAccess\bin\Debug\DataAccess.dll
+D:\ESS .Net Portal-DynaFace\DataAccess\bin\Debug\DataAccess.pdb
+D:\ESS .Net Portal-DynaFace\DataAccess\bin\Debug\BussinessObject.dll
+D:\ESS .Net Portal-DynaFace\DataAccess\bin\Debug\GeneralAuxiliary.dll
+D:\ESS .Net Portal-DynaFace\DataAccess\bin\Debug\BussinessObject.pdb
+D:\ESS .Net Portal-DynaFace\DataAccess\bin\Debug\GeneralAuxiliary.pdb
+D:\ESS .Net Portal-DynaFace\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+D:\ESS .Net Portal-DynaFace\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\ESS .Net Portal-DynaFace\DataAccess\obj\Debug\DataAccess.csproj.Up2Date
+D:\ESS .Net Portal-DynaFace\DataAccess\obj\Debug\DataAccess.dll
+D:\ESS .Net Portal-DynaFace\DataAccess\obj\Debug\DataAccess.pdb
+D:\DynaFace-Latest\DataAccess\bin\Debug\DataAccess.dll
+D:\DynaFace-Latest\DataAccess\bin\Debug\DataAccess.pdb
+D:\DynaFace-Latest\DataAccess\bin\Debug\BussinessObject.dll
+D:\DynaFace-Latest\DataAccess\bin\Debug\GeneralAuxiliary.dll
+D:\DynaFace-Latest\DataAccess\bin\Debug\BussinessObject.pdb
+D:\DynaFace-Latest\DataAccess\bin\Debug\GeneralAuxiliary.pdb
+D:\DynaFace-Latest\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+D:\DynaFace-Latest\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\DynaFace-Latest\DataAccess\obj\Debug\DataAccess.csproj.Up2Date
+D:\DynaFace-Latest\DataAccess\obj\Debug\DataAccess.dll
+D:\DynaFace-Latest\DataAccess\obj\Debug\DataAccess.pdb
+C:\WorkingESSPortalFromAzure\DataAccess\bin\Debug\DataAccess.dll
+C:\WorkingESSPortalFromAzure\DataAccess\bin\Debug\DataAccess.pdb
+C:\WorkingESSPortalFromAzure\DataAccess\bin\Debug\BussinessObject.dll
+C:\WorkingESSPortalFromAzure\DataAccess\bin\Debug\GeneralAuxiliary.dll
+C:\WorkingESSPortalFromAzure\DataAccess\bin\Debug\BussinessObject.pdb
+C:\WorkingESSPortalFromAzure\DataAccess\bin\Debug\GeneralAuxiliary.pdb
+C:\WorkingESSPortalFromAzure\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\WorkingESSPortalFromAzure\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\WorkingESSPortalFromAzure\DataAccess\obj\Debug\DataAccess.csproj.Up2Date
+C:\WorkingESSPortalFromAzure\DataAccess\obj\Debug\DataAccess.dll
+C:\WorkingESSPortalFromAzure\DataAccess\obj\Debug\DataAccess.pdb
+C:\DynafacePortal\DataAccess\bin\Debug\DataAccess.dll
+C:\DynafacePortal\DataAccess\bin\Debug\DataAccess.pdb
+C:\DynafacePortal\DataAccess\bin\Debug\BussinessObject.dll
+C:\DynafacePortal\DataAccess\bin\Debug\GeneralAuxiliary.dll
+C:\DynafacePortal\DataAccess\bin\Debug\BussinessObject.pdb
+C:\DynafacePortal\DataAccess\bin\Debug\GeneralAuxiliary.pdb
+C:\DynafacePortal\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\DynafacePortal\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\DynafacePortal\DataAccess\obj\Debug\DataAccess.csproj.Up2Date
+C:\DynafacePortal\DataAccess\obj\Debug\DataAccess.dll
+C:\DynafacePortal\DataAccess\obj\Debug\DataAccess.pdb
